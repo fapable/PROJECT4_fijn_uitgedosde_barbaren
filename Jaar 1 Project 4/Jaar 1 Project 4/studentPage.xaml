@@ -10,8 +10,9 @@
     <Grid Background="#FFCE0033">
         <TextBlock x:Name="studentMainText" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Student" VerticalAlignment="Top" Margin="136,0,0,0" Height="36" Width="94" FontSize="24" SelectionHighlightColor="White" Foreground="White" FontWeight="Bold"/>
         <Button x:Name="studenloginButton" Content="Login" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="136,75,0,0" Height="32" Width="80"/>
-        <Button x:Name="exitLoginButton" Content="Afsluiten
-                " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="136,132,0,0" Width="80"/>
+        <Button x:Name="exitLoginButton" Content="Back
+                
+                " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="136,132,0,0" Width="80" Click="BackClick"/>
 
     </Grid>
 </Page>

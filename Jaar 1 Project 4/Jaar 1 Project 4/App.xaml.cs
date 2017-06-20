@@ -43,6 +43,7 @@ namespace Jaar_1_Project_4
             if (System.Diagnostics.Debugger.IsAttached)
             {
                 this.DebugSettings.EnableFrameRateCounter = true;
+               
             }
 #endif
             Frame rootFrame = Window.Current.Content as Frame;

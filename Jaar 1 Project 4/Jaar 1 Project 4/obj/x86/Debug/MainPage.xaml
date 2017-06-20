@@ -10,11 +10,13 @@
     <Grid Background="#FFCF0044">
         <Button x:ConnectionId='1' x:Name="studentInlogButton" Content="Student&#xD;&#xA;" HorizontalAlignment="Left" Margin="136,57,0,0" VerticalAlignment="Top" Height="32" Width="94"                          />
         <Button x:ConnectionId='2' x:Name="teacherInlogButton" Content="Teacher
-                " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="136,108,0,0" Width="94"/>
+                " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="136,108,0,0" Width="94"                          />
         <Button x:ConnectionId='3' x:Name="exitInlogButton" Content="Exit
-                " HorizontalAlignment="Left" Margin="136,161,0,0" VerticalAlignment="Top" Width="94"/>
-        <TextBlock x:ConnectionId='4' x:Name="inlogMainText" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Inlog Page" VerticalAlignment="Top" Margin="120,0,0,0" Height="36" Width="132" FontSize="24" SelectionHighlightColor="White" Foreground="White" FontWeight="Bold"/>
-        <Image x:ConnectionId='5' x:Name="mainHrLogo" HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="76" Margin="280,143,0,0"/>
+                " HorizontalAlignment="Left" Margin="136,161,0,0" VerticalAlignment="Top" Width="94"                  />
+        <TextBlock x:ConnectionId='4' x:Name="inlogMainText" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="120,0,0,0" Height="36" Width="132" FontSize="24" SelectionHighlightColor="White" Foreground="White" FontWeight="Bold">
+            <Run Text="Login"/>
+            <Run Text=" Page"/>
+        </TextBlock>
     </Grid>
 </Page>
 

@@ -17,18 +17,30 @@ using Windows.UI.Xaml.Navigation;
 
 namespace Jaar_1_Project_4
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
-    public sealed partial class MainPage : Page
-    {
+    public sealed partial class MainPage : Page {
         public MainPage()
         {
             this.InitializeComponent();
+            
         }
+        //Button click for the student button
+        private void studentLoginClick(object sender, RoutedEventArgs e) {
+            this.Frame.Navigate(typeof(studentPage));
 
-        private void studentInlogClick(object sender, RoutedEventArgs e) {
+            
+            
+
+           
+        }
+        //Button click for the Exit button
+        private void ExitClick(object sender, RoutedEventArgs e) {
             Application.Current.Exit();
+            
+
+        }
+        //Button click for the teacher button
+        private void teacherLoginClick(object sender, RoutedEventArgs e) {
+
         }
     }
 }
