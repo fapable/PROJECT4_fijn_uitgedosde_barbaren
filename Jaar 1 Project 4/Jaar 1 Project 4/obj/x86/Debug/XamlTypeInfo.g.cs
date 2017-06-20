@@ -132,15 +132,17 @@ namespace Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
+            _typeNameTable = new string[4];
             _typeNameTable[0] = "Jaar_1_Project_4.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "Jaar_1_Project_4.studentPage";
 
-            _typeTable = new global::System.Type[3];
+            _typeTable = new global::System.Type[4];
             _typeTable[0] = typeof(global::Jaar_1_Project_4.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::Jaar_1_Project_4.studentPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -176,6 +178,7 @@ namespace Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo
         }
 
         private object Activate_0_MainPage() { return new global::Jaar_1_Project_4.MainPage(); }
+        private object Activate_3_studentPage() { return new global::Jaar_1_Project_4.studentPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -200,6 +203,13 @@ namespace Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo
 
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 3:   //  Jaar_1_Project_4.studentPage
+                userType = new global::Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_studentPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;

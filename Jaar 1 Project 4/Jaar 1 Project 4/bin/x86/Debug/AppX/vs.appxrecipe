@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>1397679BB337BA7D73FBAC465C8FA47AE2DEAD3944DC7C5139ACE7D1E51BEDF8</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>24136CE83645C6ED865EDD62E9CA74D09A8DF115491704034102E2CA500A0088</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>60eeff28-5f82-4856-ac62-bd89fbc4ba0e_1.0.0.0_x86__kt1fp6kzymazt</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>60eeff28-5f82-4856-ac62-bd89fbc4ba0e_kt1fp6kzymazt!App</RegisteredUserModeAppID>
     <RegisteredPackageID>60eeff28-5f82-4856-ac62-bd89fbc4ba0e</RegisteredPackageID>
@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-20T13:24:22.562</Modified>
+      <Modified>2017-06-20T13:59:50.128</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Jaar 1 Project 4.exe">
       <PackagePath>entrypoint\Jaar 1 Project 4.exe</PackagePath>
-      <Modified>2017-06-20T13:24:17.174</Modified>
+      <Modified>2017-06-20T13:59:49.089</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sppes\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -488,7 +488,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Jaar 1 Project 4.xr.xml">
       <PackagePath>Jaar 1 Project 4.xr.xml</PackagePath>
-      <Modified>2017-06-20T13:24:16.185</Modified>
+      <Modified>2017-06-20T13:59:48.341</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -497,11 +497,11 @@
     <AppxPackagedFile Include="D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-20T13:24:21.306</Modified>
+      <Modified>2017-06-20T13:59:49.798</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Core\Jaar 1 Project 4.exe">
       <PackagePath>Jaar 1 Project 4.exe</PackagePath>
-      <Modified>2017-06-20T13:24:22.544</Modified>
+      <Modified>2017-06-20T13:59:50.124</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

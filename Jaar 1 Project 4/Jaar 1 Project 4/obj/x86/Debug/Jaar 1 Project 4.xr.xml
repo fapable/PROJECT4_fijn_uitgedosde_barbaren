@@ -18,6 +18,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="HorizontalAlignment" />
@@ -40,5 +41,6 @@
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Jaar_1_Project_4.MainPage" />
+    <RootType FullName="Jaar_1_Project_4.studentPage" />
   </Roots.RootTypes>
 </Roots>
