@@ -1,2 +1,3 @@
-# PROJECT4_fijn_uitgedosde_barbaren
-project 4 fijn uitgedosde barbaren
+Hogeschool Rotterdam,  School Project 2017 June - July
+Group 2
+Notice: don't copy any content that is displayed in this repository 
