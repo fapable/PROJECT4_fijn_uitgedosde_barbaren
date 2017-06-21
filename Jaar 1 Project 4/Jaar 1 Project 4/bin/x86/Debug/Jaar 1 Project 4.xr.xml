@@ -14,38 +14,25 @@
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Text" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="Inlines" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="SelectionHighlightColor" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="FontWeight" />
       <RootProperty Name="Style" />
-      <RootProperty Name="Inlines" />
+      <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
-      <RootProperty Name="Resources" />
       <RootProperty Name="Content" />
+      <RootProperty Name="Resources" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="TextWrapping" />
-      <RootProperty Name="Text" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="FontSize" />
-      <RootEvent Name="KeyDown" />
-    </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.NullExtension" />
-    <RootType FullName="Jaar_1_Project_4.DocentLogin" />
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalAlignment" />
@@ -53,15 +40,50 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="FontSize" />
       <RootEvent Name="Click" />
     </RootType>
-    <RootType FullName="Jaar_1_Project_4.MainMenu" />
-    <RootType FullName="Jaar_1_Project_4.MainPage" />
+    <RootType FullName="Jaar_1_Project_4.Activities" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="FontSize" />
+      <RootEvent Name="KeyDown" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.Run">
       <RootProperty Name="Text" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
+    <RootType FullName="Jaar_1_Project_4.CreateAccount" />
+    <RootType FullName="Jaar_1_Project_4.Education" />
+    <RootType FullName="Jaar_1_Project_4.FifthFloor" />
+    <RootType FullName="Jaar_1_Project_4.FirstFloor" />
+    <RootType FullName="Jaar_1_Project_4.FourthFloor" />
+    <RootType FullName="Jaar_1_Project_4.MainMenu" />
+    <RootType FullName="Jaar_1_Project_4.MainPage" />
+    <RootType FullName="Jaar_1_Project_4.OpenDagInformatie" />
+    <RootType FullName="Jaar_1_Project_4.Questions" />
+    <RootType FullName="Jaar_1_Project_4.SecondFloor" />
     <RootType FullName="Jaar_1_Project_4.StudentLogin" />
-    <RootType FullName="Jaar_1_Project_4.studentPage" />
+    <RootType FullName="Jaar_1_Project_4.TeacherLogIn" />
+    <RootType FullName="Jaar_1_Project_4.ThirthFloor" />
+    <RootType FullName="Jaar_1_Project_4.Wijnhaven103" />
+    <RootType FullName="Jaar_1_Project_4.Wijnhaven103Contact" />
+    <RootType FullName="Jaar_1_Project_4.Wijnhaven103Education" />
+    <RootType FullName="Jaar_1_Project_4.Wijnhaven61" />
+    <RootType FullName="Jaar_1_Project_4.Wijnhaven103OpeningTimes" />
+    <RootType FullName="Jaar_1_Project_4.Wijnhaven61Contact" />
+    <RootType FullName="Jaar_1_Project_4.Wijnhaven61Education" />
+    <RootType FullName="Jaar_1_Project_4.Wijnhaven61OpeningTimes" />
+    <RootType FullName="Jaar_1_Project_4.Wijnhaven99" />
+    <RootType FullName="Jaar_1_Project_4.Wijnhaven99Contact" />
+    <RootType FullName="Jaar_1_Project_4.Wijnhaven99Education" />
+    <RootType FullName="Jaar_1_Project_4.Wijnhaven99OpeningTimes" />
+    <RootType FullName="Jaar_1_Project_4.WijnhavenLocations" />
   </Roots.RootTypes>
 </Roots>

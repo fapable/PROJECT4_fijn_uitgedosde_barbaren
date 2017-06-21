@@ -92,12 +92,29 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activities.xaml.cs">
+      <DependentUpon>Activities.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DocentLogin.xaml.cs">
-      <DependentUpon>DocentLogin.xaml</DependentUpon>
+    <Compile Include="CreateAccount.xaml.cs">
+      <DependentUpon>CreateAccount.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Education.xaml.cs">
+      <DependentUpon>Education.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FifthFloor.xaml.cs">
+      <DependentUpon>FifthFloor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FirstFloor.xaml.cs">
+      <DependentUpon>FirstFloor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FourthFloor.xaml.cs">
+      <DependentUpon>FourthFloor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IteratorDesignPattern.cs" />
+    <Compile Include="LoginVisitorPattern.cs" />
     <Compile Include="MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>
@@ -105,14 +122,65 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="messages.cs" />
+    <Compile Include="OpenDagInformatie.xaml.cs">
+      <DependentUpon>OpenDagInformatie.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Questions.xaml.cs">
+      <DependentUpon>Questions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SecondFloor.xaml.cs">
+      <DependentUpon>SecondFloor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StudentLogin.xaml.cs">
       <DependentUpon>StudentLogin.xaml</DependentUpon>
     </Compile>
-    <Compile Include="studentPage.xaml.cs">
-      <DependentUpon>studentPage.xaml</DependentUpon>
+    <Compile Include="LambdaVisitorDesignPattern.cs" />
+    <Compile Include="TeacherLogIn.xaml.cs">
+      <DependentUpon>TeacherLogIn.xaml</DependentUpon>
     </Compile>
-    <Compile Include="VisitorDesignPattern.cs" />
+    <Compile Include="ThirthFloor.xaml.cs">
+      <DependentUpon>ThirthFloor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wijnhaven103.xaml.cs">
+      <DependentUpon>Wijnhaven103.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wijnhaven103Contact.xaml.cs">
+      <DependentUpon>Wijnhaven103Contact.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wijnhaven103Education.xaml.cs">
+      <DependentUpon>Wijnhaven103Education.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wijnhaven61.xaml.cs">
+      <DependentUpon>Wijnhaven61.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wijnhaven103OpeningTimes.xaml.cs">
+      <DependentUpon>Wijnhaven103OpeningTimes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wijnhaven61Contact.xaml.cs">
+      <DependentUpon>Wijnhaven61Contact.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wijnhaven61Education.xaml.cs">
+      <DependentUpon>Wijnhaven61Education.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wijnhaven61OpeningTimes.xaml.cs">
+      <DependentUpon>Wijnhaven61OpeningTimes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wijnhaven99.xaml.cs">
+      <DependentUpon>Wijnhaven99.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wijnhaven99Contact.xaml.cs">
+      <DependentUpon>Wijnhaven99Contact.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wijnhaven99Education.xaml.cs">
+      <DependentUpon>Wijnhaven99Education.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wijnhaven99OpeningTimes.xaml.cs">
+      <DependentUpon>Wijnhaven99OpeningTimes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WijnhavenLocations.xaml.cs">
+      <DependentUpon>WijnhavenLocations.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -135,7 +203,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="DocentLogin.xaml">
+    <Page Include="Activities.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreateAccount.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Education.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FifthFloor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FirstFloor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FourthFloor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -147,11 +235,79 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="OpenDagInformatie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Questions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SecondFloor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="StudentLogin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="studentPage.xaml">
+    <Page Include="TeacherLogIn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ThirthFloor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wijnhaven103.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wijnhaven103Contact.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wijnhaven103Education.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wijnhaven61.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wijnhaven103OpeningTimes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wijnhaven61Contact.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wijnhaven61Education.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wijnhaven61OpeningTimes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wijnhaven99.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wijnhaven99Contact.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wijnhaven99Education.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wijnhaven99OpeningTimes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WijnhavenLocations.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

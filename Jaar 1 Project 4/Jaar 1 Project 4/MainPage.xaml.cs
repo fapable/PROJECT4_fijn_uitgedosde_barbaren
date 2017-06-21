@@ -21,11 +21,12 @@ namespace Jaar_1_Project_4
         public MainPage()
         {
             this.InitializeComponent();
+        
             
         }
         //Button click for the student button
         private void studentLoginClick(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(studentPage));
+            this.Frame.Navigate(typeof(StudentLogin));
      
         }
         //Button click for the Exit button
@@ -35,6 +36,7 @@ namespace Jaar_1_Project_4
         }
         //Button click for the teacher button
         private void teacherLoginClick(object sender, RoutedEventArgs e) {
+            this.Frame.Navigate(typeof(TeacherLogIn));
 
         }
 

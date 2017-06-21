@@ -13,5 +13,6 @@
                 " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="136,108,0,0" Width="94" Click="teacherLoginClick"/>
         <Button x:Name="exitInlogButton" Content="Exit
                 " HorizontalAlignment="Left" Margin="136,161,0,0" VerticalAlignment="Top" Width="94" Click="ExitClick"/>
+        <TextBlock x:Name="mainInlogText" HorizontalAlignment="Left" Margin="110,0,0,0" TextWrapping="Wrap" Text="Login screen" VerticalAlignment="Top" Height="42" Width="150" FontSize="24" Foreground="White" FontWeight="Bold"/>
     </Grid>
 </Page>

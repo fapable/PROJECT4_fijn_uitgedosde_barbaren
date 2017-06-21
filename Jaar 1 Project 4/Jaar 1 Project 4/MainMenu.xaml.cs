@@ -27,5 +27,13 @@ namespace Jaar_1_Project_4 {
         private void button2_Click(object sender, RoutedEventArgs e) {
             Application.Current.Exit();
         }
+
+        private void button_Click(object sender, RoutedEventArgs e) {
+            this.Frame.Navigate(typeof(OpenDagInformatie));
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e) {
+            this.Frame.Navigate(typeof(Questions));
+        }
     }
 }
