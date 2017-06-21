@@ -4,5 +4,10 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Jaar_1_Project_4"
     RequestedTheme="Light">
+    <Application.Resources>
+        <SolidColorBrush x:Key="hrTheme" Color="#FFCF0044"/>
+        <Style x:Key="mainTitle" TargetType="TextBlock"/>
+        <Style TargetType="TextBlock"/>
+    </Application.Resources>
 
 </Application>

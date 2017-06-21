@@ -589,3 +589,18 @@ B:\School\Hogeschool\Homework\Projecten\Project 4\githubClone\PROJECT4_fijn_uitg
 B:\School\Hogeschool\Homework\Projecten\Project 4\githubClone\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\StudentLogin.g.cs
 B:\School\Hogeschool\Homework\Projecten\Project 4\githubClone\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\StudentLogin.xaml
 B:\School\Hogeschool\Homework\Projecten\Project 4\githubClone\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\StudentLogin.xbf
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\StudentLogin.xbf
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\StudentLogin.g.i.cs
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\StudentLogin.g.cs
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\StudentLogin.xaml
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\StudentLogin.xbf
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\DocentLogin.g.i.cs
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\DocentLogin.g.cs
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\DocentLogin.xaml
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\DocentLogin.xbf
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\DocentLogin.xbf
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\MainMenu.xbf
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\MainMenu.g.i.cs
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\MainMenu.g.cs
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\MainMenu.xaml
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\MainMenu.xbf

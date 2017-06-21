@@ -3,14 +3,49 @@
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
       <RootProperty Name="RequestedTheme" />
+      <RootProperty Name="Resources" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
+      <RootProperty Name="Color" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="SelectionHighlightColor" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="Inlines" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="Resources" />
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
       <RootProperty Name="Children" />
     </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="FontSize" />
+      <RootEvent Name="KeyDown" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.NullExtension" />
+    <RootType FullName="Jaar_1_Project_4.DocentLogin" />
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalAlignment" />
@@ -20,24 +55,12 @@
       <RootProperty Name="Width" />
       <RootEvent Name="Click" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="TextWrapping" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="SelectionHighlightColor" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="FontWeight" />
-      <RootProperty Name="Inlines" />
-      <RootProperty Name="Text" />
-    </RootType>
+    <RootType FullName="Jaar_1_Project_4.MainMenu" />
+    <RootType FullName="Jaar_1_Project_4.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Documents.Run">
       <RootProperty Name="Text" />
     </RootType>
-    <RootType FullName="Jaar_1_Project_4.MainPage" />
+    <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
     <RootType FullName="Jaar_1_Project_4.StudentLogin" />
     <RootType FullName="Jaar_1_Project_4.studentPage" />
   </Roots.RootTypes>

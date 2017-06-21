@@ -26,20 +26,19 @@ namespace Jaar_1_Project_4
         //Button click for the student button
         private void studentLoginClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(studentPage));
-
-            
-            
-
-           
+     
         }
         //Button click for the Exit button
         private void ExitClick(object sender, RoutedEventArgs e) {
             Application.Current.Exit();
-            
 
         }
         //Button click for the teacher button
         private void teacherLoginClick(object sender, RoutedEventArgs e) {
+
+        }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e) {
 
         }
     }

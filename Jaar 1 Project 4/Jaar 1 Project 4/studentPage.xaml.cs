@@ -26,5 +26,9 @@ namespace Jaar_1_Project_4 {
 
 
         }
+
+        private void studenloginButton_Click(object sender, RoutedEventArgs e) {
+            this.Frame.Navigate(typeof(StudentLogin));
+        }
     }
 }
