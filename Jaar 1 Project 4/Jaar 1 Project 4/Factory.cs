@@ -12,7 +12,7 @@ using Windows.UI.Xaml.Controls;
 //TODO find out where the button must be loaded
 
 namespace Jaar_1_Project_4 {
-    class Factory { }
+    class Factory : Button { }
     //The main factory
     public abstract class ElementCreatorMainfactory {
         public enum HorizontalAllignmentEnum { left, right, center, stretch } //Enum is used because it's safer than using strings
