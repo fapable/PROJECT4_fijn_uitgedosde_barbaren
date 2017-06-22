@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-22T12:01:37.146</Modified>
+      <Modified>2017-06-22T12:15:34.926</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Jaar 1 Project 4.exe">
       <PackagePath>entrypoint\Jaar 1 Project 4.exe</PackagePath>
-      <Modified>2017-06-22T12:01:36.735</Modified>
+      <Modified>2017-06-22T12:15:33.670</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sppes\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -488,7 +488,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Jaar 1 Project 4.xr.xml">
       <PackagePath>Jaar 1 Project 4.xr.xml</PackagePath>
-      <Modified>2017-06-22T09:40:14.866</Modified>
+      <Modified>2017-06-22T12:15:33.364</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -497,11 +497,11 @@
     <AppxPackagedFile Include="D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-22T12:00:23.392</Modified>
+      <Modified>2017-06-22T12:15:34.558</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Core\Jaar 1 Project 4.exe">
       <PackagePath>Jaar 1 Project 4.exe</PackagePath>
-      <Modified>2017-06-22T12:01:37.141</Modified>
+      <Modified>2017-06-22T12:15:34.920</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
