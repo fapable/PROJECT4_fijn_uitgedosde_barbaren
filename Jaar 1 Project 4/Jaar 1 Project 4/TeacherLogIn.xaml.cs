@@ -13,28 +13,38 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
-
 namespace Jaar_1_Project_4 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class TeacherLogIn : Page {
+        private IClassicOption<string> username;
+        private IClassicOption<string> password;
+        private IOptionVisitor<string> loginVisitor;
         public TeacherLogIn() {
+            this.username = new NoneLogin();
+            this.password = new NoneLogin();
+            this.loginVisitor = new TheVisitor<string>();
             this.InitializeComponent();
         }
+        private void createButton_Click(object sender, RoutedEventArgs e) { }
 
-        private void createButton_Click(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(MainMenu));
-        }
 
         private void logInButton_Click(object sender, RoutedEventArgs e) {
+            if (UsernameTypeBox.Text.ToString().Length > 0) {
+                username = new SomeUsernameLogin(UsernameTypeBox.Text.ToString()); //Username is now a Some because it's not empty
+                username.ClassicVisit(loginVisitor); //Username calls it's visit method
+            }
+            else {
+                //TODO with the use of factory, make a label that says that the username is not filled in
+            }
+            if (passwordTypeBox.Text.ToString().Length > 0) {
+                password = new SomePasswordLogin(passwordTypeBox.Text.ToString());
+                password.ClassicVisit(loginVisitor);
+            }
+            loginVisitor.OnLoginCheck(); //The filled in username and password are now checked
             this.Frame.Navigate(typeof(MainMenu));
         }
-
         private void studentLoginBackButton_Click(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(MainPage));
-
         }
     }
 }
+
