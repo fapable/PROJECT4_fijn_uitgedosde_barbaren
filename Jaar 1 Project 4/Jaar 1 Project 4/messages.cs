@@ -13,8 +13,8 @@ using Windows.UI.Xaml.Navigation;
 
 namespace Jaar_1_Project_4_Messages
 {
-    interface Message { }
-    abstract class MessageFactory
+    public interface Message { }
+    public abstract class MessageFactory
     {
         public enum MessageType { question, answer, notification };
         public static Message Create(MessageType type)
@@ -40,13 +40,29 @@ namespace Jaar_1_Project_4_Messages
             }
         }
     }
+    public abstract class MessageDecorator : Message
+    {
+        public Message message;
+        public MessageDecorator(Message message)
+        {
+            this.message = message;
+        }
+    }
     public class Question : Message
     {
-
+        bool IsAnswer;
+        public Question()
+        {
+            this.IsAnswer = false;
+        }
     }
     public class Answer : Message
     {
-
+        bool IsAnswer;
+        public Answer()
+        {
+            this.IsAnswer = true;
+        }
     }
     public class Notification : Message
     {
