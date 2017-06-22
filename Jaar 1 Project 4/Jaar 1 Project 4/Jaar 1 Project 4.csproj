@@ -135,7 +135,6 @@
     <Compile Include="StudentLogin.xaml.cs">
       <DependentUpon>StudentLogin.xaml</DependentUpon>
     </Compile>
-    <Compile Include="LambdaVisitorDesignPattern.cs" />
     <Compile Include="TeacherLogIn.xaml.cs">
       <DependentUpon>TeacherLogIn.xaml</DependentUpon>
     </Compile>

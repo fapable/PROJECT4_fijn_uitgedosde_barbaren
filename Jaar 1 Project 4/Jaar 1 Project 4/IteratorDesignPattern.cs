@@ -10,45 +10,53 @@ namespace Jaar_1_Project_4 {
     class IteratorDesignPattern {
     }
     public interface Iterator<T> {
-        IClassicOption<T> GetNext();
+        T GetNext();
+        void Add(T element);
+        void Reset();
+        void RemoveElement();
+        bool IsNotEmpty();
+        int Count();
+        T GetCurrent();
+
     }
-    public class ArrayIterator<T> : Iterator<T> {
+    public class ListIterator<T> : Iterator<T> {
         int current = -1;
         int elements = 0;
-        T[] array;
-        public ArrayIterator() {
-            this.array = new T[2];
+        List<T> list;
+        public ListIterator() {
+            this.list = new List<T>();
         }
-        public IClassicOption<T> GetNext() {
-            if (current < array.Length - 1) {
-                return new NoneLogin<T>();
+        public T GetNext() {
+            if (current <= list.Count - 1) {
+                current++;
+                return list[current];
             }
             else {
-                return new SomeLogin<T>(array[current]);
+                return default(T);
             }
         }
         public void Add(T element) {
             this.current++;
             this.elements++;
-            this.array[current] = element;
+            this.list[current] = element;
         }
         public void Reset() {
-            this.current = 1;
+            this.current = -1;
         }
-        public bool Count() {
-            return this.current < array.Length - 1;
+        public bool IsNotEmpty() {
+            return this.current < this.list.Count - 1;
         }
         public T GetCurrent() {
-            return array[current];
+            return list[current];
         }
-        public T Iterate() {
-            if (this.Count()) {
-                current++;
-                return array[current];
-            }
-            else {
-                return default(T);
-            }
+
+        public void RemoveElement() {
+            elements--;
+            list.RemoveAt(current);
+          
+        }
+        public int Count() {
+            return elements;
         }
     }
 }
