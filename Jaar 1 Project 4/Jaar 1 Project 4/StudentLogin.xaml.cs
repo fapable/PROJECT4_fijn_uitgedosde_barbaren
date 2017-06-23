@@ -16,40 +16,32 @@ using Windows.System;
 using System.Diagnostics;
 
 
-//The username and password are send to the visitor 
+//The username and password are boxed as Some or none and then send to the visitor
 
 namespace Jaar_1_Project_4 {
     public sealed partial class StudentLogin : Page {
-        private IClassicOption<string> username; //has the username
-        private IClassicOption<string> password;  //Has the password
-        private IOptionVisitor<string> loginVisitor; //The visitor
+        private IClassicOption<string> username;
+        private IClassicOption<string> password;
+        private IOptionVisitor<string> loginVisitor;
         public StudentLogin() {
-            this.username = new NoneLogin(); 
+            this.username = new NoneLogin();
             this.password = new NoneLogin();
-            this.loginVisitor = new TheVisitor<string>(); 
+            this.loginVisitor = new TheVisitor<string>();
             this.InitializeComponent();
-           
         }
-        private void usernameEntered(object sender, PointerRoutedEventArgs e) {
-        }
-        public void UsernameBoxContent(object sender, KeyRoutedEventArgs e) {
-            if (e.Key == VirtualKey.Enter) {
-                if (UsernameTypeBox.Text.ToString().Length > 0) {
-                    username = new SomeUsernameLogin(UsernameTypeBox.Text.ToString());
-                    username.ClassicVisit(loginVisitor);
-                }
+        private void createButton_Click(object sender, RoutedEventArgs e) {
+            if (UsernameTypeBox.Text.ToString().Length > 0) {
+                username = new SomeUsernameLogin(UsernameTypeBox.Text.ToString()); //Username is now a Some because it's not empty
+                username.ClassicVisit(loginVisitor); //Username calls it's visit method
             }
-        }
-        public void PasswordBoxContent(object sender, KeyRoutedEventArgs e) {
-                if (e.Key == VirtualKey.Enter) {
-                if (UsernameTypeBox.Text.ToString().Length > 0) {
-                    password = new SomePasswordLogin(UsernameTypeBox.Text.ToString());
-                    username.ClassicVisit(loginVisitor);                                   
-                }
+            else {
+                //TODO with the use of factory, make a label that says that the username is not filled in
             }
-        }
-        private void CreateButtonClick(object sender, RoutedEventArgs e) {
-            loginVisitor.OnLoginCheck();
+            if (passwordTypeBox.Text.ToString().Length > 0) {
+                password = new SomePasswordLogin(passwordTypeBox.Text.ToString());
+                password.ClassicVisit(loginVisitor);
+            }
+            loginVisitor.OnLoginCheck(); //The filled in username and password are now checked
             this.Frame.Navigate(typeof(MainMenu));
         }
         private void studentLoginBackButton_Click(object sender, RoutedEventArgs e) {
