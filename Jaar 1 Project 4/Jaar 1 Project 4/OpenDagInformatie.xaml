@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{StaticResource hrTheme}">
+    <Grid Background="{StaticResource hrTheme}" x:Name="open_day_info">
         <TextBlock x:Name="openDayInformation" HorizontalAlignment="Left" Margin="107,0,0,0" TextWrapping="Wrap" Text="Open Day Information" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
         <Button x:Name="activitiesButton" Content="Activities" HorizontalAlignment="Left" Margin="140,25,0,0" VerticalAlignment="Top" Height="35" Width="80" Click="activitiesButton_Click"/>
         <Button x:Name="educationButton" Content="Education" HorizontalAlignment="Left" Margin="140,65,0,0" VerticalAlignment="Top" Height="30" Width="90" Click="educationButton_Click"/>

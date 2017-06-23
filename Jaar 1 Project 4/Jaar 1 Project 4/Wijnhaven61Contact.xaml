@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{StaticResource hrTheme}">
+    <Grid Background="{StaticResource hrTheme}" x:Name="wijnhaven_61_contact">
         <TextBlock x:Name="mainTitle" HorizontalAlignment="Left" Margin="101,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8">
             <Run Text="Wijnhaven 61 Contact"/>
             <LineBreak/>

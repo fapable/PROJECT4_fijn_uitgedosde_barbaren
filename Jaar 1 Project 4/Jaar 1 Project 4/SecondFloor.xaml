@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{StaticResource hrTheme}">
+    <Grid Background="{StaticResource hrTheme}" x:Name="second_floor">
         <Button x:Name="secondFlourBackButton" Content="Back" HorizontalAlignment="Left" Margin="155,158,0,0" VerticalAlignment="Top" Click="secondFlourBackButton_Click"/>
         <TextBlock x:Name="mainTitle" HorizontalAlignment="Left" Margin="140,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8">
             <Run Text="Second floor"/>
