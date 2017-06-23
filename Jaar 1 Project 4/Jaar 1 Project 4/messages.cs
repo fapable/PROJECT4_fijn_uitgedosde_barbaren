@@ -9,7 +9,9 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Shapes;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI;
 
 namespace Jaar_1_Project_4_Messages
 {
@@ -17,13 +19,13 @@ namespace Jaar_1_Project_4_Messages
     public abstract class MessageFactory
     {
         public enum MessageType { question, answer, notification };
-        public static Message Create(MessageType type)
+        public static Message Create(MessageType type, EasyLabel text)
         {
             switch (type)
             {
                 case MessageType.question:
                     {
-                        return new Question();
+                        return new Question(text);
                     }
                 case MessageType.answer:
                     {
@@ -42,18 +44,26 @@ namespace Jaar_1_Project_4_Messages
     }
     public abstract class MessageDecorator : Message
     {
-        public Message message;
-        public MessageDecorator(Message message)
+        public EasyLabel message;
+        public MessageDecorator(EasyLabel message)
         {
             this.message = message;
         }
     }
-    public class Question : Message
+    public class Question : MessageDecorator
     {
         bool IsAnswer;
-        public Question()
+        public Question(EasyLabel message) : base(message)
         {
             this.IsAnswer = false;
+            this.message = message;
+        }
+        public void Draw()
+        {
+            var backing = new Rectangle();
+            backing.Fill = new SolidColorBrush(Color.FromArgb(0,0,0,0));
+            
+            //draw this.message overtop backing
         }
     }
     public class Answer : Message
