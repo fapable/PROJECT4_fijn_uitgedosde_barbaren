@@ -27,17 +27,13 @@ namespace Jaar_1_Project_4 {
         private void wijnhaven61EducationButton_Click(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(Wijnhaven61Education));
         }
-
-        private void openingTimesButton_Click(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(Wijnhaven61OpeningTimes));
-        }
-
-        private void contactButton_Click(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(Wijnhaven61Contact));
-        }
-
         private void backButton_Click(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(WijnhavenLocations));
+        }
+
+        private void infoButton_Click(object sender, RoutedEventArgs e) {
+            this.Frame.Navigate(typeof(Wijnhaven61Info));
+
         }
     }
 }

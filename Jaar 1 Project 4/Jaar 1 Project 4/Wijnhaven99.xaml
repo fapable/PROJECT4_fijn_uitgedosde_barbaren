@@ -14,9 +14,8 @@
             <Run/>
         </TextBlock>
         <Button x:Name="educationButton" Content="Education" HorizontalAlignment="Left" Margin="140,45,0,0" VerticalAlignment="Top" Click="educationButton_Click"/>
-        <Button x:Name="openingTimesButton" Content="Opening time" HorizontalAlignment="Left" Margin="140,82,0,0" VerticalAlignment="Top" Click="openingTimesButton_Click"/>
-        <Button x:Name="contactButton" Content="Contact" HorizontalAlignment="Left" Margin="154,119,0,0" VerticalAlignment="Top" Click="contactButton_Click"/>
         <Button x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="154,160,0,0" VerticalAlignment="Top" Click="backButton_Click"/>
+        <Button x:Name="info" Content="Info" HorizontalAlignment="Left" Margin="154,100,0,0" VerticalAlignment="Top" Click="info_Click"/>
 
     </Grid>
 </Page>

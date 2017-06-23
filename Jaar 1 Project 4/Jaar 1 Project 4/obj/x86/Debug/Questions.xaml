@@ -7,14 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{StaticResource hrTheme}">
-        <TextBlock x:ConnectionId='1' x:Name="mainTitle" HorizontalAlignment="Left" Margin="165,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8"                                              >
+    <Grid x:ConnectionId='1' Background="{StaticResource hrTheme}" x:Name="questions">
+        <TextBlock x:ConnectionId='2' x:Name="mainTitle" HorizontalAlignment="Left" Margin="165,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8"                                              >
             <Run Text="Questions
                  "/>
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <Button x:ConnectionId='2' x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="165,170,0,0" VerticalAlignment="Top"                   />
+        <Button x:ConnectionId='3' x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="165,170,0,0" VerticalAlignment="Top"                   />
 
     </Grid>
 </Page>

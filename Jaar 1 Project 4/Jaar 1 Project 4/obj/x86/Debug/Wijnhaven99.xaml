@@ -7,16 +7,15 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{StaticResource hrTheme}">
-        <TextBlock x:ConnectionId='1' x:Name="mainTitle" HorizontalAlignment="Left" Margin="140,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8">
+    <Grid x:ConnectionId='1' Background="{StaticResource hrTheme}" x:Name="wijnhaven_99">
+        <TextBlock x:ConnectionId='2' x:Name="mainTitle" HorizontalAlignment="Left" Margin="140,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8">
             <Run Text="Wijnhaven 99"/>
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <Button x:ConnectionId='2' x:Name="educationButton" Content="Education" HorizontalAlignment="Left" Margin="140,45,0,0" VerticalAlignment="Top"                              />
-        <Button x:ConnectionId='3' x:Name="openingTimesButton" Content="Opening time" HorizontalAlignment="Left" Margin="140,82,0,0" VerticalAlignment="Top"                                 />
-        <Button x:ConnectionId='4' x:Name="contactButton" Content="Contact" HorizontalAlignment="Left" Margin="154,119,0,0" VerticalAlignment="Top"                            />
-        <Button x:ConnectionId='5' x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="154,160,0,0" VerticalAlignment="Top"                         />
+        <Button x:ConnectionId='3' x:Name="educationButton" Content="Education" HorizontalAlignment="Left" Margin="140,45,0,0" VerticalAlignment="Top"                              />
+        <Button x:ConnectionId='4' x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="154,160,0,0" VerticalAlignment="Top"                         />
+        <Button x:ConnectionId='5' x:Name="info" Content="Info" HorizontalAlignment="Left" Margin="154,100,0,0" VerticalAlignment="Top"                   />
 
     </Grid>
 </Page>

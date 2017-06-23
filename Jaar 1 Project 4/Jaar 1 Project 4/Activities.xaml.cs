@@ -28,10 +28,6 @@ namespace Jaar_1_Project_4 {
             this.Frame.Navigate(typeof(OpenDagInformatie));
         }
 
-        private void firstFloorButton_Click(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(FirstFloor));
-        }
-
         private void secondFloorButton_Click(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(SecondFloor));
         }

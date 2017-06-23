@@ -7,13 +7,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="#FFCF0044">
-        <Button x:ConnectionId='1' x:Name="studentInlogButton" Content="Student&#xD;&#xA;" HorizontalAlignment="Left" Margin="136,57,0,0" VerticalAlignment="Top" Height="32" Width="94"                          />
-        <Button x:ConnectionId='2' x:Name="teacherInlogButton" Content="Teacher
+    <Grid x:ConnectionId='1' Background="#FFCF0044" x:Name="main_page">
+        <Button x:ConnectionId='2' x:Name="studentInlogButton" Content="Student&#xD;&#xA;" HorizontalAlignment="Left" Margin="136,57,0,0" VerticalAlignment="Top" Height="32" Width="94"                          />
+        <Button x:ConnectionId='3' x:Name="teacherInlogButton" Content="Teacher
                 " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="136,108,0,0" Width="94"                          />
-        <Button x:ConnectionId='3' x:Name="exitInlogButton" Content="Exit
+        <Button x:ConnectionId='4' x:Name="exitInlogButton" Content="Exit
                 " HorizontalAlignment="Left" Margin="136,161,0,0" VerticalAlignment="Top" Width="94"                  />
-        <TextBlock x:ConnectionId='4' x:Name="mainInlogText" HorizontalAlignment="Left" Margin="110,0,0,0" TextWrapping="Wrap" Text="Login screen" VerticalAlignment="Top" Height="42" Width="150" FontSize="24" Foreground="White" FontWeight="Bold"/>
+        <TextBlock x:ConnectionId='5' x:Name="mainInlogText" HorizontalAlignment="Left" Margin="110,0,0,0" TextWrapping="Wrap" Text="Login screen" VerticalAlignment="Top" Height="42" Width="150" FontSize="24" Foreground="White" FontWeight="Bold"/>
     </Grid>
 </Page>
 

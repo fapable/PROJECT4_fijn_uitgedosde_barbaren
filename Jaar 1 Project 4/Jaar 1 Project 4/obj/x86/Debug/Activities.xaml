@@ -7,10 +7,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{StaticResource hrTheme}">
-        <TextBlock x:ConnectionId='1' x:Name="mainTitle"
+    <Grid x:ConnectionId='1' Background="{StaticResource hrTheme}" x:Name="activities">
+        <TextBlock x:ConnectionId='2' x:Name="mainTitle"
                     HorizontalAlignment="Left" Margin="141,0,0,0" TextWrapping="Wrap" Text="Acitivties" VerticalAlignment="Top" Foreground="#FFFFF8F8" FontWeight="Bold"/>
-        <Button x:ConnectionId='2' x:Name="firstFloorButton" Content="first floor" HorizontalAlignment="Left" Margin="141,20,0,0" VerticalAlignment="Top" Height="32"                               />
         <Button x:ConnectionId='3' x:Name="secondFloorButton" Content="Second floor" HorizontalAlignment="Left" Margin="130,57,0,0" VerticalAlignment="Top"                                />
         <Button x:ConnectionId='4' x:Name="thirdFloorButton" Content="Third floor" HorizontalAlignment="Left" Margin="141,94,0,0" VerticalAlignment="Top"                               />
         <Button x:ConnectionId='5' x:Name="fourthFloorButton" Content="Fourth floor" HorizontalAlignment="Left" Margin="135,131,0,0" VerticalAlignment="Top"                                />

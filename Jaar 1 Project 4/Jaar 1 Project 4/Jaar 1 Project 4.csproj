@@ -111,9 +111,6 @@
     <Compile Include="FifthFloor.xaml.cs">
       <DependentUpon>FifthFloor.xaml</DependentUpon>
     </Compile>
-    <Compile Include="FirstFloor.xaml.cs">
-      <DependentUpon>FirstFloor.xaml</DependentUpon>
-    </Compile>
     <Compile Include="FourthFloor.xaml.cs">
       <DependentUpon>FourthFloor.xaml</DependentUpon>
     </Compile>
@@ -148,8 +145,8 @@
     <Compile Include="Wijnhaven103.xaml.cs">
       <DependentUpon>Wijnhaven103.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Wijnhaven103Contact.xaml.cs">
-      <DependentUpon>Wijnhaven103Contact.xaml</DependentUpon>
+    <Compile Include="Wijnhaven103Info.xaml.cs">
+      <DependentUpon>Wijnhaven103Info.xaml</DependentUpon>
     </Compile>
     <Compile Include="Wijnhaven103Education.xaml.cs">
       <DependentUpon>Wijnhaven103Education.xaml</DependentUpon>
@@ -157,29 +154,20 @@
     <Compile Include="Wijnhaven61.xaml.cs">
       <DependentUpon>Wijnhaven61.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Wijnhaven103OpeningTimes.xaml.cs">
-      <DependentUpon>Wijnhaven103OpeningTimes.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Wijnhaven61Contact.xaml.cs">
-      <DependentUpon>Wijnhaven61Contact.xaml</DependentUpon>
+    <Compile Include="Wijnhaven61Info.xaml.cs">
+      <DependentUpon>Wijnhaven61Info.xaml</DependentUpon>
     </Compile>
     <Compile Include="Wijnhaven61Education.xaml.cs">
       <DependentUpon>Wijnhaven61Education.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Wijnhaven61OpeningTimes.xaml.cs">
-      <DependentUpon>Wijnhaven61OpeningTimes.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Wijnhaven99.xaml.cs">
       <DependentUpon>Wijnhaven99.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Wijnhaven99Contact.xaml.cs">
-      <DependentUpon>Wijnhaven99Contact.xaml</DependentUpon>
+    <Compile Include="Wijnhaven99Info.xaml.cs">
+      <DependentUpon>Wijnhaven99Info.xaml</DependentUpon>
     </Compile>
     <Compile Include="Wijnhaven99Education.xaml.cs">
       <DependentUpon>Wijnhaven99Education.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Wijnhaven99OpeningTimes.xaml.cs">
-      <DependentUpon>Wijnhaven99OpeningTimes.xaml</DependentUpon>
     </Compile>
     <Compile Include="WijnhavenLocations.xaml.cs">
       <DependentUpon>WijnhavenLocations.xaml</DependentUpon>
@@ -219,10 +207,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="FifthFloor.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="FirstFloor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -266,7 +250,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Wijnhaven103Contact.xaml">
+    <Page Include="Wijnhaven103Info.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -278,11 +262,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Wijnhaven103OpeningTimes.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Wijnhaven61Contact.xaml">
+    <Page Include="Wijnhaven61Info.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -290,23 +270,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Wijnhaven61OpeningTimes.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Wijnhaven99.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Wijnhaven99Contact.xaml">
+    <Page Include="Wijnhaven99Info.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Wijnhaven99Education.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Wijnhaven99OpeningTimes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

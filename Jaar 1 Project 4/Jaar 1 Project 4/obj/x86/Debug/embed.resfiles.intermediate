@@ -3,7 +3,6 @@ App.xbf
 CreateAccount.xbf
 Education.xbf
 FifthFloor.xbf
-FirstFloor.xbf
 FourthFloor.xbf
 MainMenu.xbf
 MainPage.xbf
@@ -14,15 +13,12 @@ StudentLogin.xbf
 TeacherLogIn.xbf
 ThirthFloor.xbf
 Wijnhaven103.xbf
-Wijnhaven103Contact.xbf
 Wijnhaven103Education.xbf
-Wijnhaven103OpeningTimes.xbf
+Wijnhaven103Info.xbf
 Wijnhaven61.xbf
-Wijnhaven61Contact.xbf
 Wijnhaven61Education.xbf
-Wijnhaven61OpeningTimes.xbf
+Wijnhaven61Info.xbf
 Wijnhaven99.xbf
-Wijnhaven99Contact.xbf
 Wijnhaven99Education.xbf
-Wijnhaven99OpeningTimes.xbf
+Wijnhaven99Info.xbf
 WijnhavenLocations.xbf
