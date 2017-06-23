@@ -29,7 +29,7 @@ namespace Jaar_1_Project_4 {
             this.loginVisitor = new TheVisitor<string>();
             this.InitializeComponent();
         }
-        private void createButton_Click(object sender, RoutedEventArgs e) {
+        private void CreateButtonClick(object sender, RoutedEventArgs e) {
             if (UsernameTypeBox.Text.ToString().Length > 0) {
                 username = new SomeUsernameLogin(UsernameTypeBox.Text.ToString()); //Username is now a Some because it's not empty
                 username.ClassicVisit(loginVisitor); //Username calls it's visit method
