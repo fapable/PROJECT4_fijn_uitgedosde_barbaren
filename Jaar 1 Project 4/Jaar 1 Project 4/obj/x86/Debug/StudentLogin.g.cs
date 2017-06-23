@@ -51,7 +51,7 @@ namespace Jaar_1_Project_4
                 {
                     this.UsernameTypeBox = (global::Windows.UI.Xaml.Controls.TextBox)(target);
                     #line 25 "..\..\..\StudentLogin.xaml"
-                    ((global::Windows.UI.Xaml.Controls.TextBox)this.UsernameTypeBox).KeyDown += this.isEntered;
+                    ((global::Windows.UI.Xaml.Controls.TextBox)this.UsernameTypeBox).KeyDown += this.UsernameBoxContent;
                     #line default
                 }
                 break;
@@ -59,7 +59,7 @@ namespace Jaar_1_Project_4
                 {
                     this.passwordTypeBox = (global::Windows.UI.Xaml.Controls.TextBox)(target);
                     #line 27 "..\..\..\StudentLogin.xaml"
-                    ((global::Windows.UI.Xaml.Controls.TextBox)this.passwordTypeBox).KeyDown += this.passwordTypeBox_KeyDown;
+                    ((global::Windows.UI.Xaml.Controls.TextBox)this.passwordTypeBox).KeyDown += this.PasswordBoxContent;
                     #line default
                 }
                 break;
@@ -67,7 +67,7 @@ namespace Jaar_1_Project_4
                 {
                     this.logInButton = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 28 "..\..\..\StudentLogin.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.logInButton).Click += this.createButton_Click;
+                    ((global::Windows.UI.Xaml.Controls.Button)this.logInButton).Click += this.CreateButtonClick;
                     #line default
                 }
                 break;

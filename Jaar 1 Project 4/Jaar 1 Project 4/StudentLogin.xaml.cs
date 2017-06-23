@@ -32,7 +32,7 @@ namespace Jaar_1_Project_4 {
         }
         private void usernameEntered(object sender, PointerRoutedEventArgs e) {
         }
-        private void isEntered(object sender, KeyRoutedEventArgs e) {
+        public void UsernameBoxContent(object sender, KeyRoutedEventArgs e) {
             if (e.Key == VirtualKey.Enter) {
                 if (UsernameTypeBox.Text.ToString().Length > 0) {
                     username = new SomeUsernameLogin(UsernameTypeBox.Text.ToString());
@@ -40,7 +40,7 @@ namespace Jaar_1_Project_4 {
                 }
             }
         }
-        private void passwordTypeBox_KeyDown(object sender, KeyRoutedEventArgs e) {
+        public void PasswordBoxContent(object sender, KeyRoutedEventArgs e) {
                 if (e.Key == VirtualKey.Enter) {
                 if (UsernameTypeBox.Text.ToString().Length > 0) {
                     password = new SomePasswordLogin(UsernameTypeBox.Text.ToString());
@@ -48,7 +48,7 @@ namespace Jaar_1_Project_4 {
                 }
             }
         }
-        private void createButton_Click(object sender, RoutedEventArgs e) {
+        private void CreateButtonClick(object sender, RoutedEventArgs e) {
             loginVisitor.OnLoginCheck();
             this.Frame.Navigate(typeof(MainMenu));
         }

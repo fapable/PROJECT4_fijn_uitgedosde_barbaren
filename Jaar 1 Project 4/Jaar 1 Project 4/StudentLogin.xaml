@@ -22,10 +22,10 @@
                    " VerticalAlignment="Top" FontSize="11"/>
         <Button x:Name="studentLoginBackButton" Content="Back
                 " HorizontalAlignment="Left" Margin="159,168,0,0" VerticalAlignment="Top" Width="71" Height="32" Click="studentLoginBackButton_Click"/>
-        <TextBox x:Name="UsernameTypeBox" HorizontalAlignment="Left" Margin="136,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="6" Width="109" FontSize="7" KeyDown="isEntered"/>
+        <TextBox x:Name="UsernameTypeBox" HorizontalAlignment="Left" Margin="136,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="6" Width="109" FontSize="7" KeyDown="UsernameBoxContent"/>
         <TextBox x:Name="passwordTypeBox" HorizontalAlignment="Left" Margin="136,102,0,0" TextWrapping="Wrap
-                 " VerticalAlignment="Top" FontSize="7" Height="13" Width="109" KeyDown="passwordTypeBox_KeyDown"/>
-        <Button x:Name="logInButton" Content="Log in" HorizontalAlignment="Left" Margin="159,131,0,0" VerticalAlignment="Top" Click="createButton_Click"/>
+                 " VerticalAlignment="Top" FontSize="7" Height="13" Width="109" KeyDown="PasswordBoxContent"/>
+        <Button x:Name="logInButton" Content="Log in" HorizontalAlignment="Left" Margin="159,131,0,0" VerticalAlignment="Top" Click="CreateButtonClick"/>
         <Button x:Name="button" Content="Create account&#xD;&#xA;" HorizontalAlignment="Left" Margin="55,168,0,0" VerticalAlignment="Top" Height="24" Width="99" FontSize="11" Click="button_Click"/>
 
     </Grid>
