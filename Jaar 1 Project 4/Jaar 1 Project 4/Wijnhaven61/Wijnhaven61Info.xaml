@@ -9,7 +9,7 @@
 
     <Grid Background="{StaticResource hrTheme}" x:Name="wijnhaven_61_contact">
         <TextBlock x:Name="mainTitle" HorizontalAlignment="Left" Margin="101,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8">
-            <Run Text="Wijnhaven 61 Contact"/>
+            <Run Text="Wijnhaven 61 Info"/>
             <LineBreak/>
             <Run/>
         </TextBlock>

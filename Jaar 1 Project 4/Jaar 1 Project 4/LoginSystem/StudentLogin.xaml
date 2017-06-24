@@ -22,10 +22,10 @@
                    " VerticalAlignment="Top" FontSize="11"/>
         <Button x:Name="studentLoginBackButton" Content="Back
                 " HorizontalAlignment="Left" Margin="125,175,0,0" VerticalAlignment="Top" Width="115" Height="25" Click="studentLoginBackButton_Click" FontSize="10"/>
-        <TextBox x:Name="UsernameTypeBox" HorizontalAlignment="Left" Margin="126,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="6" Width="114" FontSize="7"/>
+        <TextBox x:Name="UsernameTypeBox" HorizontalAlignment="Left" Margin="80,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="6" Width="205" FontSize="15" MaxLength="20"/>
         <Button x:Name="logInButton" Content="Log in" HorizontalAlignment="Left" Margin="125,115,0,0" VerticalAlignment="Top" Click="CreateButtonClick" Width="115" Height="25" FontSize="10"/>
         <Button x:Name="button" Content="Create account&#xD;&#xA;" HorizontalAlignment="Left" Margin="125,145,0,0" VerticalAlignment="Top" Height="25" Width="115" FontSize="10" Click="button_Click"/>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="125,85,0,0" Width="115"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,83,0,0" Width="205" MaxLength="20"/>
 
     </Grid>
 </Page>

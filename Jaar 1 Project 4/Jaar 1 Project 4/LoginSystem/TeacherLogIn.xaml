@@ -17,11 +17,11 @@
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <TextBlock x:Name="passwordLoginText" HorizontalAlignment="Left" Margin="155,90,0,0" TextWrapping="Wrap" Text="Teacher code" VerticalAlignment="Top" FontSize="11"/>
-        <TextBox x:Name="UsernameTypeBox" HorizontalAlignment="Left" Margin="131,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="6" Width="109" FontSize="7"/>
+        <TextBlock x:Name="passwordLoginText" HorizontalAlignment="Left" Margin="155,85,0,0" TextWrapping="Wrap" Text="Teacher code" VerticalAlignment="Top" FontSize="11" />
+        <TextBox x:Name="UsernameTypeBox" HorizontalAlignment="Left" Margin="86,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="6" Width="194" FontSize="15" MaxLength="20"/>
         <Button x:Name="logInButton" Content="Log in" HorizontalAlignment="Left" Margin="130,140,0,0" VerticalAlignment="Top" Click="logInButton_Click" FontSize="11" Width="110" />
         <Button x:Name="studentLoginBackButton" Content="Back                 " HorizontalAlignment="Left" Margin="130,175,0,0" VerticalAlignment="Top" Width="110" Height="25" Click="studentLoginBackButton_Click" FontSize="11"/>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="131,105,0,0" Width="109"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="86,98,0,0" Width="194" MaxLength="20"/>
 
     </Grid>
 </Page>

@@ -16,25 +16,25 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>987A8A4CF15F6B056528148DF27151A170DFB2B68F29F90271E61C20360339A5</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>60eeff28-5f82-4856-ac62-bd89fbc4ba0e_1.0.0.0_x86__kt1fp6kzymazt</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>851D5837EB18934E635D7914994C29F47D8B7850F15C07D0C4F843D7814E8556</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>60eeff28-5f82-4856-ac62-bd89fbc4ba0e_1.0.1.0_x86__kt1fp6kzymazt</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>60eeff28-5f82-4856-ac62-bd89fbc4ba0e_kt1fp6kzymazt!App</RegisteredUserModeAppID>
     <RegisteredPackageID>60eeff28-5f82-4856-ac62-bd89fbc4ba0e</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=Ino</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <RegisteredVersion>1.0.1.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="B:\School\Hogeschool\Homework\Projecten\Project 4\githubClone\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-24T21:13:07.265</Modified>
+      <Modified>2017-06-24T22:00:15.508</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="B:\School\Hogeschool\Homework\Projecten\Project 4\githubClone\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Jaar 1 Project 4.exe">
       <PackagePath>entrypoint\Jaar 1 Project 4.exe</PackagePath>
-      <Modified>2017-06-24T21:13:05.412</Modified>
+      <Modified>2017-06-24T22:00:13.601</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\james\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -488,7 +488,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="B:\School\Hogeschool\Homework\Projecten\Project 4\githubClone\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Jaar 1 Project 4.xr.xml">
       <PackagePath>Jaar 1 Project 4.xr.xml</PackagePath>
-      <Modified>2017-06-24T21:00:59.087</Modified>
+      <Modified>2017-06-24T21:56:31.506</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -497,11 +497,11 @@
     <AppxPackagedFile Include="B:\School\Hogeschool\Homework\Projecten\Project 4\githubClone\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-24T21:13:06.708</Modified>
+      <Modified>2017-06-24T22:00:14.969</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="B:\School\Hogeschool\Homework\Projecten\Project 4\githubClone\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Core\Jaar 1 Project 4.exe">
       <PackagePath>Jaar 1 Project 4.exe</PackagePath>
-      <Modified>2017-06-24T21:13:07.257</Modified>
+      <Modified>2017-06-24T22:00:15.500</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

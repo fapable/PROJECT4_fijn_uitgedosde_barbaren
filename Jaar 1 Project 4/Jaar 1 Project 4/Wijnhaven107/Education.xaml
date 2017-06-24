@@ -8,8 +8,8 @@
     mc:Ignorable="d">
 
     <Grid Background="{StaticResource hrTheme}" x:Name="education">
-        <TextBlock x:Name="mainTitle" HorizontalAlignment="Left" Margin="136,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8">
-            <Run Text="Education"/>
+        <TextBlock x:Name="mainTitle" HorizontalAlignment="Left" Margin="100,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8">
+            <Run Text="Wijnhaven 107 Education"/>
             <LineBreak/>
             <Run/>
         </TextBlock>

@@ -13,12 +13,12 @@
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <Button x:ConnectionId='3' x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="134,170,0,0" VerticalAlignment="Top"                   />
-        <TextBlock x:ConnectionId='4' x:Name="usernameText" HorizontalAlignment="Left" Margin="130,20,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top"/>
-        <TextBlock x:ConnectionId='5' x:Name="passwordText" HorizontalAlignment="Left" Margin="131,82,0,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top"/>
-        <TextBox x:ConnectionId='6' x:Name="passwordTypebox" HorizontalAlignment="Left" Margin="133,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-        <TextBox x:ConnectionId='7' x:Name="ussernameTypeBox" HorizontalAlignment="Left" Margin="130,45,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
-        <Button x:ConnectionId='8' x:Name="createAccountButton" Content="Create account" HorizontalAlignment="Left" Margin="108,144,0,0" VerticalAlignment="Top"                                  />
+        <Button x:ConnectionId='3' x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="110,170,0,0" VerticalAlignment="Top"                    Width="125"/>
+        <TextBlock x:ConnectionId='4' x:Name="usernameText" HorizontalAlignment="Left" Margin="140,25,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" FontSize="11"/>
+        <TextBlock x:ConnectionId='5' x:Name="passwordText" HorizontalAlignment="Left" Margin="144,80,0,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" FontSize="11"/>
+        <TextBox x:ConnectionId='6' x:Name="ussernameTypeBox" HorizontalAlignment="Left" Margin="80,43,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="185" MaxLength="20"/>
+        <Button x:ConnectionId='7' x:Name="createAccountButton" Content="Create account" HorizontalAlignment="Left" Margin="116,133,0,0" VerticalAlignment="Top"                                  />
+        <PasswordBox x:ConnectionId='8' x:Name="passwordBox" HorizontalAlignment="Left" Height="30" Margin="80,98,0,0" VerticalAlignment="Top" Width="190" MaxLength="20"/>
 
     </Grid>
 </Page>

@@ -68,9 +68,18 @@
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Text" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="MaxLength" />
+      <RootProperty Name="Height" />
       <RootProperty Name="FontSize" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="MaxLength" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.Run">
       <RootProperty Name="Text" />
@@ -85,12 +94,6 @@
     <RootType FullName="Jaar_1_Project_4.OpenDagInformatie" />
     <RootType FullName="Jaar_1_Project_4.Questions" />
     <RootType FullName="Jaar_1_Project_4.SecondFloor" />
-    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Width" />
-    </RootType>
     <RootType FullName="Jaar_1_Project_4.StudentLogin" />
     <RootType FullName="Jaar_1_Project_4.TeacherLogIn" />
     <RootType FullName="Jaar_1_Project_4.ThirthFloor" />

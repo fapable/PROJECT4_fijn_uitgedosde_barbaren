@@ -1021,3 +1021,4 @@ B:\School\Hogeschool\Homework\Projecten\Project 4\githubClone\PROJECT4_fijn_uitg
 B:\School\Hogeschool\Homework\Projecten\Project 4\githubClone\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\LoginSystem\MainLoginPage.g.cs
 B:\School\Hogeschool\Homework\Projecten\Project 4\githubClone\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\LoginSystem\MainLoginPage.xaml
 B:\School\Hogeschool\Homework\Projecten\Project 4\githubClone\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\LoginSystem\MainLoginPage.xbf
+B:\School\Hogeschool\Homework\Projecten\Project 4\githubClone\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Core\ForBundle\AppxManifest.xml
