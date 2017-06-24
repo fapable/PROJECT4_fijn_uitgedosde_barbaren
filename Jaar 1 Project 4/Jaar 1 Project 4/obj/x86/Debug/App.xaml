@@ -8,6 +8,9 @@
         <SolidColorBrush x:Key="hrTheme" Color="#FFCF0044"/>
         <Style x:Key="mainTitle" TargetType="TextBlock"/>
         <Style TargetType="TextBlock"/>
+        <Style x:Key="toiletColour" TargetType="Border"/>
+        <Style x:Key="classroomColour" TargetType="Border"/>
+        <Style x:Key="projectSpaceColour" TargetType="Border"/>
     </Application.Resources>
 
 </Application>

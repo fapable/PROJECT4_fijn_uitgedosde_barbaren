@@ -39,8 +39,5 @@ namespace Jaar_1_Project_4 {
             this.Frame.Navigate(typeof(FourthFloor));
         }
 
-        private void fifthFloorButton_Click(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(FifthFloor));
-        }
     }
 }

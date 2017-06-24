@@ -108,9 +108,6 @@
     <Compile Include="Wijnhaven107\Education.xaml.cs">
       <DependentUpon>Education.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Activities\FifthFloor.xaml.cs">
-      <DependentUpon>FifthFloor.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Activities\FourthFloor.xaml.cs">
       <DependentUpon>FourthFloor.xaml</DependentUpon>
     </Compile>
@@ -202,10 +199,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Wijnhaven107\Education.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Activities\FifthFloor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

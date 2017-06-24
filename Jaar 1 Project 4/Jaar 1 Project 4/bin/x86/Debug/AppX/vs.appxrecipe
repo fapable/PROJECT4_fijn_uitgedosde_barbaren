@@ -28,13 +28,13 @@
     <AppXManifest Include="B:\School\Hogeschool\Homework\Projecten\Project 4\githubClone\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-23T19:34:56.308</Modified>
+      <Modified>2017-06-24T20:08:45.284</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="B:\School\Hogeschool\Homework\Projecten\Project 4\githubClone\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Jaar 1 Project 4.exe">
       <PackagePath>entrypoint\Jaar 1 Project 4.exe</PackagePath>
-      <Modified>2017-06-23T19:34:54.362</Modified>
+      <Modified>2017-06-24T20:08:43.609</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\james\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -488,7 +488,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="B:\School\Hogeschool\Homework\Projecten\Project 4\githubClone\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Jaar 1 Project 4.xr.xml">
       <PackagePath>Jaar 1 Project 4.xr.xml</PackagePath>
-      <Modified>2017-06-23T19:14:40.530</Modified>
+      <Modified>2017-06-24T20:06:20.126</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -497,11 +497,11 @@
     <AppxPackagedFile Include="B:\School\Hogeschool\Homework\Projecten\Project 4\githubClone\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-23T19:34:55.622</Modified>
+      <Modified>2017-06-24T20:08:44.768</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="B:\School\Hogeschool\Homework\Projecten\Project 4\githubClone\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Core\Jaar 1 Project 4.exe">
       <PackagePath>Jaar 1 Project 4.exe</PackagePath>
-      <Modified>2017-06-23T19:34:56.280</Modified>
+      <Modified>2017-06-24T20:08:45.276</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

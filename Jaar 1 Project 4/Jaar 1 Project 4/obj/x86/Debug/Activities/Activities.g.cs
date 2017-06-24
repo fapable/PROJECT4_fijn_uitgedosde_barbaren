@@ -62,7 +62,7 @@ namespace Jaar_1_Project_4
                 {
                     this.fifthFloorButton = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 17 "..\..\..\Activities\Activities.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.fifthFloorButton).Click += this.fifthFloorButton_Click;
+        
                     #line default
                 }
                 break;
