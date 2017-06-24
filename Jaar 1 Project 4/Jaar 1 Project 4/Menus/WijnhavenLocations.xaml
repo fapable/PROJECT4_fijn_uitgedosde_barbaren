@@ -13,9 +13,9 @@
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <Button x:Name="wijnhavenLocationBackButton" Content="Back" HorizontalAlignment="Left" Margin="155,158,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="wijnhaven61Button" Content="Wijnhaven 61" HorizontalAlignment="Left" Margin="130,28,0,0" VerticalAlignment="Top" Click="wijnhaven61Button_Click"/>
-        <Button x:Name="wijnhaven99Button" Content="Wijnhaven 99" HorizontalAlignment="Left" Margin="130,65,0,0" VerticalAlignment="Top" Height="30" Width="110" Click="wijnhaven99Button_Click"/>
+        <Button x:Name="wijnhavenLocationBackButton" Content="Back" HorizontalAlignment="Left" Margin="134,153,0,0" VerticalAlignment="Top" Width="116" Click="wijnhavenLocationBackButton_Click"/>
+        <Button x:Name="wijnhaven61Button" Content="Wijnhaven 61" HorizontalAlignment="Left" Margin="130,28,0,0" VerticalAlignment="Top" Click="wijnhaven61Button_Click" Width="120"/>
+        <Button x:Name="wijnhaven99Button" Content="Wijnhaven 99" HorizontalAlignment="Left" Margin="130,65,0,0" VerticalAlignment="Top" Height="30" Width="120" Click="wijnhaven99Button_Click"/>
         <Button x:Name="wijnhaven103Button" Content="Wijnhaven 103" HorizontalAlignment="Left" Margin="130,100,0,0" VerticalAlignment="Top" Width="120" Click="wijnhaven103Button_Click"/>
 
     </Grid>

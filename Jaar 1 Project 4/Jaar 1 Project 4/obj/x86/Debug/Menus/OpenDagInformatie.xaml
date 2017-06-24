@@ -9,11 +9,11 @@
 
     <Grid x:ConnectionId='1' Background="{StaticResource hrTheme}" x:Name="open_day_info">
         <TextBlock x:ConnectionId='2' x:Name="openDayInformation" HorizontalAlignment="Left" Margin="107,0,0,0" TextWrapping="Wrap" Text="Open Day Information" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
-        <Button x:ConnectionId='3' x:Name="activitiesButton" Content="Activities" HorizontalAlignment="Left" Margin="140,25,0,0" VerticalAlignment="Top" Height="35" Width="80"                               />
-        <Button x:ConnectionId='4' x:Name="educationButton" Content="Education" HorizontalAlignment="Left" Margin="140,65,0,0" VerticalAlignment="Top" Height="30" Width="90"                              />
+        <Button x:ConnectionId='3' x:Name="activitiesButton" Content="Activities" HorizontalAlignment="Left" Margin="110,25,0,0" VerticalAlignment="Top" Height="30" Width="160"                                FontSize="15"/>
+        <Button x:ConnectionId='4' x:Name="educationButton" Content="Education" HorizontalAlignment="Left" Margin="110,65,0,0" VerticalAlignment="Top" Height="30" Width="160"                               FontSize="15"/>
         <Button x:ConnectionId='5' x:Name="locationsButton" Content="Wijnhaven Locations
-                " HorizontalAlignment="Left" Margin="130,100,0,0" VerticalAlignment="Top" Height="40" Width="110" FontSize="9"                              />
-        <Button x:ConnectionId='6' x:Name="openDayBackButton" Content="Back" HorizontalAlignment="Left" Margin="154,158,0,0" VerticalAlignment="Top"                                />
+                " HorizontalAlignment="Left" Margin="110,100,0,0" VerticalAlignment="Top" Height="30" Width="160" FontSize="15"                              />
+        <Button x:ConnectionId='6' x:Name="openDayBackButton" Content="Back" HorizontalAlignment="Left" Margin="110,155,0,0" VerticalAlignment="Top"                                 Width="160" FontSize="15"/>
 
     </Grid>
 </Page>

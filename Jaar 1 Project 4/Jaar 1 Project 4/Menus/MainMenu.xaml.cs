@@ -33,7 +33,7 @@ namespace Jaar_1_Project_4 {
         }
 
         private void button1_Click(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(Questions));
+            this.Frame.Navigate(typeof(MainLoginPage));
         }
     }
 }

@@ -3,7 +3,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DeviceId>DA831653-315E-41D9-BF63-CCCE346F4E9C</DeviceId>
     <UseEmulator>false</UseEmulator>
-    <UseSimulator>true</UseSimulator>
+    <UseSimulator>false</UseSimulator>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <DeviceId>DA831653-315E-41D9-BF63-CCCE346F4E9C</DeviceId>

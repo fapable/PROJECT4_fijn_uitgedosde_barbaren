@@ -14,8 +14,8 @@
             <Run/>
         </TextBlock>
         <Button x:ConnectionId='3' x:Name="educationButton" Content="Education" HorizontalAlignment="Left" Margin="140,45,0,0" VerticalAlignment="Top"                              />
-        <Button x:ConnectionId='4' x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="154,160,0,0" VerticalAlignment="Top"                         />
-        <Button x:ConnectionId='5' x:Name="info" Content="Info" HorizontalAlignment="Left" Margin="154,100,0,0" VerticalAlignment="Top"                   />
+        <Button x:ConnectionId='4' x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="140,163,0,0" VerticalAlignment="Top"                          Width="85"/>
+        <Button x:ConnectionId='5' x:Name="info" Content="Info" HorizontalAlignment="Left" Margin="140,98,0,0" VerticalAlignment="Top"                    Width="85"/>
 
     </Grid>
 </Page>

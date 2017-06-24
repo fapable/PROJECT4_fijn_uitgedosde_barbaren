@@ -4,10 +4,10 @@ Activities\SecondFloor.xbf
 Activities\ThirthFloor.xbf
 App.xbf
 LoginSystem\CreateAccount.xbf
+LoginSystem\MainLoginPage.xbf
 LoginSystem\StudentLogin.xbf
 LoginSystem\TeacherLogIn.xbf
 Menus\MainMenu.xbf
-Menus\MainPage.xbf
 Menus\OpenDagInformatie.xbf
 Menus\WijnhavenLocations.xbf
 QuestionSystem\Questions.xbf

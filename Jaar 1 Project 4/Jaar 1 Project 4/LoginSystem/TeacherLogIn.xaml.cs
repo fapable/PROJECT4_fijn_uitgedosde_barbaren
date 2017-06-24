@@ -35,15 +35,15 @@ namespace Jaar_1_Project_4 {
             else {
                 //TODO with the use of factory, make a label that says that the username is not filled in
             }
-            if (passwordTypeBox.Text.ToString().Length > 0) {
-                password = new SomePasswordLogin(passwordTypeBox.Text.ToString());
+            if (passwordBox.Password.ToString().Length > 0) {
+                password = new SomePasswordLogin(passwordBox.Password.ToString());
                 password.ClassicVisit(loginVisitor);
             }
             loginVisitor.OnLoginCheck(); //The filled in username and password are now checked
-            this.Frame.Navigate(typeof(MainMenu));
+            this.Frame.Navigate(typeof(Questions));
         }
         private void studentLoginBackButton_Click(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(MainPage));
+            this.Frame.Navigate(typeof(MainLoginPage));
         }
     }
 }

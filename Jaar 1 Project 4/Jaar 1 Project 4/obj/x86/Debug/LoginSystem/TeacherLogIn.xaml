@@ -17,11 +17,11 @@
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <TextBlock x:ConnectionId='4' x:Name="passwordLoginText" HorizontalAlignment="Left" Margin="170,90,0,0" TextWrapping="Wrap" Text="Code" VerticalAlignment="Top" FontSize="11"/>
-        <TextBox x:ConnectionId='5' x:Name="UsernameTypeBox" HorizontalAlignment="Left" Margin="136,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="6" Width="109" FontSize="7"/>
-        <TextBox x:ConnectionId='6' x:Name="passwordTypeBox" HorizontalAlignment="Left" Margin="136,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="7" Height="13" Width="109"/>
-        <Button x:ConnectionId='7' x:Name="logInButton" Content="Log in" HorizontalAlignment="Left" Margin="159,131,0,0" VerticalAlignment="Top"                           />
-        <Button x:ConnectionId='8' x:Name="studentLoginBackButton" Content="Back                 " HorizontalAlignment="Left" Margin="159,168,0,0" VerticalAlignment="Top" Width="71" Height="32"                                     />
+        <TextBlock x:ConnectionId='4' x:Name="passwordLoginText" HorizontalAlignment="Left" Margin="155,90,0,0" TextWrapping="Wrap" Text="Teacher code" VerticalAlignment="Top" FontSize="11"/>
+        <TextBox x:ConnectionId='5' x:Name="UsernameTypeBox" HorizontalAlignment="Left" Margin="131,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="6" Width="109" FontSize="7"/>
+        <Button x:ConnectionId='6' x:Name="logInButton" Content="Log in" HorizontalAlignment="Left" Margin="130,140,0,0" VerticalAlignment="Top"                           FontSize="11" Width="110" />
+        <Button x:ConnectionId='7' x:Name="studentLoginBackButton" Content="Back                 " HorizontalAlignment="Left" Margin="130,175,0,0" VerticalAlignment="Top" Width="110" Height="25"                                      FontSize="11"/>
+        <PasswordBox x:ConnectionId='8' x:Name="passwordBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="131,105,0,0" Width="109"/>
 
     </Grid>
 </Page>

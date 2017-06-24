@@ -29,7 +29,7 @@
         <TextBlock x:Name="toiletTitle" HorizontalAlignment="Left" Margin="21,75,0,0" TextWrapping="Wrap" Text="Toilet                    " VerticalAlignment="Top" FontSize="6"/>
         <TextBlock x:Name="projectSpaceTitle" HorizontalAlignment="Left" Margin="20,100,0,0" TextWrapping="Wrap" Text="project space                    " VerticalAlignment="Top" FontSize="6"/>
         <TextBlock x:Name="classroomTitle" HorizontalAlignment="Left" Margin="21,55,0,0" TextWrapping="Wrap" Text="classroom                    " VerticalAlignment="Top" FontSize="6"/>
-        <Button x:Name="secondFlourBackButton" Content="Back" HorizontalAlignment="Left" Margin="154,170,0,0" VerticalAlignment="Top" Height="30"/>
+        <Button x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="154,170,0,0" VerticalAlignment="Top" Height="30" Click="BackButton"/>
         <Border x:Name="backgroundBorder" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="150" Margin="60,20,0,0" VerticalAlignment="Top" Width="202" Background="White">
             <Border BorderBrush="Black" BorderThickness="0.5" Margin="43.75,123.75,135.625,8.75">
                 <Border BorderBrush="Black" BorderThickness="0.5" Margin="-15.625,-125.625,-0.625,114.375"/>

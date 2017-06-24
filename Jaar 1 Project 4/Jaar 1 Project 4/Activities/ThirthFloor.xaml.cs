@@ -23,9 +23,9 @@ namespace Jaar_1_Project_4 {
         public ThirthFloor() {
             this.InitializeComponent();
         }
-
-        private void thirthFlourBackButton_Click(object sender, RoutedEventArgs e) {
+        private void BackButton(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(Activities));
+
         }
     }
 }

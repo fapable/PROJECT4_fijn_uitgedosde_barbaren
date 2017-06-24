@@ -10,12 +10,10 @@
     <Grid Background="{StaticResource hrTheme}" x:Name="activities">
         <TextBlock x:Name="mainTitle"
                     HorizontalAlignment="Left" Margin="141,0,0,0" TextWrapping="Wrap" Text="Acitivties" VerticalAlignment="Top" Foreground="#FFFFF8F8" FontWeight="Bold"/>
-        <Button x:Name="secondFloorButton" Content="Second floor" HorizontalAlignment="Left" Margin="130,57,0,0" VerticalAlignment="Top" Click="secondFloorButton_Click"/>
-        <Button x:Name="thirdFloorButton" Content="Third floor" HorizontalAlignment="Left" Margin="141,94,0,0" VerticalAlignment="Top" Click="thirdFloorButton_Click"/>
-        <Button x:Name="fourthFloorButton" Content="Fourth floor" HorizontalAlignment="Left" Margin="135,131,0,0" VerticalAlignment="Top" Click="fourthFloorButton_Click"/>
-        <Button x:Name="fifthFloorButton" Content="fifth Floor 
-                " HorizontalAlignment="Left" Margin="141,168,0,0" VerticalAlignment="Top" Click="fifthFloorButton_Click"/>
-        <Button x:Name="activitiesBackButton" Content="Back" HorizontalAlignment="Left" Margin="79,158,0,0" VerticalAlignment="Top" Click="activitiesBackButton_Click"/>
+        <Button x:Name="secondFloorButton" Content="Second floor" HorizontalAlignment="Left" Margin="126,30,0,0" VerticalAlignment="Top" Click="secondFloorButton_Click"/>
+        <Button x:Name="thirdFloorButton" Content="Third floor" HorizontalAlignment="Left" Margin="126,65,0,0" VerticalAlignment="Top" Click="thirdFloorButton_Click" Width="104"/>
+        <Button x:Name="fourthFloorButton" Content="Fourth floor" HorizontalAlignment="Left" Margin="126,105,0,0" VerticalAlignment="Top" Click="fourthFloorButton_Click" Width="104"/>
+        <Button x:Name="activitiesBackButton" Content="Back" HorizontalAlignment="Left" Margin="125,165,0,0" VerticalAlignment="Top" Click="activitiesBackButton_Click" Width="105"/>
 
     </Grid>
 </Page>

@@ -140,7 +140,7 @@ namespace Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo
             _typeNameTable[4] = "Jaar_1_Project_4.Education";
             _typeNameTable[5] = "Jaar_1_Project_4.FourthFloor";
             _typeNameTable[6] = "Jaar_1_Project_4.MainMenu";
-            _typeNameTable[7] = "Jaar_1_Project_4.MainPage";
+            _typeNameTable[7] = "Jaar_1_Project_4.MainLoginPage";
             _typeNameTable[8] = "Jaar_1_Project_4.OpenDagInformatie";
             _typeNameTable[9] = "Jaar_1_Project_4.Questions";
             _typeNameTable[10] = "Jaar_1_Project_4.SecondFloor";
@@ -166,7 +166,7 @@ namespace Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo
             _typeTable[4] = typeof(global::Jaar_1_Project_4.Education);
             _typeTable[5] = typeof(global::Jaar_1_Project_4.FourthFloor);
             _typeTable[6] = typeof(global::Jaar_1_Project_4.MainMenu);
-            _typeTable[7] = typeof(global::Jaar_1_Project_4.MainPage);
+            _typeTable[7] = typeof(global::Jaar_1_Project_4.MainLoginPage);
             _typeTable[8] = typeof(global::Jaar_1_Project_4.OpenDagInformatie);
             _typeTable[9] = typeof(global::Jaar_1_Project_4.Questions);
             _typeTable[10] = typeof(global::Jaar_1_Project_4.SecondFloor);
@@ -222,7 +222,7 @@ namespace Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo
         private object Activate_4_Education() { return new global::Jaar_1_Project_4.Education(); }
         private object Activate_5_FourthFloor() { return new global::Jaar_1_Project_4.FourthFloor(); }
         private object Activate_6_MainMenu() { return new global::Jaar_1_Project_4.MainMenu(); }
-        private object Activate_7_MainPage() { return new global::Jaar_1_Project_4.MainPage(); }
+        private object Activate_7_MainLoginPage() { return new global::Jaar_1_Project_4.MainLoginPage(); }
         private object Activate_8_OpenDagInformatie() { return new global::Jaar_1_Project_4.OpenDagInformatie(); }
         private object Activate_9_Questions() { return new global::Jaar_1_Project_4.Questions(); }
         private object Activate_10_SecondFloor() { return new global::Jaar_1_Project_4.SecondFloor(); }
@@ -293,9 +293,9 @@ namespace Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 7:   //  Jaar_1_Project_4.MainPage
+            case 7:   //  Jaar_1_Project_4.MainLoginPage
                 userType = new global::Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_7_MainPage;
+                userType.Activator = Activate_7_MainLoginPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

@@ -13,35 +13,24 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
-
 namespace Jaar_1_Project_4
 {
-    public sealed partial class MainPage : Page {
-        public MainPage()
+    public sealed partial class MainLoginPage : Page {
+        public MainLoginPage()
         {
-            this.InitializeComponent();
-        
-            
+            this.InitializeComponent();           
         }
         //Button click for the student button
         private void studentLoginClick(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(StudentLogin));
-     
+            this.Frame.Navigate(typeof(StudentLogin));    
         }
         //Button click for the Exit button
         private void ExitClick(object sender, RoutedEventArgs e) {
-            Application.Current.Exit();
-
+            this.Frame.Navigate(typeof(MainMenu));
         }
         //Button click for the teacher button
         private void teacherLoginClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(TeacherLogIn));
-
-        }
-
-        private void textBox_TextChanged(object sender, TextChangedEventArgs e) {
-
         }
     }
 }
