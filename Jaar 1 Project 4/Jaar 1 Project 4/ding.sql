@@ -1,5 +1,9 @@
-CREATE TABLE category (
-    cat_name varchar(30) PRIMARY KEY
+CREATE TABLE opleiding(
+    opleiding_naam varchar(30) PRIMARY KEY,
+    description text,
+    duration int,
+    diploma_type varchar(100),
+    jobs text
 );
 
 CREATE TABLE classrooms (
@@ -8,42 +12,42 @@ CREATE TABLE classrooms (
 
 CREATE TABLE questions (
     question_id int PRIMARY KEY,
-    cat_name varchar(30),
+    opleiding_naam varchar(30),
     email varchar(100),
     name varchar(100),
     question text,
-    FOREIGN KEY (cat_name) REFERENCES category(cat_name)
+    FOREIGN KEY (opleiding_naam) REFERENCES opleiding(opleiding_naam)
 );
 
 CREATE TABLE teachers (
     teacher_id varchar(5) PRIMARY KEY,
-    cat_name varchar(30),
+    opleiding_naam varchar(30),
     teacher_code varchar(20),
     name varchar(100),
-    FOREIGN KEY (cat_name) REFERENCES category(cat_name)
+    FOREIGN KEY (opleiding_naam) REFERENCES opleiding(opleiding_naam)
 );
 
 CREATE TABLE answer (
     question_id int,
-    cat_name varchar(30),
+    opleiding_naam varchar(30),
     teacher_id varchar(5),
     answer text,
     FOREIGN KEY (question_id) REFERENCES questions(question_id),
-    FOREIGN KEY (cat_name) REFERENCES category(cat_name),
+    FOREIGN KEY (opleiding_naam) REFERENCES opleiding(opleiding_naam),
     FOREIGN KEY (teacher_id) REFERENCES teachers(teacher_id)
 );
 
 CREATE TABLE events (
     event_id int PRIMARY KEY,
     classroom_id VARCHAR(9),
-    cat_name VARCHAR(30),
+    opleiding_naam VARCHAR(30),
     description text,
     duration int,
     start_time time,
     end_time time,
     event_name VARCHAR(100),
     FOREIGN KEY (classroom_id) REFERENCES classrooms(classroom_id),
-    FOREIGN KEY (cat_name) REFERENCES category(cat_name)
+    FOREIGN KEY (opleiding_naam) REFERENCES opleiding(opleiding_naam)
 );
 
 INSERT INTO classrooms VALUES('WN.01.017');
