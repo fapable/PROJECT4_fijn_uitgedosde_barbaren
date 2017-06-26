@@ -18,7 +18,7 @@ CREATE TABLE questions (
 CREATE TABLE teachers (
     teacher_id varchar(5) PRIMARY KEY,
     cat_name varchar(30),
-    password text,
+    teacher_code varchar(20),
     name varchar(100),
     FOREIGN KEY (cat_name) REFERENCES category(cat_name)
 );
