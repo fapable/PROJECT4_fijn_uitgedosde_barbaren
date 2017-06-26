@@ -1,5 +1,5 @@
 CREATE TABLE opleiding(
-    opleiding_naam varchar(30) PRIMARY KEY,
+    opleiding_naam varchar(100) PRIMARY KEY,
     description text,
     duration int,
     diploma_type varchar(100),
@@ -92,3 +92,10 @@ INSERT INTO classrooms VALUES('H.04.318');
 INSERT INTO classrooms VALUES('H.04.312');
 INSERT INTO classrooms VALUES('H.04.308');
 INSERT INTO classrooms VALUES('H.04.206');
+
+INSERT INTO opleiding VALUES('Communicatie','The Communication program is innovative and practical and leads you to a "smart connector". A smart connector is a professional that connects people with the use of, for example, social tools, big data and co-creation.',4,'Bachelor of Arts (BA)','Communications adviser, Communicatie manager');
+INSERT INTO opleiding VALUES('Informatica','As an IT technician you will be able to analyze, design, implement and implement complex ICT systems, taking into account the wishes of the client or user of the system.',4,'Bachelor of Science (BSc)','Software engineer, Software analist');
+INSERT INTO opleiding VALUES('Technical Informatica','During the course of the study you will be familiar with the technical aspects of ICT. You learn to program in various programming languages, which teaches you to develop solutions for different devices, robots and systems.',4,'Bachelor of Science (BSc)','Embedded systems engineer, Network security engineer');
+INSERT INTO opleiding VALUES('Communication and multimedia design','u investigate who wants to use such interactive products and services, why and in what situation. You develop ideas that make the product unique and experiment with it.',4,'Bachelor of Science (BSc)','Interaction designer, Visual designer');
+INSERT INTO opleiding VALUES('Creative Media and Game Technologies','As a CMGTer, you are a developer (programmer) of interactive digital products: you develop web and mobile applications and you know the basis of game development.',4,'Bachelor of Science (BSc)','Game developer, Mobile developer');
+INSERT INTO opleiding VALUES('Leisure Management','A leisure manager designs and produces innovative and exciting experiences in a (large) urban environment.',4,'Bachelor of Arts (BA)','Leisure managemer');
