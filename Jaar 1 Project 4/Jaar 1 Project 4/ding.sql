@@ -99,3 +99,10 @@ INSERT INTO opleiding VALUES('Technical Informatica','During the course of the s
 INSERT INTO opleiding VALUES('Communication and multimedia design','u investigate who wants to use such interactive products and services, why and in what situation. You develop ideas that make the product unique and experiment with it.',4,'Bachelor of Science (BSc)','Interaction designer, Visual designer');
 INSERT INTO opleiding VALUES('Creative Media and Game Technologies','As a CMGTer, you are a developer (programmer) of interactive digital products: you develop web and mobile applications and you know the basis of game development.',4,'Bachelor of Science (BSc)','Game developer, Mobile developer');
 INSERT INTO opleiding VALUES('Leisure Management','A leisure manager designs and produces innovative and exciting experiences in a (large) urban environment.',4,'Bachelor of Arts (BA)','Leisure managemer');
+
+INSERT INTO teachers VALUES ('test1','Communicatie','test1','testacc1');
+INSERT INTO teachers VALUES ('test2','Informatica','test2','testacc2');
+INSERT INTO teachers VALUES ('test3','Technical Informatica','test3','testacc3');
+INSERT INTO teachers VALUES ('test4','Communication and multimedia design','test4','testacc4');
+INSERT INTO teachers VALUES ('test5','Creative Media and Game Technologies','test5','testacc5');
+INSERT INTO teachers VALUES ('test6','Leisure Management','test6','testacc6');
