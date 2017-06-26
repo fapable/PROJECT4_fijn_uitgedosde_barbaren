@@ -12,28 +12,28 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Shapes;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI;
+using Windows.Foundation;
 
 namespace Jaar_1_Project_4_Messages
 {
-    public interface Message { }
+    public interface Message
+    {
+        void Draw();
+    }
+    public enum MessageType { question, answer }
     public abstract class MessageFactory
     {
-        public enum MessageType { question, answer, notification };
-        public static Message Create(MessageType type, EasyLabel text)
+        public static Message Create(MessageType type, EasyLabel text, Grid current_page)
         {
             switch (type)
             {
                 case MessageType.question:
                     {
-                        return new Question(text);
+                        return new Question(text, current_page);
                     }
                 case MessageType.answer:
                     {
-                        return new Answer();
-                    }
-                case MessageType.notification:
-                    {
-                        return new Notification();
+                        return new Answer(text, current_page);
                     }
                 default:
                     {
@@ -49,60 +49,63 @@ namespace Jaar_1_Project_4_Messages
         {
             this.message = message;
         }
+        public abstract void Draw();
     }
     public class Question : MessageDecorator
     {
         bool IsAnswer;
-        public Question(EasyLabel message) : base(message)
+        dynamic current_page;
+        public Question(EasyLabel message, Grid current_page) : base(message)
         {
             this.IsAnswer = false;
             this.message = message;
+            this.current_page = current_page;
         }
-        public void Draw()
+        public override void Draw()
         {
             var backing = new Rectangle();
-            backing.Fill = new SolidColorBrush(Color.FromArgb(0,0,0,0));
-            
+            backing.Fill = new SolidColorBrush(Color.FromArgb(0,0,0,255));
+            backing.Width = 50;
+            backing.Height = 50;
+            //backing.Margin = new Thickness(50, 50, 0, 0);
+            current_page.Children.Add(backing);
+            current_page.Children.Add(this.message.Draw());
             //draw this.message overtop backing
         }
     }
-    public class Answer : Message
+    public class Answer : MessageDecorator
     {
         bool IsAnswer;
-        public Answer()
+        public Answer(EasyLabel message, Grid current_page) : base(message)
         {
             this.IsAnswer = true;
         }
-    }
-    public class Notification : Message
-    {
-
+        public override void Draw()
+        {
+            throw new NotImplementedException();
+        }
     }
     public class EasyLabel
     {
-        int width;
-        int height;
         int x;
         int y;
         string text;
-        dynamic current_page;
-        public EasyLabel(int width, int height, int x, int y, string text, Page current_page)
+        public EasyLabel(int x, int y, string text)
         {
-            this.width = width;
-            this.height = height;
             this.x = x;
             this.y = y;
             this.text = text;
-            this.current_page = current_page;
         }
-        public void draw()
+        public dynamic Draw()
         {
             var current_message = new TextBlock();
+            //current_message.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
+            current_message.TextWrapping = TextWrapping.Wrap;
             current_message.Text = this.text;
-            current_message.Width = this.width;
-            current_message.Height = this.height;
+            current_message.Width = 50;
+            //current_message.Height = current_message.DesiredSize.Height;
             current_message.RenderTransform = new TranslateTransform { X = this.x, Y = this.y };
-            this.current_page.Children.Add(current_message);
+            return current_message;
         }
     }
 }

@@ -123,8 +123,8 @@
       <DependentUpon>OpenDagInformatie.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuestionSystem\Questions.xaml.cs">
-      <DependentUpon>Questions.xaml</DependentUpon>
+    <Compile Include="QuestionSystem\AskAQuestions.xaml.cs">
+      <DependentUpon>AskAQuestions.xaml</DependentUpon>
     </Compile>
     <Compile Include="Activities\SecondFloor.xaml.cs">
       <DependentUpon>SecondFloor.xaml</DependentUpon>
@@ -218,7 +218,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="QuestionSystem\Questions.xaml">
+    <Page Include="QuestionSystem\AskAQuestions.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
