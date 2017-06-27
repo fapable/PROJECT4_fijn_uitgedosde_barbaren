@@ -8,14 +8,14 @@
     mc:Ignorable="d">
 
     <Grid Background="{StaticResource hrTheme}" x:Name="wijnhaven_99">
-        <TextBlock x:Name="mainTitle" HorizontalAlignment="Left" Margin="140,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8">
+        <TextBlock x:Name="mainTitle" HorizontalAlignment="Left" Margin="70,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8" FontSize="35" Width="246">
             <Run Text="Wijnhaven 99"/>
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <Button x:Name="educationButton" Content="Education" HorizontalAlignment="Left" Margin="140,45,0,0" VerticalAlignment="Top" Click="educationButton_Click"/>
-        <Button x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="140,163,0,0" VerticalAlignment="Top" Click="backButton_Click" Width="85"/>
-        <Button x:Name="info" Content="Info" HorizontalAlignment="Left" Margin="140,98,0,0" VerticalAlignment="Top" Click="info_Click" Width="85"/>
+        <Button x:Name="educationButton" Content="Education" HorizontalAlignment="Left" Margin="96,141,0,0"  VerticalAlignment="Top" Click="educationButton_Click" Height="49" Width="163"/>
+        <Button x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="96,294,0,0" VerticalAlignment="Top" Click="backButton_Click" Width="163" Height="45"/>
+        <Button x:Name="info" Content="Info" HorizontalAlignment="Left" Margin="96,218,0,0" VerticalAlignment="Top" Click="info_Click" Width="163" Height="47"/>
 
     </Grid>
 </Page>

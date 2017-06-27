@@ -8,17 +8,17 @@
     mc:Ignorable="d">
 
     <Grid Background="{StaticResource hrTheme}" x:Name="create_accoutn">
-        <TextBlock x:Name="mainTitle" HorizontalAlignment="Left" Margin="101,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8">
+        <TextBlock x:Name="mainTitle" HorizontalAlignment="Left" Margin="16,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8" FontSize="35" Width="344">
             <Run Text="Create an account"/>
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="110,170,0,0" VerticalAlignment="Top" Click="back_Click" Width="125"/>
-        <TextBlock x:Name="usernameText" HorizontalAlignment="Left" Margin="140,25,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" FontSize="11"/>
-        <TextBlock x:Name="passwordText" HorizontalAlignment="Left" Margin="144,80,0,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" FontSize="11"/>
-        <TextBox x:Name="ussernameTypeBox" HorizontalAlignment="Left" Margin="80,43,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="185" MaxLength="20"/>
-        <Button x:Name="createAccountButton" Content="Create account" HorizontalAlignment="Left" Margin="116,133,0,0" VerticalAlignment="Top" Click="createAccountButton_Click"/>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Height="30" Margin="80,98,0,0" VerticalAlignment="Top" Width="190" MaxLength="20"/>
+        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="81,306,0,0" VerticalAlignment="Top" Click="back_Click" Width="185" Height="54"/>
+        <TextBlock x:Name="usernameText" HorizontalAlignment="Left" Margin="145,116,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" FontSize="15" FontWeight="Bold"/>
+        <TextBlock x:Name="passwordText" HorizontalAlignment="Left" Margin="145,178,0,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" FontSize="15" FontWeight="Bold"/>
+        <TextBox x:Name="ussernameTypeBox" HorizontalAlignment="Left" Margin="81,141,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="185" MaxLength="20"/>
+        <Button x:Name="createAccountButton" Content="Create account" HorizontalAlignment="Left" Margin="81,242,0,0" VerticalAlignment="Top" Click="createAccountButton_Click" Width="182" Height="50"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Height="30" Margin="81,196,0,0" VerticalAlignment="Top" Width="190" MaxLength="20"/>
 
     </Grid>
 </Page>

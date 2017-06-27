@@ -34,7 +34,7 @@ namespace Jaar_1_Project_4 {
         }
 
         private void wijnhavenLocationBackButton_Click(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(MainMenu));
+            this.Frame.Navigate(typeof(OpenDagInformatie));
 
         }
     }

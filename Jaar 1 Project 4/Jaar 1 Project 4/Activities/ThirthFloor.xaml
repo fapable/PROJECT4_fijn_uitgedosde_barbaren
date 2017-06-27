@@ -11,65 +11,70 @@
     </Page.Resources>
 
     <Grid Background="{StaticResource hrTheme}" x:Name="third_floor">
-        <TextBlock x:Name="mainTitle" HorizontalAlignment="Left" Margin="140,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Border BorderBrush="Black" BorderThickness="0.5" HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="102" Margin="257,231,0,0" Grid.ColumnSpan="2"/>
+        <Border x:Name="backgroundBorder" BorderBrush="Black" BorderThickness="1" Margin="123,45,0,10" Background="White" Grid.ColumnSpan="2">
+            <Button x:Name="button_Copy20" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="57" Width="41"/>
+        </Border>
+
+        <TextBlock x:Name="mainTitle" HorizontalAlignment="Left" Margin="231,-8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8" Grid.ColumnSpan="2" FontSize="35">
             <Run Text="Thirth Floor"/>
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <Border x:Name="legendaBox" BorderThickness="1" HorizontalAlignment="Left" Height="120" Margin="-2,30,0,0" VerticalAlignment="Top" Width="65" Background="White">
-            <Border BorderBrush="Black" BorderThickness="1" Margin="-1.25,0.75,0.75,-1.25">
-                <TextBlock x:Name="elevatorTitle" TextWrapping="Wrap" Text="elevator                            " Margin="20.75,86.75,14.875,13.875" FontSize="6"/>
-            </Border>
+        <Button x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="0,294,0,0" VerticalAlignment="Top" Height="56" Click="BackButton" Width="108"/>
+        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,45,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="32" Width="53"/>
+        <Button x:Name="button_Copy1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,124,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="47" Width="53"/>
+        <Button x:Name="button_Copy2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,213,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="49" Width="53"/>
+        <Button x:Name="button_Copy3" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,262,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="54" Width="53"/>
+        <Button x:Name="button_Copy4" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,316,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="34" Width="69"/>
+        <Button x:Name="button_Copy5" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="231,45,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2"  BorderThickness="0.5" Height="36" Width="35"/>
+        <Button x:Name="button_Copy6" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="231,77,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2"  BorderThickness="0.5" Height="27" Width="34"/>
+        <Button x:Name="button_Copy7" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="231,104,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="109" Width="34"/>
+        <Button x:Name="button_Copy9" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="230.916,275.964,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2" BorderThickness="0.5" Height="17.111" Width="34.084" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Button.RenderTransform>
+                <CompositeTransform SkewY="-0.943" TranslateY="0.206"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="button_Copy10" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="231,293,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2"  BorderThickness="0.5" Height="18" Width="34"/>
+        <Button x:Name="button_Copy11" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="231,311,0,0" BorderBrush="Black"  BorderThickness="0.5" Height="5" Width="34" Background="#FFF7FEA0" Foreground="#FFF99C9C"/>
+        <Button x:Name="button_Copy12" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="265,231,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2" BorderThickness="0.5" Height="24" Width="10" RenderTransformOrigin="0.667,-0.104"/>
+        <Button x:Name="button_Copy13" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="265,255,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2" BorderThickness="0.5" Height="22" Width="10"/>
+        <Button x:Name="button_Copy14" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="265,277,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="16" Width="20"/>
+        <Button x:Name="button_Copy" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,77,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="50" Width="53"/>
+        <Button x:Name="button_Copy15" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="176,45,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="36" Width="39"/>
+        <Button x:Name="button_Copy8" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="231,197,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="80" Width="34"/>
+        <Button x:Name="button_Copy16" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,168,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="45" Width="53"/>
+        <Button x:Name="button_Copy17" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="192,316,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="34" Width="33"/>
+        <Button x:Name="button_Copy18" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="265,311,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="39" Width="15"/>
+        <Border BorderBrush="Black" BorderThickness="0.5" HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="94" Margin="265,231,0,0" Grid.ColumnSpan="2"/>
+        <Button x:Name="button_Copy19" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="280,311,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="39" Width="20"/>
+        <Button x:Name="button_Copy21" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="294,231,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="21" Width="23" Grid.ColumnSpan="2"/>
+        <Button x:Name="button_Copy22" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,231,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="46" Width="27" Grid.Column="1"/>
+        <Button x:Name="button_Copy23" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="39,231,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="21" Width="15" Grid.Column="1"/>
+        <Button x:Name="button_Copy24" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="39,252,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2" BorderThickness="0.5" Height="25" Width="15" RenderTransformOrigin="0.667,-0.104" Grid.Column="1"/>
+        <Button x:Name="button_Copy25" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="285,268,0,0" BorderBrush="Black"  BorderThickness="0.5" Height="9" Width="21" Background="#FFF7FEA0" Foreground="#FFF99C9C" Grid.ColumnSpan="2"/>
+        <Button x:Name="button_Copy26" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="117,242,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="108" Width="42" Grid.Column="1"/>
+        <Button x:Name="button_Copy27" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,311,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="39" Width="41" Grid.Column="1"/>
+        <Button x:Name="button_Copy28" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="54,177,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="54" Width="16" Grid.Column="1"/>
+        <Button x:Name="button_Copy29" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="70,177,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="54" Width="17" Grid.Column="1"/>
+        <Button x:Name="button_Copy30" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="87,177,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="54" Width="17" Grid.Column="1"/>
+        <Border BorderBrush="Black" BorderThickness="0.5" HorizontalAlignment="Left" Height="66" VerticalAlignment="Top" Width="55" Margin="104,176,0,0" Grid.Column="1"/>
+        <Button x:Name="button_Copy31" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="117,177,0,0" BorderBrush="Black"  BorderThickness="0.5" Height="24" Width="30" Background="#FFF7FEA0" Foreground="#FFF99C9C" Grid.Column="1"/>
+        <Border x:Name="legendaBox" BorderThickness="1" HorizontalAlignment="Left" Height="146" Margin="-2,30,0,0" VerticalAlignment="Top" Width="120" Background="White">
+            <TextBlock x:Name="classroomTitle_Copy" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Elevator" VerticalAlignment="Top" FontSize="10" Margin="43,114,0,0"/>
         </Border>
-        <TextBlock x:Name="legendaTitle" HorizontalAlignment="Left" Margin="0,30,0,0" TextWrapping="Wrap" Text="Legenda" VerticalAlignment="Top" FontSize="10"/>
-        <Border x:Name="classroomLogo" BorderThickness="0.5" HorizontalAlignment="Left" Height="15" Margin="0,55,0,0" VerticalAlignment="Top" Width="20" Background="#FF99D9EA" Style="{StaticResource classroomColour}" BorderBrush="Black"/>
-        <Border x:Name="toiletLogo" BorderThickness="0.5" HorizontalAlignment="Left" Height="15" Margin="0,75,0,0" VerticalAlignment="Top" Width="20" Background="#FFFF9FA2" RenderTransformOrigin="5.75,0" BorderBrush="Black"/>
-        <Border x:Name="projectSpaceLogo" BorderThickness="0.5" HorizontalAlignment="Left" Height="15" Margin="0,100,0,0" VerticalAlignment="Top" Width="20" Background="#FFC3C3C3" Style="{StaticResource projectSpaceColour}" BorderBrush="Black"/>
-        <Border x:Name="elevatorLogo" BorderThickness="0.5" HorizontalAlignment="Left" Height="15" Margin="0,120,0,0" VerticalAlignment="Top" Width="20" Background="#FFF7FEA0" Style="{StaticResource elevatorColour}" BorderBrush="Black"/>
-        <TextBlock x:Name="toiletTitle" HorizontalAlignment="Left" Margin="21,75,0,0" TextWrapping="Wrap" Text="Toilet                    " VerticalAlignment="Top" FontSize="6"/>
-        <TextBlock x:Name="projectSpaceTitle" HorizontalAlignment="Left" Margin="20,100,0,0" TextWrapping="Wrap" Text="project space                    " VerticalAlignment="Top" FontSize="6"/>
-        <TextBlock x:Name="classroomTitle" HorizontalAlignment="Left" Margin="21,55,0,0" TextWrapping="Wrap" Text="classroom                    " VerticalAlignment="Top" FontSize="6"/>
-        <Button x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="154,170,0,0" VerticalAlignment="Top" Height="30" Click="BackButton"/>
-        <Border x:Name="backgroundBorder" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="150" Margin="60,20,0,0" VerticalAlignment="Top" Width="202" Background="White">
-            <Border BorderBrush="Black" BorderThickness="0.5" Margin="43.75,123.75,135.625,8.75">
-                <Border BorderBrush="Black" BorderThickness="0.5" Margin="-15.625,-125.625,-0.625,114.375"/>
-            </Border>
-        </Border>
-        <Button x:Name="button" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,20,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="16" Width="20"/>
-        <Button x:Name="button_Copy1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,55,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="20" Width="20"/>
-        <Button x:Name="button_Copy2" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,94,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="29" Width="20"/>
-        <Button x:Name="button_Copy3" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,123,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="29" Width="20"/>
-        <Button x:Name="button_Copy4" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,151,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="19" Width="25"/>
-        <Button x:Name="button_Copy5" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="105,25,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2"  BorderThickness="0.5" Height="9" Width="20"/>
-        <Button x:Name="button_Copy6" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="105,34,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2"  BorderThickness="0.5" Height="9" Width="20"/>
-        <Button x:Name="button_Copy7" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="105,43,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="40" Width="20"/>
-        <Button x:Name="button_Copy9" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="105,123,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2" BorderThickness="0.5" Height="12" Width="20"/>
-        <Button x:Name="button_Copy10" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="105,135,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2"  BorderThickness="0.5" Height="12" Width="20"/>
-        <Button x:Name="button_Copy11" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="105,147,0,0" BorderBrush="Black"  BorderThickness="0.5" Height="5" Width="15" Background="#FFF7FEA0" Foreground="#FFF99C9C"/>
-        <Button x:Name="button_Copy12" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="125,106,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2" BorderThickness="0.5" Height="12" Width="15" RenderTransformOrigin="0.667,-0.104"/>
-        <Button x:Name="button_Copy13" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="125,118,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2" BorderThickness="0.5" Height="12" Width="15"/>
-        <Button x:Name="button_Copy14" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="125,130,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="12" Width="15"/>
-        <Button x:Name="button_Copy" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,36,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="19" Width="20"/>
-        <Button x:Name="button_Copy15" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,20,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="16" Width="15"/>
-        <Button x:Name="button_Copy8" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="105,83,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="40" Width="20"/>
-        <Button x:Name="button_Copy16" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,73,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="21" Width="20"/>
-        <Button x:Name="button_Copy17" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="85,151,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="19" Width="10"/>
-        <Button x:Name="button_Copy18" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="125,147,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="23" Width="15"/>
-        <Button x:Name="button_Copy19" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="140,147,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="23" Width="15"/>
-        <Button x:Name="button_Copy20" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="155,147,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="23" Width="15"/>
-        <Border BorderBrush="Black" BorderThickness="0.5" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="55" Margin="140,106,0,0"/>
-        <Button x:Name="button_Copy21" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="155,107,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="11" Width="20"/>
-        <Button x:Name="button_Copy22" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="175,107,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="23" Width="15"/>
-        <Button x:Name="button_Copy23" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="190,106,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="12" Width="5"/>
-        <Button x:Name="button_Copy24" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="190,118,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2" BorderThickness="0.5" Height="12" Width="5" RenderTransformOrigin="0.667,-0.104"/>
-        <Button x:Name="button_Copy25" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="140,125,0,0" BorderBrush="Black"  BorderThickness="0.5" Height="5" Width="15" Background="#FFF7FEA0" Foreground="#FFF99C9C"/>
-        <Button x:Name="button_Copy26" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="225,111,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="59" Width="37"/>
-        <Button x:Name="button_Copy27" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="210,147,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="23" Width="15"/>
-        <Button x:Name="button_Copy28" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="195,78,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="28" Width="10"/>
-        <Button x:Name="button_Copy29" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="205,78,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="28" Width="10"/>
-        <Button x:Name="button_Copy30" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="214,78,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="28" Width="10"/>
-        <Border BorderBrush="Black" BorderThickness="0.5" HorizontalAlignment="Left" Height="33" VerticalAlignment="Top" Width="38" Margin="224,78,0,0"/>
-        <Button x:Name="button_Copy31" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="235,78,0,0" BorderBrush="Black"  BorderThickness="0.5" Height="16" Width="15" Background="#FFF7FEA0" Foreground="#FFF99C9C"/>
+        <TextBlock x:Name="legendaTitle" HorizontalAlignment="Left" Margin="0,30,0,0" TextWrapping="Wrap" Text="Legenda" VerticalAlignment="Top" FontSize="10" FontWeight="Bold"/>
+        <Border x:Name="classroomLogo" BorderThickness="0.5" HorizontalAlignment="Left" Height="18" Margin="0,54,0,0" VerticalAlignment="Top" Width="38" Background="#FF99D9EA" Style="{StaticResource classroomColour}" BorderBrush="Black"/>
+        <Border x:Name="toiletLogo" BorderThickness="0.5" HorizontalAlignment="Left" Height="20" Margin="0,77,0,0" VerticalAlignment="Top" Width="38" Background="#FFFF9FA2" RenderTransformOrigin="5.75,0" BorderBrush="Black"/>
+        <Border x:Name="projectSpaceLogo" BorderThickness="0.5" HorizontalAlignment="Left" Height="23" Margin="0,104,0,0" VerticalAlignment="Top" Width="38" Background="#FFC3C3C3" Style="{StaticResource projectSpaceColour}" BorderBrush="Black"/>
+        <Border x:Name="elevatorLogo" BorderThickness="0.5" HorizontalAlignment="Left" Height="24" Margin="0,140,0,0" VerticalAlignment="Top" Width="38" Background="#FFF7FEA0" Style="{StaticResource elevatorColour}" BorderBrush="Black"/>
+        <TextBlock x:Name="toiletTitle" HorizontalAlignment="Left" Margin="43,81,0,0" TextWrapping="Wrap" Text="Toilet                    " VerticalAlignment="Top" FontSize="10"/>
+        <TextBlock x:Name="projectSpaceTitle" HorizontalAlignment="Left" Margin="43,108,0,0" TextWrapping="Wrap" Text="project space                    " VerticalAlignment="Top" FontSize="10"/>
+        <TextBlock x:Name="classroomTitle" HorizontalAlignment="Left" Margin="43,54,0,0" TextWrapping="Wrap" Text="classroom                    " VerticalAlignment="Top" FontSize="10"/>
 
     </Grid>
 </Page>

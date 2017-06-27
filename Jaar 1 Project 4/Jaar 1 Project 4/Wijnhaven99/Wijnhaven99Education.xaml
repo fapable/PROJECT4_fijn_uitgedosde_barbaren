@@ -8,12 +8,12 @@
     mc:Ignorable="d">
 
     <Grid Background="{StaticResource hrTheme}" x:Name="wijnhaven_99_education" >
-        <TextBlock x:Name="mainTitle" HorizontalAlignment="Left" Margin="101,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8">
+        <TextBlock x:Name="mainTitle" HorizontalAlignment="Left" Margin="9,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8" FontSize="30" Width="351">
             <Run Text="Wijnhaven 99 Education"/>
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="165,170,0,0" VerticalAlignment="Top" Click="back_Click"/>
+        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="111,471,0,0" VerticalAlignment="Top" Click="back_Click" Height="62" Width="142"/>
 
     </Grid>
 </Page>

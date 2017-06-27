@@ -12,6 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Graphics.Display; //For the flip
+
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -22,6 +24,7 @@ namespace Jaar_1_Project_4 {
     public sealed partial class SecondFloor : Page {
         public SecondFloor() {
             this.InitializeComponent();
+             DisplayInformation.AutoRotationPreferences = DisplayOrientations.Landscape; //Flips page
         }
 
         private void secondFlourBackButton_Click(object sender, RoutedEventArgs e) {

@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="Jaar_1_Project_4.Questions"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Jaar_1_Project_4"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:ConnectionId='1' Background="{StaticResource hrTheme}" x:Name="askquestions">
+        <TextBlock x:ConnectionId='2' x:Name="mainTitle" HorizontalAlignment="Left" Margin="72,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8"                                               Height="67" FontSize="35" Width="271">
+            <Run Text="Ask a question"/>
+            <LineBreak/>
+            <Run Text="                  "/>
+            <LineBreak/>
+            <Run/>
+        </TextBlock>
+        <Button x:ConnectionId='3' x:Name="back" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top"                    Margin="103,504,0,0" Height="56" Width="147"/>
+        <Button x:ConnectionId='4' x:Name="button" Content="Send" HorizontalAlignment="Left" Margin="103,427,0,0" VerticalAlignment="Top"                      Height="59" Width="147"/>
+        <TextBox x:ConnectionId='5' x:Name="Question" HorizontalAlignment="Left" Margin="10,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.419,0.014" Width="333"                                   Height="296"/>
+
+    </Grid>
+</Page>
+

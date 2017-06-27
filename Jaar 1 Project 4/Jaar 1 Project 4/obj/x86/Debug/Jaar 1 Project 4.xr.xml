@@ -88,9 +88,10 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
     <RootType FullName="Jaar_1_Project_4.CreateAccount" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Jaar_1_Project_4.Menus.ContactPage" />
     <RootType FullName="Jaar_1_Project_4.Education" />
     <RootType FullName="Jaar_1_Project_4.FourthFloor" />
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Jaar_1_Project_4.MainMenu" />
     <RootType FullName="Jaar_1_Project_4.MainLoginPage" />
     <RootType FullName="Jaar_1_Project_4.OpenDagInformatie" />

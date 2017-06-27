@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace Jaar_1_Project_4.Menus
+namespace Jaar_1_Project_4
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -27,9 +27,8 @@ namespace Jaar_1_Project_4.Menus
             this.InitializeComponent();
         }
 
-        private void textBlock_SelectionChanged(System.Object sender, RoutedEventArgs e)
-        {
-
+        private void backButton_Click(object sender, RoutedEventArgs e) {
+            this.Frame.Navigate(typeof(OpenDagInformatie));
         }
     }
 }

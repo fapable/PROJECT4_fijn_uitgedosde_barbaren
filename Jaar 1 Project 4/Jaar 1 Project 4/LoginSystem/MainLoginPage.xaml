@@ -8,11 +8,11 @@
     mc:Ignorable="d">
 
     <Grid Background="#FFCF0044" x:Name="main_page">
-        <Button x:Name="studentInlogButton" Content="Student&#xD;&#xA;" HorizontalAlignment="Left" Margin="136,57,0,0" VerticalAlignment="Top" Height="32" Width="94" Click="studentLoginClick"/>
+        <Button x:Name="studentInlogButton" Content="Student&#xD;&#xA;" HorizontalAlignment="Left" Margin="111,141,0,0"   VerticalAlignment="Top" Height="38" Width="130" Click="studentLoginClick"/>
         <Button x:Name="teacherInlogButton" Content="Teacher
-                " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="136,108,0,0" Width="94" Click="teacherLoginClick"/>
+                " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,202,0,0" Width="130" Click="teacherLoginClick" Height="39"/>
         <Button x:Name="exitInlogButton" Content="Back
-                " HorizontalAlignment="Left" Margin="136,161,0,0" VerticalAlignment="Top" Width="94" Click="ExitClick"/>
-        <TextBlock x:Name="mainInlogText" HorizontalAlignment="Left" Margin="110,0,0,0" TextWrapping="Wrap" Text="Login screen" VerticalAlignment="Top" Height="42" Width="150" FontSize="24" Foreground="White" FontWeight="Bold"/>
+                " HorizontalAlignment="Left" Margin="111,275,0,0" VerticalAlignment="Top" Width="130" Click="ExitClick" Height="43"/>
+        <TextBlock x:Name="mainInlogText" HorizontalAlignment="Left" Margin="82,0,0,0" TextWrapping="Wrap" Text="Login screen" VerticalAlignment="Top" Height="52" Width="237" FontSize="35" Foreground="White" FontWeight="Bold"/>
     </Grid>
 </Page>

@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Graphics.Display; //For the flip
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -22,6 +23,7 @@ namespace Jaar_1_Project_4 {
     public sealed partial class ThirthFloor : Page {
         public ThirthFloor() {
             this.InitializeComponent();
+            DisplayInformation.AutoRotationPreferences = DisplayOrientations.Landscape; //Flips page
         }
         private void BackButton(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(Activities));

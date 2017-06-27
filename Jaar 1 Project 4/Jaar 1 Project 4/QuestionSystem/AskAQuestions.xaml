@@ -8,16 +8,16 @@
     mc:Ignorable="d">
 
     <Grid Background="{StaticResource hrTheme}" x:Name="askquestions">
-        <TextBlock x:Name="mainTitle" HorizontalAlignment="Left" Margin="130,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8" SelectionChanged="mainTitle_SelectionChanged" Height="32">
+        <TextBlock x:Name="mainTitle" HorizontalAlignment="Left" Margin="72,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8" SelectionChanged="mainTitle_SelectionChanged" Height="67" FontSize="35" Width="271">
             <Run Text="Ask a question"/>
             <LineBreak/>
             <Run Text="                  "/>
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Click="back_Click"/>
-        <Button x:Name="button" Content="Send" HorizontalAlignment="Left" Margin="302,168,0,0" VerticalAlignment="Top" Click="send_message"/>
-        <TextBox x:Name="Question" HorizontalAlignment="Left" Margin="0,32,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.419,0.014" Width="302" TextChanged="textBox_TextChanged" Height="168"/>
+        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Click="back_Click" Margin="103,504,0,0" Height="56" Width="147"/>
+        <Button x:Name="button" Content="Send" HorizontalAlignment="Left" Margin="103,427,0,0" VerticalAlignment="Top" Click="send_message" Height="59" Width="147"/>
+        <TextBox x:Name="Question" HorizontalAlignment="Left" Margin="10,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.419,0.014" Width="333" TextChanged="textBox_TextChanged" Height="296"/>
 
     </Grid>
 </Page>

@@ -8,12 +8,16 @@
     mc:Ignorable="d">
 
     <Grid Background="{StaticResource hrTheme}" x:Name="activities">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" MinHeight="255"/>
+            <RowDefinition Height="Auto" MinHeight="184.667"/>
+        </Grid.RowDefinitions>
         <TextBlock x:Name="mainTitle"
-                    HorizontalAlignment="Left" Margin="141,0,0,0" TextWrapping="Wrap" Text="Acitivties" VerticalAlignment="Top" Foreground="#FFFFF8F8" FontWeight="Bold"/>
-        <Button x:Name="secondFloorButton" Content="Second floor" HorizontalAlignment="Left" Margin="126,30,0,0" VerticalAlignment="Top" Click="secondFloorButton_Click"/>
-        <Button x:Name="thirdFloorButton" Content="Third floor" HorizontalAlignment="Left" Margin="126,65,0,0" VerticalAlignment="Top" Click="thirdFloorButton_Click" Width="104"/>
-        <Button x:Name="fourthFloorButton" Content="Fourth floor" HorizontalAlignment="Left" Margin="126,105,0,0" VerticalAlignment="Top" Click="fourthFloorButton_Click" Width="104"/>
-        <Button x:Name="activitiesBackButton" Content="Back" HorizontalAlignment="Left" Margin="125,165,0,0" VerticalAlignment="Top" Click="activitiesBackButton_Click" Width="105"/>
+                    HorizontalAlignment="Left" Margin="124,0,0,0" TextWrapping="Wrap" Text="Activties" VerticalAlignment="Top" Foreground="#FFFFF8F8" FontWeight="Bold" FontSize="35" Height="47" Width="152"/>
+        <Button x:Name="secondFloorButton" Content="Second floor" HorizontalAlignment="Stretch" Margin="63,141,52,42" VerticalAlignment="Stretch" Click="secondFloorButton_Click"/>
+        <Button x:Name="thirdFloorButton" Content="Third floor" HorizontalAlignment="Stretch" Margin="63,239,52,135.667" VerticalAlignment="Stretch" Click="thirdFloorButton_Click" Grid.RowSpan="2"/>
+        <Button x:Name="fourthFloorButton" Content="Fourth floor" HorizontalAlignment="Stretch" Margin="63,77,52,42.667" VerticalAlignment="Stretch" Click="fourthFloorButton_Click" Grid.Row="1"/>
+        <Button x:Name="activitiesBackButton" Content="Back" HorizontalAlignment="Stretch" Margin="63,185,52,-65.333" VerticalAlignment="Top" Click="activitiesBackButton_Click" Height="65" Grid.Row="1"/>
 
     </Grid>
 </Page>

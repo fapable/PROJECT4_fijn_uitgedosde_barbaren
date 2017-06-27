@@ -7,6 +7,7 @@ LoginSystem\CreateAccount.xbf
 LoginSystem\MainLoginPage.xbf
 LoginSystem\StudentLogin.xbf
 LoginSystem\TeacherLogIn.xbf
+Menus\ContactPage.xbf
 Menus\MainMenu.xbf
 Menus\OpenDagInformatie.xbf
 Menus\WijnhavenLocations.xbf
