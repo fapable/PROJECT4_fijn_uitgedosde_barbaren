@@ -10,10 +10,11 @@
     <Grid Background="{StaticResource hrTheme}" x:Name="open_day_info">
         <TextBlock x:Name="openDayInformation" HorizontalAlignment="Left" Margin="107,0,0,0" TextWrapping="Wrap" Text="Open Day Information" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
         <Button x:Name="activitiesButton" Content="Activities" HorizontalAlignment="Left" Margin="80,25,0,0" VerticalAlignment="Top" Height="30" Width="210" Click="activitiesButton_Click" FontSize="15"/>
-        <Button x:Name="educationButton" Content="Wijnhaven 107 Education" HorizontalAlignment="Left" Margin="80,65,0,0" VerticalAlignment="Top" Height="30" Width="210" Click="educationButton_Click" FontSize="15"/>
+        <Button x:Name="educationButton" Content="Wijnhaven 107 Education" HorizontalAlignment="Left" Margin="80,60,0,0" VerticalAlignment="Top" Height="30" Width="210" Click="educationButton_Click" FontSize="15"/>
         <Button x:Name="locationsButton" Content="Other Wijnhaven Locations
-                " HorizontalAlignment="Left" Margin="80,105,0,0" VerticalAlignment="Top" Height="30" Width="210" FontSize="15" Click="locationsButton_Click"/>
-        <Button x:Name="openDayBackButton" Content="Back" HorizontalAlignment="Left" Margin="85,160,0,0" VerticalAlignment="Top" Click="openDayBackButton_Click" Width="205" FontSize="15"/>
+                " HorizontalAlignment="Left" Margin="80,95,0,0" VerticalAlignment="Top" Height="30" Width="210" FontSize="15" Click="locationsButton_Click"/>
+        <Button x:Name="openDayBackButton" Content="Back" HorizontalAlignment="Left" Margin="80,168,0,0" VerticalAlignment="Top" Click="openDayBackButton_Click" Width="210" FontSize="15"/>
+        <Button x:Name="ContactPage" Content="Contact page" HorizontalAlignment="Left" Margin="80,130,0,0" VerticalAlignment="Top" Width="210" Click="contactButton_click"/>
 
     </Grid>
 </Page>
