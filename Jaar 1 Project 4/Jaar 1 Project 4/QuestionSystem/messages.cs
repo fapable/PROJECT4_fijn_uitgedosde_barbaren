@@ -51,6 +51,7 @@ namespace Jaar_1_Project_4_Messages
         }
         public abstract void Draw();
     }
+
     public class Question : MessageDecorator
     {
         bool IsAnswer;
@@ -63,12 +64,18 @@ namespace Jaar_1_Project_4_Messages
         }
         public override void Draw()
         {
-            var backing = new Rectangle();
-            backing.Fill = new SolidColorBrush(Color.FromArgb(0,0,0,255));
-            backing.Width = 50;
-            backing.Height = 50;
-            //backing.Margin = new Thickness(50, 50, 0, 0);
-            current_page.Children.Add(backing);
+            var background = new Rectangle();
+            background.Fill = new SolidColorBrush(Windows.UI.Colors.LightPink);
+            background.Width = this.message.getWidth() - 70;
+            background.Height = 180;
+            background.Stroke = new SolidColorBrush(Windows.UI.Colors.Black);
+            background.VerticalAlignment = VerticalAlignment.Top;
+            background.Margin = new Thickness(30);
+            background.StrokeThickness = 2;
+            background.RadiusX = 50;
+            background.RadiusY = 10;
+
+            current_page.Children.Add(background);
             current_page.Children.Add(this.message.Draw());
             //draw this.message overtop backing
         }
@@ -90,22 +97,37 @@ namespace Jaar_1_Project_4_Messages
         int x;
         int y;
         string text;
-        public EasyLabel(int x, int y, string text)
+        int width;
+        int height;
+        TextBlock current_message;
+
+        public EasyLabel(int x, int y, int width, string text)
         {
-            this.x = x;
+            this.x = x + width / 2 + 50;
             this.y = y;
             this.text = text;
-        }
-        public dynamic Draw()
-        {
-            var current_message = new TextBlock();
-            //current_message.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
+            this.width = width;
+
+            current_message = new TextBlock();
             current_message.TextWrapping = TextWrapping.Wrap;
             current_message.Text = this.text;
-            current_message.Width = 50;
-            //current_message.Height = current_message.DesiredSize.Height;
+            current_message.Width = this.width;
+            current_message.RenderTransform = new TranslateTransform { X = this.x, Y = this.y };
+        }
+
+        public dynamic Draw()
+        {
+            // Get variables
+            current_message = new TextBlock();
+            current_message.TextWrapping = TextWrapping.Wrap;
+            current_message.Text = this.text;
+            current_message.Text = this.getHeight().ToString();
+            current_message.Width = this.width;
             current_message.RenderTransform = new TranslateTransform { X = this.x, Y = this.y };
             return current_message;
         }
+
+        public int getWidth() => this.width;
+        public double getHeight() => this.current_message.ActualHeight;
     }
 }
