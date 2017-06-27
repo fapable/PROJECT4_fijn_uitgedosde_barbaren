@@ -20,12 +20,12 @@ namespace Jaar_1_Project_4_Messages
     {
         void Draw();
     }
-    public enum MessageType { question, answer, notification }
+    public enum MessageType { question, answer, notification } // this enum makes sure we can only create 3 kinds of in app messages 
     public abstract class MessageFactory
     {
-        public static Message Create(MessageType type, EasyLabel text, Grid current_page)
+        public static Message Create(MessageType type, EasyLabel text, Grid current_page) //current page is the grid the message has to be drawn to
         {
-            switch (type)
+            switch (type) //checks the type of message you want and then returns the apropriate object
             {
                 case MessageType.question:
                     {
@@ -41,12 +41,12 @@ namespace Jaar_1_Project_4_Messages
                     }
                 default:
                     {
-                        return null;
+                        return null; //if there is no message we dont want an object 
                     }
             }
         }
     }
-    public abstract class MessageDecorator : Message
+    public abstract class MessageDecorator : Message //this decorator adds text (an easy label) to your message
     {
         public EasyLabel message;
         public MessageDecorator(EasyLabel message)
@@ -56,7 +56,7 @@ namespace Jaar_1_Project_4_Messages
         public abstract void Draw();
     }
 
-    public class Question : MessageDecorator
+    public class Question : MessageDecorator //if MessageType == question create a question message object(consisting of a colored background and text
     {
         bool IsAnswer;
         dynamic current_page;
@@ -81,10 +81,10 @@ namespace Jaar_1_Project_4_Messages
 
             current_page.Children.Add(background);
             current_page.Children.Add(this.message.Draw());
-            //draw this.message overtop backing
+            //first we create the background we want, then we draw that background and then we draw the text overtop to create a message with a colore background
         }
     }
-    public class Answer : MessageDecorator
+    public class Answer : MessageDecorator //if MessageType == answer create an answer message object(consisting of a colored background (that differs from question) and text)
     {
         bool IsAnswer;
         dynamic current_page;
@@ -99,7 +99,7 @@ namespace Jaar_1_Project_4_Messages
             throw new NotImplementedException();
         }
     }
-    public class Notification : MessageDecorator
+    public class Notification : MessageDecorator //if MessageType == notification create a notification message object(consisting of a colored background (that differs from question and answer) and text)
     {
         bool IsAnswer;
         dynamic current_page;
@@ -114,7 +114,7 @@ namespace Jaar_1_Project_4_Messages
             throw new NotImplementedException();
         }
     }
-    public class EasyLabel
+    public class EasyLabel //creates a textblock that can be drawn to the screen
     {
         int x;
         int y;
@@ -137,7 +137,7 @@ namespace Jaar_1_Project_4_Messages
             current_message.RenderTransform = new TranslateTransform { X = this.x, Y = this.y };
         }
 
-        public dynamic Draw()
+        public dynamic Draw() //returns the created textblock for the main classes (question, answer and notification) to use
         {
             // Get variables
             current_message = new TextBlock();
@@ -149,7 +149,7 @@ namespace Jaar_1_Project_4_Messages
             return current_message;
         }
 
-        public int getWidth() => this.width;
-        public double getHeight() => this.current_message.ActualHeight;
+        public int getWidth() => this.width; //returns width of the textblock
+        public double getHeight() => this.current_message.ActualHeight; //returns height of the textblock
     }
 }
