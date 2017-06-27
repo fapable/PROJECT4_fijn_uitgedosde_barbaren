@@ -40,5 +40,20 @@ namespace Jaar_1_Project_4 {
             this.Frame.Navigate(typeof(WijnhavenLocations));
 
         }
+
+        private void activitiesButton_Click(System.Object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void contactButton_click(System.Object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void contactButton_click(System.Object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
