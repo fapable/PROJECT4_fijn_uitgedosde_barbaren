@@ -20,7 +20,7 @@ namespace Jaar_1_Project_4_Messages
     {
         void Draw();
     }
-    public enum MessageType { question, answer }
+    public enum MessageType { question, answer, notification }
     public abstract class MessageFactory
     {
         public static Message Create(MessageType type, EasyLabel text, Grid current_page)
@@ -34,6 +34,10 @@ namespace Jaar_1_Project_4_Messages
                 case MessageType.answer:
                     {
                         return new Answer(text, current_page);
+                    }
+                case MessageType.notification:
+                    {
+                        return new Notification(text, current_page);
                     }
                 default:
                     {
@@ -83,9 +87,27 @@ namespace Jaar_1_Project_4_Messages
     public class Answer : MessageDecorator
     {
         bool IsAnswer;
+        dynamic current_page;
         public Answer(EasyLabel message, Grid current_page) : base(message)
         {
             this.IsAnswer = true;
+            this.message = message;
+            this.current_page = current_page;
+        }
+        public override void Draw()
+        {
+            throw new NotImplementedException();
+        }
+    }
+    public class Notification : MessageDecorator
+    {
+        bool IsAnswer;
+        dynamic current_page;
+        public Notification(EasyLabel message, Grid current_page) : base(message)
+        {
+            this.current_page = current_page;
+            this.IsAnswer = false;
+            this.message = message;
         }
         public override void Draw()
         {
