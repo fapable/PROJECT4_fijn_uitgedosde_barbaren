@@ -55,7 +55,6 @@ namespace Jaar_1_Project_4_Messages
         }
         public abstract void Draw();
     }
-
     public class Question : MessageDecorator //if MessageType == question create a question message object(consisting of a colored background and text
     {
         bool IsAnswer;
@@ -96,7 +95,19 @@ namespace Jaar_1_Project_4_Messages
         }
         public override void Draw()
         {
-            throw new NotImplementedException();
+            var background = new Rectangle();
+            background.Fill = new SolidColorBrush(Windows.UI.Colors.White);
+            background.Width = this.message.getWidth() - 70;
+            background.Height = 180;
+            background.Stroke = new SolidColorBrush(Windows.UI.Colors.Black);
+            background.VerticalAlignment = VerticalAlignment.Top;
+            background.Margin = new Thickness(30);
+            background.StrokeThickness = 2;
+            background.RadiusX = 50;
+            background.RadiusY = 10;
+
+            current_page.Children.Add(background);
+            current_page.Children.Add(this.message.Draw());
         }
     }
     public class Notification : MessageDecorator //if MessageType == notification create a notification message object(consisting of a colored background (that differs from question and answer) and text)
@@ -111,7 +122,19 @@ namespace Jaar_1_Project_4_Messages
         }
         public override void Draw()
         {
-            throw new NotImplementedException();
+            var background = new Rectangle();
+            background.Fill = new SolidColorBrush(Windows.UI.Colors.DarkRed);
+            background.Width = this.message.getWidth() - 70;
+            background.Height = 180;
+            background.Stroke = new SolidColorBrush(Windows.UI.Colors.Black);
+            background.VerticalAlignment = VerticalAlignment.Top;
+            background.Margin = new Thickness(30);
+            background.StrokeThickness = 2;
+            background.RadiusX = 50;
+            background.RadiusY = 10;
+
+            current_page.Children.Add(background);
+            current_page.Children.Add(this.message.Draw());
         }
     }
     public class EasyLabel //creates a textblock that can be drawn to the screen
@@ -122,7 +145,6 @@ namespace Jaar_1_Project_4_Messages
         int width;
         int height;
         TextBlock current_message;
-
         public EasyLabel(int x, int y, int width, string text)
         {
             this.x = x + width / 2 + 50;
@@ -136,7 +158,6 @@ namespace Jaar_1_Project_4_Messages
             current_message.Width = this.width;
             current_message.RenderTransform = new TranslateTransform { X = this.x, Y = this.y };
         }
-
         public dynamic Draw() //returns the created textblock for the main classes (question, answer and notification) to use
         {
             // Get variables
@@ -148,7 +169,6 @@ namespace Jaar_1_Project_4_Messages
             current_message.RenderTransform = new TranslateTransform { X = this.x, Y = this.y };
             return current_message;
         }
-
         public int getWidth() => this.width; //returns width of the textblock
         public double getHeight() => this.current_message.ActualHeight; //returns height of the textblock
     }

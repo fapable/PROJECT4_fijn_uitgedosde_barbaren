@@ -15,9 +15,12 @@
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Click="back_Click" Margin="103,504,0,0" Height="56" Width="147"/>
-        <Button x:Name="button" Content="Send" HorizontalAlignment="Left" Margin="103,427,0,0" VerticalAlignment="Top" Click="send_message" Height="59" Width="147"/>
-        <TextBox x:Name="Question" HorizontalAlignment="Left" Margin="10,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.419,0.014" Width="333" TextChanged="textBox_TextChanged" Height="296"/>
+        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Click="back_Click" Margin="103,574,0,0" Height="56" Width="147"/>
+        <Button x:Name="button" Content="Send" HorizontalAlignment="Left" Margin="103,510,0,0" VerticalAlignment="Top" Click="send_message" Height="59" Width="147"/>
+        <TextBox x:Name="E_mail" HorizontalAlignment="Left" Margin="10,67,0,0" TextWrapping="Wrap" Text="e-mail" VerticalAlignment="Top" RenderTransformOrigin="0.419,0.014" Width="333" TextChanged="textBox_TextChanged" Height="0"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="5" Margin="10,104,0,0" TextWrapping="Wrap" Text="opleiding" VerticalAlignment="Top" Width="333"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="0" Margin="10,141,0,0" TextWrapping="Wrap" Text="naam" VerticalAlignment="Top" Width="333"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="327" Margin="10,178,0,0" TextWrapping="Wrap" Text="vraag" VerticalAlignment="Top" Width="333"/>
 
     </Grid>
 </Page>
