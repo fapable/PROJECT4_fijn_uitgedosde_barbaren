@@ -128,4 +128,15 @@ INSERT INTO events VALUES(16,'WD.02.216','Leisure Management','Student will plan
 INSERT INTO events VALUES(17,'WD.02.308','Leisure Management','Student will solve problems that are in a non existing jazz music festival',120,TIME '13:00:00', TIME '15:00:00','Festival problems');
 INSERT INTO events VALUES(18,'WN.02.007','Leisure Management','Student will plan a party for a non existing neighbourhood.',120,TIME '13:00:00', TIME '15:00:00','Neighbour party');
 
+CREATE TABLE contact(
+    question_type varchar(30),
+    description text,
+    tel varchar(15),
+    email varchar(100)
+    );
+    
+INSERT INTO contact VALUES('Studychoice','Are you busy with making a study choice but you are still unsure which education to follow? Or are you unsure how to sign up for your education? Then contact the department of study Information.','010 - 794 4400','studievoorlichting@hr.nl');
+INSERT INTO contact VALUES('Education question','Do you have questions related to an education?','010 – 500 9900','hropleidingen@hr.nl');
+                           
+
 
