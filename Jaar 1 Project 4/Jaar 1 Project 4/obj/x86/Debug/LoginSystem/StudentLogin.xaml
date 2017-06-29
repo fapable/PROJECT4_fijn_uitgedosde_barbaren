@@ -11,21 +11,21 @@
     </Page.Resources>
 
     <Grid x:ConnectionId='1' Background="{StaticResource hrTheme}" x:Name="student_login">
-        <TextBlock x:ConnectionId='2' x:Name="studentLoginMainText" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Student" VerticalAlignment="Top" Margin="140,-5,0,0" Height="36" Width="94" FontSize="24" SelectionHighlightColor="White" Foreground="White" FontWeight="Bold" Style="{StaticResource mainHeadtitle}"/>
-        <TextBlock x:ConnectionId='3' x:Name="usernameLoginText" HorizontalAlignment="Left" Height="14" Margin="160,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51" FontSize="11">
+        <TextBlock x:ConnectionId='2' x:Name="studentLoginMainText" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Student" VerticalAlignment="Top" Margin="119,0,0,0" Height="68" Width="145" FontSize="35" SelectionHighlightColor="White" Foreground="White" FontWeight="Bold" Style="{StaticResource mainHeadtitle}"/>
+        <TextBlock x:ConnectionId='3' x:Name="usernameLoginText" HorizontalAlignment="Left" Height="22" Margin="145,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" FontSize="15" FontWeight="Bold">
             <Run Text="Username
                  "/>
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <TextBlock x:ConnectionId='4' x:Name="passwordLoginText" HorizontalAlignment="Left" Margin="160,70,0,0" TextWrapping="Wrap" Text="Password
-                   " VerticalAlignment="Top" FontSize="11"/>
+        <TextBlock x:ConnectionId='4' x:Name="passwordLoginText" HorizontalAlignment="Left" Margin="145,220,0,0" TextWrapping="Wrap" Text="Password
+                   " VerticalAlignment="Top" FontSize="15" FontWeight="Bold"/>
         <Button x:ConnectionId='5' x:Name="studentLoginBackButton" Content="Back
-                " HorizontalAlignment="Left" Margin="125,175,0,0" VerticalAlignment="Top" Width="115" Height="25"                                      FontSize="10"/>
-        <TextBox x:ConnectionId='6' x:Name="UsernameTypeBox" HorizontalAlignment="Left" Margin="80,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="6" Width="205" FontSize="15" MaxLength="20"/>
-        <Button x:ConnectionId='7' x:Name="logInButton" Content="Log in" HorizontalAlignment="Left" Margin="125,115,0,0" VerticalAlignment="Top"                           Width="115" Height="25" FontSize="10"/>
-        <Button x:ConnectionId='8' x:Name="button" Content="Create account&#xD;&#xA;" HorizontalAlignment="Left" Margin="125,145,0,0" VerticalAlignment="Top" Height="25" Width="115" FontSize="10"                     />
-        <PasswordBox x:ConnectionId='9' x:Name="passwordBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,83,0,0" Width="205" MaxLength="20"/>
+                " HorizontalAlignment="Left" Margin="119,428,0,0" VerticalAlignment="Top" Width="121" Height="45"                                      FontSize="10"/>
+        <TextBox x:ConnectionId='6' x:Name="UsernameTypeBox" HorizontalAlignment="Left" Margin="80,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="6" Width="205" FontSize="15" MaxLength="20"/>
+        <Button x:ConnectionId='7' x:Name="logInButton" Content="Log in" HorizontalAlignment="Left" Margin="119,311,0,0" VerticalAlignment="Top"                           Width="121" Height="34" FontSize="10"/>
+        <Button x:ConnectionId='8' x:Name="button" Content="Create account&#xD;&#xA;" HorizontalAlignment="Left" Margin="119,368,0,0" VerticalAlignment="Top" Height="39" Width="121" FontSize="10"                     />
+        <PasswordBox x:ConnectionId='9' x:Name="passwordBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,245,0,0" Width="205" MaxLength="20"/>
 
     </Grid>
 </Page>

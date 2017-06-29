@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid x:Name="mainQpage" Background="{ThemeResource hrTheme}">
+    <Grid x:Name="QuestionMenu" Background="{ThemeResource hrTheme}">
         <TextBlock x:Name="title" HorizontalAlignment="Left" Margin="257,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="35" Foreground="#FFFFF8F8">
             <Run Text="Q and A"/>
             <LineBreak/>

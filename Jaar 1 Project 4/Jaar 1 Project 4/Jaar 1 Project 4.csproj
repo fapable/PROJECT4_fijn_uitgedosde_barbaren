@@ -109,6 +109,15 @@
     <Compile Include="Menus\ContactPage.xaml.cs">
       <DependentUpon>ContactPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="QuestionSystem\AnswerAQuestion.xaml.cs">
+      <DependentUpon>AnswerAQuestion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionSystem\mainQpage.xaml.cs">
+      <DependentUpon>mainQpage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionSystem\QandAPage.xaml.cs">
+      <DependentUpon>QandAPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Wijnhaven107\Education.xaml.cs">
       <DependentUpon>Education.xaml</DependentUpon>
     </Compile>
@@ -207,6 +216,18 @@
     <Page Include="Menus\ContactPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="QuestionSystem\AnswerAQuestion.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="QuestionSystem\mainQpage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="QuestionSystem\QandAPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Wijnhaven107\Education.xaml">
       <SubType>Designer</SubType>
