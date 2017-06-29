@@ -26,5 +26,18 @@ namespace Jaar_1_Project_4.QuestionSystem
         {
             this.InitializeComponent();
         }
+
+        private void AskAQuestion(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Questions));
+        }
+        private void ToQandAButton(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(QandAPage));
+        }
+        private void backButtonClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainMenu));
+        }
     }
 }
