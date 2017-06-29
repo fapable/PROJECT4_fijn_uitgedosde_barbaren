@@ -6,9 +6,9 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
-    <Grid Background="{ThemeResource hrTheme}">
-        <Button x:Name="button" Content="Back" HorizontalAlignment="Left" Margin="0,584,0,0" VerticalAlignment="Top" Height="56" Width="360" Click="BackButton_Click"/>
-
-    </Grid>
+    <ScrollViewer VerticalScrollMode="Auto" Height="Auto" VerticalScrollBarVisibility="Auto">
+        <Grid Background="{ThemeResource hrTheme}">
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="274,812,0,-472"/>
+        </Grid>
+    </ScrollViewer>
 </Page>
