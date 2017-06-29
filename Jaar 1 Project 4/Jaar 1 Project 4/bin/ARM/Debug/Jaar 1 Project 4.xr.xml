@@ -20,6 +20,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootProperty Name="Inlines" />
+      <RootProperty Name="TextAlignment" />
       <RootProperty Name="SelectionHighlightColor" />
       <RootProperty Name="Style" />
       <RootEvent Name="SelectionChanged" />
@@ -67,12 +68,12 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="FontSize" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="Background" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="RenderTransformOrigin" />
-      <RootProperty Name="FontSize" />
       <RootProperty Name="UseLayoutRounding" />
       <RootProperty Name="RenderTransform" />
       <RootEvent Name="Click" />
@@ -86,8 +87,9 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="MaxLength" />
-      <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Height" />
+      <RootProperty Name="IsReadOnly" />
+      <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="FontSize" />
       <RootEvent Name="TextChanged" />
     </RootType>
@@ -104,8 +106,18 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
     <RootType FullName="Jaar_1_Project_4.CreateAccount" />
+    <RootType FullName="Jaar_1_Project_4.HelpPage" />
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Jaar_1_Project_4.ContactPage" />
+    <RootType FullName="Jaar_1_Project_4.Answer" />
+    <RootType FullName="Jaar_1_Project_4.QuestionSystem.mainQpage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="VerticalScrollMode" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalScrollBarVisibility" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Jaar_1_Project_4.QuestionSystem.QandAPage" />
     <RootType FullName="Jaar_1_Project_4.Education" />
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />

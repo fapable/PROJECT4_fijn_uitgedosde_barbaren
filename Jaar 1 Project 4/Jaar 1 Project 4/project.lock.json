@@ -15610,14 +15610,14 @@
     "UAP,Version=v10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ramon\\.nuget\\packages\\": {}
+    "C:\\Users\\james\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\ramon\\Desktop\\New folder\\Jaar 1 Project 4\\Jaar 1 Project 4\\Jaar 1 Project 4.csproj",
+      "projectUniqueName": "B:\\School\\Developing\\Github projects\\PROJECT4_fijn_uitgedosde_barbaren\\Jaar 1 Project 4\\Jaar 1 Project 4\\Jaar 1 Project 4.csproj",
       "projectName": "Jaar 1 Project 4",
-      "projectPath": "C:\\Users\\ramon\\Desktop\\New folder\\Jaar 1 Project 4\\Jaar 1 Project 4\\Jaar 1 Project 4.csproj",
-      "projectJsonPath": "C:\\Users\\ramon\\Desktop\\New folder\\Jaar 1 Project 4\\Jaar 1 Project 4\\project.json",
+      "projectPath": "B:\\School\\Developing\\Github projects\\PROJECT4_fijn_uitgedosde_barbaren\\Jaar 1 Project 4\\Jaar 1 Project 4\\Jaar 1 Project 4.csproj",
+      "projectJsonPath": "B:\\School\\Developing\\Github projects\\PROJECT4_fijn_uitgedosde_barbaren\\Jaar 1 Project 4\\Jaar 1 Project 4\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {

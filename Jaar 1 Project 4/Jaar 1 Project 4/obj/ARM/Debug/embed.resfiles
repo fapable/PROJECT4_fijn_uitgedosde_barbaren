@@ -8,10 +8,14 @@ LoginSystem\MainLoginPage.xbf
 LoginSystem\StudentLogin.xbf
 LoginSystem\TeacherLogIn.xbf
 Menus\ContactPage.xbf
+Menus\HelpPage.xbf
 Menus\MainMenu.xbf
 Menus\OpenDagInformatie.xbf
 Menus\WijnhavenLocations.xbf
+QuestionSystem\AnswerAQuestion.xbf
 QuestionSystem\AskAQuestions.xbf
+QuestionSystem\mainQpage.xbf
+QuestionSystem\QandAPage.xbf
 Wijnhaven103\Wijnhaven103.xbf
 Wijnhaven103\Wijnhaven103Education.xbf
 Wijnhaven103\Wijnhaven103Info.xbf
