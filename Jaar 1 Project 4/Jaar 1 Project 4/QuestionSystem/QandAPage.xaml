@@ -8,7 +8,6 @@
     mc:Ignorable="d">
     <ScrollViewer VerticalScrollMode="Auto" Height="Auto" VerticalScrollBarVisibility="Auto">
         <Grid Background="{ThemeResource hrTheme}">
-            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="274,812,0,-472"/>
         </Grid>
     </ScrollViewer>
 </Page>

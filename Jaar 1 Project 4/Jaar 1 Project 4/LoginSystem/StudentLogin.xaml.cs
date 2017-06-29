@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.System;
 using System.Diagnostics;
+using Jaar_1_Project_4.QuestionSystem;
 
 
 //The username and password are boxed as Some or none and then send to the visitor
@@ -42,7 +43,7 @@ namespace Jaar_1_Project_4 {
                 password.ClassicVisit(loginVisitor);
             }
             loginVisitor.OnLoginCheck(); //The filled in username and password are now checked
-            this.Frame.Navigate(typeof(Questions));
+            this.Frame.Navigate(typeof(mainQpage));
         }
         private void studentLoginBackButton_Click(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(MainLoginPage));
