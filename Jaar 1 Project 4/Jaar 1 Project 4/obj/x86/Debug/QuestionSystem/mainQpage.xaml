@@ -13,9 +13,9 @@
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <Button x:ConnectionId='3' x:Name="AskAQuestionButton" Content="Ask a question" HorizontalAlignment="Left" Margin="257,109,0,0" VerticalAlignment="Top" Width="126"/>
-        <Button x:ConnectionId='4' x:Name="viewQuestionsButton" Content="View questions" HorizontalAlignment="Left" Margin="257,146,0,0" VerticalAlignment="Top" Width="126"/>
-        <Button x:ConnectionId='5' x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="257,183,0,0" VerticalAlignment="Top" Width="126"/>
+        <Button x:ConnectionId='3' x:Name="AskAQuestionButton" Content="Ask a question" HorizontalAlignment="Left" Margin="257,109,0,0" VerticalAlignment="Top" Width="126"                     />
+        <Button x:ConnectionId='4' x:Name="viewQuestionsButton" Content="View questions" HorizontalAlignment="Left" Margin="257,146,0,0" VerticalAlignment="Top" Width="126"                      />
+        <Button x:ConnectionId='5' x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="257,183,0,0" VerticalAlignment="Top" Width="126"                        />
 
     </Grid>
 </Page>

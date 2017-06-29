@@ -12,15 +12,18 @@
             <RowDefinition Height="0*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <TextBlock x:Name="textBlock" Margin="85,0,85,587" TextWrapping="NoWrap" Text="Main Menu" FontWeight="Bold" FontSize="35" Grid.RowSpan="2">
+        <TextBlock x:Name="textBlock" Margin="85,0,85,587" TextWrapping="NoWrap" Text="Main Menu" FontWeight="Bold" FontSize="35" Grid.RowSpan="2"  TextAlignment="Center">
             <TextBlock.Foreground>
                 <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
             </TextBlock.Foreground>
         </TextBlock>
         <Button x:Name="button" Content="Open day information" HorizontalAlignment="Center" Margin="63,141,52,434" VerticalAlignment="Center" Click="button_Click" Height="65" Width="245" Grid.Row="1"/>
         <Button x:Name="button1" Content="Questions" HorizontalAlignment="Stretch" Margin="63,238,52,337" VerticalAlignment="Stretch" Click="button1_Click" Grid.Row="1"  Width="245" Height="65" />
-        <Button x:Name="button2" Content="Close" HorizontalAlignment="Left" Margin="63,333,0,246" VerticalAlignment="Center" Click="button2_Click" Height="65"
+        <Button x:Name="button2" Content="Close" HorizontalAlignment="Center" Margin="63,446,52,133" VerticalAlignment="Center" Click="button2_Click" Height="65"
                 Grid.Row="1" Width="245"/>
+        <Button x:Name="help_button" Content="Help" HorizontalAlignment="Center" Margin="63,343,52,236" VerticalAlignment="Center" Click="help_click" Height="65"
+            Grid.Row="1" Width="245"/>
+        
 
     </Grid>
 </Page>

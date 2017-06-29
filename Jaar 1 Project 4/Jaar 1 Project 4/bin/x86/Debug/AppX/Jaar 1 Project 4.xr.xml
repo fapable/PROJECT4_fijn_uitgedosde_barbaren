@@ -20,6 +20,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootProperty Name="Inlines" />
+      <RootProperty Name="TextAlignment" />
       <RootProperty Name="SelectionHighlightColor" />
       <RootProperty Name="Style" />
       <RootEvent Name="SelectionChanged" />
@@ -67,12 +68,12 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="FontSize" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="Background" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="RenderTransformOrigin" />
-      <RootProperty Name="FontSize" />
       <RootProperty Name="UseLayoutRounding" />
       <RootProperty Name="RenderTransform" />
       <RootEvent Name="Click" />
@@ -105,6 +106,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
     <RootType FullName="Jaar_1_Project_4.CreateAccount" />
+    <RootType FullName="Jaar_1_Project_4.HelpPage" />
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Jaar_1_Project_4.ContactPage" />
     <RootType FullName="Jaar_1_Project_4.Answer" />
