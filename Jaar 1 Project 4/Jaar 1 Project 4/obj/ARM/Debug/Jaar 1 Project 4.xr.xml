@@ -86,8 +86,9 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="MaxLength" />
-      <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Height" />
+      <RootProperty Name="IsReadOnly" />
+      <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="FontSize" />
       <RootEvent Name="TextChanged" />
     </RootType>
@@ -106,6 +107,15 @@
     <RootType FullName="Jaar_1_Project_4.CreateAccount" />
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Jaar_1_Project_4.ContactPage" />
+    <RootType FullName="Jaar_1_Project_4.Answer" />
+    <RootType FullName="Jaar_1_Project_4.QuestionSystem.mainQpage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="VerticalScrollMode" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalScrollBarVisibility" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Jaar_1_Project_4.QuestionSystem.QandAPage" />
     <RootType FullName="Jaar_1_Project_4.Education" />
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />

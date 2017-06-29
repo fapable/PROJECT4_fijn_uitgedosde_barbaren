@@ -13,7 +13,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <TextBlock x:ConnectionId='1' x:Name="textBlock" Margin="10,0,-28,593" TextWrapping="Wrap" Text="Contact information" VerticalAlignment="Top"  FontSize="35" Foreground="White" FontWeight="Bold" Grid.RowSpan="3" Height="47"/>
+        <TextBlock x:ConnectionId='1' x:Name="contacttitle" Margin="10,0,-28,593" TextWrapping="Wrap" Text="Contact information" VerticalAlignment="Top"  FontSize="35" Foreground="White" FontWeight="Bold" Grid.RowSpan="3" Height="47"/>
         <Button x:ConnectionId='2' x:Name="backButton" Content="Back
                 " HorizontalAlignment="Left" Margin="113,389.889,0,0" VerticalAlignment="Top" Height="56" Width="145" Grid.Row="2"                         />
     </Grid>
