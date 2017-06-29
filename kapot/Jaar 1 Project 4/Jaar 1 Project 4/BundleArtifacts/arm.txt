@@ -1,0 +1,2 @@
+MainPackage=B:\School\Hogeschool\Homework\Projecten\Project 4\githubClone\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\ARM\Debug\Jaar 1 Project 4_1.0.1.0_ARM_Debug.appx
+SymbolPackage=C:\Users\james\Desktop\Jaar 1 Project 4_1.0.1.0_Debug_Test\Jaar 1 Project 4_1.0.1.0_ARM_Debug.appxsym

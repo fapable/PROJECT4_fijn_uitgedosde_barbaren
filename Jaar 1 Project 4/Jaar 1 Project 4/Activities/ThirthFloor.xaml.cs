@@ -13,7 +13,6 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.Graphics.Display; //For the flip
-using System.Diagnostics;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -29,25 +28,6 @@ namespace Jaar_1_Project_4 {
         private void BackButton(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(Activities));
 
-        }
-        //When the user clicks on a classroom this method gets called
-        private void classroomClick(object sender, RoutedEventArgs e) {
-            Button clickedOnButton = (Button) sender; 
-            string emptyButtonName = ""; //to store the buttonname
-            /*
-            The foreach loop is here because you can't have buttonnames with dots
-            Since the database tables need to match the buttonname, the foreach loop is made to change
-            the buttoname          
-           */
-            foreach (var letter in clickedOnButton.Name.ToString()) {
-                if (letter.ToString() == "_") {
-                    emptyButtonName += ".";
-                }
-                else {
-                    emptyButtonName += letter.ToString();
-                }
-            }
-            Debug.WriteLine("Clicked on classroom... what is your name? My name is: " + emptyButtonName);
         }
     }
 }

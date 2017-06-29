@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="Jaar_1_Project_4.StudentLogin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Jaar_1_Project_4"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <Style x:Key="mainHeadtitle" TargetType="TextBlock"/>
+    </Page.Resources>
+
+    <Grid Background="{StaticResource hrTheme}" x:Name="student_login">
+        <TextBlock x:Name="studentLoginMainText" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Student" VerticalAlignment="Top" Margin="119,0,0,0" Height="68" Width="145" FontSize="35" SelectionHighlightColor="White" Foreground="White" FontWeight="Bold" Style="{StaticResource mainHeadtitle}"/>
+        <TextBlock x:Name="usernameLoginText" HorizontalAlignment="Left" Height="22" Margin="145,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" FontSize="15" FontWeight="Bold">
+            <Run Text="Username
+                 "/>
+            <LineBreak/>
+            <Run/>
+        </TextBlock>
+        <TextBlock x:Name="passwordLoginText" HorizontalAlignment="Left" Margin="145,220,0,0" TextWrapping="Wrap" Text="Password
+                   " VerticalAlignment="Top" FontSize="15" FontWeight="Bold"/>
+        <Button x:Name="studentLoginBackButton" Content="Back
+                " HorizontalAlignment="Left" Margin="119,428,0,0" VerticalAlignment="Top" Width="121" Height="45" Click="studentLoginBackButton_Click" FontSize="10"/>
+        <TextBox x:Name="UsernameTypeBox" HorizontalAlignment="Left" Margin="80,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="6" Width="205" FontSize="15" MaxLength="20"/>
+        <Button x:Name="logInButton" Content="Log in" HorizontalAlignment="Left" Margin="119,311,0,0" VerticalAlignment="Top" Click="CreateButtonClick" Width="121" Height="34" FontSize="10"/>
+        <Button x:Name="button" Content="Create account&#xD;&#xA;" HorizontalAlignment="Left" Margin="119,368,0,0" VerticalAlignment="Top" Height="39" Width="121" FontSize="10" Click="button_Click"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,245,0,0" Width="205" MaxLength="20"/>
+
+    </Grid>
+</Page>

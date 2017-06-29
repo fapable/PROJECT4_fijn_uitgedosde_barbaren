@@ -16,11 +16,11 @@
             <Run/>
         </TextBlock>
         <Button x:ConnectionId='3' x:Name="back" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top"                    Margin="103,574,0,0" Height="56" Width="147"/>
-        <Button x:ConnectionId='4' x:Name="SendQuestion" Content="Send" HorizontalAlignment="Left" Margin="103,510,0,0" VerticalAlignment="Top"                      Height="59" Width="147"/>
+        <Button x:ConnectionId='4' x:Name="button" Content="Send" HorizontalAlignment="Left" Margin="103,510,0,0" VerticalAlignment="Top"                      Height="59" Width="147"/>
         <TextBox x:ConnectionId='5' x:Name="E_mail" HorizontalAlignment="Left" Margin="10,67,0,0" TextWrapping="Wrap" Text="e-mail" VerticalAlignment="Top" RenderTransformOrigin="0.419,0.014" Width="333"                                   Height="0"/>
-        <TextBox x:ConnectionId='6' x:Name="Opleiding" HorizontalAlignment="Left" Height="5" Margin="10,104,0,0" TextWrapping="Wrap" Text="opleiding" VerticalAlignment="Top" Width="333"/>
-        <TextBox x:ConnectionId='7' x:Name="Naam" HorizontalAlignment="Left" Height="0" Margin="10,141,0,0" TextWrapping="Wrap" Text="naam" VerticalAlignment="Top" Width="333"/>
-        <TextBox x:ConnectionId='8' x:Name="Vraag" HorizontalAlignment="Left" Height="327" Margin="10,178,0,0" TextWrapping="Wrap" Text="vraag" VerticalAlignment="Top" Width="333"/>
+        <TextBox x:ConnectionId='6' x:Name="textBox" HorizontalAlignment="Left" Height="5" Margin="10,104,0,0" TextWrapping="Wrap" Text="opleiding" VerticalAlignment="Top" Width="333"/>
+        <TextBox x:ConnectionId='7' x:Name="textBox1" HorizontalAlignment="Left" Height="0" Margin="10,141,0,0" TextWrapping="Wrap" Text="naam" VerticalAlignment="Top" Width="333"/>
+        <TextBox x:ConnectionId='8' x:Name="textBox2" HorizontalAlignment="Left" Height="327" Margin="10,178,0,0" TextWrapping="Wrap" Text="vraag" VerticalAlignment="Top" Width="333"/>
 
     </Grid>
 </Page>

@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>60eeff28-5f82-4856-ac62-bd89fbc4ba0e</PackageIdentityName>
     <PackageIdentityPublisher>CN=Ino</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\ramon\Documents\GitHub\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\ramon\Desktop\New folder\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\ramon\Documents\GitHub\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\ramon\Desktop\New folder\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>9F2815F25B13C38BC890020328C2663224A726ABD25FA8FC9E9428D0D2859710</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>60eeff28-5f82-4856-ac62-bd89fbc4ba0e_1.0.1.0_x86__kt1fp6kzymazt</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>60eeff28-5f82-4856-ac62-bd89fbc4ba0e_kt1fp6kzymazt!App</RegisteredUserModeAppID>
@@ -28,16 +28,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\ramon\Documents\GitHub\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\ramon\Desktop\New folder\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-29T11:40:54.444</Modified>
+      <Modified>2017-06-29T13:27:25.859</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\ramon\Documents\GitHub\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Jaar 1 Project 4.exe">
+    <AppxPackagedFile Include="C:\Users\ramon\Desktop\New folder\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Jaar 1 Project 4.exe">
       <PackagePath>entrypoint\Jaar 1 Project 4.exe</PackagePath>
-      <Modified>2017-06-29T11:40:53.866</Modified>
+      <Modified>2017-06-29T13:27:22.790</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ramon\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -451,67 +451,67 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T21:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ramon\Documents\GitHub\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\ramon\Desktop\New folder\Jaar 1 Project 4\Jaar 1 Project 4\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-29T11:06:44.787</Modified>
+      <Modified>2017-06-29T02:41:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ramon\Documents\GitHub\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\ramon\Desktop\New folder\Jaar 1 Project 4\Jaar 1 Project 4\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2017-06-29T11:06:44.787</Modified>
+      <Modified>2017-06-29T02:41:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ramon\Documents\GitHub\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\ramon\Desktop\New folder\Jaar 1 Project 4\Jaar 1 Project 4\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-29T11:06:44.787</Modified>
+      <Modified>2017-06-29T02:41:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ramon\Documents\GitHub\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\ramon\Desktop\New folder\Jaar 1 Project 4\Jaar 1 Project 4\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
-      <Modified>2017-06-29T11:06:44.787</Modified>
+      <Modified>2017-06-29T02:41:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ramon\Documents\GitHub\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\ramon\Desktop\New folder\Jaar 1 Project 4\Jaar 1 Project 4\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-29T11:06:44.787</Modified>
+      <Modified>2017-06-29T02:41:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ramon\Documents\GitHub\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\ramon\Desktop\New folder\Jaar 1 Project 4\Jaar 1 Project 4\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-29T11:06:44.787</Modified>
+      <Modified>2017-06-29T02:41:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ramon\Documents\GitHub\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\ramon\Desktop\New folder\Jaar 1 Project 4\Jaar 1 Project 4\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <Modified>2017-06-29T11:06:44.787</Modified>
+      <Modified>2017-06-29T02:41:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ramon\Documents\GitHub\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\ramon\Desktop\New folder\Jaar 1 Project 4\Jaar 1 Project 4\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
-      <Modified>2017-06-29T11:06:44.787</Modified>
+      <Modified>2017-06-29T02:41:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ramon\Documents\GitHub\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\custom_Assets\appIcon.scale-100.jpg">
+    <AppxPackagedFile Include="C:\Users\ramon\Desktop\New folder\Jaar 1 Project 4\Jaar 1 Project 4\custom_Assets\appIcon.scale-100.jpg">
       <PackagePath>custom_Assets\appIcon.scale-100.jpg</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-29T11:06:53.929</Modified>
+      <Modified>2017-06-29T02:41:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ramon\Documents\GitHub\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\ramon\Desktop\New folder\Jaar 1 Project 4\Jaar 1 Project 4\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2017-06-29T11:06:45.068</Modified>
+      <Modified>2017-06-29T02:41:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ramon\Documents\GitHub\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Jaar 1 Project 4.xr.xml">
+    <AppxPackagedFile Include="C:\Users\ramon\Desktop\New folder\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Jaar 1 Project 4.xr.xml">
       <PackagePath>Jaar 1 Project 4.xr.xml</PackagePath>
-      <Modified>2017-06-29T11:29:41.026</Modified>
+      <Modified>2017-06-29T13:27:22.215</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-06-29T10:39:13.192</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ramon\Documents\GitHub\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\ramon\Desktop\New folder\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-29T11:40:54.277</Modified>
+      <Modified>2017-06-29T13:27:25.457</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ramon\Documents\GitHub\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Core\Jaar 1 Project 4.exe">
+    <AppxPackagedFile Include="C:\Users\ramon\Desktop\New folder\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Core\Jaar 1 Project 4.exe">
       <PackagePath>Jaar 1 Project 4.exe</PackagePath>
-      <Modified>2017-06-29T11:40:54.439</Modified>
+      <Modified>2017-06-29T13:27:25.845</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

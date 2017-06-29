@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="Jaar_1_Project_4.ContactPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Jaar_1_Project_4"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource hrTheme}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:ConnectionId='1' x:Name="contacttitle" Margin="10,0,-28,593" TextWrapping="Wrap" Text="Contact information" VerticalAlignment="Top"  FontSize="35" Foreground="White" FontWeight="Bold" Grid.RowSpan="3" Height="47"/>
+        <Button x:ConnectionId='2' x:Name="backButton" Content="Back
+                " HorizontalAlignment="Left" Margin="113,389.889,0,0" VerticalAlignment="Top" Height="56" Width="145" Grid.Row="2"                         />
+    </Grid>
+</Page>
+
