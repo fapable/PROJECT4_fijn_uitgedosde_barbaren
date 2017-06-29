@@ -69,7 +69,7 @@ namespace Jaar_1_Project_4_Messages
         {
             var background = new Rectangle();
             background.Fill = new SolidColorBrush(Windows.UI.Colors.LightPink);
-            background.Width = this.message.getWidth() - 70;
+            background.Width = this.message.getWidth();
             background.Height = 180;
             background.Stroke = new SolidColorBrush(Windows.UI.Colors.Black);
             background.VerticalAlignment = VerticalAlignment.Top;
@@ -97,7 +97,7 @@ namespace Jaar_1_Project_4_Messages
         {
             var background = new Rectangle();
             background.Fill = new SolidColorBrush(Windows.UI.Colors.White);
-            background.Width = this.message.getWidth() - 70;
+            background.Width = this.message.getWidth();
             background.Height = 180;
             background.Stroke = new SolidColorBrush(Windows.UI.Colors.Black);
             background.VerticalAlignment = VerticalAlignment.Top;
@@ -124,7 +124,7 @@ namespace Jaar_1_Project_4_Messages
         {
             var background = new Rectangle();
             background.Fill = new SolidColorBrush(Windows.UI.Colors.DarkRed);
-            background.Width = this.message.getWidth() - 70;
+            background.Width = this.message.getWidth();
             background.Height = 180;
             background.Stroke = new SolidColorBrush(Windows.UI.Colors.Black);
             background.VerticalAlignment = VerticalAlignment.Top;
@@ -145,31 +145,26 @@ namespace Jaar_1_Project_4_Messages
         int width;
         int height;
         TextBlock current_message;
-        public EasyLabel(int x, int y, int width, string text)
+        public EasyLabel(int x, int y, int width, int height, string text)
         {
             this.x = x + width / 2 + 50;
             this.y = y;
             this.text = text;
             this.width = width;
+            this.height = height;
 
             current_message = new TextBlock();
             current_message.TextWrapping = TextWrapping.Wrap;
             current_message.Text = this.text;
             current_message.Width = this.width;
+            current_message.Height = this.height;
             current_message.RenderTransform = new TranslateTransform { X = this.x, Y = this.y };
         }
         public dynamic Draw() //returns the created textblock for the main classes (question, answer and notification) to use
         {
-            // Get variables
-            current_message = new TextBlock();
-            current_message.TextWrapping = TextWrapping.Wrap;
-            current_message.Text = this.text;
-            current_message.Text = this.getHeight().ToString();
-            current_message.Width = this.width;
-            current_message.RenderTransform = new TranslateTransform { X = this.x, Y = this.y };
             return current_message;
         }
         public int getWidth() => this.width; //returns width of the textblock
-        public double getHeight() => this.current_message.ActualHeight; //returns height of the textblock
+        public double getHeight() => this.height; //returns height of the textblock
     }
 }

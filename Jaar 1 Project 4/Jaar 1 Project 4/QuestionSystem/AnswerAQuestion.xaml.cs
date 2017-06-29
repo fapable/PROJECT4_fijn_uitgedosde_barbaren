@@ -34,7 +34,7 @@ namespace Jaar_1_Project_4 {
 
         private void send_message(object sender, RoutedEventArgs e)
         {
-            Jaar_1_Project_4_Messages.Message question = Jaar_1_Project_4_Messages.MessageFactory.Create(Jaar_1_Project_4_Messages.MessageType.question, new Jaar_1_Project_4_Messages.EasyLabel(-(getWidth() / 2) + 5,50, getWidth() - 20 ,"vandaaggaanwijeenheellulverhaalschrijvenzonderspatiets om iets uit te testen en opeen ga ik spatioes gebruiken wtf haha oke ben ik al ver genoeg met dit kut verhaal vast wel hihi"), askquestions);
+            Jaar_1_Project_4_Messages.Message question = Jaar_1_Project_4_Messages.MessageFactory.Create(Jaar_1_Project_4_Messages.MessageType.question, new Jaar_1_Project_4_Messages.EasyLabel(-(getWidth() / 2) + 5,50, getWidth() - 200, getHeight() -200,"vandaaggaanwijeenheellulverhaalschrijvenzonderspatiets om iets uit te testen en opeen ga ik spatioes gebruiken wtf haha oke ben ik al ver genoeg met dit kut verhaal vast wel hihi"), askquestions);
             question.Draw();
         }
 
@@ -50,6 +50,16 @@ namespace Jaar_1_Project_4 {
             {
                 double Width = pnlClient.ActualWidth;
                 return (int)Width;
+            }
+            return 0;
+        }
+        private int getHeight()
+        {
+            FrameworkElement pnlClient = this.Content as FrameworkElement;
+            if (pnlClient != null)
+            {
+                double height = pnlClient.ActualHeight;
+                return (int)Height;
             }
             return 0;
         }
