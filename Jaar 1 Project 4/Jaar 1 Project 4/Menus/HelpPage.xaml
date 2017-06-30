@@ -8,8 +8,12 @@
     mc:Ignorable="d">
 
     <Grid Background="{StaticResource hrTheme}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
         <TextBlock x:Name="contacttitle" Margin="10,0" TextWrapping="Wrap" Text="HELP    " VerticalAlignment="Top"  FontSize="35" Foreground="White" FontWeight="Bold" Height="47" TextAlignment="Center"/>
-        <TextBlock HorizontalAlignment="Center" Height="462" Margin="10,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340">
+        <TextBlock HorizontalAlignment="Center" Height="462" Margin="15,52,5,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="340" Grid.RowSpan="2">
             <Run Text="This is the app for the open day for the Hogeschool Rotterdam. In this application you will be able to find a map of the school and the different events that will take place at the open day. "/>
             <LineBreak/>
             <Run Text="You can also find a contact page with various ways to contact the school."/>
@@ -26,7 +30,7 @@
             <LineBreak/>
             <Run Text="If you find a bug, please report it to me at &quot;0927190@hr.nl&quot;."/>
         </TextBlock>
-        <Button x:Name="HelpPageBackButton" Content="Back" HorizontalAlignment="Center" Margin="62,519,54,59" VerticalAlignment="Center" Click="HelpPageBackButton_click" Width="244" Height="62" FontSize="15" />
+        <Button x:Name="HelpPageBackButton" Content="Back" HorizontalAlignment="Center" Margin="57,403.833,59,-72" VerticalAlignment="Center" Click="HelpPageBackButton_click" Width="244" Height="62" FontSize="15" Grid.Row="1" />
 
     </Grid>
 </Page>

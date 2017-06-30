@@ -97,6 +97,7 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstracttest.cs" />
     <Compile Include="Activities\Activities.xaml.cs">
       <DependentUpon>Activities.xaml</DependentUpon>
     </Compile>
@@ -120,6 +121,9 @@
     </Compile>
     <Compile Include="QuestionSystem\QandAPage.xaml.cs">
       <DependentUpon>QandAPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Activities\SecondFloorPopup.xaml.cs">
+      <DependentUpon>SecondFloorPopup.xaml</DependentUpon>
     </Compile>
     <Compile Include="Wijnhaven107\Education.xaml.cs">
       <DependentUpon>Education.xaml</DependentUpon>
@@ -235,6 +239,10 @@
     <Page Include="QuestionSystem\QandAPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Activities\SecondFloorPopup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Wijnhaven107\Education.xaml">
       <SubType>Designer</SubType>

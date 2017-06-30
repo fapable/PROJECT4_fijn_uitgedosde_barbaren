@@ -15,8 +15,8 @@
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Click="back_Click" Margin="103,574,0,0" Height="56" Width="147"/>
-        <Button x:Name="SendQuestion" Content="Send" HorizontalAlignment="Left" Margin="103,510,0,0" VerticalAlignment="Top" Click="send_message" Height="59" Width="147"/>
+        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Click="back_Click" Margin="44,513,0,0" Height="56" Width="147"/>
+        <Button x:Name="SendQuestion" Content="Send" HorizontalAlignment="Left" Margin="196,510,0,0" VerticalAlignment="Top" Click="send_message" Height="59" Width="147"/>
         <TextBox x:Name="E_mail" HorizontalAlignment="Left" Margin="10,67,0,0" TextWrapping="Wrap" Text="e-mail" VerticalAlignment="Top" RenderTransformOrigin="0.419,0.014" Width="333" TextChanged="textBox_TextChanged" Height="0"/>
         <TextBox x:Name="Opleiding" HorizontalAlignment="Left" Height="5" Margin="10,104,0,0" TextWrapping="Wrap" Text="opleiding" VerticalAlignment="Top" Width="333"/>
         <TextBox x:Name="Naam" HorizontalAlignment="Left" Height="0" Margin="10,141,0,0" TextWrapping="Wrap" Text="naam" VerticalAlignment="Top" Width="333"/>

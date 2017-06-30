@@ -425,7 +425,6 @@ D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\b
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\ARM\Debug\resources.pri
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\ARM\Debug\AppxManifest.xml
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\ARM\Debug\Core\AppxManifest.xml
-D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\ARM\Debug\Core\ForBundle\AppxManifest.xml
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\ARM\Debug\Core\Jaar 1 Project 4.exe
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\ARM\Debug\Jaar 1 Project 4.build.appxrecipe
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\ARM\Debug\Microsoft.CSharp.dll
@@ -934,3 +933,13 @@ B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Pr
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\ARM\Debug\qualifiers.txt.intermediate
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\ARM\Debug\MultipleQualifiersPerDimensionFound.txt
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\ARM\Debug\ProjectArchitectures.txt
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\ARM\Debug\Menus\HelpPage.xbf
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\ARM\Debug\Menus\HelpPage.g.i.cs
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\ARM\Debug\Menus\HelpPage.g.cs
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\ARM\Debug\Menus\HelpPage.xaml
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\ARM\Debug\Menus\HelpPage.xbf
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\ARM\Debug\Activities\SecondFloorPopUp.g.i.cs
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\ARM\Debug\Activities\SecondFloorPopUp.g.cs
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\ARM\Debug\Activities\SecondFloorPopUp.xaml
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\ARM\Debug\Activities\SecondFloorPopUp.xbf
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\ARM\Debug\Activities\SecondFloorPopUp.xbf

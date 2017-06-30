@@ -14,6 +14,10 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.Graphics.Display; //For the flip
 using System.Diagnostics;
+using System.Threading.Tasks;
+using System.Net.Http;
+using System.Text;
+
 
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
@@ -23,9 +27,10 @@ namespace Jaar_1_Project_4 {
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class SecondFloor : Page {
+
         public SecondFloor() {
             this.InitializeComponent();
-             DisplayInformation.AutoRotationPreferences = DisplayOrientations.Landscape; //Flips page
+            DisplayInformation.AutoRotationPreferences = DisplayOrientations.Landscape; //Flips page
         }
 
         private void secondFlourBackButton_Click(object sender, RoutedEventArgs e) {
@@ -48,7 +53,9 @@ namespace Jaar_1_Project_4 {
                     emptyButtonName += letter.ToString();
                 }
             }
-            Debug.WriteLine("Clicked on classroom... what is your name? My name is: " + emptyButtonName);
-        }
+            Debug.WriteLine("Clicked on classroom... what is your name? My name is: " + emptyButtonName);         
+            StaticButtonName.ButtonName = emptyButtonName;
+            this.Frame.Navigate(typeof(SecondFloorPopup)); //Goes to another page
+        } 
     }
 }

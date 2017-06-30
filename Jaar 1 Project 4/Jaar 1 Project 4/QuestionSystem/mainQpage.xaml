@@ -8,14 +8,14 @@
     mc:Ignorable="d">
 
     <Grid x:Name="QuestionMenu" Background="{ThemeResource hrTheme}">
-        <TextBlock x:Name="title" HorizontalAlignment="Left" Margin="257,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="35" Foreground="#FFFFF8F8">
+        <TextBlock x:Name="title" HorizontalAlignment="Left" Margin="113,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="35" Foreground="#FFFFF8F8">
             <Run Text="Q and A"/>
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <Button x:Name="AskAQuestionButton" Content="Ask a question" HorizontalAlignment="Left" Margin="257,109,0,0" VerticalAlignment="Top" Width="126" Click="AskAQuestion"/>
-        <Button x:Name="viewQuestionsButton" Content="View questions" HorizontalAlignment="Left" Margin="257,146,0,0" VerticalAlignment="Top" Width="126" Click="ToQandAButton"/>
-        <Button x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="257,183,0,0" VerticalAlignment="Top" Width="126" Click="backButtonClick"/>
+        <Button x:Name="AskAQuestionButton" Content="Ask a question" HorizontalAlignment="Left" Margin="113,178,0,0" VerticalAlignment="Top" Width="126" Click="AskAQuestion"/>
+        <Button x:Name="viewQuestionsButton" Content="View questions" HorizontalAlignment="Left" Margin="113,251,0,0" VerticalAlignment="Top" Width="126" Click="ToQandAButton"/>
+        <Button x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="113,323,0,0" VerticalAlignment="Top" Width="126" Click="backButtonClick"/>
 
     </Grid>
 </Page>

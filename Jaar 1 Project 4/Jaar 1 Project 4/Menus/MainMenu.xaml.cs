@@ -21,7 +21,7 @@ namespace Jaar_1_Project_4 {
     /// </summary>
     public sealed partial class MainMenu : Page {
         public MainMenu() {
-            this.InitializeComponent();
+            this.InitializeComponent();          
         }
 
         private void button2_Click(object sender, RoutedEventArgs e) {

@@ -80,6 +80,7 @@ namespace Jaar_1_Project_4_Messages
 
             current_page.Children.Add(background);
             current_page.Children.Add(this.message.Draw());
+            
             //first we create the background we want, then we draw that background and then we draw the text overtop to create a message with a colore background
         }
     }
@@ -139,8 +140,8 @@ namespace Jaar_1_Project_4_Messages
     }
     public class EasyLabel //creates a textblock that can be drawn to the screen
     {
-        int x;
-        int y;
+        public int x;
+        public int y;
         string text;
         int width;
         int height;

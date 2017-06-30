@@ -118,6 +118,7 @@
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Jaar_1_Project_4.QuestionSystem.QandAPage" />
+    <RootType FullName="Jaar_1_Project_4.SecondFloorPopup" />
     <RootType FullName="Jaar_1_Project_4.Education" />
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />

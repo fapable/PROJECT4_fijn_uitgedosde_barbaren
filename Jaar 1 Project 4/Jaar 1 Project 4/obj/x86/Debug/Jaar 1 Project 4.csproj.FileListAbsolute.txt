@@ -1450,3 +1450,13 @@ C:\Users\ramon\Documents\GitHub\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project
 C:\Users\ramon\Documents\GitHub\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\Menus\HelpPage.xbf
 C:\Users\ramon\Documents\GitHub\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Menus\HelpPage.xbf
 >>>>>>> origin/master
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Menus\HelpPage.xbf
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\Menus\HelpPage.g.i.cs
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\Menus\HelpPage.g.cs
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\Menus\HelpPage.xaml
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\Menus\HelpPage.xbf
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x86\Debug\Activities\SecondFloorPopup.xbf
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\Activities\SecondFloorPopup.g.i.cs
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\Activities\SecondFloorPopup.g.cs
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\Activities\SecondFloorPopup.xaml
+D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x86\Debug\Activities\SecondFloorPopup.xbf
