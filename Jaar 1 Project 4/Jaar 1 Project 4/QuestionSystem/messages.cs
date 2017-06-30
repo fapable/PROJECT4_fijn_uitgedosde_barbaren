@@ -84,7 +84,7 @@ namespace Jaar_1_Project_4_Messages
             var background = new Rectangle();
             background.Fill = new SolidColorBrush(Windows.UI.Colors.LightPink);
             background.Width = this.message.getWidth() + 20;
-            background.Height = 180;
+            background.Height = 100;
             background.Stroke = new SolidColorBrush(Windows.UI.Colors.Black);
             background.VerticalAlignment = VerticalAlignment.Top;
             background.Margin = new Thickness(1, this.some_margin, 1, 1);
@@ -121,7 +121,7 @@ namespace Jaar_1_Project_4_Messages
             var background = new Rectangle();
             background.Fill = new SolidColorBrush(Windows.UI.Colors.White);
             background.Width = this.message.getWidth();
-            background.Height = 180;
+            background.Height = 100;
             background.Stroke = new SolidColorBrush(Windows.UI.Colors.Black);
             background.VerticalAlignment = VerticalAlignment.Top;
             background.Margin = new Thickness(1, this.some_margin, 1, 1);
