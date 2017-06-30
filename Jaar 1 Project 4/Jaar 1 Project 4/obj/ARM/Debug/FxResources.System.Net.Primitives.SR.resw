@@ -1948,7 +1948,7 @@
     <value>Authentication failed.</value>
   </data>
   <data name="net_log_cache_multiple_complex_range_not_implemented" xml:space="preserve">
-    <value>Multiple/complexe ranges are not implemented.</value>
+    <value>Multiple/complex ranges are not implemented.</value>
   </data>
   <data name="net_cache_not_configured" xml:space="preserve">
     <value>No cache protocol is available for this request.</value>

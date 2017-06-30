@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\Jaar 1 Project 4.csproj;x86
+=======
+C:\Users\Ino\Documents\GitHub\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\Jaar 1 Project 4.csproj;x86
+>>>>>>> origin/master
