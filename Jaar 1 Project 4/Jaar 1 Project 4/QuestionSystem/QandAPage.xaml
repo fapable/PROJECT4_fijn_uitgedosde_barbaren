@@ -8,6 +8,7 @@
     mc:Ignorable="d">
     <ScrollViewer VerticalScrollMode="Auto" Height="Auto" VerticalScrollBarVisibility="Auto">
         <Grid Background="{ThemeResource hrTheme}">
+            <Button x:Name="BackButton" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" Click="goBack"/>
         </Grid>
     </ScrollViewer>
 </Page>

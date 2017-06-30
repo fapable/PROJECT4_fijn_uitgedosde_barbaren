@@ -26,5 +26,10 @@ namespace Jaar_1_Project_4.QuestionSystem
         {
             this.InitializeComponent();
         }
+
+        private void goBack(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(mainQpage));
+        }
     }
 }

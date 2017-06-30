@@ -69,7 +69,7 @@ namespace Jaar_1_Project_4_Messages
         {
             var background = new Rectangle();
             background.Fill = new SolidColorBrush(Windows.UI.Colors.LightPink);
-            background.Width = this.message.getWidth();
+            background.Width = this.message.getWidth() + 20;
             background.Height = 180;
             background.Stroke = new SolidColorBrush(Windows.UI.Colors.Black);
             background.VerticalAlignment = VerticalAlignment.Top;
