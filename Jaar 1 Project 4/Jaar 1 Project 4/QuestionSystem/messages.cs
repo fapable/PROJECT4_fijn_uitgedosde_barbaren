@@ -19,25 +19,28 @@ namespace Jaar_1_Project_4_Messages
     public interface Message
     {
         void Draw();
+        EasyLabel content { get; }
+        int content_y_value { set; }
+        int margin { set; }
     }
     public enum MessageType { question, answer, notification } // this enum makes sure we can only create 3 kinds of in app messages 
     public abstract class MessageFactory
     {
-        public static Message Create(MessageType type, EasyLabel text, Grid current_page) //current page is the grid the message has to be drawn to
+        public static Message Create(MessageType type, EasyLabel text, Grid current_page, int margin) //current page is the grid the message has to be drawn to
         {
             switch (type) //checks the type of message you want and then returns the apropriate object
             {
                 case MessageType.question:
                     {
-                        return new Question(text, current_page);
+                        return new Question(text, current_page, margin);
                     }
                 case MessageType.answer:
                     {
-                        return new Answer(text, current_page);
+                        return new Answer(text, current_page, margin);
                     }
                 case MessageType.notification:
                     {
-                        return new Notification(text, current_page);
+                        return new Notification(text, current_page, margin);
                     }
                 default:
                     {
@@ -54,17 +57,28 @@ namespace Jaar_1_Project_4_Messages
             this.message = message;
         }
         public abstract void Draw();
+        public abstract EasyLabel content { get;}
+        public abstract int content_y_value { set; }
+        public abstract int margin { set; }
     }
     public class Question : MessageDecorator //if MessageType == question create a question message object(consisting of a colored background and text
     {
         bool IsAnswer;
         dynamic current_page;
-        public Question(EasyLabel message, Grid current_page) : base(message)
+        int some_margin;
+        public Question(EasyLabel message, Grid current_page, int margin) : base(message)
         {
             this.IsAnswer = false;
             this.message = message;
             this.current_page = current_page;
+            this.some_margin = margin;
         }
+
+        public override EasyLabel content => this.message;
+
+        public override int content_y_value { set => this.message.y = (int)value; }
+        public override int margin { set => this.some_margin = value; }
+
         public override void Draw()
         {
             var background = new Rectangle();
@@ -73,10 +87,10 @@ namespace Jaar_1_Project_4_Messages
             background.Height = 180;
             background.Stroke = new SolidColorBrush(Windows.UI.Colors.Black);
             background.VerticalAlignment = VerticalAlignment.Top;
-            background.Margin = new Thickness(30);
+            background.Margin = new Thickness(1, this.some_margin, 1, 1);
             background.StrokeThickness = 2;
-            background.RadiusX = 50;
-            background.RadiusY = 10;
+            background.RadiusX = this.message.x;
+            background.RadiusY = this.message.y;
 
             current_page.Children.Add(background);
             current_page.Children.Add(this.message.Draw());
@@ -87,12 +101,21 @@ namespace Jaar_1_Project_4_Messages
     {
         bool IsAnswer;
         dynamic current_page;
-        public Answer(EasyLabel message, Grid current_page) : base(message)
+        int some_margin;
+
+        public Answer(EasyLabel message, Grid current_page, int margin) : base(message)
         {
             this.IsAnswer = true;
             this.message = message;
             this.current_page = current_page;
+            this.some_margin = margin;
         }
+
+        public override EasyLabel content => this.message;
+
+        public override int content_y_value { set => this.message.y = (int)value; }
+        public override int margin { set => this.some_margin = value; }
+
         public override void Draw()
         {
             var background = new Rectangle();
@@ -101,7 +124,7 @@ namespace Jaar_1_Project_4_Messages
             background.Height = 180;
             background.Stroke = new SolidColorBrush(Windows.UI.Colors.Black);
             background.VerticalAlignment = VerticalAlignment.Top;
-            background.Margin = new Thickness(30);
+            background.Margin = new Thickness(1, this.some_margin, 1, 1);
             background.StrokeThickness = 2;
             background.RadiusX = 50;
             background.RadiusY = 10;
@@ -114,12 +137,21 @@ namespace Jaar_1_Project_4_Messages
     {
         bool IsAnswer;
         dynamic current_page;
-        public Notification(EasyLabel message, Grid current_page) : base(message)
+        int some_margin;
+
+        public Notification(EasyLabel message, Grid current_page, int margin) : base(message)
         {
             this.current_page = current_page;
             this.IsAnswer = false;
             this.message = message;
+            this.some_margin = margin;
         }
+
+        public override EasyLabel content => this.message;
+
+        public override int content_y_value { set => this.message.y = (int)value; }
+        public override int margin { set => this.some_margin = value; }
+
         public override void Draw()
         {
             var background = new Rectangle();
@@ -128,7 +160,7 @@ namespace Jaar_1_Project_4_Messages
             background.Height = 180;
             background.Stroke = new SolidColorBrush(Windows.UI.Colors.Black);
             background.VerticalAlignment = VerticalAlignment.Top;
-            background.Margin = new Thickness(30);
+            background.Margin = new Thickness(1, this.some_margin, 1, 1);
             background.StrokeThickness = 2;
             background.RadiusX = 50;
             background.RadiusY = 10;
@@ -139,8 +171,8 @@ namespace Jaar_1_Project_4_Messages
     }
     public class EasyLabel //creates a textblock that can be drawn to the screen
     {
-        int x;
-        int y;
+        public int x;
+        public int y;
         string text;
         int width;
         int height;
