@@ -13,32 +13,36 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Jaar_1_Project_4 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class ThirdFloorPopup : Page {
         public ThirdFloorPopup() {
             this.InitializeComponent();
             this.MakeQueriesAndTextBlocks(); //Creates queries and textblocks
         }
+        //As soon as the Secondfloor pop up page is loaded, this method gets called
+        //Queries get created an the textblocks get created
         private void Button_Click(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(ThirthFloor));
         }
-        //As soon as the Secondfloor pop up page is loaded, this method gets called
-        //Queries get created an the textblocks get created
+        /* These methods below create a textblock for each column from the DB
+        As arguments is given the grid where it's drawn on, and the text (the query result)
+        but before an SQL query result is drawn on the screen, it first gets converted.
+        Why? Because the result has brackets and other things that are not nice to read
+        They are removed in that method and the method then returns a: "prettier" querry result to read,
+        and as final argument is given in which row the textblock needs to drawn
+        it is comparable to Excel where you have columns and rows
+        */
         public void MakeQueriesAndTextBlocks() {
             StaticActivityQueryMaker.MakeQueries(StaticActivityQueryMaker.ButtonName);
-            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.OpleidingNaam, 1);
-            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.ClassroomID, 2);
-            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.EventName, 3);
-            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.Description, 4);
-            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.Duration, 5);
-            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.StartTime, 6);
-            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.EndTime, 7);
-            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.ClassroomID, 8);
+            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.OpleidingNaam), 1);
+            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.ClassroomID), 2);
+            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.EventName), 3);
+            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.Description), 4);
+            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.Duration), 5);
+            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.StartTime), 6);
+            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.EndTime), 7);
+            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.ClassroomID), 8);
         }
     }
 }

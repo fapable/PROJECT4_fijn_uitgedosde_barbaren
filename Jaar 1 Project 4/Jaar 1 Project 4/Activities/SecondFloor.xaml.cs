@@ -19,9 +19,6 @@ using System.Net.Http;
 using System.Text;
 
 
-
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
-
 namespace Jaar_1_Project_4 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -34,15 +31,16 @@ namespace Jaar_1_Project_4 {
         private void secondFlourBackButton_Click(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(Activities));
         }
-
+        //When an event classroom gets clicked, the clicked on event classroom comes into this method
+        //Then it it set to the StaticActivityQueryMaker class to create queries based on it
         private void classroomClick(object sender, RoutedEventArgs e) {
             Button clickedOnButton = (Button) sender;
-            string emptyButtonName = ""; //to store the buttonname
-                /*
-                The foreach loop is here because you can't have buttonnames with dots
-                Since the database tables need to match the buttonname, the foreach loop is made to change
-                the buttoname with lower: _ , to buttoname with dots.          
-            */
+            string emptyButtonName = ""; //to store the converted buttonname
+            /*
+            The foreach loop is here because you can't have object names with dots in UWP
+            Since the database tables need to match the buttonname, the foreach loop is made to change (convert)
+            the buttoname to match the DB tables
+             */
             foreach (var letter in clickedOnButton.Name.ToString()) {            
                 if (letter.ToString() == "_") {
                     emptyButtonName += ".";

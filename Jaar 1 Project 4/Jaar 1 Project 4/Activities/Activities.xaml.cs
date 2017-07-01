@@ -12,35 +12,25 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using Windows.Graphics.Display; //For the flip
-
-
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
+using Windows.Graphics.Display; //For the mobile flip
 
 namespace Jaar_1_Project_4 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class Activities : Page {
         public Activities() {
             this.InitializeComponent();
-            DisplayInformation.AutoRotationPreferences = DisplayOrientations.Portrait; //flips screen
+            DisplayInformation.AutoRotationPreferences = DisplayOrientations.Portrait; //flips screen (for mobile only)
         }
-
         private void activitiesBackButton_Click(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(OpenDagInformatie));
+            this.Frame.Navigate(typeof(OpenDagInformatie)); //Changes page
         }
-
         private void secondFloorButton_Click(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(SecondFloor));
         }
         private void thirdFloorButton_Click(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(ThirthFloor));
         }
-
         private void fourthFloorButton_Click(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(FourthFloor));
         }
-
     }
 }

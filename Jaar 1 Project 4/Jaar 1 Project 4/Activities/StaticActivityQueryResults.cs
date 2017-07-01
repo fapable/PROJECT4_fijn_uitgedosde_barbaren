@@ -11,14 +11,14 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Text;
 
+//Class that has static methods so that it can be reached from the 3 activity pop up pages
 
-
-
-//Saves the buttonname and the result of the query's
-//Then these attributes get approached to draw it to the screen (text)
-//This method is used for the activity section of the application
 namespace Jaar_1_Project_4 {
     public abstract class StaticActivityQueryMaker : Page {
+        /* When a query is made, the results of the query's is set to these attributes below
+         then the attributes (query results) can be reached by the 3 activity pop up pages
+         to display the query results on the screen
+        */
         private static string buttonName;
         private static string description;
         private static string eventName;
@@ -36,10 +36,12 @@ namespace Jaar_1_Project_4 {
         public static string StartTime { get => startTime; set => startTime = value; }
         public static string EndTime { get => endTime; set => endTime = value; }
 
-        //This method is to create queries
+        //This method is to create the queries
+        //As paramter is the clicked on event classroom
         public static void MakeQueries(string classroomId) {
-            var syncClient = new HttpClient(); //Webclient does not work for windows universal platform
+            var syncClient = new HttpClient(); //To make connection with the API
 
+            //The queries
             string description = "http://www.wschaijk.nl/api/api.php/SELECT-description-FROM-events-WHERE-classroom_ID-=-" + "'" + classroomId + "';";
             string eventName = "http://www.wschaijk.nl/api/api.php/SELECT-event_name-FROM-events-WHERE-classroom_ID-=-" + "'" + classroomId + "';";
             string classRoomID = "http://www.wschaijk.nl/api/api.php/SELECT-classroom_id-FROM-events-WHERE-classroom_ID-=-" + "'" + classroomId + "';";
@@ -47,9 +49,9 @@ namespace Jaar_1_Project_4 {
             string duration = "http://www.wschaijk.nl/api/api.php/SELECT-duration-FROM-events-WHERE-classroom_ID-=-" + "'" + classroomId + "';";
             string startTime = "http://www.wschaijk.nl/api/api.php/SELECT-start_time-FROM-events-WHERE-classroom_ID-=-" + "'" + classroomId + "';";
             string endTime = "http://www.wschaijk.nl/api/api.php/SELECT-end_time-FROM-events-WHERE-classroom_ID-=-" + "'" + classroomId + "';";
-
-            var descriptionCall = syncClient.GetStringAsync(description);
-            var descriptionResult = descriptionCall.Result;
+       
+            var descriptionCall = syncClient.GetStringAsync(description); //Query call
+            var descriptionResult = descriptionCall.Result; //Query result is sved
 
             var eventCall = syncClient.GetStringAsync(eventName);
             var eventResult = eventCall.Result;         
@@ -69,7 +71,7 @@ namespace Jaar_1_Project_4 {
             var endTimeCall = syncClient.GetStringAsync(endTime);
             var endTimeResult = endTimeCall.Result;
 
-            //results get set to the static set methods this is so they can be reached everywhere in the program
+            //results set to the static set methods this is so they can by the 3 activity pop up pages
             StaticActivityQueryMaker.Description = descriptionResult;
             StaticActivityQueryMaker.EventName = eventResult;
             StaticActivityQueryMaker.ClassroomID = classroomIDResult;
@@ -78,7 +80,10 @@ namespace Jaar_1_Project_4 {
             StaticActivityQueryMaker.StartTime = startTimeResult;
             StaticActivityQueryMaker.EndTime = endTimeResult;
         }
-        //To create the text (query results) that will appear on the screen
+        /* To create the text (query results) that will appear on the screen
+        As paramaters is given the grid (page) where it will be drawn on,
+        the result of the query, and in which row the textblock will apppear
+        */
         public static void CreateTextBlock(dynamic gridPage, string queryResult, int gridRow) {
             TextBlock textblock = new TextBlock();
             textblock.Text = queryResult;
@@ -89,8 +94,29 @@ namespace Jaar_1_Project_4 {
             textblock.FontSize = 20;
             textblock.Foreground = new SolidColorBrush(Windows.UI.Colors.Black);
             textblock.FontWeight = FontWeights.Bold;
-            gridPage.Children.Add(textblock);
-        } 
+            gridPage.Children.Add(textblock); //Adds textblock to the given page
+        }
+        /* Converts the query result from the method: MakeQueries, and makes the text more human readable.
+         the query result have brackets and other things in them, but that is not so nice on the screen
+         so that's why they are converted with this method to a more readable text */
+        public static string ConvertRawQueryResultToNormalText(string rawQueryText) {
+            string queryTextConverted = "";
+            foreach (char character in rawQueryText) {
+                if (character.ToString() == "{" || character.ToString() == "}" ) {
+                    queryTextConverted += "";
+                }
+                else if(character.ToString() == "\"") {
+                    queryTextConverted += " ";
+                }
+                else if(character.ToString() == "_") {
+                    queryTextConverted += " ";
+                }
+                else {
+                    queryTextConverted += character.ToString();
+                }           
+            }
+            return (queryTextConverted);
+        }
        
     }
 }

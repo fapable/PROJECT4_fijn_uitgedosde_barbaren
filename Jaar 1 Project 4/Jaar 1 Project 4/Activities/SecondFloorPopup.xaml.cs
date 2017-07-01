@@ -17,9 +17,7 @@ using System.Net.Http;
 using System.Text;
 using System.Diagnostics;
 
-
 namespace Jaar_1_Project_4 {
-
     public sealed partial class SecondFloorPopup : Page {
         public SecondFloorPopup() {
             this.InitializeComponent();
@@ -32,15 +30,25 @@ namespace Jaar_1_Project_4 {
         //As soon as the Secondfloor pop up page is loaded, this method gets called
         //Queries get created an the textblocks get created
         public void MakeQueriesAndTextBlocks() {
+            //Queries are made, as argument is given the clicked on buttoname (the event classroom)
             StaticActivityQueryMaker.MakeQueries(StaticActivityQueryMaker.ButtonName);
-            StaticActivityQueryMaker.CreateTextBlock(secondFloorPopupGrid, StaticActivityQueryMaker.OpleidingNaam, 1);
-            StaticActivityQueryMaker.CreateTextBlock(secondFloorPopupGrid, StaticActivityQueryMaker.ClassroomID, 2);
-            StaticActivityQueryMaker.CreateTextBlock(secondFloorPopupGrid, StaticActivityQueryMaker.EventName, 3);
-            StaticActivityQueryMaker.CreateTextBlock(secondFloorPopupGrid, StaticActivityQueryMaker.Description, 4);
-            StaticActivityQueryMaker.CreateTextBlock(secondFloorPopupGrid, StaticActivityQueryMaker.Duration, 5);
-            StaticActivityQueryMaker.CreateTextBlock(secondFloorPopupGrid, StaticActivityQueryMaker.StartTime, 6);
-            StaticActivityQueryMaker.CreateTextBlock(secondFloorPopupGrid, StaticActivityQueryMaker.EndTime, 7);
-            StaticActivityQueryMaker.CreateTextBlock(secondFloorPopupGrid, StaticActivityQueryMaker.ClassroomID, 8);
+
+            /* These methods below create a textblock for each column from the DB
+            As arguments is given the grid where it's drawn on, and the text (the query result)
+            but before an SQL query result is drawn on the screen, it first gets converted.
+            Why? Because the result has brackets and other things that are not nice to read
+            They are removed in that method and the method then returns a: "prettier" querry result to read,
+            and as final argument is given in which row the textblock needs to drawn
+            it is comparable to Excel where you have columns and rows
+            */
+            StaticActivityQueryMaker.CreateTextBlock(secondFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.OpleidingNaam), 1);
+            StaticActivityQueryMaker.CreateTextBlock(secondFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.ClassroomID), 2);
+            StaticActivityQueryMaker.CreateTextBlock(secondFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.EventName), 3);
+            StaticActivityQueryMaker.CreateTextBlock(secondFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.Description), 4);
+            StaticActivityQueryMaker.CreateTextBlock(secondFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.Duration), 5);
+            StaticActivityQueryMaker.CreateTextBlock(secondFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.StartTime), 6);
+            StaticActivityQueryMaker.CreateTextBlock(secondFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.EndTime), 7);
+            StaticActivityQueryMaker.CreateTextBlock(secondFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.ClassroomID), 8);
         }
     }
 }
