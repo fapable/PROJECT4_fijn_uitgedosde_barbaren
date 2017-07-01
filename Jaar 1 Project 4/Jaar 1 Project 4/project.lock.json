@@ -24343,18 +24343,18 @@
     "UAP,Version=v10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\sppes\\.nuget\\packages\\": {}
+    "C:\\Users\\james\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "D:\\Project\\PROJECT4_fijn_uitgedosde_barbaren\\Jaar 1 Project 4\\Jaar 1 Project 4\\Jaar 1 Project 4.csproj",
+      "projectUniqueName": "B:\\School\\Developing\\Github projects\\PROJECT4_fijn_uitgedosde_barbaren\\Jaar 1 Project 4\\Jaar 1 Project 4\\Jaar 1 Project 4.csproj",
       "projectName": "Jaar 1 Project 4",
-      "projectPath": "D:\\Project\\PROJECT4_fijn_uitgedosde_barbaren\\Jaar 1 Project 4\\Jaar 1 Project 4\\Jaar 1 Project 4.csproj",
-      "projectJsonPath": "D:\\Project\\PROJECT4_fijn_uitgedosde_barbaren\\Jaar 1 Project 4\\Jaar 1 Project 4\\project.json",
+      "projectPath": "B:\\School\\Developing\\Github projects\\PROJECT4_fijn_uitgedosde_barbaren\\Jaar 1 Project 4\\Jaar 1 Project 4\\Jaar 1 Project 4.csproj",
+      "projectJsonPath": "B:\\School\\Developing\\Github projects\\PROJECT4_fijn_uitgedosde_barbaren\\Jaar 1 Project 4\\Jaar 1 Project 4\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {
-      "Microsoft.NETCore.UniversalWindowsPlatform": "[5.3.3, )"
+      "Microsoft.NETCore.UniversalWindowsPlatform": "5.3.3"
     },
     "frameworks": {
       "uap10.0": {}

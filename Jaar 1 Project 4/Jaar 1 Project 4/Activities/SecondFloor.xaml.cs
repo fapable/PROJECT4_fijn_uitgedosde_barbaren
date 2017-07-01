@@ -27,12 +27,10 @@ namespace Jaar_1_Project_4 {
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class SecondFloor : Page {
-
         public SecondFloor() {
             this.InitializeComponent();
             DisplayInformation.AutoRotationPreferences = DisplayOrientations.Landscape; //Flips page
         }
-
         private void secondFlourBackButton_Click(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(Activities));
         }
@@ -40,12 +38,12 @@ namespace Jaar_1_Project_4 {
         private void classroomClick(object sender, RoutedEventArgs e) {
             Button clickedOnButton = (Button) sender;
             string emptyButtonName = ""; //to store the buttonname
-            /*
-            The foreach loop is here because you can't have buttonnames with dots
-            Since the database tables need to match the buttonname, the foreach loop is made to change
-            the buttoname          
-           */
-            foreach (var letter in clickedOnButton.Name.ToString()) {
+                /*
+                The foreach loop is here because you can't have buttonnames with dots
+                Since the database tables need to match the buttonname, the foreach loop is made to change
+                the buttoname with lower: _ , to buttoname with dots.          
+            */
+            foreach (var letter in clickedOnButton.Name.ToString()) {            
                 if (letter.ToString() == "_") {
                     emptyButtonName += ".";
                 }
@@ -53,9 +51,8 @@ namespace Jaar_1_Project_4 {
                     emptyButtonName += letter.ToString();
                 }
             }
-            Debug.WriteLine("Clicked on classroom... what is your name? My name is: " + emptyButtonName);         
-            StaticButtonName.ButtonName = emptyButtonName;
-            this.Frame.Navigate(typeof(SecondFloorPopup)); //Goes to another page
-        } 
+            StaticActivityQueryMaker.ButtonName = emptyButtonName; //Buttoname gets SET so it can reached within SecondFloorPopup class
+            this.Frame.Navigate(typeof(SecondFloorPopup)); //Goes to the popup page
+        }
     }
 }

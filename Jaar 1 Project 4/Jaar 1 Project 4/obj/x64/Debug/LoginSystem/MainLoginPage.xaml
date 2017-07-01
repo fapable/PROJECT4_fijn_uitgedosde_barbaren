@@ -8,12 +8,12 @@
     mc:Ignorable="d">
 
     <Grid x:ConnectionId='1' Background="#FFCF0044" x:Name="main_page">
-        <Button x:ConnectionId='2' x:Name="studentInlogButton" Content="Student&#xD;&#xA;" HorizontalAlignment="Left" Margin="136,57,0,0" VerticalAlignment="Top" Height="32" Width="94"                          />
+        <Button x:ConnectionId='2' x:Name="studentInlogButton" Content="Student&#xD;&#xA;" HorizontalAlignment="Left" Margin="111,141,0,0"   VerticalAlignment="Top" Height="38" Width="130"                          />
         <Button x:ConnectionId='3' x:Name="teacherInlogButton" Content="Teacher
-                " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="136,108,0,0" Width="94"                          />
+                " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="111,202,0,0" Width="130"                           Height="39"/>
         <Button x:ConnectionId='4' x:Name="exitInlogButton" Content="Back
-                " HorizontalAlignment="Left" Margin="136,161,0,0" VerticalAlignment="Top" Width="94"                  />
-        <TextBlock x:ConnectionId='5' x:Name="mainInlogText" HorizontalAlignment="Left" Margin="110,0,0,0" TextWrapping="Wrap" Text="Login screen" VerticalAlignment="Top" Height="42" Width="150" FontSize="24" Foreground="White" FontWeight="Bold"/>
+                " HorizontalAlignment="Left" Margin="111,275,0,0" VerticalAlignment="Top" Width="130"                   Height="43"/>
+        <TextBlock x:ConnectionId='5' x:Name="mainInlogText" HorizontalAlignment="Left" Margin="82,0,0,0" TextWrapping="Wrap" Text="Login screen" VerticalAlignment="Top" Height="52" Width="237" FontSize="35" Foreground="White" FontWeight="Bold"/>
     </Grid>
 </Page>
 

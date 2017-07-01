@@ -10,6 +10,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="TextAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Text" />
@@ -20,7 +21,6 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootProperty Name="Inlines" />
-      <RootProperty Name="TextAlignment" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="SelectionHighlightColor" />
       <RootProperty Name="Style" />
@@ -38,6 +38,7 @@
       <RootProperty Name="Child" />
       <RootProperty Name="Style" />
       <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="IsTapEnabled" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Content" />
@@ -75,11 +76,13 @@
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="IsTapEnabled" />
       <RootProperty Name="UseLayoutRounding" />
       <RootProperty Name="RenderTransform" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Jaar_1_Project_4.Activities" />
+    <RootType FullName="Jaar_1_Project_4.FourthFloorpopup" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
@@ -120,6 +123,7 @@
     </RootType>
     <RootType FullName="Jaar_1_Project_4.QuestionSystem.QandAPage" />
     <RootType FullName="Jaar_1_Project_4.SecondFloorPopup" />
+    <RootType FullName="Jaar_1_Project_4.ThirdFloorPopup" />
     <RootType FullName="Jaar_1_Project_4.Education" />
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />

@@ -47,7 +47,9 @@ namespace Jaar_1_Project_4 {
                     emptyButtonName += letter.ToString();
                 }
             }
-            Debug.WriteLine("Clicked on classroom... what is your name? My name is: " + emptyButtonName);
+            StaticActivityQueryMaker.ButtonName = emptyButtonName; //Buttoname gets SET so it can reached within SecondFloorPopup class
+            this.Frame.Navigate(typeof(ThirdFloorPopup)); //Goes to the popup page
+            
         }
     }
 }

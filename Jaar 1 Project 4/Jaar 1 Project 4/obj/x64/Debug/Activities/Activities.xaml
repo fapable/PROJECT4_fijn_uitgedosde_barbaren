@@ -8,12 +8,16 @@
     mc:Ignorable="d">
 
     <Grid x:ConnectionId='1' Background="{StaticResource hrTheme}" x:Name="activities">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" MinHeight="255"/>
+            <RowDefinition Height="Auto" MinHeight="184.667"/>
+        </Grid.RowDefinitions>
         <TextBlock x:ConnectionId='2' x:Name="mainTitle"
-                    HorizontalAlignment="Left" Margin="141,0,0,0" TextWrapping="Wrap" Text="Acitivties" VerticalAlignment="Top" Foreground="#FFFFF8F8" FontWeight="Bold"/>
-        <Button x:ConnectionId='3' x:Name="secondFloorButton" Content="Second floor" HorizontalAlignment="Left" Margin="126,30,0,0" VerticalAlignment="Top"                                />
-        <Button x:ConnectionId='4' x:Name="thirdFloorButton" Content="Third floor" HorizontalAlignment="Left" Margin="126,65,0,0" VerticalAlignment="Top"                                Width="104"/>
-        <Button x:ConnectionId='5' x:Name="fourthFloorButton" Content="Fourth floor" HorizontalAlignment="Left" Margin="126,105,0,0" VerticalAlignment="Top"                                 Width="104"/>
-        <Button x:ConnectionId='6' x:Name="activitiesBackButton" Content="Back" HorizontalAlignment="Left" Margin="125,165,0,0" VerticalAlignment="Top"                                    Width="105"/>
+                    HorizontalAlignment="Center" TextAlignment="Center" Margin="100,0,108,0" TextWrapping="Wrap" Text="Activties" VerticalAlignment="Top" Foreground="#FFFFF8F8" FontWeight="Bold" FontSize="35" Height="47" Width="152"/>
+        <Button x:ConnectionId='3' x:Name="secondFloorButton" Content="Second floor" HorizontalAlignment="Center" Margin="63,146,52,52" VerticalAlignment="Center"                                 Height="57" Width="245"/>
+        <Button x:ConnectionId='4' x:Name="thirdFloorButton" Content="Third floor" HorizontalAlignment="Center" Margin="63,242,52,139.667" VerticalAlignment="Center"                                Height="58" Width="245" Grid.RowSpan="2"/>
+        <Button x:ConnectionId='5' x:Name="fourthFloorButton" Content="Fourth floor" HorizontalAlignment="Center" Margin="63,83,52,39.667" VerticalAlignment="Center"                                 Grid.Row="1" Width="245" Height="62"/>
+        <Button x:ConnectionId='6' x:Name="activitiesBackButton" Content="Back" HorizontalAlignment="Center" Margin="63,185,52,-65.333" VerticalAlignment="Center"                                    Height="65" Grid.Row="1" Width="245"/>
 
     </Grid>
 </Page>

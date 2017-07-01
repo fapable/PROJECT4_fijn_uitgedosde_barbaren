@@ -10,56 +10,68 @@
         <Style x:Key="elevatorColour" TargetType="Border"/>
     </Page.Resources>
 
-    <Grid x:ConnectionId='1' Background="{StaticResource hrTheme}" x:Name="second_floor">
+    <Grid x:ConnectionId='1' Background="#FFCF0044" x:Name="second_floor">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="209"/>
+            <RowDefinition Height="151"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="285"/>
+            <ColumnDefinition Width="11"/>
+            <ColumnDefinition Width="0"/>
+            <ColumnDefinition Width="232"/>
         </Grid.ColumnDefinitions>
-        <Button x:ConnectionId='2' x:Name="secondFlourBackButton" Content="Back" HorizontalAlignment="Left" Margin="-4,293,0,0" VerticalAlignment="Top"                                     Width="122" Height="57"/>
-        <TextBlock x:ConnectionId='3' x:Name="mainTitle" HorizontalAlignment="Left" Margin="226,-8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8" Grid.ColumnSpan="2" FontSize="35">
+        <Button x:ConnectionId='2' x:Name="secondFlourBackButton" Content="Back" HorizontalAlignment="Left" Margin="-4,94,0,0" VerticalAlignment="Top"                                     Width="122" Height="57" Grid.Row="1"/>
+        <TextBlock x:ConnectionId='3' x:Name="mainTitle" HorizontalAlignment="Center" Margin="272,-8,46,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8" Grid.ColumnSpan="4" FontSize="35" Height="48" Width="210">
             <Run Text="Second floor"/>
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <Border x:ConnectionId='4' x:Name="legendaBox" BorderThickness="1" HorizontalAlignment="Left" Height="146" Margin="-2,30,0,0" VerticalAlignment="Top" Width="120" Background="White">
-            <TextBlock x:ConnectionId='40' x:Name="classroomTitle_Copy" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Elevator" VerticalAlignment="Top" FontSize="10" Margin="43,114,0,0"/>
+        <Border x:ConnectionId='4' x:Name="legendaBox" BorderThickness="1" HorizontalAlignment="Left" Height="169" Margin="-4,45,0,0" VerticalAlignment="Top" Width="123" Background="White" Grid.RowSpan="2">
+            <Border BorderBrush="Black" BorderThickness="1" Margin="-1"/>
         </Border>
-        <TextBlock x:ConnectionId='5' x:Name="legendaTitle" HorizontalAlignment="Left" Margin="0,30,0,0" TextWrapping="Wrap" Text="Legenda" VerticalAlignment="Top" FontSize="10" FontWeight="Bold"/>
-        <Border x:ConnectionId='6' x:Name="classroomLogo" BorderThickness="0.5" HorizontalAlignment="Left" Height="18" Margin="0,54,0,0" VerticalAlignment="Top" Width="38" Background="#FF99D9EA" Style="{StaticResource classroomColour}" BorderBrush="Black"/>
-        <Border x:ConnectionId='7' x:Name="toiletLogo" BorderThickness="0.5" HorizontalAlignment="Left" Height="20" Margin="0,77,0,0" VerticalAlignment="Top" Width="38" Background="#FFFF9FA2" RenderTransformOrigin="5.75,0" BorderBrush="Black"/>
-        <Border x:ConnectionId='8' x:Name="projectSpaceLogo" BorderThickness="0.5" HorizontalAlignment="Left" Height="23" Margin="0,104,0,0" VerticalAlignment="Top" Width="38" Background="#FFC3C3C3" Style="{StaticResource projectSpaceColour}" BorderBrush="Black"/>
-        <Border x:ConnectionId='9' x:Name="elevatorLogo" BorderThickness="0.5" HorizontalAlignment="Left" Height="24" Margin="0,140,0,0" VerticalAlignment="Top" Width="38" Background="#FFF7FEA0" Style="{StaticResource elevatorColour}" BorderBrush="Black"/>
-        <TextBlock x:ConnectionId='10' x:Name="toiletTitle" HorizontalAlignment="Left" Margin="43,81,0,0" TextWrapping="Wrap" Text="Toilet                    " VerticalAlignment="Top" FontSize="10"/>
-        <TextBlock x:ConnectionId='11' x:Name="projectSpaceTitle" HorizontalAlignment="Left" Margin="43,108,0,0" TextWrapping="Wrap" Text="project space                    " VerticalAlignment="Top" FontSize="10"/>
-        <TextBlock x:ConnectionId='12' x:Name="classroomTitle" HorizontalAlignment="Left" Margin="43,54,0,0" TextWrapping="Wrap" Text="classroom                    " VerticalAlignment="Top" FontSize="10"/>
-        <Border x:ConnectionId='13' x:Name="backgroundBorder" BorderBrush="Black" BorderThickness="1" Margin="123,45,129,10" Background="White" Grid.ColumnSpan="2"/>
-        <Button x:ConnectionId='14' x:Name="H_02_403" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,45,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="32" Width="60"                       />
-        <Button x:ConnectionId='15' x:Name="H_02_318" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,77,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="35" Width="40"                       />
-        <Button x:ConnectionId='16' x:Name="button_Copy1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,112,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="70" Width="40"/>
-        <Button x:ConnectionId='17' x:Name="H_02_308" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,179,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="63" Width="40"                       />
-        <Button x:ConnectionId='18' x:Name="button_Copy3" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,242,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="68" Width="40"/>
-        <Button x:ConnectionId='19' x:Name="H_02_204" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,310,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="40" Width="63"                       />
-        <Button x:ConnectionId='20' x:Name="button_Copy5" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="188,56,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2"  BorderThickness="0.5" Height="16" Width="33" RenderTransformOrigin="0.489,1.354"/>
-        <Button x:ConnectionId='21' x:Name="button_Copy6" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="188,70,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2"  BorderThickness="0.5" Height="13" Width="33"/>
-        <Button x:ConnectionId='22' x:Name="button_Copy7" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="189,83,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="57" Width="32"/>
-        <Button x:ConnectionId='23' x:Name="button_Copy8" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="189,140,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="60" Width="32"/>
-        <Button x:ConnectionId='24' x:Name="button_Copy9" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="189,200,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2" BorderThickness="0.5" Height="33" Width="32"/>
-        <Button x:ConnectionId='25' x:Name="button_Copy10" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="189,233,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2"  BorderThickness="0.5" Height="29" Width="29"/>
-        <Button x:ConnectionId='26' x:Name="button_Copy11" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="189,262,0,0" BorderBrush="Black"  BorderThickness="0.5" Height="5" Width="15" Background="#FFF7FEA0" Foreground="#FFF99C9C"/>
-        <Button x:ConnectionId='27' x:Name="button_Copy12" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="221,181,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2" BorderThickness="0.5" Height="47" Width="29"/>
-        <Button x:ConnectionId='28' x:Name="WD_02_002" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250,180,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="48" Width="35"                       />
-        <Button x:ConnectionId='29' x:Name="WD_02_019" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250,310,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="40" Width="35"                       />
-        <Button x:ConnectionId='30' x:Name="button_Copy16" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250,228,0,0" BorderBrush="Black"  BorderThickness="0.5" Height="5" Width="15" Background="#FFF7FEA0" Foreground="#FFF99C9C"/>
-        <Button x:ConnectionId='31' x:Name="WD_02_016" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,199,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA" BorderThickness="0.5" Height="151" Width="30" Grid.Column="1"                       />
-        <Button x:ConnectionId='32' x:Name="WN_02_026" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,199,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="151" Width="35" Grid.Column="1"                       />
-        <Button x:ConnectionId='33' x:Name="WN_02_022" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="65,199,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA" BorderThickness="0.5" Height="151" Width="26" Grid.Column="1"                       />
-        <Button x:ConnectionId='34' x:Name="WN_02_017" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="91,199,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA" BorderThickness="0.5" Height="151" Width="18" Grid.Column="1"                       />
-        <Button x:ConnectionId='35' x:Name="button_Copy21" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="109,199,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3" BorderThickness="0.5" Height="151" Width="32" Grid.Column="1"/>
-        <Button x:ConnectionId='36' x:Name="WN_02_007" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="141,149,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="201" Width="38" Grid.Column="1"                       />
-        <Button x:ConnectionId='37' x:Name="button_Copy23" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,112,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2" BorderThickness="0.5" Height="87" Width="38" Grid.Column="1"/>
-        <Button x:ConnectionId='38' x:Name="button_Copy24" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="91,112,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3" BorderThickness="0.5" Height="37" Width="45" Grid.Column="1"/>
-        <Button x:ConnectionId='39' x:Name="button_Copy25" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="136,112,0,0" BorderBrush="Black"  BorderThickness="0.5" Height="37" Width="43" Background="#FFF7FEA0" Foreground="#FFF99C9C" Grid.Column="1"/>
-        <Border BorderBrush="Black" BorderThickness="0.5" HorizontalAlignment="Right" Height="87" VerticalAlignment="Top" Width="179" Margin="0,112,129,0" Grid.Column="1"/>
+        <TextBlock x:ConnectionId='5' x:Name="legendaTitle" HorizontalAlignment="Left" Margin="0,39,0,0" TextWrapping="Wrap" Text="Legenda" VerticalAlignment="Top" FontSize="25" FontWeight="Bold" Height="33" Width="99"/>
+        <Border x:ConnectionId='6' x:Name="classroomLogo" BorderThickness="0.5" HorizontalAlignment="Left" Height="24" Margin="-1,106,0,0" VerticalAlignment="Top" Width="38" Background="#FF99D9EA" Style="{StaticResource classroomColour}" BorderBrush="Black"/>
+        <Border x:ConnectionId='7' x:Name="toiletLogo" BorderThickness="0.5" HorizontalAlignment="Left" Height="24
+                " Margin="-1,190,0,0" VerticalAlignment="Top" Width="38" Background="#FFFF9FA2" RenderTransformOrigin="5.75,0" BorderBrush="Black" Grid.RowSpan="2"/>
+        <Border x:ConnectionId='8' x:Name="projectSpaceLogo" BorderThickness="0.5" HorizontalAlignment="Left" Height="24" Margin="-1,133,0,0" VerticalAlignment="Top" Width="38" Background="#FFC3C3C3" Style="{StaticResource projectSpaceColour}" BorderBrush="Black"/>
+        <Border x:ConnectionId='9' x:Name="elevatorLogo" BorderThickness="0.5" HorizontalAlignment="Left" Height="24" Margin="-1,161,0,0" VerticalAlignment="Top" Width="38" Background="#FFF7FEA0" Style="{StaticResource elevatorColour}" BorderBrush="Black"/>
+        <TextBlock x:ConnectionId='10' x:Name="toiletTitle" HorizontalAlignment="Left" Margin="42,190,0,0" TextWrapping="Wrap" Text="Toilet                    " VerticalAlignment="Top" FontSize="15" Grid.RowSpan="2" Height="20" Width="53"/>
+        <TextBlock x:ConnectionId='11' x:Name="projectSpaceTitle" HorizontalAlignment="Left" Margin="42,133,0,0" TextWrapping="Wrap" Text="Work room                   " VerticalAlignment="Top" FontSize="15" Height="20" Width="75"/>
+        <TextBlock x:ConnectionId='12' x:Name="classroomTitle" HorizontalAlignment="Left" Margin="42,104,0,0" TextWrapping="Wrap" Text="Classroom                   " VerticalAlignment="Top" FontSize="15" Height="20" Width="69"/>
+        <Border x:ConnectionId='13' x:Name="backgroundBorder" BorderBrush="Black" BorderThickness="1" Margin="0,45,64,0" Background="White" Grid.ColumnSpan="4" IsTapEnabled="False" Height="315" VerticalAlignment="Top" HorizontalAlignment="Right" Width="341" Grid.RowSpan="2"/>
+        <Button x:ConnectionId='14' x:Name="H_02_403" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,45,0,0" BorderBrush="#FF0C0C0C" Background="#FFFFC500"  BorderThickness="0.5" Height="32" Width="60"                       />
+        <Button x:ConnectionId='15' x:Name="H_02_318" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,77,0,0" BorderBrush="#FF0C0C0C" Background="#FFFFC500"  BorderThickness="0.5" Height="35" Width="40"                       />
+        <Button x:ConnectionId='16' x:Name="button_Copy1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,112,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="70" Width="40" IsTapEnabled="False"/>
+        <Button x:ConnectionId='17' x:Name="H_02_308" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,179,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="63" Width="40" IsTapEnabled="False" Grid.RowSpan="2"/>
+        <Button x:ConnectionId='18' x:Name="button_Copy3" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,43,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="68" Width="40" Grid.Row="1"/>
+        <Button x:ConnectionId='19' x:Name="H_02_204" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,111,0,0" BorderBrush="#FF0C0C0C" Background="#FFFFC500"  BorderThickness="0.5" Height="40" Width="63"                        Grid.Row="1"/>
+        <Button x:ConnectionId='20' x:Name="button_Copy5" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="189,56,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2"  BorderThickness="0.5" Height="14" Width="32" RenderTransformOrigin="0.489,1.354" IsTapEnabled="False"/>
+        <Button x:ConnectionId='21' x:Name="button_Copy6" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="189,70,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2"  BorderThickness="0.5" Height="13" Width="32" IsTapEnabled="False"/>
+        <Button x:ConnectionId='22' x:Name="button_Copy7" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="189,83,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="57" Width="32" IsTapEnabled="False"/>
+        <Button x:ConnectionId='23' x:Name="button_Copy8" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="189,140,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="60" Width="32" IsTapEnabled="False" Grid.RowSpan="2"/>
+        <Button x:ConnectionId='24' x:Name="button_Copy9" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="189,1,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2" BorderThickness="0.5" Height="33" Width="32" IsTapEnabled="False" Grid.Row="1"/>
+        <Button x:ConnectionId='25' x:Name="button_Copy10" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="189,34,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2"  BorderThickness="0.5" Height="29" Width="32" IsTapEnabled="False" Grid.Row="1"/>
+        <Button x:ConnectionId='26' x:Name="button_Copy11" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="189,63,0,0" BorderBrush="Black"  BorderThickness="0.5" Height="5" Width="15" Background="#FFF7FEA0" Foreground="#FFF99C9C" IsTapEnabled="False" Grid.Row="1"/>
+        <Button x:ConnectionId='27' x:Name="button_Copy12" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="221,181,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2" BorderThickness="0.5" Height="47" Width="29" IsTapEnabled="False" Grid.RowSpan="2"/>
+        <Button x:ConnectionId='28' x:Name="WD_02_002" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250,181,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="47" Width="35" IsTapEnabled="False" Grid.RowSpan="2"/>
+        <Button x:ConnectionId='29' x:Name="WD_02_019" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250,111,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="40" Width="35" Grid.Row="1"/>
+        <Button x:ConnectionId='30' x:Name="button_Copy16" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250,29,0,0" BorderBrush="Black"  BorderThickness="0.5" Height="5" Width="15" Background="#FFF7FEA0" Foreground="#FFF99C9C" Grid.Row="1"/>
+        <Button x:ConnectionId='31' x:Name="WD_02_016" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="#FF0C0C0C" Background="#FF99D9EA" BorderThickness="0.5" Height="151" Width="30" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3"/>
+        <Button x:ConnectionId='32' x:Name="WN_02_026" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="18,0,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA"  BorderThickness="0.5" Height="151" Width="35" Grid.Column="3" Grid.Row="1"/>
+        <Button x:ConnectionId='33' x:Name="WN_02_022" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,0,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA" BorderThickness="0.5" Height="151" Width="26" Grid.Column="3" Grid.Row="1"/>
+        <Button x:ConnectionId='34' x:Name="WN_02_017" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="79,0,0,0" BorderBrush="#FF0C0C0C" Background="#FF99D9EA" BorderThickness="0.5" Height="151" Width="18" Grid.Column="3" Grid.Row="1"/>
+        <Button x:ConnectionId='35' x:Name="button_Copy21" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="97,0,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3" BorderThickness="0.5" Height="151" Width="32" Grid.Column="3" Grid.Row="1"/>
+        <Button x:ConnectionId='36' x:Name="WN_02_007" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="129,0,0,0" BorderBrush="#FF0C0C0C" Background="#FFFFC500"  BorderThickness="0.5" Height="151" Width="38" Grid.Column="3"                        Grid.Row="1"/>
+        <Button x:ConnectionId='37' x:Name="button_Copy23" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,112,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2" BorderThickness="0.5" Height="87" Width="38" Grid.Column="3"/>
+        <Button x:ConnectionId='38' x:Name="button_Copy24" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="79,112,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3" BorderThickness="0.5" Height="37" Width="45" Grid.Column="3"/>
+        <Button x:ConnectionId='39' x:Name="button_Copy25" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="124,133,0,0" BorderBrush="Black"  BorderThickness="0.5" Height="16" Width="15" Background="#FFF7FEA0" Foreground="#FFF99C9C" Grid.Column="3"/>
+        <Border BorderBrush="Black" BorderThickness="0.5" HorizontalAlignment="Right" Height="87" VerticalAlignment="Top" Width="179" Margin="0,112,64,0" Grid.Column="1" Grid.ColumnSpan="3"/>
+        <Border x:ConnectionId='40' x:Name="noEventLogo" BorderThickness="0.5" HorizontalAlignment="Left" Height="24" Margin="-1,77,0,0" VerticalAlignment="Top" Width="38" Background="#FFFFC500" Style="{StaticResource elevatorColour}" BorderBrush="Black"/>
+        <TextBlock x:ConnectionId='41' x:Name="elevatorTitle" HorizontalAlignment="Left" Margin="42,163,0,0" TextWrapping="Wrap" Text="Elevator                    " VerticalAlignment="Top" FontSize="15" Height="20" Width="53"/>
+        <TextBlock x:ConnectionId='42' x:Name="EventLogo" HorizontalAlignment="Left" Margin="42,77,0,0" TextWrapping="Wrap" Text="Event                    " VerticalAlignment="Top" FontSize="15" Height="20" Width="57"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="5" VerticalAlignment="Top" Width="16" Margin="189,63,0,0" Grid.Row="1"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="5" Margin="250,29,0,0" VerticalAlignment="Top" Width="15" Grid.Row="1"/>
 
     </Grid>
 </Page>

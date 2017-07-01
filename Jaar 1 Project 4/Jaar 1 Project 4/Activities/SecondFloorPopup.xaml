@@ -8,8 +8,22 @@
     mc:Ignorable="d">
 
     <Grid Background="{StaticResource hrTheme}"  x:Name="secondFloorPopupGrid">
-        <TextBlock HorizontalAlignment="Left" Margin="179,10,0,0" TextWrapping="Wrap" Text="Event information" VerticalAlignment="Top" Height="86" Width="346" FontSize="36" Foreground="White" FontWeight="Bold"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="275,219,0,0" VerticalAlignment="Top" Click="clickMe"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="29"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="24"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="22"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="159"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Stretch"
+                   Margin="164,0,163,0" TextWrapping="NoWrap" Text="Event information" VerticalAlignment="Top" Height="46" Width="313" FontSize="36" Foreground="White" FontWeight="Bold" Grid.RowSpan="1"/>
+        <Button x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="254,10,0,0" VerticalAlignment="Top" Click="backButton_Click" Grid.Row="10" Height="42" Width="122"/>
 
     </Grid>
 </Page>

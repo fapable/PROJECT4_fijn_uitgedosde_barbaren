@@ -12,7 +12,7 @@
             <RowDefinition Height="Auto" MinHeight="226"/>
             <RowDefinition Height="Auto" MinHeight="414"/>
         </Grid.RowDefinitions>
-        <TextBlock x:Name="openDayInformation" TextWrapping="Wrap" Text="Open Day Information" Foreground="White" FontWeight="Bold" FontSize="33" Margin="10,0,0,168"/>
+        <TextBlock x:Name="openDayInformation" TextWrapping="Wrap" Text="Open Day Information" TextAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="33" Margin="10,0,0,168"/>
         <Button x:Name="activitiesButton" Content="Activities" HorizontalAlignment="Center" Margin="63,141,52,20" VerticalAlignment="Center" Width="245" Height="65" Click="activitiesButton_Click" FontSize="15"/>
         <Button x:Name="educationButton" Content="Wijnhaven 107 Education" HorizontalAlignment="Center" Margin="63,219,52,356" VerticalAlignment="Center" Width="245" Height="65" Click="educationButton_Click" FontSize="15" Grid.RowSpan="2"/>
         <Button x:Name="locationsButton" Content="Other Wijnhaven Locations

@@ -55,6 +55,7 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>true</Prefer32Bit>
+    <LangVersion>7</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
     <OutputPath>bin\ARM\Release\</OutputPath>
@@ -97,12 +98,15 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstracttest.cs" />
+    <Compile Include="Activities\StaticActivityQueryResults.cs" />
     <Compile Include="Activities\Activities.xaml.cs">
       <DependentUpon>Activities.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Activities\FourthFloorpopup.xaml.cs">
+      <DependentUpon>FourthFloorpopup.xaml</DependentUpon>
     </Compile>
     <Compile Include="LoginSystem\CreateAccount.xaml.cs">
       <DependentUpon>CreateAccount.xaml</DependentUpon>
@@ -124,6 +128,9 @@
     </Compile>
     <Compile Include="Activities\SecondFloorPopup.xaml.cs">
       <DependentUpon>SecondFloorPopup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Activities\ThirdFloorPopup.xaml.cs">
+      <DependentUpon>ThirdFloorPopup.xaml</DependentUpon>
     </Compile>
     <Compile Include="Wijnhaven107\Education.xaml.cs">
       <DependentUpon>Education.xaml</DependentUpon>
@@ -216,6 +223,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Activities\FourthFloorpopup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="LoginSystem\CreateAccount.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -241,6 +252,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Activities\SecondFloorPopup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Activities\ThirdFloorPopup.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
