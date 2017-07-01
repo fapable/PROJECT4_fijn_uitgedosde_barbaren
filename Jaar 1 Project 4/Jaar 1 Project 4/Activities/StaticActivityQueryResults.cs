@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
-using System.Threading.Tasks;
 using System.Net.Http;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -80,43 +79,24 @@ namespace Jaar_1_Project_4 {
             StaticActivityQueryMaker.StartTime = startTimeResult;
             StaticActivityQueryMaker.EndTime = endTimeResult;
         }
-        /* To create the text (query results) that will appear on the screen
-        As paramaters is given the grid (page) where it will be drawn on,
-        the result of the query, and in which row the textblock will apppear
+
+                /* These methods below create a textblock for each column from the DB
+        As arguments is given the grid where it's drawn on, and the text (the query result)
+        but before an SQL query result is drawn on the screen, it first gets converted.
+        Why? Because the result has brackets and other things that are not nice to read
+        They are removed in that method and the method then returns a: "prettier" querry result to read,
+        and as final argument is given in which row the textblock needs to drawn
+        it is comparable to Excel where you have columns and rows
         */
-        public static void CreateTextBlock(dynamic gridPage, string queryResult, int gridRow) {
-            TextBlock textblock = new TextBlock();
-            textblock.Text = queryResult;
-            Grid.SetColumn(textblock, 0);
-            Grid.SetRow(textblock, gridRow);
-            textblock.VerticalAlignment = VerticalAlignment.Center; //Without this the application freezes
-            textblock.TextWrapping = TextWrapping.Wrap; //this way the text won't go out of the screen
-            textblock.FontSize = 20;
-            textblock.Foreground = new SolidColorBrush(Windows.UI.Colors.Black);
-            textblock.FontWeight = FontWeights.Bold;
-            gridPage.Children.Add(textblock); //Adds textblock to the given page
-        }
-        /* Converts the query result from the method: MakeQueries, and makes the text more human readable.
-         the query result have brackets and other things in them, but that is not so nice on the screen
-         so that's why they are converted with this method to a more readable text */
-        public static string ConvertRawQueryResultToNormalText(string rawQueryText) {
-            string queryTextConverted = "";
-            foreach (char character in rawQueryText) {
-                if (character.ToString() == "{" || character.ToString() == "}" ) {
-                    queryTextConverted += "";
-                }
-                else if(character.ToString() == "\"") {
-                    queryTextConverted += " ";
-                }
-                else if(character.ToString() == "_") {
-                    queryTextConverted += " ";
-                }
-                else {
-                    queryTextConverted += character.ToString();
-                }           
-            }
-            return (queryTextConverted);
-        }
-       
+        public static void SetTextOnScreen(dynamic gridPage) {
+            AbstractGeneralQueryHandler.CreateTextBlock(gridPage, AbstractGeneralQueryHandler.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.OpleidingNaam), 1);
+            AbstractGeneralQueryHandler.CreateTextBlock(gridPage, AbstractGeneralQueryHandler.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.ClassroomID), 2);
+            AbstractGeneralQueryHandler.CreateTextBlock(gridPage, AbstractGeneralQueryHandler.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.EventName), 3);
+            AbstractGeneralQueryHandler.CreateTextBlock(gridPage, AbstractGeneralQueryHandler.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.Description), 4);
+            AbstractGeneralQueryHandler.CreateTextBlock(gridPage, AbstractGeneralQueryHandler.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.Duration), 5);
+            AbstractGeneralQueryHandler.CreateTextBlock(gridPage, AbstractGeneralQueryHandler.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.StartTime), 6);
+            AbstractGeneralQueryHandler.CreateTextBlock(gridPage, AbstractGeneralQueryHandler.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.EndTime), 7);
+            AbstractGeneralQueryHandler.CreateTextBlock(gridPage, AbstractGeneralQueryHandler.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.ClassroomID), 8);
+        }     
     }
 }

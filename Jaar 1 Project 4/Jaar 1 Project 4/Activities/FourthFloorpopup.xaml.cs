@@ -29,22 +29,7 @@ namespace Jaar_1_Project_4 {
             //Queries are made, as argument is given the clicked on buttoname (the event classroom)
             StaticActivityQueryMaker.MakeQueries(StaticActivityQueryMaker.ButtonName);
 
-            /* These methods below create a textblock for each column from the DB
-            As arguments is given the grid where it's drawn on, and the text (the query result)
-            but before an SQL query result is drawn on the screen, it first gets converted.
-            Why? Because the result has brackets and other things that are not nice to read
-            They are removed in that method and the method then returns a: "prettier" querry result to read,
-            and as final argument is given in which row the textblock needs to drawn
-            it is comparable to Excel where you have columns and rows
-            */
-            StaticActivityQueryMaker.CreateTextBlock(FourthfloorpopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.OpleidingNaam), 1);
-            StaticActivityQueryMaker.CreateTextBlock(FourthfloorpopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.ClassroomID), 2);
-            StaticActivityQueryMaker.CreateTextBlock(FourthfloorpopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.EventName), 3);
-            StaticActivityQueryMaker.CreateTextBlock(FourthfloorpopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.Description), 4);
-            StaticActivityQueryMaker.CreateTextBlock(FourthfloorpopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.Duration), 5);
-            StaticActivityQueryMaker.CreateTextBlock(FourthfloorpopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.StartTime), 6);
-            StaticActivityQueryMaker.CreateTextBlock(FourthfloorpopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.EndTime), 7);
-            StaticActivityQueryMaker.CreateTextBlock(FourthfloorpopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.ClassroomID), 8);
+            StaticActivityQueryMaker.SetTextOnScreen(FourthfloorpopupGrid);
         }
     }
 }

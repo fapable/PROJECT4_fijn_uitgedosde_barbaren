@@ -35,14 +35,7 @@ namespace Jaar_1_Project_4 {
         */
         public void MakeQueriesAndTextBlocks() {
             StaticActivityQueryMaker.MakeQueries(StaticActivityQueryMaker.ButtonName);
-            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.OpleidingNaam), 1);
-            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.ClassroomID), 2);
-            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.EventName), 3);
-            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.Description), 4);
-            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.Duration), 5);
-            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.StartTime), 6);
-            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.EndTime), 7);
-            StaticActivityQueryMaker.CreateTextBlock(thirdFloorPopupGrid, StaticActivityQueryMaker.ConvertRawQueryResultToNormalText(StaticActivityQueryMaker.ClassroomID), 8);
+            StaticActivityQueryMaker.SetTextOnScreen(thirdFloorPopupGrid);
         }
     }
 }

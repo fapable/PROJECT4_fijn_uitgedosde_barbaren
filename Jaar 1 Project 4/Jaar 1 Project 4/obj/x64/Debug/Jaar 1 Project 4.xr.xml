@@ -71,11 +71,11 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="Background" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Foreground" />
-      <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="IsTapEnabled" />
       <RootProperty Name="UseLayoutRounding" />
       <RootProperty Name="RenderTransform" />
@@ -124,6 +124,11 @@
     <RootType FullName="Jaar_1_Project_4.QuestionSystem.QandAPage" />
     <RootType FullName="Jaar_1_Project_4.SecondFloorPopup" />
     <RootType FullName="Jaar_1_Project_4.ThirdFloorPopup" />
+    <RootType FullName="Jaar_1_Project_4.Wijnhaven107Communication" />
+    <RootType FullName="Jaar_1_Project_4.Wijnhaven107Informatica" />
+    <RootType FullName="Jaar_1_Project_4.Wijnhaven107TechnicalInformatica" />
+    <RootType FullName="Jaar_1_Project_4.Wijnhaven107Education" />
+    <RootType FullName="Jaar_1_Project_4.Wijnhaven107Info" />
     <RootType FullName="Jaar_1_Project_4.Education" />
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />

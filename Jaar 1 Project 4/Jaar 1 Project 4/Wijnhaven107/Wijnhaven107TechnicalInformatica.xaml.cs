@@ -13,19 +13,15 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
+// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Jaar_1_Project_4 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Education : Page {
-        public Education() {
+    public sealed partial class Wijnhaven107TechnicalInformatica : Page {
+        public Wijnhaven107TechnicalInformatica() {
             this.InitializeComponent();
-        }
-
-        private void backButton_Click(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(OpenDagInformatie));
         }
     }
 }

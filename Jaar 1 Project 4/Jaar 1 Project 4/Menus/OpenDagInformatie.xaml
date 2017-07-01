@@ -14,7 +14,7 @@
         </Grid.RowDefinitions>
         <TextBlock x:Name="openDayInformation" TextWrapping="Wrap" Text="Open Day Information" TextAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="33" Margin="10,0,0,168"/>
         <Button x:Name="activitiesButton" Content="Activities" HorizontalAlignment="Center" Margin="63,141,52,20" VerticalAlignment="Center" Width="245" Height="65" Click="activitiesButton_Click" FontSize="15"/>
-        <Button x:Name="educationButton" Content="Wijnhaven 107 Education" HorizontalAlignment="Center" Margin="63,219,52,356" VerticalAlignment="Center" Width="245" Height="65" Click="educationButton_Click" FontSize="15" Grid.RowSpan="2"/>
+        <Button x:Name="educationButton" Content="Wijnhaven 107" HorizontalAlignment="Center" Margin="63,219,52,356" VerticalAlignment="Center" Width="245" Height="65" Click="educationButton_Click" FontSize="15" Grid.RowSpan="2"/>
         <Button x:Name="locationsButton" Content="Other Wijnhaven Locations
                 " HorizontalAlignment="Center" Margin="64,70,51,279" VerticalAlignment="Center" Width="245" Height="65" FontSize="15" Click="locationsButton_Click" Grid.Row="1"/>
         <Button x:Name="openDayBackButton" Content="Back" HorizontalAlignment="Center" Margin="65,222,51,130" VerticalAlignment="Center" Click="openDayBackButton_Click" Width="244" Height="62" FontSize="15" Grid.Row="1" />

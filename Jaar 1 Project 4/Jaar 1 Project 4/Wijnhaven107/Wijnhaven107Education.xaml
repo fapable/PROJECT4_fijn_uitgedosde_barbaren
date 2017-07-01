@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="Jaar_1_Project_4.Wijnhaven107Education"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Jaar_1_Project_4"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource hrTheme}">
+        <TextBlock x:Name="mainTitle" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Wijnhaven 107 Education" VerticalAlignment="Top" FontSize="30
+                   " FontWeight="Bold" Foreground="White" Width="360"/>
+        <Button x:Name="backButton" Content="Back" HorizontalAlignment="Center" Margin="115,557,127,0" VerticalAlignment="Top" Height="36" Width="118" Click="backButton_Click"/>
+        <Button x:Name="Communicatie" Content="Communication" HorizontalAlignment="Center" Margin="98,133,104,0" VerticalAlignment="Top" Height="57" Width="158" Click="Button_Click"/>
+        <Button x:Name="Informatica" Content="Informatica" HorizontalAlignment="Center" Margin="98,214,104,0" VerticalAlignment="Top" Height="47" Width="158" Click="Button_Click_1"/>
+        <Button x:Name="Technical_Informatica" Content="Tecnical Informatica" HorizontalAlignment="Left" Margin="98,294,0,0" VerticalAlignment="Top" Height="46" Width="158" RenderTransformOrigin="0.498,-0.457" Click="Button_Click_2"/>
+
+    </Grid>
+</Page>

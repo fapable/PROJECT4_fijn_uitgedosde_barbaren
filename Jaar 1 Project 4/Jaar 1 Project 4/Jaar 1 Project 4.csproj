@@ -98,6 +98,7 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GeneralQueryHandler\AbstractGeneralQueryMaker.cs" />
     <Compile Include="Activities\StaticActivityQueryResults.cs" />
     <Compile Include="Activities\Activities.xaml.cs">
       <DependentUpon>Activities.xaml</DependentUpon>
@@ -132,8 +133,24 @@
     <Compile Include="Activities\ThirdFloorPopup.xaml.cs">
       <DependentUpon>ThirdFloorPopup.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Wijnhaven107\Education.xaml.cs">
-      <DependentUpon>Education.xaml</DependentUpon>
+    <Compile Include="Education\StaticEducationQueryResults.cs" />
+    <Compile Include="Wijnhaven107\Wijnhaven107Communication.xaml.cs">
+      <DependentUpon>Wijnhaven107Communication.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wijnhaven107\Wijnhaven107Informatica.xaml.cs">
+      <DependentUpon>Wijnhaven107Informatica.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wijnhaven107\Wijnhaven107TechnicalInformatica.xaml.cs">
+      <DependentUpon>Wijnhaven107TechnicalInformatica.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wijnhaven107\Wijnhaven107Education.xaml.cs">
+      <DependentUpon>Wijnhaven107Education.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wijnhaven107\Wijnhaven107Info.xaml.cs">
+      <DependentUpon>Wijnhaven107Info.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wijnhaven107\Wijnhaven107.xaml.cs">
+      <DependentUpon>Wijnhaven107.xaml</DependentUpon>
     </Compile>
     <Compile Include="Activities\FourthFloor.xaml.cs">
       <DependentUpon>FourthFloor.xaml</DependentUpon>
@@ -259,7 +276,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Wijnhaven107\Education.xaml">
+    <Page Include="Wijnhaven107\Wijnhaven107Communication.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wijnhaven107\Wijnhaven107Informatica.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wijnhaven107\Wijnhaven107TechnicalInformatica.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wijnhaven107\Wijnhaven107Education.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wijnhaven107\Wijnhaven107Info.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wijnhaven107\Wijnhaven107.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -27,22 +27,7 @@ namespace Jaar_1_Project_4 {
         //When an event classroom gets clicked, the clicked on event classroom comes into this method
         //Then it it set to the StaticActivityQueryMaker class to create queries based on it
         private void classroomClick(object sender, RoutedEventArgs e) {
-            Button clickedOnButton = (Button) sender; 
-            string emptyButtonName = ""; //To store the converted buttoname
-            /*
-            The foreach loop is here because you can't have object names with dots in UWP
-            Since the database tables need to match the buttonname, the foreach loop is made to change (convert)
-            the buttoname to match the DB tables
-             */
-            foreach (var letter in clickedOnButton.Name.ToString()) {
-                if (letter.ToString() == "_") {
-                    emptyButtonName += ".";
-                }
-                else {
-                    emptyButtonName += letter.ToString();
-                }
-            }
-            StaticActivityQueryMaker.ButtonName = emptyButtonName; //Buttoname gets SET so it can reached within SecondFloorPopup class
+            StaticActivityQueryMaker.ButtonName = AbstractGeneralQueryHandler.ChangeMainStaticAttributeName(sender);
             this.Frame.Navigate(typeof(FourthFloorpopup)); //Goes to the popup page
         }
     }
