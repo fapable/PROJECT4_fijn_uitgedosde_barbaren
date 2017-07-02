@@ -18,7 +18,7 @@
 
     // retrieve the table from the path
     $rawData = array_shift($request);
-    $sql = str_replace("-", " ", $rawData);
+    $sql = urldecode(str_replace("-", " ", $rawData));
     $method = replace($rawData);
 
     // excecute SQL statement
