@@ -13,22 +13,24 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
+//The contact page
 
-namespace Jaar_1_Project_4
-{
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
-    public sealed partial class ContactPage : Page
-    {
+namespace Jaar_1_Project_4 {
+    public sealed partial class ContactPage : Page {
+        ContactQueryHandler contactQueryHandler;
         public ContactPage()
         {
             this.InitializeComponent();
+            this.contactQueryHandler = new ContactQueryHandler();
         }
 
-        private void backButton_Click(object sender, RoutedEventArgs e) {
+        private void BackButtonclick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(OpenDagInformatie));
+        }
+
+        private void StudyChoiceClick(object sender, RoutedEventArgs e) {        
+            ContactQueryHandler.CurrentChoice = contactQueryHandler.ChangeMainAttributeName(sender);
+            this.Frame.Navigate(typeof(ContactPagePopup)); //Goes to the popup page      
         }
     }
 }

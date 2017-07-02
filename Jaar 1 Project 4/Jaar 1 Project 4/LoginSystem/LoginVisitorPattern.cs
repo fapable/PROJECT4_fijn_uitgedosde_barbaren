@@ -8,36 +8,24 @@ using System.Diagnostics;
 //Visitor design pattern to verify login
 //In the database will be checked if the given username and password are correct
 
-
 namespace Jaar_1_Project_4 {
-    class LoginVisitorPattern {
-    }
-    public interface IClassicOption<T> { //Interfaces offers the classic to visit and lambda way
-        void ClassicVisit(IOptionVisitor<T> visitor);
-        U LambdaVisit<U>(Func<U> onNone, Func<T, U> OnSomeUsernameLogin, Func<T, U> onSomePasswordLogin);
-        T GetValue();
-    }
-    public interface IOptionVisitor<T> {
-        void OnLoginCheck(); 
-        void OnPassword(IClassicOption<string> IOptionObject);
-        void OnUsername(IClassicOption<string> IOptionObject);
-        void OnNone();
-    }
-    public class TheVisitor<T> : IOptionVisitor<string> {
-        Dictionary<IClassicOption<string>, IClassicOption<string>> givenUsernameAndPassword; //In this the username and password are stored
-        IClassicOption<string> none; //To avoid creating null''s
+    public class TheVisitor<T> : ILoginVisitor<string> {
+        //In the dictionary the username and password is stored
+        Dictionary<IUserNameAndPasswordVisit<string>, IUserNameAndPasswordVisit<string>> givenUsernameAndPassword; 
+        IUserNameAndPasswordVisit<string> none; //To avoid creating null objects
+
         public TheVisitor() {
             none = new NoneLogin();
-            this.givenUsernameAndPassword = new Dictionary<IClassicOption<string>, IClassicOption<string>>();
+            this.givenUsernameAndPassword = new Dictionary<IUserNameAndPasswordVisit<string>, IUserNameAndPasswordVisit<string>>();
             this.givenUsernameAndPassword.Add(none, none);
         }
         public void OnNone() {
-            Debug.WriteLine("We got a none object here!, empty, null!");
-            
+            Debug.WriteLine("We got a none object here");         
         }
-        public void OnLoginCheck() { //Estabilishes database connection
+        //Checks if there is an username and password entered, and will then estabalish database connection
+        public void OnLoginCheck() { 
             foreach (var item in this.givenUsernameAndPassword) {
-                if (item.Key.LambdaVisit(() => true, _ => false, _ => false)){ //Checks if the item key is none, in other words Null.
+                if (item.Key.LambdaVisit(() => true, _ => false, _ => false)){ //Checks if the password or username is fileld in
                     Debug.WriteLine("No username entered!");
                 }
                 else if (item.Value.LambdaVisit(() => true, _ => false, _ => false)) { 
@@ -49,63 +37,64 @@ namespace Jaar_1_Project_4 {
                 }
             }
         }
-        public void OnPassword(IClassicOption<string> typedInPassword) { //Checks if the given password is not empty (0 length)
+        //Checks if the password is filled in
+        public void OnPassword(IUserNameAndPasswordVisit<string> typedInPassword) {
             foreach (var item in this.givenUsernameAndPassword) {
                 if (item.Value.LambdaVisit(() => true, _ => false, _ => false)) {
-                    this.givenUsernameAndPassword = new Dictionary<IClassicOption<string>, IClassicOption<string>>() { { item.Key, typedInPassword } };
+                    this.givenUsernameAndPassword = new Dictionary<IUserNameAndPasswordVisit<string>, IUserNameAndPasswordVisit<string>>() { { item.Key, typedInPassword } };
                     //Updates the dictionary
                 }
             }
         }
-        public void OnUsername(IClassicOption<string> typedInUsername) {
+        //Checks if the username is filled in
+        public void OnUsername(IUserNameAndPasswordVisit<string> typedInUsername) {
             foreach (var item in this.givenUsernameAndPassword) {
                 if (item.Key.LambdaVisit(() => true, _ => false, _ => false)) {
-                    this.givenUsernameAndPassword = new Dictionary<IClassicOption<string>, IClassicOption<string>>() { { typedInUsername, item.Value } };
+                    this.givenUsernameAndPassword = new Dictionary<IUserNameAndPasswordVisit<string>, IUserNameAndPasswordVisit<string>>() { { typedInUsername, item.Value } };
                 }
             }
         }
     }
-    public class SomeUsernameLogin : IClassicOption<string> { 
-        private string value;
-        public SomeUsernameLogin(string value) {
-            this.value = value;
+    //The username concrete class
+    public class SomeUsernameLogin : IUserNameAndPasswordVisit<string> { 
+        private string username;
+        public SomeUsernameLogin(string username) {
+            this.username = username;
         }
-        public void ClassicVisit(IOptionVisitor<string> visitor) {
+        public void NoLamdaVisit(ILoginVisitor<string> visitor) {
             visitor.OnUsername(this);
         }
-        public string GetValue() {
-            return this.value;
+        public string GetLoginInformationValue() {
+            return this.username;
         }
         public U LambdaVisit<U>(Func<U> onNone, Func<string, U> OnSomeUsernameLogin, Func<string, U> onSomePasswordLogin) {
-            return OnSomeUsernameLogin(this.value);
+            return OnSomeUsernameLogin(this.username);
         }
     }
-    public class SomePasswordLogin : IClassicOption<string> {
-        private string value;
+    //The password concrete class
+    public class SomePasswordLogin : IUserNameAndPasswordVisit<string> {
+        private string password;
         public SomePasswordLogin(string value) {
-            this.value = value;
+            this.password = value;
         }
-        public void ClassicVisit(IOptionVisitor<string> visitor) {
+        public void NoLamdaVisit(ILoginVisitor<string> visitor) {
             visitor.OnPassword(this);
         }
-
-        public string GetValue() {
-            return this.value;
+        public string GetLoginInformationValue() {
+            return this.password;
         }
-
         public U LambdaVisit<U>(Func<U> onNone, Func<string, U> OnSomeUsernameLogin, Func<string, U> onSomePasswordLogin) {
-            return onSomePasswordLogin(this.value);
+            return onSomePasswordLogin(this.password);
         }
     }
-    public class NoneLogin : IClassicOption<string> {
-        public void ClassicVisit(IOptionVisitor<string> visitor) {
+    //Concrete classs to avoid null objects
+    public class NoneLogin : IUserNameAndPasswordVisit<string> {
+        public void NoLamdaVisit(ILoginVisitor<string> visitor) {
             visitor.OnNone();
         }
-
-        public string GetValue() {
+        public string GetLoginInformationValue() {
             return "";
         }
-
         public U LambdaVisit<U>(Func<U> onNone, Func<string, U> OnSomeUsernameLogin, Func<string, U> onSomePasswordLogin) {
             return onNone();
         }

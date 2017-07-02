@@ -13,6 +13,8 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+//The main login page
+
 namespace Jaar_1_Project_4
 {
     public sealed partial class MainLoginPage : Page {
@@ -20,17 +22,18 @@ namespace Jaar_1_Project_4
         {
             this.InitializeComponent();           
         }
-        //Button click for the student button
-        private void studentLoginClick(object sender, RoutedEventArgs e) {
+        //Goes to the student login page
+        private void StudentLoginClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(StudentLogin));    
         }
-        //Button click for the Exit button
-        private void ExitClick(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(MainMenu));
-        }
-        //Button click for the teacher button
-        private void teacherLoginClick(object sender, RoutedEventArgs e) {
+        //Goes to the teacher login page
+        private void TeacherLoginClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(TeacherLogIn));
         }
+        //Goes back to the menu
+        private void BackButtonClick(object sender, RoutedEventArgs e) {
+            this.Frame.Navigate(typeof(MainMenu));
+        }
+
     }
 }

@@ -38,7 +38,7 @@ namespace Jaar_1_Project_4
                 {
                     this.button = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 20 "..\..\..\Menus\MainMenu.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.button).Click += this.button_Click;
+                    ((global::Windows.UI.Xaml.Controls.Button)this.button).Click += this.OpenDagInformationClick;
                     #line default
                 }
                 break;
@@ -46,7 +46,7 @@ namespace Jaar_1_Project_4
                 {
                     this.button1 = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 21 "..\..\..\Menus\MainMenu.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.button1).Click += this.button1_Click;
+                    ((global::Windows.UI.Xaml.Controls.Button)this.button1).Click += this.MainLoginPageClick;
                     #line default
                 }
                 break;
@@ -54,7 +54,7 @@ namespace Jaar_1_Project_4
                 {
                     this.button2 = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 22 "..\..\..\Menus\MainMenu.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.button2).Click += this.button2_Click;
+                    ((global::Windows.UI.Xaml.Controls.Button)this.button2).Click += this.ExitButtonClick;
                     #line default
                 }
                 break;
@@ -62,7 +62,7 @@ namespace Jaar_1_Project_4
                 {
                     this.help_button = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 24 "..\..\..\Menus\MainMenu.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.help_button).Click += this.help_click;
+                    ((global::Windows.UI.Xaml.Controls.Button)this.help_button).Click += this.HelpPageClick;
                     #line default
                 }
                 break;

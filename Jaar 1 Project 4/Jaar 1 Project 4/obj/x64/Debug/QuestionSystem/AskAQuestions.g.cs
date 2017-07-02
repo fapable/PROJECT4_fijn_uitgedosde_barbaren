@@ -41,7 +41,7 @@ namespace Jaar_1_Project_4
                 {
                     this.back = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 18 "..\..\..\QuestionSystem\AskAQuestions.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.back).Click += this.back_Click;
+                    ((global::Windows.UI.Xaml.Controls.Button)this.back).Click += this.BackButtonClick;
                     #line default
                 }
                 break;

@@ -38,7 +38,7 @@ namespace Jaar_1_Project_4
                 {
                     this.activitiesButton = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 16 "..\..\..\Menus\OpenDagInformatie.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.activitiesButton).Click += this.activitiesButton_Click;
+                    ((global::Windows.UI.Xaml.Controls.Button)this.activitiesButton).Click += this.ActivitiesButtonClick;
                     #line default
                 }
                 break;
@@ -46,7 +46,7 @@ namespace Jaar_1_Project_4
                 {
                     this.educationButton = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 17 "..\..\..\Menus\OpenDagInformatie.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.educationButton).Click += this.educationButton_Click;
+                    ((global::Windows.UI.Xaml.Controls.Button)this.educationButton).Click += this.EducationButtonClick;
                     #line default
                 }
                 break;
@@ -54,7 +54,7 @@ namespace Jaar_1_Project_4
                 {
                     this.locationsButton = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 19 "..\..\..\Menus\OpenDagInformatie.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.locationsButton).Click += this.locationsButton_Click;
+                    ((global::Windows.UI.Xaml.Controls.Button)this.locationsButton).Click += this.LocationsButtonClick;
                     #line default
                 }
                 break;
@@ -62,7 +62,7 @@ namespace Jaar_1_Project_4
                 {
                     this.openDayBackButton = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 20 "..\..\..\Menus\OpenDagInformatie.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.openDayBackButton).Click += this.openDayBackButton_Click;
+                    ((global::Windows.UI.Xaml.Controls.Button)this.openDayBackButton).Click += this.BackButtonClick;
                     #line default
                 }
                 break;
@@ -70,7 +70,7 @@ namespace Jaar_1_Project_4
                 {
                     this.ContactPage = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 21 "..\..\..\Menus\OpenDagInformatie.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.ContactPage).Click += this.contactButton_click;
+                    ((global::Windows.UI.Xaml.Controls.Button)this.ContactPage).Click += this.ContactButtonClick;
                     #line default
                 }
                 break;

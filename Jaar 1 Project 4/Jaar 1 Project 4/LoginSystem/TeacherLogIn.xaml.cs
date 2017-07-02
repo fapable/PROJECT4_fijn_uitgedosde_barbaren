@@ -13,36 +13,36 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+//The teacher login page
+//See the student login page for the comments
+
 namespace Jaar_1_Project_4 {
     public sealed partial class TeacherLogIn : Page {
-        private IClassicOption<string> username;
-        private IClassicOption<string> password;
-        private IOptionVisitor<string> loginVisitor;
+        private IUserNameAndPasswordVisit<string> username;
+        private IUserNameAndPasswordVisit<string> password;
+        private ILoginVisitor<string> loginVisitor;
         public TeacherLogIn() {
             this.username = new NoneLogin();
             this.password = new NoneLogin();
             this.loginVisitor = new TheVisitor<string>();
             this.InitializeComponent();
         }
-        private void createButton_Click(object sender, RoutedEventArgs e) { }
-
-
-        private void logInButton_Click(object sender, RoutedEventArgs e) {
+        private void LogInButtonClick(object sender, RoutedEventArgs e) {
             if (UsernameTypeBox.Text.ToString().Length > 0) {
-                username = new SomeUsernameLogin(UsernameTypeBox.Text.ToString()); //Username is now a Some because it's not empty
-                username.ClassicVisit(loginVisitor); //Username calls it's visit method
+                username = new SomeUsernameLogin(UsernameTypeBox.Text.ToString()); 
+                username.NoLamdaVisit(loginVisitor); 
             }
             else {
                 //TODO with the use of factory, make a label that says that the username is not filled in
             }
             if (passwordBox.Password.ToString().Length > 0) {
                 password = new SomePasswordLogin(passwordBox.Password.ToString());
-                password.ClassicVisit(loginVisitor);
+                password.NoLamdaVisit(loginVisitor);
             }
-            loginVisitor.OnLoginCheck(); //The filled in username and password are now checked
+            loginVisitor.OnLoginCheck();
             this.Frame.Navigate(typeof(Questions));
         }
-        private void studentLoginBackButton_Click(object sender, RoutedEventArgs e) {
+        private void BackButtonClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(MainLoginPage));
         }
     }

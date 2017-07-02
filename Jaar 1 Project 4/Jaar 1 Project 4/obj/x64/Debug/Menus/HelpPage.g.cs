@@ -33,7 +33,7 @@ namespace Jaar_1_Project_4
                 {
                     this.HelpPageBackButton = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 33 "..\..\..\Menus\HelpPage.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.HelpPageBackButton).Click += this.HelpPageBackButton_click;
+                    ((global::Windows.UI.Xaml.Controls.Button)this.HelpPageBackButton).Click += this.BackButtonClick;
                     #line default
                 }
                 break;

@@ -13,34 +13,32 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
+//Openday information page
 
 namespace Jaar_1_Project_4 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+
     public sealed partial class OpenDagInformatie : Page {
         public OpenDagInformatie() {
             this.InitializeComponent();
         }
-
-        private void openDayBackButton_Click(object sender, RoutedEventArgs e) {
+        //Goes to the main menu
+        private void BackButtonClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(MainMenu));
         }
-
-        private void activitiesButton_Click(object sender, RoutedEventArgs e) {
+        //Goes to the activities page
+        private void ActivitiesButtonClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(Activities));
         }
-
-        private void educationButton_Click(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(Education));
+        //Goes to the Wijnhaven 107 page
+        private void EducationButtonClick(object sender, RoutedEventArgs e) {
+            this.Frame.Navigate(typeof(Wijnhaven107));
         }
-
-        private void locationsButton_Click(object sender, RoutedEventArgs e) {
+        //Goes to the  wijnhaven locations page
+        private void LocationsButtonClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(WijnhavenLocations));
-
         }
-        private void contactButton_click(System.Object sender, RoutedEventArgs e) {
+        //Goes to the contact page
+        private void ContactButtonClick(System.Object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(ContactPage));
 
 

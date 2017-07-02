@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="Jaar_1_Project_4.EducationPagePopUp"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Jaar_1_Project_4"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource hrTheme}" x:Name="wijnhavenEducationpopup">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="28"/>
+            <RowDefinition Height="47"/>
+            <RowDefinition Height="Auto" MinHeight="58"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="48"/>
+            <RowDefinition Height="74"/>
+            <RowDefinition Height="385"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="center" Margin="51,-1,46,0" TextWrapping="Wrap" Text="Education Information" VerticalAlignment="Top" Height="36" Width="263" Foreground="White" FontWeight="Bold" FontSize="20" Grid.RowSpan="2"/>
+        <Button Content="Back" HorizontalAlignment="Center" Margin="114,10,124,0" VerticalAlignment="Top" Height="48" Width="122" Click="BackButtonClick" Grid.Row="6"/>
+
+    </Grid>
+</Page>

@@ -53,7 +53,7 @@ namespace Jaar_1_Project_4
                 {
                     this.logInButton = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 22 "..\..\..\LoginSystem\TeacherLogIn.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.logInButton).Click += this.logInButton_Click;
+                    ((global::Windows.UI.Xaml.Controls.Button)this.logInButton).Click += this.LogInButtonClick;
                     #line default
                 }
                 break;
@@ -61,7 +61,7 @@ namespace Jaar_1_Project_4
                 {
                     this.studentLoginBackButton = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 23 "..\..\..\LoginSystem\TeacherLogIn.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.studentLoginBackButton).Click += this.studentLoginBackButton_Click;
+                    ((global::Windows.UI.Xaml.Controls.Button)this.studentLoginBackButton).Click += this.BackButtonClick;
                     #line default
                 }
                 break;

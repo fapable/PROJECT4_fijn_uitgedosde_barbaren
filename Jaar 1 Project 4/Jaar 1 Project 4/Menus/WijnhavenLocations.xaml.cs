@@ -13,27 +13,27 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
+//The wijnhavens location page
 
 namespace Jaar_1_Project_4 {
     public sealed partial class WijnhavenLocations : Page {
         public WijnhavenLocations() {
             this.InitializeComponent();
         }
-
-        private void wijnhaven61Button_Click(object sender, RoutedEventArgs e) {
+        //Goes to the wijnhaven 61 page
+        private void Wijnhaven61ButtonClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(Wijnhaven61));
         }
-
-        private void wijnhaven99Button_Click(object sender, RoutedEventArgs e) {
+        //Goes to the wijnhaven 99 page
+        private void Wijnhaven99ButtonClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(Wijnhaven99));
         }
-
-        private void wijnhaven103Button_Click(object sender, RoutedEventArgs e) {
+        //Goes to the wijnhaven 103 page
+        private void Wijnhaven103ButtonClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(Wijnhaven103));
         }
-
-        private void wijnhavenLocationBackButton_Click(object sender, RoutedEventArgs e) {
+        //Goes to the opendaginformation page
+        private void BackButtonClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(OpenDagInformatie));
 
         }

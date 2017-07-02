@@ -8,15 +8,15 @@
     mc:Ignorable="d">
 
     <Grid Background="{StaticResource hrTheme}" x:Name="wijnhaven_locations">
-        <TextBlock x:Name="mainTitle" HorizontalAlignment="Left" Margin="10,0,-10,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8" FontSize="35" Width="360">
+        <TextBlock x:Name="mainTitle" HorizontalAlignment="Center" Margin="10,0,-10,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8" FontSize="35" Width="360">
             <Run Text="Wijnhaven locations"/>
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <Button x:Name="wijnhavenLocationBackButton" Content="Back" HorizontalAlignment="Left" Margin="92,353,0,0" VerticalAlignment="Top" Width="176" Click="wijnhavenLocationBackButton_Click" Height="59"/>
-        <Button x:Name="wijnhaven61Button" Content="Wijnhaven 61" HorizontalAlignment="Left" Margin="92,116,0,0" VerticalAlignment="Top" Click="wijnhaven61Button_Click" Width="176" Height="63"/>
-        <Button x:Name="wijnhaven99Button" Content="Wijnhaven 99" HorizontalAlignment="Left" Margin="92,192,0,0" VerticalAlignment="Top" Height="59" Width="176" Click="wijnhaven99Button_Click"/>
-        <Button x:Name="wijnhaven103Button" Content="Wijnhaven 103" HorizontalAlignment="Left" Margin="92,269,0,0" VerticalAlignment="Top" Width="176" Click="wijnhaven103Button_Click" Height="55"/>
+        <Button x:Name="wijnhavenLocationBackButton" Content="Back" HorizontalAlignment="Center" Margin="99,358,85,0" VerticalAlignment="Top" Width="176" Click="BackButtonClick" Height="59"/>
+        <Button x:Name="wijnhaven61Button" Content="Wijnhaven 61" HorizontalAlignment="Center" Margin="99,119,85,0" VerticalAlignment="Top" Click="Wijnhaven61ButtonClick" Width="176" Height="63"/>
+        <Button x:Name="wijnhaven99Button" Content="Wijnhaven 99" HorizontalAlignment="Center" Margin="99,203,85,0" VerticalAlignment="Top" Height="59" Width="176" Click="Wijnhaven99ButtonClick"/>
+        <Button x:Name="wijnhaven103Button" Content="Wijnhaven 103" HorizontalAlignment="Center" Margin="99,282,85,0" VerticalAlignment="Top" Width="176" Click="Wijnhaven103ButtonClick" Height="55"/>
 
     </Grid>
 </Page>

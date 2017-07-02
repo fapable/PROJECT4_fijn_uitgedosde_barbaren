@@ -28,7 +28,7 @@ namespace Jaar_1_Project_4 {
 
         }
 
-        private void back_Click(object sender, RoutedEventArgs e) {
+        private void BackButtonClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(MainMenu));
         }
 

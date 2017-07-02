@@ -13,30 +13,27 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
+//The main menu (first page of the whole application)
 
 namespace Jaar_1_Project_4 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class MainMenu : Page {
         public MainMenu() {
             this.InitializeComponent();      
         }
-
-        private void button2_Click(object sender, RoutedEventArgs e) {
+        //Exits the application
+        private void ExitButtonClick(object sender, RoutedEventArgs e) {
             Application.Current.Exit();
         }
-
-        private void button_Click(object sender, RoutedEventArgs e) {
+        //Goes to the opendaginformation page
+        private void OpenDagInformationClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(OpenDagInformatie));
         }
-
-        private void button1_Click(object sender, RoutedEventArgs e) {
+        //Goes the login page
+        private void MainLoginPageClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(MainLoginPage));
         }
-
-        private void help_click(object sender, RoutedEventArgs e){
+        //Goes to the help page
+        private void HelpPageClick(object sender, RoutedEventArgs e){
             this.Frame.Navigate(typeof(HelpPage));
         }
     }
