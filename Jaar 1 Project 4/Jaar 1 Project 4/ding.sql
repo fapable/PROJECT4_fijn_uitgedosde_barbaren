@@ -137,6 +137,24 @@ CREATE TABLE contact(
     
 INSERT INTO contact VALUES('Studychoice','Are you busy with making a study choice but you are still unsure which education to follow? Or are you unsure how to sign up for your education? Then contact the department of study Information.','010 - 794 4400','studievoorlichting@hr.nl');
 INSERT INTO contact VALUES('Education question','Do you have questions related to an education?','010 – 500 9900','hropleidingen@hr.nl');
+
+CREATE TABLE openingstijden_locatie(
+    maandagopen TIME,
+    maandagdicht TIME,
+    dinsdagopen TIME,
+    dinsdagdicht TIME,
+    woensdagopen TIME,
+    woensdagdicht TIME,
+    donderdagopen TIME,
+    donderdagdicht TIME,
+    vrijdagopen TIME,
+    vrijdagdicht TIME,
+    adres TEXT);
+    
+INSERT INTO openingstijden_locatie VALUES(TIME '07:30:00', TIME '22:00:00', TIME '07:30:00', TIME '21:00:00', TIME '07:30:00', TIME '22:00:00',TIME '07:30:00', TIME '19:30:00',TIME '07:30:00', TIME '17:30:00','Wijnhaven 107 3011 WN Rotterdam');
+INSERT INTO openingstijden_locatie VALUES(TIME '07:30:00', TIME '22:00:00', TIME '07:30:00', TIME '21:00:00', TIME '07:30:00', TIME '22:00:00',TIME '07:30:00', TIME '19:30:00',TIME '07:30:00', TIME '17:30:00','Wijnhaven 103 3011 WN Rotterdam');
+INSERT INTO openingstijden_locatie VALUES(TIME '07:30:00', TIME '22:00:00', TIME '07:30:00', TIME '21:00:00', TIME '07:30:00', TIME '22:00:00',TIME '07:30:00', TIME '19:30:00',TIME '07:30:00', TIME '17:30:00','Wijnhaven 99 3011 WN Rotterdam');
+INSERT INTO openingstijden_locatie VALUES(TIME '07:30:00', TIME '22:00:00', TIME '07:30:00', TIME '21:00:00', TIME '07:30:00', TIME '22:00:00',TIME '07:30:00', TIME '19:30:00',TIME '07:30:00', TIME '17:30:00','Wijnhaven 61 3011 WN Rotterdam');
                            
 
 
