@@ -151,10 +151,11 @@ CREATE TABLE openingstijden_locatie(
     vrijdagdicht TIME,
     adres TEXT);
     
-INSERT INTO openingstijden_locatie VALUES(TIME '07:30:00', TIME '22:00:00', TIME '07:30:00', TIME '21:00:00', TIME '07:30:00', TIME '22:00:00',TIME '07:30:00', TIME '19:30:00',TIME '07:30:00', TIME '17:30:00','Wijnhaven 107 3011 WN Rotterdam');
-INSERT INTO openingstijden_locatie VALUES(TIME '07:30:00', TIME '22:00:00', TIME '07:30:00', TIME '21:00:00', TIME '07:30:00', TIME '22:00:00',TIME '07:30:00', TIME '19:30:00',TIME '07:30:00', TIME '17:30:00','Wijnhaven 103 3011 WN Rotterdam');
-INSERT INTO openingstijden_locatie VALUES(TIME '07:30:00', TIME '22:00:00', TIME '07:30:00', TIME '21:00:00', TIME '07:30:00', TIME '22:00:00',TIME '07:30:00', TIME '19:30:00',TIME '07:30:00', TIME '17:30:00','Wijnhaven 99 3011 WN Rotterdam');
-INSERT INTO openingstijden_locatie VALUES(TIME '07:30:00', TIME '22:00:00', TIME '07:30:00', TIME '21:00:00', TIME '07:30:00', TIME '22:00:00',TIME '07:30:00', TIME '19:30:00',TIME '07:30:00', TIME '17:30:00','Wijnhaven 61 3011 WN Rotterdam');
+INSERT INTO openingstijden_locatie VALUES(TIME '07:30:00', TIME '22:00:00', TIME '07:30:00', TIME '21:00:00', TIME '07:30:00', TIME '22:00:00',TIME '07:30:00', TIME '19:30:00',TIME '07:30:00', TIME '17:30:00','Wijnhaven_107_3011_WN Rotterdam');
+INSERT INTO openingstijden_locatie VALUES(TIME '07:30:00', TIME '22:00:00', TIME '07:30:00', TIME '21:00:00', TIME '07:30:00', TIME '22:00:00',TIME '07:30:00', TIME '19:30:00',TIME '07:30:00', TIME '17:30:00','Wijnhaven_103_3011_WN Rotterdam');
+INSERT INTO openingstijden_locatie VALUES(TIME '07:30:00', TIME '22:00:00', TIME '07:30:00', TIME '21:00:00', TIME '07:30:00', TIME '22:00:00',TIME '07:30:00', TIME '19:30:00',TIME '07:30:00', TIME '17:30:00','Wijnhaven_99_3011_WN_Rotterdam');
+INSERT INTO openingstijden_locatie VALUES(TIME '07:30:00', TIME '22:00:00', TIME '07:30:00', TIME '21:00:00', TIME '07:30:00', TIME '22:00:00',TIME '07:30:00', TIME '19:30:00',TIME '07:30:00', TIME '17:30:00','Wijnhaven_61_3011_WN_Rotterdam');
+
                            
 
 
