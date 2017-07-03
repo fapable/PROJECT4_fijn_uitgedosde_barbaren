@@ -19,7 +19,7 @@
         </TextBlock>
         <Button x:Name="backButton" Content="Back" HorizontalAlignment="Center" Margin="98,489,112,-68.667" VerticalAlignment="Top" Click="BackButtonClick" Height="59" Width="150" Grid.Row="1"/>
         <Button Content="education" HorizontalAlignment="Center" Margin="98,117,112,0" Grid.Row="1" VerticalAlignment="Top" Height="43" Width="150" Click="EducationButtonClick"/>
-        <Button Content="Info" HorizontalAlignment="Center" Margin="98,200,112,0" Grid.Row="1" VerticalAlignment="Top" Height="47" Width="150"/>
+        <Button x:Name="_25Wijnhaven4107_25" Content="Info" HorizontalAlignment="Center" Margin="98,200,112,0" Grid.Row="1" VerticalAlignment="Top" Height="47" Width="150" Click="InfoClickButton"/>
 
     </Grid>
 </Page>

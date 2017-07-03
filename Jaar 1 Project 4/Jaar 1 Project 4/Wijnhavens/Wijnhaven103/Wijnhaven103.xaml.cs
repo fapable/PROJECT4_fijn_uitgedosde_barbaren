@@ -18,14 +18,21 @@ using Windows.UI.Xaml.Navigation;
 namespace Jaar_1_Project_4 {
     public sealed partial class Wijnhaven103 : Page {
         EducationQueryHandler educationQueryHandler;
+        StaticInfoQueryHandler infoQueryHandler;
         public Wijnhaven103() {
             this.InitializeComponent();
             this.educationQueryHandler = new EducationQueryHandler();
+            this.infoQueryHandler = new StaticInfoQueryHandler();
             educationQueryHandler.CurrentWijnhavenGetSet = EducationQueryHandler.CurrentWijnhaven.wijnhaven103; //Changes state to keep track of the wijnhavne
         }
         //Goes to the wijnhavenlocations
         private void BackButtonClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(WijnhavenLocations));
+        }
+
+        private void infoClickButton(object sender, RoutedEventArgs e) {
+            StaticInfoQueryHandler.Wijnhaven = infoQueryHandler.ChangeMainAttributeName(sender);
+            this.Frame.Navigate(typeof(InfoPopup)); //Goes to the popup page
         }
     }
 }

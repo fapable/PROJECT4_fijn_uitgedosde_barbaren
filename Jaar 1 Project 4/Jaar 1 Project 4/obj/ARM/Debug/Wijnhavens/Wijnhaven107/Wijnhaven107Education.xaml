@@ -13,7 +13,7 @@
         <Button x:ConnectionId='2' x:Name="Communicatie" Content="Communication" HorizontalAlignment="Center" Margin="98,133,104,0" VerticalAlignment="Top" Height="57" Width="158"                             />
         <Button x:ConnectionId='3' x:Name="Informatica" Content="Informatica" HorizontalAlignment="Center" Margin="98,214,104,0" VerticalAlignment="Top" Height="47" Width="158"                             />
         <Button x:ConnectionId='4' x:Name="Technical_Informatica" Content="Tecnical Informatica" HorizontalAlignment="Center" Margin="98,283,104,0" VerticalAlignment="Top" Height="46" Width="158" RenderTransformOrigin="0.498,-0.457"                             />
-        <Button x:ConnectionId='5' Content="back" HorizontalAlignment="Center" Margin="98,525,104,0" VerticalAlignment="Top" Width="158"                     />
+        <Button x:ConnectionId='5' Content="back" HorizontalAlignment="Center" Margin="98,525,104,0" VerticalAlignment="Top" Width="158"                        />
 
     </Grid>
 </Page>

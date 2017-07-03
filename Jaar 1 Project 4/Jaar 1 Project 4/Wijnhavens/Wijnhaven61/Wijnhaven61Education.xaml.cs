@@ -29,7 +29,7 @@ namespace Jaar_1_Project_4 {
         }
         private void EducationButtonClick(object sender, RoutedEventArgs e) {
             EducationQueryHandler.Education = educationQueryHandler.ChangeMainAttributeName(sender);
-            this.Frame.Navigate(typeof(EducationPagePopUp)); //Goes to the popup page
+            this.Frame.Navigate(typeof(InfoPopup)); //Goes to the popup page
         }
     }
 }

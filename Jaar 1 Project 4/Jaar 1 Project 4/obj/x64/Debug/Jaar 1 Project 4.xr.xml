@@ -90,6 +90,7 @@
     <RootType FullName="Jaar_1_Project_4.HelpPage" />
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Jaar_1_Project_4.ContactPage" />
+    <RootType FullName="Jaar_1_Project_4.InfoPopup" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />

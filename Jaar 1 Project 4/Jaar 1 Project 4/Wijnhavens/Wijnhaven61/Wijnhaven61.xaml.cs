@@ -15,21 +15,24 @@ using Windows.UI.Xaml.Navigation;
 
 
 namespace Jaar_1_Project_4 {
-
     public sealed partial class Wijnhaven61 : Page {
         EducationQueryHandler educationQueryHandler;
+        StaticInfoQueryHandler infoQueryHandler;
         public Wijnhaven61() {
             this.InitializeComponent();
             this.educationQueryHandler = new EducationQueryHandler();
+            this.infoQueryHandler = new StaticInfoQueryHandler();
             educationQueryHandler.CurrentWijnhavenGetSet = EducationQueryHandler.CurrentWijnhaven.wijnhaven61;
         }
-
         private void EducationButtonClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(Wijnhaven61Education));
         }
         private void BackButtonClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(WijnhavenLocations));
         }
-
+        private void infoClickButton(object sender, RoutedEventArgs e) {
+            StaticInfoQueryHandler.Wijnhaven = infoQueryHandler.ChangeMainAttributeName(sender);
+            this.Frame.Navigate(typeof(InfoPopup)); //Goes to the popup page
+        }
     }
 }

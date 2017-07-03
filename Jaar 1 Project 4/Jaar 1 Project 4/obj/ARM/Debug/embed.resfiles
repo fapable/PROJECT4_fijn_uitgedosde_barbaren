@@ -2,11 +2,7 @@ Activities\ActivityPages\Activities.xbf
 Activities\ActivityPages\FourthFloor.xbf
 Activities\ActivityPages\SecondFloor.xbf
 Activities\ActivityPages\ThirthFloor.xbf
-ActivitiesQueryHandlers\ActivityPopup.xbf
 App.xbf
-ContactQueryHandler\ContactPagePopup.xbf
-EducationQueryHandler\EducationQueryHandler\WijnhavenEducationPopup.xbf
-LoginSystem\CreateAccount.xbf
 LoginSystem\MainLoginPage.xbf
 LoginSystem\StudentLogin.xbf
 LoginSystem\TeacherLogIn.xbf
@@ -15,6 +11,10 @@ Menus\HelpPage.xbf
 Menus\MainMenu.xbf
 Menus\OpenDagInformatie.xbf
 Menus\WijnhavenLocations.xbf
+QueryHandlers\ActivitiesQueryHandlers\ActivityPopup.xbf
+QueryHandlers\ContactQueryHandler\ContactPagePopup.xbf
+QueryHandlers\EducationQueryHandler\EducationQueryHandler\EducationPopup.xbf
+QueryHandlers\InfoQueryHandler\InfoQueryHandler\InfoPopup.xbf
 QuestionSystem\AnswerAQuestion.xbf
 QuestionSystem\AskAQuestions.xbf
 QuestionSystem\mainQpage.xbf

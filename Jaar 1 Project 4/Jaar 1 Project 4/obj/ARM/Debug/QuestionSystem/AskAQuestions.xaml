@@ -15,7 +15,7 @@
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <Button x:ConnectionId='3' x:Name="back" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top"                    Margin="44,513,0,0" Height="56" Width="147"/>
+        <Button x:ConnectionId='3' x:Name="back" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top"                         Margin="44,513,0,0" Height="56" Width="147"/>
         <Button x:ConnectionId='4' x:Name="SendQuestion" Content="Send" HorizontalAlignment="Left" Margin="196,510,0,0" VerticalAlignment="Top"                      Height="59" Width="147"/>
         <TextBox x:ConnectionId='5' x:Name="E_mail" HorizontalAlignment="Left" Margin="10,67,0,0" TextWrapping="Wrap" Text="e-mail" VerticalAlignment="Top" RenderTransformOrigin="0.419,0.014" Width="333"                                   Height="0"/>
         <TextBox x:ConnectionId='6' x:Name="Opleiding" HorizontalAlignment="Left" Height="5" Margin="10,104,0,0" TextWrapping="Wrap" Text="opleiding" VerticalAlignment="Top" Width="333"/>

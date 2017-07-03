@@ -15,7 +15,7 @@
         </TextBlock>
         <Button x:Name="educationButton" Content="Education" HorizontalAlignment="Center" Margin="92,142,105,0"  VerticalAlignment="Top" Click="EducationButtonClick" Height="49" Width="163"/>
         <Button x:Name="backButton" Content="Back" HorizontalAlignment="Center" Margin="92,307,105,0" VerticalAlignment="Top" Click="BackButtonClick" Width="163" Height="45"/>
-        <Button x:Name="info" Content="Info" HorizontalAlignment="Center" Margin="92,229,105,0" VerticalAlignment="Top" Width="163" Height="47"/>
+        <Button x:Name="_25Wijnhaven499_25" Content="Info" HorizontalAlignment="Center" Margin="92,229,105,0" VerticalAlignment="Top" Width="163" Height="47" Click="InfoClickButton"/>
 
     </Grid>
 </Page>

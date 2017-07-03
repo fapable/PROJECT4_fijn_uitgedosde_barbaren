@@ -30,7 +30,7 @@
             <LineBreak/>
             <Run Text="If you find a bug, please report it to me at &quot;0927190@hr.nl&quot;."/>
         </TextBlock>
-        <Button x:ConnectionId='2' x:Name="HelpPageBackButton" Content="Back" HorizontalAlignment="Center" Margin="57,403.833,59,-72" VerticalAlignment="Center"                                  Width="244" Height="62" FontSize="15" Grid.Row="1" />
+        <Button x:ConnectionId='2' x:Name="HelpPageBackButton" Content="Back" HorizontalAlignment="Center" Margin="57,403.833,59,-72" VerticalAlignment="Center"                         Width="244" Height="62" FontSize="15" Grid.Row="1" />
 
     </Grid>
 </Page>

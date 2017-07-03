@@ -21,7 +21,7 @@
             <ColumnDefinition Width="0"/>
             <ColumnDefinition Width="232"/>
         </Grid.ColumnDefinitions>
-        <Button x:ConnectionId='2' x:Name="secondFlourBackButton" Content="Back" HorizontalAlignment="Left" Margin="-4,94,0,0" VerticalAlignment="Top"                                     Width="122" Height="57" Grid.Row="1"/>
+        <Button x:ConnectionId='2' x:Name="secondFlourBackButton" Content="Back" HorizontalAlignment="Left" Margin="-4,94,0,0" VerticalAlignment="Top"                               Width="122" Height="57" Grid.Row="1"/>
         <TextBlock x:ConnectionId='3' x:Name="mainTitle" HorizontalAlignment="Center" Margin="272,-8,46,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8" Grid.ColumnSpan="4" FontSize="35" Height="48" Width="210">
             <Run Text="Second floor"/>
             <LineBreak/>

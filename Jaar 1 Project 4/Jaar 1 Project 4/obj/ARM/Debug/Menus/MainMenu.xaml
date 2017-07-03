@@ -17,11 +17,11 @@
                 <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
             </TextBlock.Foreground>
         </TextBlock>
-        <Button x:ConnectionId='3' x:Name="button" Content="Open day information" HorizontalAlignment="Center" Margin="63,141,52,434" VerticalAlignment="Center"                      Height="65" Width="245" Grid.Row="1"/>
-        <Button x:ConnectionId='4' x:Name="button1" Content="Questions" HorizontalAlignment="Stretch" Margin="63,238,52,337" VerticalAlignment="Stretch"                       Grid.Row="1"  Width="245" Height="65" />
-        <Button x:ConnectionId='5' x:Name="button2" Content="Close" HorizontalAlignment="Center" Margin="63,446,52,133" VerticalAlignment="Center"                       Height="65"
+        <Button x:ConnectionId='3' x:Name="button" Content="Open day information" HorizontalAlignment="Center" Margin="63,141,52,434" VerticalAlignment="Center"                                 Height="65" Width="245" Grid.Row="1"/>
+        <Button x:ConnectionId='4' x:Name="button1" Content="Questions" HorizontalAlignment="Stretch" Margin="63,238,52,337" VerticalAlignment="Stretch"                            Grid.Row="1"  Width="245" Height="65" />
+        <Button x:ConnectionId='5' x:Name="button2" Content="Close" HorizontalAlignment="Center" Margin="63,446,52,133" VerticalAlignment="Center"                         Height="65"
                 Grid.Row="1" Width="245"/>
-        <Button x:ConnectionId='6' x:Name="help_button" Content="Help" HorizontalAlignment="Center" Margin="63,343,52,236" VerticalAlignment="Center"                    Height="65"
+        <Button x:ConnectionId='6' x:Name="help_button" Content="Help" HorizontalAlignment="Center" Margin="63,343,52,236" VerticalAlignment="Center"                       Height="65"
             Grid.Row="1" Width="245"/>
         
 
