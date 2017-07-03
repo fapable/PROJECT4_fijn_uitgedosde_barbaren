@@ -38,7 +38,7 @@ CREATE TABLE answer (
 );
 
 CREATE TABLE events (
-    even,t_id int PRIMARY KEY,
+    event_id int PRIMARY KEY,
     classroom_id VARCHAR(9),
     opleiding_naam VARCHAR(100),
     description text,
@@ -139,22 +139,17 @@ INSERT INTO contact VALUES('Studychoice','Are you busy with making a study choic
 INSERT INTO contact VALUES('Education question','Do you have questions related to an education?','010 - 500 9900','hropleidingen@hr.nl');
 
 CREATE TABLE openingstijden_locatie(
-    maandagopen TIME,
-    maandagdicht TIME,
-    dinsdagopen TIME,
-    dinsdagdicht TIME,
-    woensdagopen TIME,
-    woensdagdicht TIME,
-    donderdagopen TIME,
-    donderdagdicht TIME,
-    vrijdagopen TIME,
-    vrijdagdicht TIME,
+    maandagopenning text,
+    dinsdagopening text,
+    woensdagopening text,
+    donderdagopening text,
+    vrijdagopening text,
     adres TEXT);
     
-INSERT INTO openingstijden_locatie VALUES(TIME '07:30:00', TIME '22:00:00', TIME '07:30:00', TIME '21:00:00', TIME '07:30:00', TIME '22:00:00',TIME '07:30:00', TIME '19:30:00',TIME '07:30:00', TIME '17:30:00','Wijnhaven_107_3011_WN Rotterdam');
-INSERT INTO openingstijden_locatie VALUES(TIME '07:30:00', TIME '22:00:00', TIME '07:30:00', TIME '21:00:00', TIME '07:30:00', TIME '22:00:00',TIME '07:30:00', TIME '19:30:00',TIME '07:30:00', TIME '17:30:00','Wijnhaven_103_3011_WN Rotterdam');
-INSERT INTO openingstijden_locatie VALUES(TIME '07:30:00', TIME '22:00:00', TIME '07:30:00', TIME '21:00:00', TIME '07:30:00', TIME '22:00:00',TIME '07:30:00', TIME '19:30:00',TIME '07:30:00', TIME '17:30:00','Wijnhaven_99_3011_WN_Rotterdam');
-INSERT INTO openingstijden_locatie VALUES(TIME '07:30:00', TIME '22:00:00', TIME '07:30:00', TIME '21:00:00', TIME '07:30:00', TIME '22:00:00',TIME '07:30:00', TIME '19:30:00',TIME '07:30:00', TIME '17:30:00','Wijnhaven_61_3011_WN_Rotterdam');
+INSERT INTO openingstijden_locatie VALUES('07:30:00-22:00:00', '07:30:00-21:00:00', '07:30:00-22:00:00', '07:30:00-19:30:00', '07:30:00-17:30:00','Wijnhaven_107_3011_WN Rotterdam');
+INSERT INTO openingstijden_locatie VALUES('07:30:00-22:00:00', '07:30:00-21:00:00', '07:30:00-22:00:00', '07:30:00-19:30:00', '07:30:00-17:30:00','Wijnhaven_103_3011_WN Rotterdam');
+INSERT INTO openingstijden_locatie VALUES('07:30:00-22:00:00', '07:30:00-21:00:00', '07:30:00-22:00:00', '07:30:00-19:30:00', '07:30:00-17:30:00','Wijnhaven_99_3011_WN_Rotterdam');
+INSERT INTO openingstijden_locatie VALUES('07:30:00-22:00:00', '07:30:00-21:00:00', '07:30:00-22:00:00', '07:30:00-19:30:00', '07:30:00-17:30:00','Wijnhaven_61_3011_WN_Rotterdam');
 
                            
 
