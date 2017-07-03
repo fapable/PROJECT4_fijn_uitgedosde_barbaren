@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Net.Http;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -38,8 +39,22 @@ namespace Jaar_1_Project_4 {
 
         private void send_message(object sender, RoutedEventArgs e)
         {
-            Jaar_1_Project_4_Messages.Message question = Jaar_1_Project_4_Messages.MessageFactory.Create(Jaar_1_Project_4_Messages.MessageType.question, new Jaar_1_Project_4_Messages.EasyLabel(-(getWidth() / 2) + 110, -330, getWidth() - 320, 140, "vandaaggaanwijeenheellulverhaalschrijvenzonderspatiets om iets uit te testen en opeen ga ik spatioes gebruiken wtf haha oke ben ik al ver genoeg met dit kut verhaal vast wel hihi"), askquestions, 30);
-            question.Draw();
+            var syncClient = new HttpClient();
+            string email = E_mail.Text;
+            var eduselect = Opleiding.Items[Opleiding.SelectedIndex] as ComboBoxItem;
+            string education = eduselect.Content.ToString();
+            string name = Naam.Text;
+            string question = Vraag.Text;
+            string qid = "http://www.wschaijk.nl/api/api.php/SELECT-question_id-FROM-questions-ORDER-BY-question_id-DESC-LIMIT-1;";
+            var qidCall = syncClient.GetStringAsync(qid);
+            var qidResult = qidCall.Result;
+            var gimmeResult = new PrepareForScreenQueryHandler();
+            var tempid = gimmeResult.resultOnly(qidResult);
+            int id = Int32.Parse(tempid);
+            id = id + 1;
+            string qupload = string.Format("http://www.wschaijk.nl/api/api.php/INSERT-INTO-questions-VALUES({0},-\'{1}\',-\'{2}\',-\'{3}\',-\'{4}\');", id, education.Replace(" ", "-"), email.Replace("@", "%40"), name.Replace(" ", "-"), question.Replace("?", "").Replace(" ", "-"));
+            var uploadstuff = syncClient.GetAsync(qupload);
+            this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage));
         }
 
         private void textBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -66,6 +81,11 @@ namespace Jaar_1_Project_4 {
                 return (int)Height;
             }
             return 0;
+        }
+
+        private void Opleiding_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

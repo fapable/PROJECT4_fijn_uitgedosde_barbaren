@@ -26,17 +26,17 @@ namespace Jaar_1_Project_4_Messages
     public enum MessageType { question, answer, notification } // this enum makes sure we can only create 3 kinds of in app messages 
     public abstract class MessageFactory
     {
-        public static Message Create(MessageType type, EasyLabel text, Grid current_page, int margin) //current page is the grid the message has to be drawn to
+        public static Message Create(MessageType type, EasyLabel text, Grid current_page, int margin,string email, string name, int qandaid, string education) //current page is the grid the message has to be drawn to
         {
             switch (type) //checks the type of message you want and then returns the apropriate object
             {
                 case MessageType.question:
                     {
-                        return new Question(text, current_page, margin);
+                        return new Question(text, current_page, margin, email, name, qandaid, education);
                     }
                 case MessageType.answer:
                     {
-                        return new Answer(text, current_page, margin);
+                        return new Answer(text, current_page, margin, name, qandaid, education);
                     }
                 case MessageType.notification:
                     {
@@ -52,9 +52,13 @@ namespace Jaar_1_Project_4_Messages
     public abstract class MessageDecorator : Message //this decorator adds text (an easy label) to your message
     {
         public EasyLabel message;
-        public MessageDecorator(EasyLabel message)
+        public int qandaid;
+        public string education;
+        public MessageDecorator(EasyLabel message, int qandaid, string education)
         {
             this.message = message;
+            this.qandaid = qandaid;
+            this.education = education;
         }
         public abstract void Draw();
         public abstract EasyLabel content { get;}
@@ -66,12 +70,16 @@ namespace Jaar_1_Project_4_Messages
         bool IsAnswer;
         dynamic current_page;
         int some_margin;
-        public Question(EasyLabel message, Grid current_page, int margin) : base(message)
+        string email;
+        string name;
+        public Question(EasyLabel message, Grid current_page, int margin, string email, string name, int qandaid, string education) : base(message, qandaid, education)
         {
             this.IsAnswer = false;
             this.message = message;
             this.current_page = current_page;
             this.some_margin = margin;
+            this.email = email;
+            this.name = name;
         }
 
         public override EasyLabel content => this.message;
@@ -103,13 +111,15 @@ namespace Jaar_1_Project_4_Messages
         bool IsAnswer;
         dynamic current_page;
         int some_margin;
+        string teacherid;
 
-        public Answer(EasyLabel message, Grid current_page, int margin) : base(message)
+        public Answer(EasyLabel message, Grid current_page, int margin, string teacherid, int qandaid, string education) : base(message, qandaid, education)
         {
             this.IsAnswer = true;
             this.message = message;
             this.current_page = current_page;
             this.some_margin = margin;
+            this.teacherid = teacherid;
         }
 
         public override EasyLabel content => this.message;
@@ -140,7 +150,7 @@ namespace Jaar_1_Project_4_Messages
         dynamic current_page;
         int some_margin;
 
-        public Notification(EasyLabel message, Grid current_page, int margin) : base(message)
+        public Notification(EasyLabel message, Grid current_page, int margin) : base(message, -1, null)
         {
             this.current_page = current_page;
             this.IsAnswer = false;

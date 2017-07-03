@@ -45,12 +45,12 @@ namespace Jaar_1_Project_4.QuestionSystem
             {
                 if(current % 2 == 0)
                 {
-                    Message current_message = MessageFactory.Create(MessageType.question, new EasyLabel(basex, (basey + (130 * current)), basewidth, baseheieght, qena[current]), current_page, (30 * (current + 1)) + 100 * current);
+                    Message current_message = MessageFactory.Create(MessageType.question, new EasyLabel(basex, (basey + (130 * current)), basewidth, baseheieght, qena[current]), current_page, (30 * (current + 1)) + 100 * current, "test", "Henk", 1, "informatica");
                     current_message.Draw();
                 }
                 else if(current % 2 != 0)
                 {
-                    Message current_message = MessageFactory.Create(MessageType.answer, new EasyLabel(basex, (basey + (130 * current)), basewidth, baseheieght, qena[current]), current_page, (30 * (current + 1)) + 100 * current);
+                    Message current_message = MessageFactory.Create(MessageType.answer, new EasyLabel(basex, (basey + (130 * current)), basewidth, baseheieght, qena[current]), current_page, (30 * (current + 1)) + 100 * current, null, "leraar", 1, "informatica");
                     current_message.Draw();
                 }
             }

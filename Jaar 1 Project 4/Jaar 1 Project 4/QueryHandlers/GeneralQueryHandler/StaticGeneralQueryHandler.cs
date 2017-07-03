@@ -50,5 +50,29 @@ namespace Jaar_1_Project_4 {
             textblock.FontWeight = FontWeights.Bold;
             gridPage.Children.Add(textblock); //Adds textblock to the given page
         }
+        public string resultOnly(string queryResult)
+        {
+            string queryTextConverted = "";
+            foreach (char character in queryResult.Reverse())
+            {
+                if (character.ToString() == "{" || character.ToString() == "}")
+                {
+                    queryTextConverted += "";
+                }
+                else if (character.ToString() == "\"")
+                {
+                    queryTextConverted += "";
+                }
+                else if (character.ToString() == ":")
+                {
+                    break;
+                }
+                else
+                {
+                    queryTextConverted = character.ToString() + queryTextConverted;
+                }
+            }
+            return (queryTextConverted);
+        }
     }
 }
