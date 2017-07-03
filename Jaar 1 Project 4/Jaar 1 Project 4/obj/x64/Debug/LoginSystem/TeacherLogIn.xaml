@@ -19,9 +19,11 @@
         </TextBlock>
         <TextBlock x:ConnectionId='4' x:Name="passwordLoginText" HorizontalAlignment="Left" Margin="144,147,0,0" TextWrapping="Wrap" Text="Teacher code" VerticalAlignment="Top" FontSize="11" FontWeight="Bold" />
         <TextBox x:ConnectionId='5' x:Name="UsernameTypeBox" HorizontalAlignment="Left" Margin="81,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="6" Width="194" FontSize="15" MaxLength="20"/>
-        <Button x:ConnectionId='6' x:Name="logInButton" Content="Log in" HorizontalAlignment="Left" Margin="114,221,0,0" VerticalAlignment="Top"                          FontSize="11" Width="129" Height="41" />
-        <Button x:ConnectionId='7' x:Name="studentLoginBackButton" Content="Back                 " HorizontalAlignment="Left" Margin="114,267,0,0" VerticalAlignment="Top" Width="129" Height="46"                         FontSize="11"/>
+        <Button x:ConnectionId='6' x:Name="logInButton" Content="Log in" HorizontalAlignment="Left" Margin="114,228,0,0" VerticalAlignment="Top"                          FontSize="11" Width="129" Height="41" />
+        <Button x:ConnectionId='7' x:Name="studentLoginBackButton" Content="Back                 " HorizontalAlignment="Left" Margin="114,354,0,0" VerticalAlignment="Top" Width="129" Height="46"                         FontSize="11"/>
         <PasswordBox x:ConnectionId='8' x:Name="passwordBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="81,167,0,0" Width="194" MaxLength="20"/>
+        <Button x:ConnectionId='9' Content="Log out" HorizontalAlignment="Left" Margin="114,288,0,0" VerticalAlignment="Top" Height="44" Width="126" FontSize="11"                           />
+        <TextBlock x:ConnectionId='10' x:Name="errorTextBlock" HorizontalAlignment="Center" Margin="114,204,106,0" TextWrapping="Wrap" Text="Enter your login Information" VerticalAlignment="Top" FontWeight="Bold" FontSize="10" Width="140" Height="19"/>
 
     </Grid>
 </Page>

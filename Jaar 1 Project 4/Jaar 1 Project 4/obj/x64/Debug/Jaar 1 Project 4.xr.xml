@@ -22,7 +22,6 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Inlines" />
       <RootProperty Name="RenderTransformOrigin" />
-      <RootProperty Name="SelectionHighlightColor" />
       <RootProperty Name="Style" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
@@ -88,7 +87,6 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
     <RootType FullName="Jaar_1_Project_4.HelpPage" />
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Jaar_1_Project_4.ContactPage" />
     <RootType FullName="Jaar_1_Project_4.InfoPopup" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
@@ -106,6 +104,7 @@
       <RootEvent Name="TextChanged" />
     </RootType>
     <RootType FullName="Jaar_1_Project_4.Answer" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Jaar_1_Project_4.QuestionSystem.mainQpage" />
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="VerticalScrollMode" />
@@ -133,7 +132,6 @@
       <RootProperty Name="Width" />
       <RootProperty Name="MaxLength" />
     </RootType>
-    <RootType FullName="Jaar_1_Project_4.StudentLogin" />
     <RootType FullName="Jaar_1_Project_4.TeacherLogIn" />
     <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
       <RootProperty Name="SkewY" />

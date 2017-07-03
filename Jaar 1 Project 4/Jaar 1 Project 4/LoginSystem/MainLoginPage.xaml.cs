@@ -22,18 +22,18 @@ namespace Jaar_1_Project_4
         {
             this.InitializeComponent();           
         }
-        //Goes to the student login page
-        private void StudentLoginClick(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(StudentLogin));    
-        }
         //Goes to the teacher login page
         private void TeacherLoginClick(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(TeacherLogIn));
+                this.Frame.Navigate(typeof(TeacherLogIn));
+                      
         }
         //Goes back to the menu
         private void BackButtonClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(MainMenu));
         }
 
+        private void StudentLoginClick(object sender, RoutedEventArgs e) {
+
+        }
     }
 }

@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using System.Diagnostics;
 
 //The teacher login page
 //See the student login page for the comments
@@ -28,23 +29,30 @@ namespace Jaar_1_Project_4 {
             this.InitializeComponent();
         }
         private void LogInButtonClick(object sender, RoutedEventArgs e) {
-            if (UsernameTypeBox.Text.ToString().Length > 0) {
                 username = new SomeUsernameLogin(UsernameTypeBox.Text.ToString()); 
-                username.NoLamdaVisit(loginVisitor); 
-            }
-            else {
-                //TODO with the use of factory, make a label that says that the username is not filled in
-            }
-            if (passwordBox.Password.ToString().Length > 0) {
                 password = new SomePasswordLogin(passwordBox.Password.ToString());
+                username.NoLamdaVisit(loginVisitor);                                 
                 password.NoLamdaVisit(loginVisitor);
-            }
-            loginVisitor.OnLoginCheck();
-            this.Frame.Navigate(typeof(Questions));
+                pagePass();
         }
         private void BackButtonClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(MainLoginPage));
         }
+        private void TeacherLogOutClick(object sender, RoutedEventArgs e) {
+            DatabaseLoginCheck.IsTeacherLoggedIn = false;
+            this.Frame.Navigate(typeof(MainMenu));
+        }
+        public void pagePass() {
+            if (loginVisitor.OnLoginCheck()) {
+                DatabaseLoginCheck.IsTeacherLoggedIn = true;
+                this.Frame.Navigate(typeof(Questions));
+            }
+            else {
+                ErrorTextAttributeFactory.TheErrorTextAttributeFactory(this.errorTextBlock);
+            }
+
+        }
+
     }
 }
 

@@ -304,7 +304,6 @@ B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Pr
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x64\Debug\LoginSystem\MainLoginPage.xbf
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x64\Debug\Menus\OpenDagInformatie.xbf
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x64\Debug\QuestionSystem\AskAQuestions.xbf
-B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x64\Debug\LoginSystem\StudentLogin.xbf
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x64\Debug\LoginSystem\TeacherLogIn.xbf
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x64\Debug\Menus\WijnhavenLocations.xbf
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x64\Debug\Jaar 1 Project 4.xr.xml
@@ -438,8 +437,6 @@ B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Pr
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\LoginSystem\MainLoginPage.g.cs
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\Menus\OpenDagInformatie.g.i.cs
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\Menus\OpenDagInformatie.g.cs
-B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\LoginSystem\StudentLogin.g.i.cs
-B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\LoginSystem\StudentLogin.g.cs
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\LoginSystem\TeacherLogIn.g.i.cs
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\LoginSystem\TeacherLogIn.g.cs
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\Menus\WijnhavenLocations.g.i.cs
@@ -467,7 +464,6 @@ B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Pr
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\LoginSystem\MainLoginPage.xaml
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\Menus\OpenDagInformatie.xaml
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\QuestionSystem\AskAQuestions.xaml
-B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\LoginSystem\StudentLogin.xaml
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\LoginSystem\TeacherLogIn.xaml
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\Menus\WijnhavenLocations.xaml
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\App.xbf
@@ -480,7 +476,6 @@ B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Pr
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\LoginSystem\MainLoginPage.xbf
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\Menus\OpenDagInformatie.xbf
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\QuestionSystem\AskAQuestions.xbf
-B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\LoginSystem\StudentLogin.xbf
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\LoginSystem\TeacherLogIn.xbf
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\Menus\WijnhavenLocations.xbf
 B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\XamlSaveStateFile.xml
@@ -973,3 +968,8 @@ D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\o
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\QueryHandlers\InfoQueryHandler\InfoQueryHandler\InfoPopup.xaml
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\QueryHandlers\InfoQueryHandler\InfoQueryHandler\InfoPopup.xbf
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x64\Debug\QueryHandlers\InfoQueryHandler\InfoQueryHandler\InfoPopup.xbf
+B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x64\Debug\QueryHandlers\InfoQueryHandler\InfoQueryHandler\InfoPopup.xbf
+B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\QueryHandlers\InfoQueryHandler\InfoQueryHandler\InfoPopup.g.i.cs
+B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\QueryHandlers\InfoQueryHandler\InfoQueryHandler\InfoPopup.g.cs
+B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\QueryHandlers\InfoQueryHandler\InfoQueryHandler\InfoPopup.xaml
+B:\School\Developing\Github projects\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\QueryHandlers\InfoQueryHandler\InfoQueryHandler\InfoPopup.xbf

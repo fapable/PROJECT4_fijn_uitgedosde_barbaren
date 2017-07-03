@@ -29,7 +29,7 @@ namespace Jaar_1_Project_4 {
         T GetLoginInformationValue();
     }
     public interface ILoginVisitor<T> {
-        void OnLoginCheck();
+        bool OnLoginCheck();
         void OnPassword(IUserNameAndPasswordVisit<string> IUserNameAndPassWordObject);
         void OnUsername(IUserNameAndPasswordVisit<string> IUserNameAndPassWordObject);
         void OnNone();

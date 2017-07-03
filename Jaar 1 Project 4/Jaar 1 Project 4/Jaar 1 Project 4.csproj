@@ -97,6 +97,8 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LoginSystem\ErrorTextAttributeFactory.cs" />
+    <Compile Include="LoginSystem\DatabaseLoginCheck.cs" />
     <Compile Include="Interfaces\Interfaces.cs" />
     <Compile Include="QueryHandlers\ContactQueryHandler\ContactPagePopup.xaml.cs">
       <DependentUpon>ContactPagePopup.xaml</DependentUpon>
@@ -159,9 +161,6 @@
     </Compile>
     <Compile Include="Activities\ActivityPages\SecondFloor.xaml.cs">
       <DependentUpon>SecondFloor.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="LoginSystem\StudentLogin.xaml.cs">
-      <DependentUpon>StudentLogin.xaml</DependentUpon>
     </Compile>
     <Compile Include="LoginSystem\TeacherLogIn.xaml.cs">
       <DependentUpon>TeacherLogIn.xaml</DependentUpon>
@@ -279,10 +278,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Activities\ActivityPages\SecondFloor.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="LoginSystem\StudentLogin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

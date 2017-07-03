@@ -10,53 +10,27 @@ using System.Diagnostics;
 
 namespace Jaar_1_Project_4 {
     public class LogInInformationStoreVisitor<T> : ILoginVisitor<string> {
-        //In the dictionary the username and password is stored
-        Dictionary<IUserNameAndPasswordVisit<string>, IUserNameAndPasswordVisit<string>> givenUsernameAndPassword; 
-        IUserNameAndPasswordVisit<string> none; //To avoid creating null objects
-
+        //In the array the username and password is stored
+        IUserNameAndPasswordVisit<string>[] usernameAndPassword;
         public LogInInformationStoreVisitor() {
-            none = new NoneLogin();
-            this.givenUsernameAndPassword = new Dictionary<IUserNameAndPasswordVisit<string>, IUserNameAndPasswordVisit<string>>();
-            this.givenUsernameAndPassword.Add(none, none);
+            this.usernameAndPassword = new IUserNameAndPasswordVisit<string>[2];
         }
         public void OnNone() {
-            Debug.WriteLine("We got a none object here");         
+            Debug.WriteLine("We got a none object here");
         }
-        //Checks if there is an username and password entered, and will then estabalish database connection
-        public void OnLoginCheck() { 
-            foreach (var item in this.givenUsernameAndPassword) {
-                if (item.Key.LambdaVisit(() => true, _ => false, _ => false)){ //Checks if the password or username is fileld in
-                    Debug.WriteLine("No username entered!");
-                }
-                else if (item.Value.LambdaVisit(() => true, _ => false, _ => false)) { 
-                    Debug.WriteLine("No password entered");
-                }
-                else {
-                    //TODO see if the entered username and password match with each other
-                    Debug.WriteLine("We make database connection now since username nad password are filled in!");
-                }
-            }
+        //estabalishes database connection
+        public bool OnLoginCheck() {
+            return DatabaseLoginCheck.LookUserNameAndPasswordInDB(usernameAndPassword);
         }
-        //Checks if the password is filled in
         public void OnPassword(IUserNameAndPasswordVisit<string> typedInPassword) {
-            foreach (var item in this.givenUsernameAndPassword) {
-                if (item.Value.LambdaVisit(() => true, _ => false, _ => false)) {
-                    this.givenUsernameAndPassword = new Dictionary<IUserNameAndPasswordVisit<string>, IUserNameAndPasswordVisit<string>>() { { item.Key, typedInPassword } };
-                    //Updates the dictionary
-                }
-            }
+            usernameAndPassword[0] = typedInPassword;
         }
-        //Checks if the username is filled in
         public void OnUsername(IUserNameAndPasswordVisit<string> typedInUsername) {
-            foreach (var item in this.givenUsernameAndPassword) {
-                if (item.Key.LambdaVisit(() => true, _ => false, _ => false)) {
-                    this.givenUsernameAndPassword = new Dictionary<IUserNameAndPasswordVisit<string>, IUserNameAndPasswordVisit<string>>() { { typedInUsername, item.Value } };
-                }
-            }
+            usernameAndPassword[1] = typedInUsername;
         }
     }
     //The username concrete class
-    public class SomeUsernameLogin : IUserNameAndPasswordVisit<string> { 
+    public class SomeUsernameLogin : IUserNameAndPasswordVisit<string> {
         private string username;
         public SomeUsernameLogin(string username) {
             this.username = username;

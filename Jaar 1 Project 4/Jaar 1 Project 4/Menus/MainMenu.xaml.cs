@@ -30,7 +30,13 @@ namespace Jaar_1_Project_4 {
         }
         //Goes the login page
         private void MainLoginPageClick(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(MainLoginPage));
+            if(DatabaseLoginCheck.IsTeacherLoggedIn == true) {
+                this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.QandAPage));
+            }
+            else {
+                this.Frame.Navigate(typeof(MainLoginPage));
+            }
+            
         }
         //Goes to the help page
         private void HelpPageClick(object sender, RoutedEventArgs e){
