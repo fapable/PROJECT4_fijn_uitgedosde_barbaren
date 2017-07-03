@@ -13,7 +13,6 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Jaar_1_Project_4 {
 
@@ -21,6 +20,7 @@ namespace Jaar_1_Project_4 {
         EducationQueryHandler educationQueryHandler;
         public Wijnhaven61() {
             this.InitializeComponent();
+            this.educationQueryHandler = new EducationQueryHandler();
             educationQueryHandler.CurrentWijnhavenGetSet = EducationQueryHandler.CurrentWijnhaven.wijnhaven61;
         }
 

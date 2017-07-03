@@ -26,7 +26,7 @@ namespace Jaar_1_Project_4 {
         public StudentLogin() {
             this.username = new NoneLogin();
             this.password = new NoneLogin();
-            this.loginVisitor = new TheVisitor<string>();
+            this.loginVisitor = new LogInInformationStoreVisitor<string>();
             this.InitializeComponent();
         }
         //Checks if username and password is typed in and then visits the username and password

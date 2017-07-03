@@ -24,7 +24,7 @@ namespace Jaar_1_Project_4 {
         public TeacherLogIn() {
             this.username = new NoneLogin();
             this.password = new NoneLogin();
-            this.loginVisitor = new TheVisitor<string>();
+            this.loginVisitor = new LogInInformationStoreVisitor<string>();
             this.InitializeComponent();
         }
         private void LogInButtonClick(object sender, RoutedEventArgs e) {

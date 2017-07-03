@@ -83,36 +83,27 @@
     </RootType>
     <RootType FullName="Jaar_1_Project_4.Activities" />
     <RootType FullName="Jaar_1_Project_4.ContactPagePopup" />
+    <RootType FullName="Windows.UI.Xaml.Documents.Run">
+      <RootProperty Name="Text" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
+    <RootType FullName="Jaar_1_Project_4.HelpPage" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Jaar_1_Project_4.ContactPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
       <RootProperty Name="Margin" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Text" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
-      <RootProperty Name="MaxLength" />
-      <RootProperty Name="Height" />
       <RootProperty Name="IsReadOnly" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="MaxLength" />
       <RootEvent Name="TextChanged" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="MaxLength" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Documents.Run">
-      <RootProperty Name="Text" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
-    <RootType FullName="Jaar_1_Project_4.CreateAccount" />
-    <RootType FullName="Jaar_1_Project_4.HelpPage" />
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
-    <RootType FullName="Jaar_1_Project_4.ContactPage" />
     <RootType FullName="Jaar_1_Project_4.Answer" />
     <RootType FullName="Jaar_1_Project_4.QuestionSystem.mainQpage" />
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
@@ -134,6 +125,13 @@
     <RootType FullName="Jaar_1_Project_4.OpenDagInformatie" />
     <RootType FullName="Jaar_1_Project_4.Questions" />
     <RootType FullName="Jaar_1_Project_4.SecondFloor" />
+    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="MaxLength" />
+    </RootType>
     <RootType FullName="Jaar_1_Project_4.StudentLogin" />
     <RootType FullName="Jaar_1_Project_4.TeacherLogIn" />
     <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
@@ -147,6 +145,6 @@
     <RootType FullName="Jaar_1_Project_4.Wijnhaven99" />
     <RootType FullName="Jaar_1_Project_4.Wijnhaven99Education" />
     <RootType FullName="Jaar_1_Project_4.WijnhavenLocations" />
-    <RootType FullName="Jaar_1_Project_4.WijnhavenEducationPopup" />
+    <RootType FullName="Jaar_1_Project_4.EducationPagePopUp" />
   </Roots.RootTypes>
 </Roots>

@@ -20,6 +20,7 @@ namespace Jaar_1_Project_4 {
         EducationQueryHandler educationQueryHandler;
         public Wijnhaven107() {
             this.InitializeComponent();
+            this.educationQueryHandler = new EducationQueryHandler();
             educationQueryHandler.CurrentWijnhavenGetSet = EducationQueryHandler.CurrentWijnhaven.wijnhaven107;
         }
         private void BackButtonClick(object sender, RoutedEventArgs e) {

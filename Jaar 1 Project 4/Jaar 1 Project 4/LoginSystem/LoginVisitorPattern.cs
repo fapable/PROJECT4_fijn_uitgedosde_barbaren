@@ -9,12 +9,12 @@ using System.Diagnostics;
 //In the database will be checked if the given username and password are correct
 
 namespace Jaar_1_Project_4 {
-    public class TheVisitor<T> : ILoginVisitor<string> {
+    public class LogInInformationStoreVisitor<T> : ILoginVisitor<string> {
         //In the dictionary the username and password is stored
         Dictionary<IUserNameAndPasswordVisit<string>, IUserNameAndPasswordVisit<string>> givenUsernameAndPassword; 
         IUserNameAndPasswordVisit<string> none; //To avoid creating null objects
 
-        public TheVisitor() {
+        public LogInInformationStoreVisitor() {
             none = new NoneLogin();
             this.givenUsernameAndPassword = new Dictionary<IUserNameAndPasswordVisit<string>, IUserNameAndPasswordVisit<string>>();
             this.givenUsernameAndPassword.Add(none, none);
