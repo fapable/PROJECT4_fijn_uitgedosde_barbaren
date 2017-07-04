@@ -11,7 +11,7 @@ using System.Diagnostics;
 namespace Jaar_1_Project_4 {
     public abstract class DatabaseLoginCheck {
         private static bool isTeacherLoggedIn = false;
-        public static bool IsTeacherLoggedIn { get => isTeacherLoggedIn; set => isTeacherLoggedIn = value; }
+        public static bool IsTeacherLoggedInGetAndSettter { get => isTeacherLoggedIn; set => isTeacherLoggedIn = value; }
 
         public static bool LookUserNameAndPasswordInDB(IUserNameAndPasswordVisit<string>[] givenUserNameAndPassword) {
             var syncClient = new HttpClient(); //To make connection with the API
@@ -49,7 +49,7 @@ namespace Jaar_1_Project_4 {
             }
             return secondemptyUserNameAndPassword;
         }
-        public static bool CheckUserNameAndPassword(string usernameDB, string passwordDB, string username, string password) {
+        public static bool CheckUserNameAndPassword(string usernameDB, string passwordDB, string givenUsername, string givenPassword) {
             if(usernameDB == "") {
                 ErrorTextAttributeFactory.GetAndSetErrorMessage = ErrorTextAttributeFactory.errorMessageEnum.noUsername;
                 return false;
@@ -58,11 +58,11 @@ namespace Jaar_1_Project_4 {
                 ErrorTextAttributeFactory.GetAndSetErrorMessage = ErrorTextAttributeFactory.errorMessageEnum.noPassword;
                 return false;
             }
-            else if (usernameDB != username) {
+            else if (usernameDB != givenUsername) {
                 ErrorTextAttributeFactory.GetAndSetErrorMessage = ErrorTextAttributeFactory.errorMessageEnum.wrongUsername;
                 return false;
             }
-            else if (passwordDB != password) {
+            else if (passwordDB != givenPassword) {
                 ErrorTextAttributeFactory.GetAndSetErrorMessage = ErrorTextAttributeFactory.errorMessageEnum.noPassword;
                 return false;
             }

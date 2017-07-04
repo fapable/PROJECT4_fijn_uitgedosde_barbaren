@@ -31,20 +31,20 @@ namespace Jaar_1_Project_4 {
         private void LogInButtonClick(object sender, RoutedEventArgs e) {
                 username = new SomeUsernameLogin(UsernameTypeBox.Text.ToString()); 
                 password = new SomePasswordLogin(passwordBox.Password.ToString());
-                username.NoLamdaVisit(loginVisitor);                                 
-                password.NoLamdaVisit(loginVisitor);
-                pagePass();
+                username.VisitTheLoginInformation(loginVisitor);                                 
+                password.VisitTheLoginInformation(loginVisitor);
+                CheckIfLogInIsCorrect();
         }
         private void BackButtonClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(MainLoginPage));
         }
         private void TeacherLogOutClick(object sender, RoutedEventArgs e) {
-            DatabaseLoginCheck.IsTeacherLoggedIn = false;
+            DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter = false;
             this.Frame.Navigate(typeof(MainMenu));
         }
-        public void pagePass() {
-            if (loginVisitor.OnLoginCheck()) {
-                DatabaseLoginCheck.IsTeacherLoggedIn = true;
+        public void CheckIfLogInIsCorrect() {
+            if (loginVisitor.IsLoginInSucceded()) {
+                DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter = true;
                 this.Frame.Navigate(typeof(Questions));
             }
             else {

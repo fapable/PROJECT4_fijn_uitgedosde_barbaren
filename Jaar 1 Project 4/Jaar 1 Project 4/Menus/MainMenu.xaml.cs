@@ -30,7 +30,7 @@ namespace Jaar_1_Project_4 {
         }
         //Goes the login page
         private void MainLoginPageClick(object sender, RoutedEventArgs e) {
-            if(DatabaseLoginCheck.IsTeacherLoggedIn == true) {
+            if(DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter == true) {
                 this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.QandAPage));
             }
             else {

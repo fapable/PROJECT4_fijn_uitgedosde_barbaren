@@ -24,14 +24,14 @@ namespace Jaar_1_Project_4 {
     }
     //Main Job is to give the concrete classes the methods for them to be able to be visited
     public interface IUserNameAndPasswordVisit<T> { //Interfaces offers the classic to visit and lambda way
-        void NoLamdaVisit(ILoginVisitor<T> visitor);
-        U LambdaVisit<U>(Func<U> onNone, Func<T, U> OnSomeUsernameLogin, Func<T, U> onSomePasswordLogin);
+        void VisitTheLoginInformation(ILoginVisitor<T> visitor);
         T GetLoginInformationValue();
     }
+    //Main Job is to store the username and password and then calls a method from another class that goes into the DB
     public interface ILoginVisitor<T> {
-        bool OnLoginCheck();
-        void OnPassword(IUserNameAndPasswordVisit<string> IUserNameAndPassWordObject);
-        void OnUsername(IUserNameAndPasswordVisit<string> IUserNameAndPassWordObject);
+        bool IsLoginInSucceded();
+        void OnPassword(IUserNameAndPasswordVisit<string> userNameOrPassWord);
+        void OnUsername(IUserNameAndPasswordVisit<string> userNameOrPassWord);
         void OnNone();
     }
 }

@@ -19,7 +19,7 @@ namespace Jaar_1_Project_4 {
             Debug.WriteLine("We got a none object here");
         }
         //estabalishes database connection
-        public bool OnLoginCheck() {
+        public bool IsLoginInSucceded() {
             return DatabaseLoginCheck.LookUserNameAndPasswordInDB(usernameAndPassword);
         }
         public void OnPassword(IUserNameAndPasswordVisit<string> typedInPassword) {
@@ -35,14 +35,11 @@ namespace Jaar_1_Project_4 {
         public SomeUsernameLogin(string username) {
             this.username = username;
         }
-        public void NoLamdaVisit(ILoginVisitor<string> visitor) {
+        public void VisitTheLoginInformation(ILoginVisitor<string> visitor) {
             visitor.OnUsername(this);
         }
         public string GetLoginInformationValue() {
             return this.username;
-        }
-        public U LambdaVisit<U>(Func<U> onNone, Func<string, U> OnSomeUsernameLogin, Func<string, U> onSomePasswordLogin) {
-            return OnSomeUsernameLogin(this.username);
         }
     }
     //The password concrete class
@@ -51,26 +48,20 @@ namespace Jaar_1_Project_4 {
         public SomePasswordLogin(string value) {
             this.password = value;
         }
-        public void NoLamdaVisit(ILoginVisitor<string> visitor) {
+        public void VisitTheLoginInformation(ILoginVisitor<string> visitor) {
             visitor.OnPassword(this);
         }
         public string GetLoginInformationValue() {
             return this.password;
         }
-        public U LambdaVisit<U>(Func<U> onNone, Func<string, U> OnSomeUsernameLogin, Func<string, U> onSomePasswordLogin) {
-            return onSomePasswordLogin(this.password);
-        }
     }
     //Concrete classs to avoid null objects
     public class NoneLogin : IUserNameAndPasswordVisit<string> {
-        public void NoLamdaVisit(ILoginVisitor<string> visitor) {
+        public void VisitTheLoginInformation(ILoginVisitor<string> visitor) {
             visitor.OnNone();
         }
         public string GetLoginInformationValue() {
             return "";
-        }
-        public U LambdaVisit<U>(Func<U> onNone, Func<string, U> OnSomeUsernameLogin, Func<string, U> onSomePasswordLogin) {
-            return onNone();
         }
     }
 }
