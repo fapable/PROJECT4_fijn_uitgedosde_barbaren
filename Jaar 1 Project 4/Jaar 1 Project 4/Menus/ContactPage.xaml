@@ -15,8 +15,8 @@
         </Grid.RowDefinitions>
         <TextBlock x:Name="contacttitle" Margin="10,0,16,0" TextWrapping="Wrap" HorizontalAlignment="Center" Text="Contact information" VerticalAlignment="Top"  FontSize="35" Foreground="White" FontWeight="Bold" Height="47"/>
         <Button x:Name="backButton" Content="Back
-                " HorizontalAlignment="Center" Margin="107,362.667,108,0" VerticalAlignment="Top" Height="56" Width="145" Grid.Row="2" Click="BackButtonclick"/>
-        <Button x:Name="Studychoice" Content="Study Choice" HorizontalAlignment="Center" Margin="82,66,108,0" Grid.Row="2" VerticalAlignment="Top" Height="40" Width="170" Click="StudyChoiceClick"/>
-        <Button x:Name="Education_question" Content="Education question" HorizontalAlignment="Center" Margin="82,160,108,0" Grid.Row="2" VerticalAlignment="Top" Width="170" Click="StudyChoiceClick"/>
+                " HorizontalAlignment="Center" Margin="82,363,108,-0.333" VerticalAlignment="Top" Height="56" Width="170" Grid.Row="2" Click="BackButtonclick"/>
+        <Button x:Name="Studychoice" Content="Study Choice" HorizontalAlignment="Center" Margin="82,56,108,0" Grid.Row="2" VerticalAlignment="Top" Height="52" Width="170" Click="StudyChoiceClick"/>
+        <Button x:Name="Education_question" Content="Education question" HorizontalAlignment="Center" Margin="82,146,108,0" Grid.Row="2" VerticalAlignment="Top" Width="170" Click="StudyChoiceClick" Height="49"/>
     </Grid>
 </Page>

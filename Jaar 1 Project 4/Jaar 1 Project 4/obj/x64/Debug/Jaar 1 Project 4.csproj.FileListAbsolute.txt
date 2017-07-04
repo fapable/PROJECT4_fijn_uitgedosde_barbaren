@@ -643,7 +643,6 @@ D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\b
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x64\Debug\Menus\OpenDagInformatie.xbf
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x64\Debug\QuestionSystem\AskAQuestions.xbf
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x64\Debug\Activities\ActivityPages\SecondFloor.xbf
-D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x64\Debug\LoginSystem\StudentLogin.xbf
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x64\Debug\LoginSystem\TeacherLogIn.xbf
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x64\Debug\Activities\ActivityPages\ThirthFloor.xbf
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\bin\x64\Debug\Wijnhavens\Wijnhaven103\Wijnhaven103.xbf
@@ -810,8 +809,6 @@ D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\o
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\QuestionSystem\AskAQuestions.g.cs
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\Activities\ActivityPages\SecondFloor.g.i.cs
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\Activities\ActivityPages\SecondFloor.g.cs
-D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\LoginSystem\StudentLogin.g.i.cs
-D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\LoginSystem\StudentLogin.g.cs
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\LoginSystem\TeacherLogIn.g.i.cs
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\LoginSystem\TeacherLogIn.g.cs
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\Activities\ActivityPages\ThirthFloor.g.i.cs
@@ -848,7 +845,6 @@ D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\o
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\Menus\OpenDagInformatie.xaml
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\QuestionSystem\AskAQuestions.xaml
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\Activities\ActivityPages\SecondFloor.xaml
-D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\LoginSystem\StudentLogin.xaml
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\LoginSystem\TeacherLogIn.xaml
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\Activities\ActivityPages\ThirthFloor.xaml
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\Wijnhavens\Wijnhaven103\Wijnhaven103.xaml
@@ -875,7 +871,6 @@ D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\o
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\Menus\OpenDagInformatie.xbf
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\QuestionSystem\AskAQuestions.xbf
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\Activities\ActivityPages\SecondFloor.xbf
-D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\LoginSystem\StudentLogin.xbf
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\LoginSystem\TeacherLogIn.xbf
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\Activities\ActivityPages\ThirthFloor.xbf
 D:\Project\PROJECT4_fijn_uitgedosde_barbaren\Jaar 1 Project 4\Jaar 1 Project 4\obj\x64\Debug\Wijnhavens\Wijnhaven103\Wijnhaven103.xbf

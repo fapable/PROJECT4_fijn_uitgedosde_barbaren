@@ -22,12 +22,13 @@ namespace Jaar_1_Project_4 {
         public bool IsLoginInSucceded() {
             return DatabaseLoginCheck.LookUserNameAndPasswordInDB(usernameAndPassword);
         }
-        public void OnPassword(IUserNameAndPasswordVisit<string> typedInPassword) {
-            usernameAndPassword[0] = typedInPassword;
-        }
         public void OnUsername(IUserNameAndPasswordVisit<string> typedInUsername) {
-            usernameAndPassword[1] = typedInUsername;
+            usernameAndPassword[0] = typedInUsername;
         }
+        public void OnPassword(IUserNameAndPasswordVisit<string> typedInPassword) {
+            usernameAndPassword[1] = typedInPassword;
+        }
+
     }
     //The username concrete class
     public class SomeUsernameLogin : IUserNameAndPasswordVisit<string> {

@@ -123,6 +123,17 @@
     <RootType FullName="Jaar_1_Project_4.MainMenu" />
     <RootType FullName="Jaar_1_Project_4.MainLoginPage" />
     <RootType FullName="Jaar_1_Project_4.OpenDagInformatie" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Items" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
+      <RootProperty Name="Content" />
+    </RootType>
     <RootType FullName="Jaar_1_Project_4.Questions" />
     <RootType FullName="Jaar_1_Project_4.SecondFloor" />
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">

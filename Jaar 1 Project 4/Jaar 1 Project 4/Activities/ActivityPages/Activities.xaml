@@ -13,7 +13,7 @@
             <RowDefinition Height="Auto" MinHeight="184.667"/>
         </Grid.RowDefinitions>
         <TextBlock x:Name="mainTitle"
-                    HorizontalAlignment="Center" TextAlignment="Center" Margin="100,0,108,0" TextWrapping="Wrap" Text="Activties" VerticalAlignment="Top" Foreground="#FFFFF8F8" FontWeight="Bold" FontSize="35" Height="47" Width="152"/>
+                    HorizontalAlignment="Center" TextAlignment="Center" Margin="100,0,108,0" TextWrapping="Wrap" Text="Activities" VerticalAlignment="Top" Foreground="#FFFFF8F8" FontWeight="Bold" FontSize="35" Height="47" Width="152"/>
         <Button x:Name="secondFloorButton" Content="Second floor" HorizontalAlignment="Center" Margin="63,146,52,52" VerticalAlignment="Center" Click="SecondFloorButton_Click" Height="57" Width="245"/>
         <Button x:Name="thirdFloorButton" Content="Third floor" HorizontalAlignment="Center" Margin="63,242,52,139.667" VerticalAlignment="Center" Click="ThirdFloorButton_Click" Height="58" Width="245" Grid.RowSpan="2"/>
         <Button x:Name="fourthFloorButton" Content="Fourth floor" HorizontalAlignment="Center" Margin="63,83,52,39.667" VerticalAlignment="Center" Click="FourthFloorButton_Click" Grid.Row="1" Width="245" Height="62"/>

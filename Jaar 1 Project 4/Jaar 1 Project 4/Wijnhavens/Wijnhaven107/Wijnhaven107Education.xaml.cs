@@ -29,7 +29,7 @@ namespace Jaar_1_Project_4 {
         }
 
         private void BackButtonClick(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(OpenDagInformatie));
+            this.Frame.Navigate(typeof(Wijnhaven107));
 
         }
     }

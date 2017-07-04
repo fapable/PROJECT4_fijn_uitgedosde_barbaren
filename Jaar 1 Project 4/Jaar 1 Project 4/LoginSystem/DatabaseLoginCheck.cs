@@ -16,19 +16,14 @@ namespace Jaar_1_Project_4 {
         public static bool LookUserNameAndPasswordInDB(IUserNameAndPasswordVisit<string>[] givenUserNameAndPassword) {
             var syncClient = new HttpClient(); //To make connection with the API
 
-            string usernameQuery = "http://www.wschaijk.nl/api/api.php/SELECT-teacher_id-FROM-teachers-WHERE-teacher_id=" + "'" + givenUserNameAndPassword[0].GetLoginInformationValue() + "';";
-            string passwordQuery = "http://www.wschaijk.nl/api/api.php/SELECT-teacher_code-FROM-teachers-WHERE-teacher_id=" + "'" + givenUserNameAndPassword[1].GetLoginInformationValue() + "';";
-
-            var usernameCall = syncClient.GetStringAsync(usernameQuery); //Query call
-            var usernameResult = usernameCall.Result; //Query result is saved
-
+            string passwordQuery = "http://www.wschaijk.nl/api/api.php/SELECT-teacher_code-FROM-teachers-WHERE-teacher_id=" + "'" + givenUserNameAndPassword[0].GetLoginInformationValue() + "';";
+ 
             var passwordCall = syncClient.GetStringAsync(passwordQuery); //Query call
             var passwordResult = passwordCall.Result; //Query result is saved
+    
+            string passwordDBConverted = DatabaseLoginCheck.ConvertRawQueryToText(passwordResult);
 
-            string usernameDB = DatabaseLoginCheck.ConvertRawQueryToText(usernameResult);
-            string passwordDB = DatabaseLoginCheck.ConvertRawQueryToText(passwordResult);
-
-            return CheckUserNameAndPassword(usernameDB, passwordDB, givenUserNameAndPassword[0].GetLoginInformationValue(), givenUserNameAndPassword[1].GetLoginInformationValue());
+            return CheckUserNameAndPassword(passwordDBConverted, givenUserNameAndPassword[1].GetLoginInformationValue());
         }
         public static string ConvertRawQueryToText(string usernameOrPassword) {
             string emptyUserNameAndPassword = "";
@@ -49,21 +44,13 @@ namespace Jaar_1_Project_4 {
             }
             return secondemptyUserNameAndPassword;
         }
-        public static bool CheckUserNameAndPassword(string usernameDB, string passwordDB, string givenUsername, string givenPassword) {
-            if(usernameDB == "") {
-                ErrorTextAttributeFactory.GetAndSetErrorMessage = ErrorTextAttributeFactory.errorMessageEnum.noUsername;
-                return false;
-            }
-            else if (passwordDB == "") {
-                ErrorTextAttributeFactory.GetAndSetErrorMessage = ErrorTextAttributeFactory.errorMessageEnum.noPassword;
-                return false;
-            }
-            else if (usernameDB != givenUsername) {
+        public static bool CheckUserNameAndPassword(string passwordDB,  string givenPassword) {
+           if (passwordDB == "") {
                 ErrorTextAttributeFactory.GetAndSetErrorMessage = ErrorTextAttributeFactory.errorMessageEnum.wrongUsername;
                 return false;
             }
             else if (passwordDB != givenPassword) {
-                ErrorTextAttributeFactory.GetAndSetErrorMessage = ErrorTextAttributeFactory.errorMessageEnum.noPassword;
+                ErrorTextAttributeFactory.GetAndSetErrorMessage = ErrorTextAttributeFactory.errorMessageEnum.wrongPassword;
                 return false;
             }
             else {

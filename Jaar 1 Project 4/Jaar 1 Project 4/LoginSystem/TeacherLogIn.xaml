@@ -11,18 +11,18 @@
     </Page.Resources>
 
     <Grid Background="{StaticResource hrTheme}" x:Name="teacher_login">
-        <TextBlock x:Name="mainTeacherText" HorizontalAlignment="Left" Margin="114,0,0,0" TextWrapping="Wrap" Text="Teacher" VerticalAlignment="Top" Style="{StaticResource mainTitle}" Foreground="White" FontWeight="Bold" FontSize="35"/>
-        <TextBlock x:Name="usernameLoginText" HorizontalAlignment="Left" Height="14" Margin="144,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" FontSize="11" FontWeight="Bold">
-            <Run Text="Username                  "/>
+        <TextBlock x:Name="mainTeacherText" HorizontalAlignment="Center" Margin="114,0,120,0" TextWrapping="Wrap" Text="Teacher" VerticalAlignment="Top" Style="{StaticResource mainTitle}" Foreground="White" FontWeight="Bold" FontSize="35"/>
+        <TextBlock x:Name="usernameLoginText" HorizontalAlignment="Center" Height="14" Margin="143,77,157,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" FontSize="11" FontWeight="Bold">
+            <Run Text="Teacher ID"/>
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <TextBlock x:Name="passwordLoginText" HorizontalAlignment="Left" Margin="144,147,0,0" TextWrapping="Wrap" Text="Teacher code" VerticalAlignment="Top" FontSize="11" FontWeight="Bold" />
-        <TextBox x:Name="UsernameTypeBox" HorizontalAlignment="Left" Margin="81,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="6" Width="194" FontSize="15" MaxLength="20"/>
-        <Button x:Name="logInButton" Content="Log in" HorizontalAlignment="Left" Margin="114,228,0,0" VerticalAlignment="Top" Click="LogInButtonClick" FontSize="11" Width="129" Height="41" />
-        <Button x:Name="studentLoginBackButton" Content="Back                 " HorizontalAlignment="Left" Margin="114,354,0,0" VerticalAlignment="Top" Width="129" Height="46" Click="BackButtonClick" FontSize="11"/>
-        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="81,167,0,0" Width="194" MaxLength="20"/>
-        <Button Content="Log out" HorizontalAlignment="Left" Margin="114,288,0,0" VerticalAlignment="Top" Height="44" Width="126" FontSize="11" Click="TeacherLogOutClick"/>
+        <TextBlock x:Name="passwordLoginText" HorizontalAlignment="Center" Margin="143,147,149,0" TextWrapping="Wrap" Text="Teacher code" VerticalAlignment="Top" FontSize="11" FontWeight="Bold" />
+        <TextBox x:Name="UsernameTypeBox" HorizontalAlignment="Center" Margin="79,96,87,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="6" Width="194" FontSize="15" MaxLength="20" RenderTransformOrigin="0.28,0.531"/>
+        <Button x:Name="logInButton" Content="Log in" HorizontalAlignment="Center" Margin="114,241,117,0" VerticalAlignment="Top" Click="LogInButtonClick" FontSize="11" Width="129" Height="41" />
+        <Button x:Name="studentLoginBackButton" Content="Back                 " HorizontalAlignment="Center" Margin="114,365,117,0" VerticalAlignment="Top" Width="129" Height="46" Click="BackButtonClick" FontSize="11"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="79,167,87,0" Width="194" MaxLength="20"/>
+        <Button Content="Log out" HorizontalAlignment="Center" Margin="114,301,120,0" VerticalAlignment="Top" Height="44" Width="126" FontSize="11" Click="TeacherLogOutClick" RenderTransformOrigin="0.19,0.682"/>
         <TextBlock x:Name="errorTextBlock" HorizontalAlignment="Center" Margin="114,204,106,0" TextWrapping="Wrap" Text="Enter your login Information" VerticalAlignment="Top" FontWeight="Bold" FontSize="10" Width="140" Height="19"/>
 
     </Grid>

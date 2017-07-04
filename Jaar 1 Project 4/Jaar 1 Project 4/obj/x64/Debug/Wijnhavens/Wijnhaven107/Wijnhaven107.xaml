@@ -17,7 +17,7 @@
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <Button x:ConnectionId='3' x:Name="backButton" Content="Back" HorizontalAlignment="Center" Margin="98,489,112,-68.667" VerticalAlignment="Top"                         Height="59" Width="150" Grid.Row="1"/>
+        <Button x:ConnectionId='3' x:Name="backButton" Content="Back" HorizontalAlignment="Center" Margin="98,443,112,-22.667" VerticalAlignment="Top"                         Height="59" Width="150" Grid.Row="1"/>
         <Button x:ConnectionId='4' Content="education" HorizontalAlignment="Center" Margin="98,117,112,0" Grid.Row="1" VerticalAlignment="Top" Height="43" Width="150"                             />
         <Button x:ConnectionId='5' x:Name="_25Wijnhaven4107_25" Content="Info" HorizontalAlignment="Center" Margin="98,200,112,0" Grid.Row="1" VerticalAlignment="Top" Height="47" Width="150"                        />
 

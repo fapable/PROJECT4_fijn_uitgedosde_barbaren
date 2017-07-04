@@ -20,7 +20,7 @@
             <RowDefinition Height="243*"/>
         </Grid.RowDefinitions>
         <TextBlock HorizontalAlignment="Center" Margin="138,10,153,0" TextWrapping="Wrap" Text="Info" VerticalAlignment="Top" FontSize="36" Foreground="White" FontWeight="Bold" Grid.RowSpan="2"/>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="138,10,0,0" VerticalAlignment="Top" Grid.Row="8" Height="39" Width="69" Click="Button_Click"/>
+        <Button Content="Back" HorizontalAlignment="Center" Margin="99,10,100,0" VerticalAlignment="Top" Grid.Row="8" Height="44" Width="161" Click="Button_Click"/>
 
     </Grid>
 </Page>
