@@ -45,7 +45,7 @@ namespace Jaar_1_Project_4 {
         public void CheckIfLogInIsCorrect() {
             if (loginVisitor.IsLoginInSucceded()) {
                 DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter = true;
-                this.Frame.Navigate(typeof(Answer));
+                this.Frame.Navigate(typeof(Jaar_1_Project_4.Answer));
             }
             else {
                 ErrorTextAttributeFactory.TheErrorTextAttributeFactory(this.errorTextBlock);

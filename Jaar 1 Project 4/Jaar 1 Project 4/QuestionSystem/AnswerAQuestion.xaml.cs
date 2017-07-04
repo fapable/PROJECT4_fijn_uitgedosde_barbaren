@@ -17,9 +17,9 @@ using Jaar_1_Project_4_Messages;
 
 namespace Jaar_1_Project_4 {
     public sealed partial class Answer : Page {
-        public Answer(Message question) {
+        public Answer() {
             this.InitializeComponent();
-            question.Draw();
+            //question.Draw();
         }
 
         private void mainTitle_SelectionChanged(object sender, RoutedEventArgs e) {

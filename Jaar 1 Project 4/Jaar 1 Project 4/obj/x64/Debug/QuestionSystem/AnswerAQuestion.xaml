@@ -7,12 +7,12 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid x:ConnectionId='1' Background="{StaticResource hrTheme}" x:Name="askquestions">
+    <Grid x:ConnectionId='1' Background="{StaticResource hrTheme}" x:Name="answerquestions">
         <TextBlock x:ConnectionId='2' x:Name="mainTitle" HorizontalAlignment="Left" Margin="34,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8"                                               Height="67" FontSize="35" Width="293" Text="Answer Question&#xD;&#xA;"/>
-        <Button x:ConnectionId='3' x:Name="button" Content="Send" HorizontalAlignment="Left" Margin="10,571,0,0" VerticalAlignment="Top"                      Height="59" Width="159"/>
-        <TextBox x:ConnectionId='4' x:Name="textBox2" HorizontalAlignment="Left" Height="366" Margin="10,200,0,0" TextWrapping="Wrap" Text="answer" VerticalAlignment="Top" Width="333"/>
-        <TextBox x:ConnectionId='5' x:Name="textBox2_Copy" HorizontalAlignment="Left" Height="128" Margin="10,67,0,0" TextWrapping="Wrap" Text="vraag" VerticalAlignment="Top" Width="333" IsReadOnly="True"/>
-        <Button x:ConnectionId='6' x:Name="button_Copy" Content="Back" HorizontalAlignment="Left" Margin="184,571,0,0" VerticalAlignment="Top"                      Height="59" Width="159"/>
+        <Button x:ConnectionId='3' x:Name="sendButton" Content="Send" HorizontalAlignment="Left" Margin="10,571,0,0" VerticalAlignment="Top"                      Height="59" Width="159"/>
+        <TextBox x:ConnectionId='4' x:Name="answerBox" HorizontalAlignment="Left" Height="366" Margin="10,200,0,0" TextWrapping="Wrap" Text="answer" VerticalAlignment="Top" Width="333"/>
+        <TextBox x:ConnectionId='5' x:Name="vraagBox" HorizontalAlignment="Left" Height="128" Margin="10,67,0,0" TextWrapping="Wrap" Text="vraag" VerticalAlignment="Top" Width="333" IsReadOnly="True"/>
+        <Button x:ConnectionId='6' x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="184,571,0,0" VerticalAlignment="Top"                      Height="59" Width="159"/>
 
     </Grid>
 </Page>
