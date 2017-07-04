@@ -24,11 +24,6 @@ namespace Jaar_1_Project_4
         {
             switch(connectionId)
             {
-            case 1:
-                {
-                    this.askquestions = (global::Windows.UI.Xaml.Controls.Grid)(target);
-                }
-                break;
             case 2:
                 {
                     this.mainTitle = (global::Windows.UI.Xaml.Controls.TextBlock)(target);
@@ -37,32 +32,7 @@ namespace Jaar_1_Project_4
                     #line default
                 }
                 break;
-            case 3:
-                {
-                    this.button = (global::Windows.UI.Xaml.Controls.Button)(target);
-                    #line 12 "..\..\..\QuestionSystem\AnswerAQuestion.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.button).Click += this.send_message;
-                    #line default
-                }
-                break;
-            case 4:
-                {
-                    this.textBox2 = (global::Windows.UI.Xaml.Controls.TextBox)(target);
-                }
-                break;
-            case 5:
-                {
-                    this.textBox2_Copy = (global::Windows.UI.Xaml.Controls.TextBox)(target);
-                }
-                break;
-            case 6:
-                {
-                    this.button_Copy = (global::Windows.UI.Xaml.Controls.Button)(target);
-                    #line 15 "..\..\..\QuestionSystem\AnswerAQuestion.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.button_Copy).Click += this.send_message;
-                    #line default
-                }
-                break;
+
             default:
                 break;
             }

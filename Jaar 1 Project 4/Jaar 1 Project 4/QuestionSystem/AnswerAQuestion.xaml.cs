@@ -12,16 +12,14 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
+using System.Net.Http;
+using Jaar_1_Project_4_Messages;
 
 namespace Jaar_1_Project_4 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class Answer : Page {
-        public Answer() {
+        public Answer(Message question) {
             this.InitializeComponent();
+            question.Draw();
         }
 
         private void mainTitle_SelectionChanged(object sender, RoutedEventArgs e) {
@@ -32,13 +30,13 @@ namespace Jaar_1_Project_4 {
             this.Frame.Navigate(typeof(MainMenu));
         }
 
-        private void send_message(object sender, RoutedEventArgs e)
-        {
-            throw new NotImplementedException();
+        private void send_message(object sender, RoutedEventArgs e) {
+            
         }
 
-        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e) {
+
+          
 
         }
 

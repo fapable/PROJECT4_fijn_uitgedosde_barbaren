@@ -33,6 +33,7 @@ namespace Jaar_1_Project_4
         }
 
         private void StudentLoginClick(object sender, RoutedEventArgs e) {
+            this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage));
 
         }
     }
