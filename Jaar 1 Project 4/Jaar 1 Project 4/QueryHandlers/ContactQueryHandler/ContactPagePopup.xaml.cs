@@ -13,21 +13,25 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-//The contact page pop up, on this page the contact information gets loaded
+//Main job is to display contact information on the screen
+//All the different type of contact information, the result of them are shown on this page
+//it is a dynamic page that changes on runtime based on the clicked contact button
 
 namespace Jaar_1_Project_4 {
     public sealed partial class ContactPagePopup : Page, IPagePopup {
-        ContactQueryHandler contactQueryHandler;
+        ContactQueryHandler contactQueryHandler;  //To create the queries and display the text (query results) on the screen
         public ContactPagePopup() {
             this.InitializeComponent();
             this.contactQueryHandler = new ContactQueryHandler();
-            this.MakeQueriesAndTextBlocks();
+            this.MakeQueriesAndTextBlocks();  //As soon as the page is loaded, the query results are drawn on it on runtime (dynamic)  
         }
+        //Queries get created and the textblocks get created, in the textblocks the query result will appear
         public void MakeQueriesAndTextBlocks() {
-            contactQueryHandler.MakeQueries(ContactQueryHandler.CurrentChoice);
-            contactQueryHandler.SetTextOnScreen(contactPopupGrid);
+            contactQueryHandler.MakeQueries(ContactQueryHandler.CurrentChoice);  //Creates queries, as argument is given the last clicked on contact button
+            contactQueryHandler.SetTextOnScreen(contactPopupGrid); //The text (query result) is displayed on the screen
+               //As argument is given the grid (page) on which the query results should be drawn
         }
-        private void Button_Click(object sender, RoutedEventArgs e) {
+        private void BackButtonClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(ContactPage));
         }
     }

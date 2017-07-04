@@ -16,13 +16,10 @@ using Windows.UI.Xaml.Navigation;
 using Jaar_1_Project_4_Messages;
 using Jaar_1_Project_4;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Jaar_1_Project_4.QuestionSystem
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
+
     public sealed partial class QandAPage : Page
     {
         public QandAPage()
@@ -43,20 +40,20 @@ namespace Jaar_1_Project_4.QuestionSystem
             int basey = -420;
             int basewidth = 640;
             int baseheieght = 80;
-            List<Message> current_messages = new List<Message> { };
+            List<IMessage> current_messages = new List<IMessage> { };
             for(int current = 0; current < qena.Count(); current++)
             {
                 if(current % 2 == 0)
                 {
-                    Message current_message = MessageFactory.Create(MessageType.question, new EasyLabel(basex, (basey + (130 * current)), basewidth, baseheieght, qena[current]), current_page, (30 * (current + 1)) + 100 * current, "test", "Henk", 1, "informatica");
+                    IMessage current_message = MessageFactory.Create(MessageType.question, new EasyLabel(basex, (basey + (130 * current)), basewidth, baseheieght, qena[current]), current_page, (30 * (current + 1)) + 100 * current, "test", "Henk", 1, "informatica");
                     //if (DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter) { current_message.content.Tapped += new TappedEventHandler(answerQuestion); }
-                    current_message.content.current_message.Tapped += new TappedEventHandler(answerQuestion);
+                    current_message.Content.current_message.Tapped += new TappedEventHandler(AnswerQuestion);
                     current_message.Draw();
                     current_messages.Add(current_message);
                 }
                 else if(current % 2 != 0)
                 {
-                    Message current_message = MessageFactory.Create(MessageType.answer, new EasyLabel(basex, (basey + (130 * current)), basewidth, baseheieght, qena[current]), current_page, (30 * (current + 1)) + 100 * current, null, "leraar", 1, "informatica");
+                    IMessage current_message = MessageFactory.Create(MessageType.answer, new EasyLabel(basex, (basey + (130 * current)), basewidth, baseheieght, qena[current]), current_page, (30 * (current + 1)) + 100 * current, null, "leraar", 1, "informatica");
                     current_message.Draw();
                     current_messages.Add(current_message);
                 }
@@ -71,11 +68,11 @@ namespace Jaar_1_Project_4.QuestionSystem
             //}
         }
 
-        private void goBack(object sender, RoutedEventArgs e)
+        private void GoBack(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(mainQpage));
         }
-        private int getWidth()
+        private int GetWidth()
         {
             FrameworkElement pnlClient = this.Content as FrameworkElement;
             if (pnlClient != null)
@@ -89,7 +86,7 @@ namespace Jaar_1_Project_4.QuestionSystem
             this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage));
         }
 
-        public void answerQuestion(object sender, TappedRoutedEventArgs e)
+        public void AnswerQuestion(object sender, TappedRoutedEventArgs e)
         {
             Debug.WriteLine("Clicked It Bitch");
             this.Frame.Navigate(typeof(Answer));

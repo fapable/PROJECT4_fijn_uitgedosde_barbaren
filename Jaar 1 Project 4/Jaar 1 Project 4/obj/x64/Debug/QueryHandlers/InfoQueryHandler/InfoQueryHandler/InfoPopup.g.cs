@@ -33,7 +33,7 @@ namespace Jaar_1_Project_4
                 {
                     global::Windows.UI.Xaml.Controls.Button element2 = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 23 "..\..\..\..\..\QueryHandlers\InfoQueryHandler\InfoQueryHandler\InfoPopup.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)element2).Click += this.Button_Click;
+                    ((global::Windows.UI.Xaml.Controls.Button)element2).Click += this.BackButtonClick;
                     #line default
                 }
                 break;

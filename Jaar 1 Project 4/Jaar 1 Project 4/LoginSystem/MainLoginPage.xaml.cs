@@ -13,28 +13,24 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-//The main login page
+//Main job is to display the main login page
 
-namespace Jaar_1_Project_4
-{
+namespace Jaar_1_Project_4 {
     public sealed partial class MainLoginPage : Page {
-        public MainLoginPage()
-        {
+        public MainLoginPage() {
             this.InitializeComponent();           
         }
-        //Goes to the teacher login page
+        //Goes to the teacher login page 
         private void TeacherLoginClick(object sender, RoutedEventArgs e) {
-                this.Frame.Navigate(typeof(TeacherLogIn));
-                      
+                this.Frame.Navigate(typeof(TeacherLogIn));                     
         }
         //Goes back to the menu
         private void BackButtonClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(MainMenu));
         }
-
+        //Goes to the Q&A page
         private void StudentLoginClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage));
-
         }
     }
 }

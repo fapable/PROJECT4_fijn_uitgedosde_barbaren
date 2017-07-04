@@ -9,9 +9,11 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Text;
 
+//The main job of this class is to create queries and manipulate it, it also gives commandos to display the text (query result) on screen
+
 namespace Jaar_1_Project_4 {
     public class StaticInfoQueryHandler : IQueryHandler {
-        public static string wijnhaven;
+        public static string wijnhaven; //This is the main attribute, the last clicked on button is stored, based on the button name the queries are made
         private static string mondayOpening;
         private static string tuesdayOpening;
         private static string wednesdayOpening;
@@ -27,10 +29,12 @@ namespace Jaar_1_Project_4 {
         public static string Adres { get => adres; set => adres = value; }
         public static string Wijnhaven { get => wijnhaven; set => wijnhaven = value; }
 
-        IPrepareQueryForScreenDisplay displayOnScreenObject;
+        IPrepareQueryForScreenDisplay displayOnScreenObject;  //To display the query results on the screen
         public StaticInfoQueryHandler() {
             this.displayOnScreenObject = new PrepareForScreenQueryHandler();
         }
+        //The job of this method is to create queries, as paramters is the last clicked on info button
+        //Based on the button, the queries are made
         public void MakeQueries(string wijnhaven) {
             var syncClient = new HttpClient(); //To make connection with the API
             string mondayOpening = "http://www.wschaijk.nl/api/api.php/SELECT-maandagopenning-FROM-openingstijden_locatie-WHERE-adres-LIKE-" + "'" + wijnhaven + "'; ";
@@ -40,8 +44,8 @@ namespace Jaar_1_Project_4 {
             string fridayOpening = "http://www.wschaijk.nl/api/api.php/SELECT-vrijdagopening-FROM-openingstijden_locatie-WHERE-adres-LIKE-" + "'" + wijnhaven + "'; ";
             string adres = "http://www.wschaijk.nl/api/api.php/SELECT-adres-FROM-openingstijden_locatie-WHERE-adres-LIKE-" + "'" + wijnhaven + "'; ";
 
-            var mondayOpenCall = syncClient.GetStringAsync(mondayOpening);
-            var mondayOpenResult = mondayOpenCall.Result;
+            var mondayOpenCall = syncClient.GetStringAsync(mondayOpening); //Query gets done
+            var mondayOpenResult = mondayOpenCall.Result; //Query result is saved
 
             var tuesdagOpenCall = syncClient.GetStringAsync(tuesdayOpening);
             var tuesdagOpenResult = tuesdagOpenCall.Result;
@@ -58,6 +62,7 @@ namespace Jaar_1_Project_4 {
             var adresCall = syncClient.GetStringAsync(adres);
             var adresResult = adresCall.Result;
 
+            //The attributes are set to the result of the query's, this is so that the result of the query can be shown on screen
             StaticInfoQueryHandler.MondayOpening = mondayOpenResult;
             StaticInfoQueryHandler.TuesdayOpening = tuesdagOpenResult;
             StaticInfoQueryHandler.WednesdayOpening = wednesdayOpenResult;
@@ -66,16 +71,15 @@ namespace Jaar_1_Project_4 {
             StaticInfoQueryHandler.Adres = adresResult;
 
         }
+        //Method changed the main attribute name to the last clicked on info button, based on this main attribute the quries are made
+        //This method is used because you cant have an object name with dots, but since the attributes in the DB do have dots
+        //The object name is then converted first
+        //This method is called when an info button is clicked
         public string ChangeMainAttributeName(object sender) {
             Button clickedOnButton = (Button) sender;
             string emptyButtonName = ""; //to store the buttonname
-            /*
-            The foreach loop is here because you can't have object names with dots in UWP
-            Since the database tables need to match the buttonname, the foreach loop is made to change (convert)
-            the buttoname to match the DB tables
-             */
             foreach (var letter in clickedOnButton.Name.ToString()) {
-                if (letter.ToString() == "_") { //for event buttons
+                if (letter.ToString() == "_") {
                     emptyButtonName += "%";
                 }
                 else if(letter.ToString() == "4") {
@@ -85,8 +89,10 @@ namespace Jaar_1_Project_4 {
                     emptyButtonName += letter.ToString();
                 }
             }
-            return emptyButtonName; //Buttoname gets SET so it can reached within SecondFloorPopup class                
+            return emptyButtonName;            
         }
+        //This methods creates the textblock, and also calls a method that converts the raw query result to a better looking text
+        //As parameter is the grid (page) on which the text (query results) should be drawn on
         public void SetTextOnScreen(dynamic gridPage) {
             displayOnScreenObject.CreateTextBlock(gridPage, displayOnScreenObject.ConvertRawQueryResultToNormalText(StaticInfoQueryHandler.MondayOpening), 1);
             displayOnScreenObject.CreateTextBlock(gridPage, displayOnScreenObject.ConvertRawQueryResultToNormalText(StaticInfoQueryHandler.TuesdayOpening), 2);

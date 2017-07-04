@@ -8,11 +8,11 @@
     mc:Ignorable="d">
 
     <Grid Background="{StaticResource hrTheme}" x:Name="answerquestions">
-        <TextBlock x:Name="mainTitle" HorizontalAlignment="Left" Margin="34,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8" SelectionChanged="mainTitle_SelectionChanged" Height="67" FontSize="35" Width="293" Text="Answer Question&#xD;&#xA;"/>
-        <Button x:Name="sendButton" Content="Send" HorizontalAlignment="Left" Margin="10,571,0,0" VerticalAlignment="Top" Click="send_message" Height="59" Width="159"/>
+        <TextBlock x:Name="mainTitle" HorizontalAlignment="Left" Margin="34,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8" SelectionChanged="MainTitle_SelectionChanged" Height="67" FontSize="35" Width="293" Text="Answer Question&#xD;&#xA;"/>
+        <Button x:Name="sendButton" Content="Send" HorizontalAlignment="Left" Margin="10,571,0,0" VerticalAlignment="Top" Click="Send_message" Height="59" Width="159"/>
         <TextBox x:Name="answerBox" HorizontalAlignment="Left" Height="366" Margin="10,200,0,0" TextWrapping="Wrap" Text="answer" VerticalAlignment="Top" Width="333"/>
         <TextBox x:Name="vraagBox" HorizontalAlignment="Left" Height="128" Margin="10,67,0,0" TextWrapping="Wrap" Text="vraag" VerticalAlignment="Top" Width="333" IsReadOnly="True"/>
-        <Button x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="184,571,0,0" VerticalAlignment="Top" Click="send_message" Height="59" Width="159"/>
+        <Button x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="184,571,0,0" VerticalAlignment="Top" Click="Send_message" Height="59" Width="159"/>
 
     </Grid>
 </Page>

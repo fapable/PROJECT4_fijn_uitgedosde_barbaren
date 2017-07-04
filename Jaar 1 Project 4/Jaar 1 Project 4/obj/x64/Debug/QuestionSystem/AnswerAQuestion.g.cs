@@ -33,7 +33,7 @@ namespace Jaar_1_Project_4
                 {
                     this.mainTitle = (global::Windows.UI.Xaml.Controls.TextBlock)(target);
                     #line 11 "..\..\..\QuestionSystem\AnswerAQuestion.xaml"
-                    ((global::Windows.UI.Xaml.Controls.TextBlock)this.mainTitle).SelectionChanged += this.mainTitle_SelectionChanged;
+                    ((global::Windows.UI.Xaml.Controls.TextBlock)this.mainTitle).SelectionChanged += this.MainTitle_SelectionChanged;
                     #line default
                 }
                 break;
@@ -41,7 +41,7 @@ namespace Jaar_1_Project_4
                 {
                     this.sendButton = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 12 "..\..\..\QuestionSystem\AnswerAQuestion.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.sendButton).Click += this.send_message;
+                    ((global::Windows.UI.Xaml.Controls.Button)this.sendButton).Click += this.Send_message;
                     #line default
                 }
                 break;
@@ -59,7 +59,7 @@ namespace Jaar_1_Project_4
                 {
                     this.backButton = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 15 "..\..\..\QuestionSystem\AnswerAQuestion.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.backButton).Click += this.send_message;
+                    ((global::Windows.UI.Xaml.Controls.Button)this.backButton).Click += this.Send_message;
                     #line default
                 }
                 break;

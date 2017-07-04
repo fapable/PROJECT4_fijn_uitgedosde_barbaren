@@ -14,12 +14,8 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using System.Net.Http;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Jaar_1_Project_4 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class Questions : Page
     {
         public Questions()
@@ -27,7 +23,7 @@ namespace Jaar_1_Project_4 {
             this.InitializeComponent();
         }
 
-        private void mainTitle_SelectionChanged(object sender, RoutedEventArgs e)
+        private void MainTitle_SelectionChanged(object sender, RoutedEventArgs e)
         {
 
         }
@@ -37,7 +33,7 @@ namespace Jaar_1_Project_4 {
             this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage));
         }
 
-        private void send_message(object sender, RoutedEventArgs e)
+        private void Send_message(object sender, RoutedEventArgs e)
         {
             var syncClient = new HttpClient();
             string email = E_mail.Text;
@@ -49,7 +45,7 @@ namespace Jaar_1_Project_4 {
             var qidCall = syncClient.GetStringAsync(qid);
             var qidResult = qidCall.Result;
             var gimmeResult = new PrepareForScreenQueryHandler();
-            var tempid = gimmeResult.resultOnly(qidResult);
+            var tempid = gimmeResult.ResultOnly(qidResult);
             int id = Int32.Parse(tempid);
             id = id + 1;
             string qupload = string.Format("http://www.wschaijk.nl/api/api.php/INSERT-INTO-questions-VALUES({0},-\'{1}\',-\'{2}\',-\'{3}\',-\'{4}\');", id, education.Replace(" ", "-"), email.Replace("@", "%40"), name.Replace(" ", "-"), question.Replace("?", "").Replace(" ", "-"));
@@ -57,12 +53,12 @@ namespace Jaar_1_Project_4 {
             this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage));
         }
 
-        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
 
-        private int getWidth()
+        private int GetWidth()
         {
             FrameworkElement pnlClient = this.Content as FrameworkElement;
             if (pnlClient != null)
@@ -72,7 +68,7 @@ namespace Jaar_1_Project_4 {
             }
             return 0;
         }
-        private int getHeight()
+        private int GetHeight()
         {
             FrameworkElement pnlClient = this.Content as FrameworkElement;
             if (pnlClient != null)

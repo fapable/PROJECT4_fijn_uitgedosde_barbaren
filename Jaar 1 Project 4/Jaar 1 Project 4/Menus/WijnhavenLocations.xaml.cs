@@ -13,7 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-//The wijnhavens location page
+//Main job is to give access to the wijnhaven location schools
 
 namespace Jaar_1_Project_4 {
     public sealed partial class WijnhavenLocations : Page {
@@ -35,7 +35,6 @@ namespace Jaar_1_Project_4 {
         //Goes to the opendaginformation page
         private void BackButtonClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(OpenDagInformatie));
-
         }
     }
 }

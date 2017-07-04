@@ -13,15 +13,15 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-//Openday information page
+//Main job is to give access to the activity section and wijnhaven section
+//Opendag informatie page
 
 namespace Jaar_1_Project_4 {
-
     public sealed partial class OpenDagInformatie : Page {
         public OpenDagInformatie() {
             this.InitializeComponent();
         }
-        //Goes to the main menu
+        //Goes to the main menu page
         private void BackButtonClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(MainMenu));
         }
@@ -40,10 +40,6 @@ namespace Jaar_1_Project_4 {
         //Goes to the contact page
         private void ContactButtonClick(System.Object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(ContactPage));
-
-
         }
-
-
     }
 }

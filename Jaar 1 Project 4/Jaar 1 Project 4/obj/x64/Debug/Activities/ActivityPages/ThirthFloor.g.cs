@@ -51,7 +51,7 @@ namespace Jaar_1_Project_4
                 {
                     this.H_03_403 = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 33 "..\..\..\..\Activities\ActivityPages\ThirthFloor.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.H_03_403).Click += this.classroomClick;
+                    ((global::Windows.UI.Xaml.Controls.Button)this.H_03_403).Click += this.ClassroomClick;
                     #line default
                 }
                 break;
@@ -64,7 +64,7 @@ namespace Jaar_1_Project_4
                 {
                     this.H_03_308 = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 35 "..\..\..\..\Activities\ActivityPages\ThirthFloor.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.H_03_308).Click += this.classroomClick;
+                    ((global::Windows.UI.Xaml.Controls.Button)this.H_03_308).Click += this.ClassroomClick;
                     #line default
                 }
                 break;
@@ -77,7 +77,7 @@ namespace Jaar_1_Project_4
                 {
                     this.H_03_206 = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 37 "..\..\..\..\Activities\ActivityPages\ThirthFloor.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.H_03_206).Click += this.classroomClick;
+                    ((global::Windows.UI.Xaml.Controls.Button)this.H_03_206).Click += this.ClassroomClick;
                     #line default
                 }
                 break;
@@ -140,7 +140,7 @@ namespace Jaar_1_Project_4
                 {
                     this.H_03_312 = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 53 "..\..\..\..\Activities\ActivityPages\ThirthFloor.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.H_03_312).Click += this.classroomClick;
+                    ((global::Windows.UI.Xaml.Controls.Button)this.H_03_312).Click += this.ClassroomClick;
                     #line default
                 }
                 break;

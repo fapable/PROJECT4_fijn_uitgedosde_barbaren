@@ -17,20 +17,19 @@ using Windows.UI;
 using Windows.Foundation;
 using Jaar_1_Project_4;
 
-
 namespace Jaar_1_Project_4_Messages
 {
-    public interface Message
+    public interface IMessage
     {
         void Draw();
-        EasyLabel content { get; }
-        int content_y_value { set; }
-        int margin { set; }
+        EasyLabel Content { get; }
+        int Content_y_value { set; }
+        int Margin { set; }
     }
     public enum MessageType { question, answer, notification } // this enum makes sure we can only create 3 kinds of in app messages 
     public abstract class MessageFactory
     {
-        public static Message Create(MessageType type, EasyLabel text, Grid current_page, int margin,string email, string name, int qandaid, string education) //current page is the grid the message has to be drawn to
+        public static IMessage Create(MessageType type, EasyLabel text, Grid current_page, int margin,string email, string name, int qandaid, string education) //current page is the grid the message has to be drawn to
         {
             switch (type) //checks the type of message you want and then returns the apropriate object
             {
@@ -53,7 +52,7 @@ namespace Jaar_1_Project_4_Messages
             }
         }
     }
-    public abstract class MessageDecorator : Message //this decorator adds text (an easy label) to your message
+    public abstract class MessageDecorator : IMessage //this decorator adds text (an easy label) to your message
     {
         public EasyLabel message;
         public int qandaid;
@@ -65,9 +64,9 @@ namespace Jaar_1_Project_4_Messages
             this.education = education;
         }
         public abstract void Draw();
-        public abstract EasyLabel content { get;}
-        public abstract int content_y_value { set; }
-        public abstract int margin { set; }
+        public abstract EasyLabel Content { get;}
+        public abstract int Content_y_value { set; }
+        public abstract int Margin { set; }
     }
     public class Question : MessageDecorator //if MessageType == question create a question message object(consisting of a colored background and text
     {
@@ -86,16 +85,16 @@ namespace Jaar_1_Project_4_Messages
             this.name = name;
         }
 
-        public override EasyLabel content => this.message;
+        public override EasyLabel Content => this.message;
 
-        public override int content_y_value { set => this.message.y = (int)value; }
-        public override int margin { set => this.some_margin = value; }
+        public override int Content_y_value { set => this.message.y = (int)value; }
+        public override int Margin { set => this.some_margin = value; }
 
         public override void Draw()
         {
             var background = new Rectangle();
             background.Fill = new SolidColorBrush(Windows.UI.Colors.LightPink);
-            background.Width = this.message.getWidth() + 20;
+            background.Width = this.message.GetWidth() + 20;
             background.Height = 100;
             background.Stroke = new SolidColorBrush(Windows.UI.Colors.Black);
             background.VerticalAlignment = VerticalAlignment.Top;
@@ -126,16 +125,16 @@ namespace Jaar_1_Project_4_Messages
             this.teacherid = teacherid;
         }
 
-        public override EasyLabel content => this.message;
+        public override EasyLabel Content => this.message;
 
-        public override int content_y_value { set => this.message.y = (int)value; }
-        public override int margin { set => this.some_margin = value; }
+        public override int Content_y_value { set => this.message.y = (int)value; }
+        public override int Margin { set => this.some_margin = value; }
 
         public override void Draw()
         {
             var background = new Rectangle();
             background.Fill = new SolidColorBrush(Windows.UI.Colors.White);
-            background.Width = this.message.getWidth();
+            background.Width = this.message.GetWidth();
             background.Height = 100;
             background.Stroke = new SolidColorBrush(Windows.UI.Colors.Black);
             background.VerticalAlignment = VerticalAlignment.Top;
@@ -162,16 +161,16 @@ namespace Jaar_1_Project_4_Messages
             this.some_margin = margin;
         }
 
-        public override EasyLabel content => this.message;
+        public override EasyLabel Content => this.message;
 
-        public override int content_y_value { set => this.message.y = (int)value; }
-        public override int margin { set => this.some_margin = value; }
+        public override int Content_y_value { set => this.message.y = (int)value; }
+        public override int Margin { set => this.some_margin = value; }
 
         public override void Draw()
         {
             var background = new Rectangle();
             background.Fill = new SolidColorBrush(Windows.UI.Colors.DarkRed);
-            background.Width = this.message.getWidth();
+            background.Width = this.message.GetWidth();
             background.Height = 180;
             background.Stroke = new SolidColorBrush(Windows.UI.Colors.Black);
             background.VerticalAlignment = VerticalAlignment.Top;
@@ -225,8 +224,8 @@ namespace Jaar_1_Project_4_Messages
         //    return true;
         //}
 
-        public int getWidth() => this.width; //returns width of the textblock
-        public double getHeight() => this.height; //returns height of the textblock
+        public int GetWidth() => this.width; //returns width of the textblock
+        public double GetHeight() => this.height; //returns height of the textblock
     }
 
 

@@ -54,7 +54,7 @@ namespace Jaar_1_Project_4
                 {
                     this._25Wijnhaven461_25 = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 18 "..\..\..\..\Wijnhavens\Wijnhaven61\Wijnhaven61.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this._25Wijnhaven461_25).Click += this.infoClickButton;
+                    ((global::Windows.UI.Xaml.Controls.Button)this._25Wijnhaven461_25).Click += this.InfoClickButton;
                     #line default
                 }
                 break;

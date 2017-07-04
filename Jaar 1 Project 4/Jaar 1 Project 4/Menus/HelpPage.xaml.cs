@@ -13,16 +13,14 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-//The help page
+//Main job is to show the help page
 
-namespace Jaar_1_Project_4
-{
-    public sealed partial class HelpPage : Page
-    {
-        public HelpPage()
-        {
+namespace Jaar_1_Project_4 {
+    public sealed partial class HelpPage : Page {
+        public HelpPage() {
             this.InitializeComponent();
         }
+        //Goes to the menu page
         private void BackButtonClick(object sender, RoutedEventArgs e){
             this.Frame.Navigate(typeof(MainMenu));
         }

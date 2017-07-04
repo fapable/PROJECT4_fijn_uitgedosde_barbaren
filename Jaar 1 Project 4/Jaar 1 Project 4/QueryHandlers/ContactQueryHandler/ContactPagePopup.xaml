@@ -19,7 +19,7 @@
             <RowDefinition Height="56"/>
             <RowDefinition Height="367.333"/>
         </Grid.RowDefinitions>
-        <Button Content="Back" HorizontalAlignment="Center" Margin="122,5.333,122,0" VerticalAlignment="Top" Height="45" Width="116" Grid.Row="8" Click="Button_Click"/>
+        <Button Content="Back" HorizontalAlignment="Center" Margin="122,5.333,122,0" VerticalAlignment="Top" Height="45" Width="116" Grid.Row="8" Click="BackButtonClick"/>
         <TextBlock x:Name="mainTitle" HorizontalAlignment="Center" Margin="107,0,122,0" TextWrapping="Wrap" Text="Contact" VerticalAlignment="Top" FontSize="36" Foreground="White" FontWeight="Bold"/>
 
     </Grid>

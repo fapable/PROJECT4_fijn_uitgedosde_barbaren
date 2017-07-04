@@ -30,11 +30,11 @@
             <Run/>
         </TextBlock>
         <Button x:Name="backButton" Content="Back" HorizontalAlignment="Left" Margin="9,65,0,0" VerticalAlignment="Top" Height="56" Click="ThirthFloorBackButton" Width="108" Grid.Row="1"/>
-        <Button x:Name="H_03_403" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,45,0,0" BorderBrush="#FF0C0C0C" Background="#FFFFC500"  BorderThickness="0.5" Height="32" Width="53" Click="classroomClick"/>
+        <Button x:Name="H_03_403" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,45,0,0" BorderBrush="#FF0C0C0C" Background="#FFFFC500"  BorderThickness="0.5" Height="32" Width="53" Click="ClassroomClick"/>
         <Button x:Name="button_Copy1" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,124,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="47" Width="53"/>
-        <Button x:Name="H_03_308" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,213,0,0" BorderBrush="#FF0C0C0C" Background="#FFFFC500"  BorderThickness="0.5" Height="49" Width="53" Click="classroomClick" Grid.RowSpan="2"/>
+        <Button x:Name="H_03_308" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,213,0,0" BorderBrush="#FF0C0C0C" Background="#FFFFC500"  BorderThickness="0.5" Height="49" Width="53" Click="ClassroomClick" Grid.RowSpan="2"/>
         <Button x:Name="button_Copy3" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,34,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="54" Width="53" Grid.Row="1"/>
-        <Button x:Name="H_03_206" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,88,0,0" BorderBrush="#FF0C0C0C" Background="#FFFFC500"  BorderThickness="0.5" Height="34" Width="69" Click="classroomClick" Grid.Row="1"/>
+        <Button x:Name="H_03_206" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,88,0,0" BorderBrush="#FF0C0C0C" Background="#FFFFC500"  BorderThickness="0.5" Height="34" Width="69" Click="ClassroomClick" Grid.Row="1"/>
         <Button x:Name="button_Copy5" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="231,45,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2"  BorderThickness="0.5" Height="32" Width="34"/>
         <Button x:Name="button_Copy6" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="231,77,0,0" BorderBrush="#FF0C0C0C" Background="#FFFF9FA2"  BorderThickness="0.5" Height="27" Width="34"/>
         <Button x:Name="button_Copy7" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="231,104,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="93" Width="34"/>
@@ -50,7 +50,7 @@
         <Button x:Name="button_Copy" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,77,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="50" Width="53"/>
         <Button x:Name="button_Copy15" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="176,45,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="32" Width="39"/>
         <Button x:Name="button_Copy8" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="231,197,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="80" Width="34" Grid.RowSpan="2"/>
-        <Button x:Name="H_03_312" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,168,0,0" BorderBrush="#FF0C0C0C" Background="#FFFFC500"  BorderThickness="0.5" Height="45" Width="53" Click="classroomClick"/>
+        <Button x:Name="H_03_312" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,168,0,0" BorderBrush="#FF0C0C0C" Background="#FFFFC500"  BorderThickness="0.5" Height="45" Width="53" Click="ClassroomClick"/>
         <Button x:Name="button_Copy17" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="192,88,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="34" Width="33" Grid.Row="1"/>
         <Button x:Name="button_Copy18" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="265,83,0,0" BorderBrush="#FF0C0C0C" Background="#FFC3C3C3"  BorderThickness="0.5" Height="39" Width="15" Grid.Row="1"/>
         <Border BorderBrush="Black" BorderThickness="0.5" HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="89" Margin="265,3,0,0" Grid.ColumnSpan="2" Grid.Row="1"/>

@@ -17,18 +17,20 @@ using System.Net.Http;
 using System.Text;
 using System.Diagnostics;
 
-//This page gets loaded when an event (class) from any of the floors are clicked
+//Main job is to display activity (event) information on the screen
+//All the floors pages (second floor and etc), the result of them are shown on this page
+//it is a dynamic page that changes on runtime based on the clicked eventroom in one of the activity floor pages
 
 namespace Jaar_1_Project_4 {
     public sealed partial class ActivityPopup : Page, IPagePopup {
-        ActivityQueryHandler activityQueryHandler;
+        ActivityQueryHandler activityQueryHandler; //To create the queries and display the text (query results) on the screen
         public ActivityPopup() {        
             this.InitializeComponent();
             this.activityQueryHandler = new ActivityQueryHandler();
-            MakeQueriesAndTextBlocks(); //Creaties queries and textblocks       
+            MakeQueriesAndTextBlocks(); //As soon as the page is loaded, the query results are drawn on it on runtime (dynamic)  
         }
-        //Based on the current floor, the back button goes to that floor
-        //Enum is to track which floor is clicked
+        //Based on the last selected floor page, the back button goes to that floor
+        //Enum is to track which floor was last clicked to know to which floor the application goes when the back button is clicked
         private void BackButtonClick(object sender, RoutedEventArgs e) {
             switch (ActivityQueryHandler.theCurrentFloor) {
                 case ActivityQueryHandler.CurrentFloor.secondfloor:
@@ -44,10 +46,11 @@ namespace Jaar_1_Project_4 {
                     break;
             }
         }
-        //Queries get created and the textblocks get created
+        //Queries get created and the textblocks get created, in the textblocks the query result will appear
         public void MakeQueriesAndTextBlocks() {
-            activityQueryHandler.MakeQueries(activityQueryHandler.ButtonName);
-            activityQueryHandler.SetTextOnScreen(ActivityPopupGrid);
+            activityQueryHandler.MakeQueries(activityQueryHandler.ButtonName); //Creates queries, as argument is given the last clicked on eventroom button
+            activityQueryHandler.SetTextOnScreen(ActivityPopupGrid); //The text (query result) is displayed on the screen
+            //As argument is given the grid (page) on which the query results should be drawn
         }
     }
 }

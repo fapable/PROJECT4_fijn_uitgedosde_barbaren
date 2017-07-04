@@ -13,18 +13,21 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+//Main job is to display education information about Wijnhaven 99
+//Wijnhaven 99 Education page
 
 namespace Jaar_1_Project_4 {
     public sealed partial class Wijnhaven99Education : Page {
         EducationQueryHandler educationQueryHandler;
         public Wijnhaven99Education() {
             this.InitializeComponent();
-            this.educationQueryHandler = new EducationQueryHandler();
-
+            this.educationQueryHandler = new EducationQueryHandler(); //To store the last selected education button
         }
-        private void back_Click(object sender, RoutedEventArgs e) {
+        //Goes back to wijnhaven 99 page
+        private void BackButtonClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(Wijnhaven99));
         }
+        //Stores the selected education button and then goes to the education pop up page
         private void EducationButtonClick(object sender, RoutedEventArgs e) {
             EducationQueryHandler.Education = educationQueryHandler.ChangeMainAttributeName(sender);
             this.Frame.Navigate(typeof(EducationPagePopUp)); //Goes to the popup page

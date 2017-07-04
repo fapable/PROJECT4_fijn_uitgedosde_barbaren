@@ -38,7 +38,7 @@ namespace Jaar_1_Project_4
                 {
                     this.back = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 16 "..\..\..\..\Wijnhavens\Wijnhaven99\Wijnhaven99Education.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.back).Click += this.back_Click;
+                    ((global::Windows.UI.Xaml.Controls.Button)this.back).Click += this.BackButtonClick;
                     #line default
                 }
                 break;

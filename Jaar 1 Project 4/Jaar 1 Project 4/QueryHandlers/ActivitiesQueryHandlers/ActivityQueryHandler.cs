@@ -10,13 +10,13 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Text;
 
-//Queries get prepared here 
+//The main job of this class is to create queries and manipulate it, it also gives commandos to display the text (query result) on screen
 
 namespace Jaar_1_Project_4 {
     public class ActivityQueryHandler : Page, IQueryHandler {
-        public static CurrentFloor theCurrentFloor;
-        public enum CurrentFloor  {secondfloor, thirdfloor, fourthfloor};  //Keeps track of the current floor
-        private static string clickedOnEventRoom;
+        public static CurrentFloor theCurrentFloor; //To keep track of the last selected floor
+        public enum CurrentFloor  {secondfloor, thirdfloor, fourthfloor};  
+        private static string clickedOnEventRoom; //This is the main attribute, the last clicked on button is stored, based on the button name the queries are made
         private static string description;
         private static string eventName;
         private static string classroomID;
@@ -30,7 +30,7 @@ namespace Jaar_1_Project_4 {
             this.displayOnScreenObject = new PrepareForScreenQueryHandler();
 
         }
-        //Getters and setters 
+        //Getters and setters
         public string ButtonName { get => clickedOnEventRoom; set => clickedOnEventRoom = value; }
         public static string Description { get => description; set => description = value; }
         public static string EventName { get => eventName; set => eventName = value; }
@@ -41,7 +41,8 @@ namespace Jaar_1_Project_4 {
         public static string EndTime { get => endTime; set => endTime = value; }
         public  CurrentFloor CurrentFloorGetSet { get => theCurrentFloor; set => theCurrentFloor = value; }
 
-        //This method is to create the queries
+        //The job of this method is to create queries, as paramters is the last clicked on eventroom button
+        //Based on the button, the queries are made
         public void MakeQueries(string classroomId) {
             var syncClient = new HttpClient(); //To make connection with the API
 
@@ -54,7 +55,7 @@ namespace Jaar_1_Project_4 {
             string startTime = "http://www.wschaijk.nl/api/api.php/SELECT-start_time-FROM-events-WHERE-classroom_ID-=-" + "'" + classroomId + "';";
             string endTime = "http://www.wschaijk.nl/api/api.php/SELECT-end_time-FROM-events-WHERE-classroom_ID-=-" + "'" + classroomId + "';";
        
-            var descriptionCall = syncClient.GetStringAsync(description); //Query call
+            var descriptionCall = syncClient.GetStringAsync(description); //Query gets done
             var descriptionResult = descriptionCall.Result; //Query result is saved
 
             var eventCall = syncClient.GetStringAsync(eventName);
@@ -75,7 +76,7 @@ namespace Jaar_1_Project_4 {
             var endTimeCall = syncClient.GetStringAsync(endTime);
             var endTimeResult = endTimeCall.Result;
 
-            //results set to the static set methods this is so they can by the 3 activity pop up pages
+            //The attributes are set to the result of the query's, this is so that the result of the query can be shown on screen
             ActivityQueryHandler.Description = descriptionResult;
             ActivityQueryHandler.EventName = eventResult;
             ActivityQueryHandler.ClassroomID = classroomIDResult;
@@ -84,15 +85,8 @@ namespace Jaar_1_Project_4 {
             ActivityQueryHandler.StartTime = startTimeResult;
             ActivityQueryHandler.EndTime = endTimeResult;
         }
-
-                /* These methods below create a textblock for each column from the DB
-        As arguments is given the grid where it's drawn on, and the text (the query result)
-        but before an SQL query result is drawn on the screen, it first gets converted.
-        Why? Because the result has brackets and other things that are not nice to read
-        They are removed in that method and the method then returns a: "prettier" querry result to read,
-        and as final argument is given in which row the textblock needs to drawn
-        it is comparable to Excel where you have columns and rows
-        */
+        //This methods creates the textblock, and also calls a method that converts the raw query result to a better looking text
+        //As parameter is the grid (page) on which the text (query results) should be drawn on
         public void SetTextOnScreen(dynamic gridPage) {
             displayOnScreenObject.CreateTextBlock(gridPage, displayOnScreenObject.ConvertRawQueryResultToNormalText(ActivityQueryHandler.OpleidingNaam), 1);
             displayOnScreenObject.CreateTextBlock(gridPage, displayOnScreenObject.ConvertRawQueryResultToNormalText(ActivityQueryHandler.ClassroomID), 2);
@@ -103,12 +97,15 @@ namespace Jaar_1_Project_4 {
             displayOnScreenObject.CreateTextBlock(gridPage, displayOnScreenObject.ConvertRawQueryResultToNormalText(ActivityQueryHandler.EndTime), 7);
             displayOnScreenObject.CreateTextBlock(gridPage, displayOnScreenObject.ConvertRawQueryResultToNormalText(ActivityQueryHandler.ClassroomID), 8);
         }
-        //Method changes button name to a name that matches the DB tables
+        //Method changed the main attribute name to the last clicked on event button, based on this main attribute the quries are made
+        //This method is used because you cant have an object name with dots, but since the attributes in the DB do have dots
+        //The object name is then converted first
+        //This method is called when an event room button is clicked
         public  string ChangeMainAttributeName(Object sender) {
-            Button clickedOnButton = (Button) sender;
+            Button clickedOnButton = (Button) sender; 
             string emptyButtonName = ""; //to store the buttonname
             foreach (var letter in clickedOnButton.Name.ToString()) {
-                if (letter.ToString() == "_") { //for event buttons
+                if (letter.ToString() == "_") {
                     emptyButtonName += ".";
                 }
                 else if (letter.ToString() == "-") { 
@@ -118,7 +115,7 @@ namespace Jaar_1_Project_4 {
                     emptyButtonName += letter.ToString();
                 }
             }
-            return emptyButtonName; //Buttoname gets SET so it can reached within the activity classses               
+            return emptyButtonName;             
         }
     }
 }

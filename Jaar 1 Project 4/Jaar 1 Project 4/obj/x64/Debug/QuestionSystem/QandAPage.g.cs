@@ -33,7 +33,7 @@ namespace Jaar_1_Project_4.QuestionSystem
                 {
                     this.BackButton = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 11 "..\..\..\QuestionSystem\QandAPage.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.BackButton).Click += this.goBack;
+                    ((global::Windows.UI.Xaml.Controls.Button)this.BackButton).Click += this.GoBack;
                     #line default
                 }
                 break;

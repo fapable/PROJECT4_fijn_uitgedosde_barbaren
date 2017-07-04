@@ -15,44 +15,43 @@ using Windows.UI.Xaml.Navigation;
 using System.Diagnostics;
 
 //The teacher login page
-//See the student login page for the comments
+//Main job is to store the typed in usernaem and password, and then they get visited
 
 namespace Jaar_1_Project_4 {
     public sealed partial class TeacherLogIn : Page {
-        private IUserNameAndPasswordVisit<string> username;
-        private IUserNameAndPasswordVisit<string> password;
-        private ILoginVisitor<string> loginVisitor;
+        private IUserNameAndPasswordVisit<string> username; //Username will get stored in here
+        private IUserNameAndPasswordVisit<string> password; //password will get stored in here
+        private ILoginVisitor<string> loginVisitor; //The visitor
         public TeacherLogIn() {
-            this.username = new NoneLogin();
+            this.username = new NoneLogin(); //Username and password are none by default to avoid null's
             this.password = new NoneLogin();
-            this.loginVisitor = new LogInInformationStoreVisitor<string>();
+            this.loginVisitor = new LogInInformationStoreVisitor<string>(); 
             this.InitializeComponent();
         }
+        //When the user clicks on the login button, this method gets activated
         private void LogInButtonClick(object sender, RoutedEventArgs e) {
-                username = new SomeUsernameLogin(UsernameTypeBox.Text.ToString()); 
-                password = new SomePasswordLogin(passwordBox.Password.ToString());
-                username.VisitTheLoginInformation(loginVisitor);                                 
-                password.VisitTheLoginInformation(loginVisitor);
-                CheckIfLogInIsCorrect();
+                username = new SomeUsernameLogin(UsernameTypeBox.Text.ToString());  //typed in username gets stored 
+                password = new SomePasswordLogin(passwordBox.Password.ToString()); //typed in password gets stored
+                username.VisitTheLoginInformation(loginVisitor);  //visitor visits the username                               
+                password.VisitTheLoginInformation(loginVisitor); //visitor visits the password
+                CheckIfLogInIsCorrect(); //the user information gets checked 
         }
+        //Goes back to the main login page
         private void BackButtonClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(MainLoginPage));
         }
-        private void TeacherLogOutClick(object sender, RoutedEventArgs e) {
-            DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter = false;
-            this.Frame.Navigate(typeof(MainMenu));
-        }
+        //Checks if the given user information is correct
         public void CheckIfLogInIsCorrect() {
+            //If the login is correct, the teacher goes to the answer page
             if (loginVisitor.IsLoginInSucceded()) {
-                DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter = true;
-                this.Frame.Navigate(typeof(Jaar_1_Project_4.Answer));
+                DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter = true; //This way it is know that the login has succeeded, this will be used in parts of the program
+                this.Frame.Navigate(typeof(Jaar_1_Project_4.Answer));  //goes to the answer page
             }
             else {
+                //If the login is not correct, then an error message is shown
                 ErrorTextAttributeFactory.TheErrorTextAttributeFactory(this.errorTextBlock);
             }
-
         }
-
     }
 }
 

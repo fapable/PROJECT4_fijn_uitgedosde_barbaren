@@ -70,14 +70,6 @@ namespace Jaar_1_Project_4
                     this.passwordBox = (global::Windows.UI.Xaml.Controls.PasswordBox)(target);
                 }
                 break;
-            case 9:
-                {
-                    global::Windows.UI.Xaml.Controls.Button element9 = (global::Windows.UI.Xaml.Controls.Button)(target);
-                    #line 25 "..\..\..\LoginSystem\TeacherLogIn.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)element9).Click += this.TeacherLogOutClick;
-                    #line default
-                }
-                break;
             case 10:
                 {
                     this.errorTextBlock = (global::Windows.UI.Xaml.Controls.TextBlock)(target);

@@ -16,25 +16,30 @@ using Windows.Graphics.Display; //For the mobile flip
 using System.Diagnostics;
 
 //The fourth floor page
+//The main job of the fourth floor page is to show openday events related to the fourth floor of the school
 
 namespace Jaar_1_Project_4 {
     public sealed partial class FourthFloor : Page {
-        ActivityQueryHandler activityQueryHandler; //To change enum and to set the name of the clicked event room
+        //Object is used to change his enum attribute to keep track of the selected school floor
+        //Based on the state of the enum, the back button (in the activity pop up page) goes to a certain wijnhaven school page
+        ActivityQueryHandler activityQueryHandler;    
         public FourthFloor() {
             this.InitializeComponent();
-            this.activityQueryHandler = new ActivityQueryHandler();
+            this.activityQueryHandler = new ActivityQueryHandler();  //to store button name
             DisplayInformation.AutoRotationPreferences = DisplayOrientations.Landscape; //Rotates screen (only for mobile)
             activityQueryHandler.CurrentFloorGetSet = ActivityQueryHandler.CurrentFloor.fourthfloor; //Changes enum to keep track of the current selected floor    
         }
         //Goes the activities page
-        private void fourthFlourBackButton_Click(object sender, RoutedEventArgs e) {
+        private void FourthFloorBackButtonClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(Activities));
         }
-        //When an eventroom gets clicked, the clicked on event room objects comes into this method
-        //Then it it set to the attribute of the  StaticActivityQueryMaker class to create queries based on it
+        //The eventrooms are buttons in the application, so the button name (when its clicked) comes into this method
+        //Then the name of the button is set to an attribute of the activityqueryhandler class to create queries based on it.
         private void EventRoomClick(object sender, RoutedEventArgs e) {
-            activityQueryHandler.ButtonName = activityQueryHandler.ChangeMainAttributeName(sender); //Name first get converted and then set
-            this.Frame.Navigate(typeof(ActivityPopup)); //Goes to the popup page
+            //The name of the button gets first converted, because it is illigal to have dots in an object name
+            //But since the classroom are written as dots in the Database, the objectname gets converted to match the database attributes
+            activityQueryHandler.ButtonName = activityQueryHandler.ChangeMainAttributeName(sender); 
+            this.Frame.Navigate(typeof(ActivityPopup)); //Goes to the activity popup page
         }
     }
 }

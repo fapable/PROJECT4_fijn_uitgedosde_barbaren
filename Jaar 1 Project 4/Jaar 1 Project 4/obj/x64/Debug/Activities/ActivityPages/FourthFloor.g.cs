@@ -38,7 +38,7 @@ namespace Jaar_1_Project_4
                 {
                     this.fourthFlourBackButton = (global::Windows.UI.Xaml.Controls.Button)(target);
                     #line 23 "..\..\..\..\Activities\ActivityPages\FourthFloor.xaml"
-                    ((global::Windows.UI.Xaml.Controls.Button)this.fourthFlourBackButton).Click += this.fourthFlourBackButton_Click;
+                    ((global::Windows.UI.Xaml.Controls.Button)this.fourthFlourBackButton).Click += this.FourthFloorBackButtonClick;
                     #line default
                 }
                 break;

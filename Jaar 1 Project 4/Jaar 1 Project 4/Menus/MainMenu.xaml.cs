@@ -13,14 +13,15 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-//The main menu (first page of the whole application)
+//Main job is to give fast access to functions in the application
+//The main menu
 
 namespace Jaar_1_Project_4 {
     public sealed partial class MainMenu : Page {
         public MainMenu() {
             this.InitializeComponent();      
         }
-        //Exits the application
+        //When exit button is clicked this method gets called, it exits the application
         private void ExitButtonClick(object sender, RoutedEventArgs e) {
             Application.Current.Exit();
         }
@@ -28,15 +29,14 @@ namespace Jaar_1_Project_4 {
         private void OpenDagInformationClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(OpenDagInformatie));
         }
-        //Goes the login page
+        //job is to see if the teacher is logged in, if the teacher is logged in then it skips the login page
         private void MainLoginPageClick(object sender, RoutedEventArgs e) {
-            if(DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter == true) {
-                this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.QandAPage));
+            if(DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter == true) { //Checks if teacher is already logged in
+                this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.QandAPage)); //goes to answer page if teacher is already logged in
             }
             else {
-                this.Frame.Navigate(typeof(MainLoginPage));
-            }
-            
+                this.Frame.Navigate(typeof(MainLoginPage)); //When teacher is not logged in it goes to the login page
+            }            
         }
         //Goes to the help page
         private void HelpPageClick(object sender, RoutedEventArgs e){

@@ -22,7 +22,7 @@ namespace Jaar_1_Project_4 {
             //question.Draw();
         }
 
-        private void mainTitle_SelectionChanged(object sender, RoutedEventArgs e) {
+        private void MainTitle_SelectionChanged(object sender, RoutedEventArgs e) {
 
         }
 
@@ -30,17 +30,17 @@ namespace Jaar_1_Project_4 {
             this.Frame.Navigate(typeof(MainMenu));
         }
 
-        private void send_message(object sender, RoutedEventArgs e) {
+        private void Send_message(object sender, RoutedEventArgs e) {
             
         }
 
-        private void textBox_TextChanged(object sender, TextChangedEventArgs e) {
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e) {
 
           
 
         }
 
-        private int getWidth()
+        private int GetWidth()
         {
             FrameworkElement pnlClient = this.Content as FrameworkElement;
             if (pnlClient != null)
@@ -50,7 +50,7 @@ namespace Jaar_1_Project_4 {
             }
             return 0;
         }
-        private int getHeight()
+        private int GetHeight()
         {
             FrameworkElement pnlClient = this.Content as FrameworkElement;
             if (pnlClient != null)

@@ -9,13 +9,12 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Text;
 
+//Main job is to prepare the queries to display on the screen
 //All classes that use queries will come into in these methods
 
 namespace Jaar_1_Project_4 {
     public class PrepareForScreenQueryHandler : IPrepareQueryForScreenDisplay {
-                /* Converts the query result from the method: MakeQueries, and makes the text more human readable.
-         the query result have brackets and other things in them, but that is not so nice on the screen
-         so that's why they are converted with this method to a more readable text */
+         //Removes ther brackets from the query results and make the text more readable
         public  string ConvertRawQueryResultToNormalText(string rawQueryText) {
             string queryTextConverted = "";
             foreach (char character in rawQueryText) {
@@ -34,10 +33,8 @@ namespace Jaar_1_Project_4 {
             }
             return (queryTextConverted);
         }
-                /* To create the text (query results) that will appear on the screen
-        As paramaters is given the grid (page) where it will be drawn on,
-        the result of the query, and in which row the textblock will apppear
-        */
+         //Creates the textblocks (query results) that will appear on the screen, the textblock have as text an query result
+         //As parameter, gridpage: the page it will get drawn on, queryresult: the result from the query, and gridrow: in which row to draw
         public  void CreateTextBlock(dynamic gridPage, string queryResult, int gridRow) {
             TextBlock textblock = new TextBlock();
             textblock.Text = queryResult;
@@ -46,12 +43,13 @@ namespace Jaar_1_Project_4 {
             textblock.VerticalAlignment = VerticalAlignment.Center; //Without this the application freezes
             textblock.TextWrapping = TextWrapping.Wrap; //this way the text won't go out of the screen
             textblock.FontSize = 20;
-            textblock.Foreground = new SolidColorBrush(Windows.UI.Colors.Black);
-            textblock.FontWeight = FontWeights.Bold;
+            textblock.Foreground = new SolidColorBrush(Windows.UI.Colors.Black); //background colour
+            textblock.FontWeight = FontWeights.Bold; //font style
             gridPage.Children.Add(textblock); //Adds textblock to the given page
         }
-        public string resultOnly(string queryResult)
-        {
+        //Removes ther brackets from the query results and make the text more readable
+        //The difference with the other method is that this method does not have the text and the DB attribute name together
+        public string ResultOnly(string queryResult) {
             string queryTextConverted = "";
             foreach (char character in queryResult.Reverse())
             {

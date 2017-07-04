@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Navigation;
 using Windows.Graphics.Display; //For the mobile flip
 
 //The Activity Main Page
+//The Main job of the activity main page is to give the option to choose the school floor (secondfloor, thirdfloor and fourth floor)
 
 namespace Jaar_1_Project_4 {
     public sealed partial class Activities : Page {
@@ -24,7 +25,7 @@ namespace Jaar_1_Project_4 {
         }
         //Goes back to the menu: Opendaginformatie
         private void ActivitiesBackButton_Click(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(OpenDagInformatie)); //frame.navigate changes the page
+            this.Frame.Navigate(typeof(OpenDagInformatie)); 
         }
         //Goes to the seconfloor page
         private void SecondFloorButton_Click(object sender, RoutedEventArgs e) {
