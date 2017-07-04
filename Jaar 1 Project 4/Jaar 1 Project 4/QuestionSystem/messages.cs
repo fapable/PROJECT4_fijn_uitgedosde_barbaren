@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
+using Windows.UI.Input;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -13,6 +15,8 @@ using Windows.UI.Xaml.Shapes;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI;
 using Windows.Foundation;
+using Jaar_1_Project_4;
+
 
 namespace Jaar_1_Project_4_Messages
 {
@@ -180,14 +184,14 @@ namespace Jaar_1_Project_4_Messages
             current_page.Children.Add(this.message.Draw());
         }
     }
-    public class EasyLabel //creates a textblock that can be drawn to the screen
+    public class EasyLabel : Page//creates a textblock that can be drawn to the screen
     {
         public int x;
         public int y;
         string text;
         int width;
         int height;
-        TextBlock current_message;
+        public TextBlock current_message;
         public EasyLabel(int x, int y, int width, int height, string text)
         {
             this.x = x + width / 2 + 50;
@@ -202,12 +206,28 @@ namespace Jaar_1_Project_4_Messages
             current_message.Width = this.width;
             current_message.Height = this.height;
             current_message.RenderTransform = new TranslateTransform { X = this.x, Y = this.y };
+
+            if (DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter)
+            {
+                //this.current_message.Tapped += new TappedEventHandler(answerQuestion);
+            
+            }
+
+
         }
         public dynamic Draw() //returns the created textblock for the main classes (question, answer and notification) to use
         {
             return current_message;
         }
+
+        //public bool answerQuestion(object sender, TappedRoutedEventArgs e)
+        //{
+        //    return true;
+        //}
+
         public int getWidth() => this.width; //returns width of the textblock
         public double getHeight() => this.height; //returns height of the textblock
     }
+
+
 }
