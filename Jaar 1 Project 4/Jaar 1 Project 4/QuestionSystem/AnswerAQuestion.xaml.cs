@@ -29,7 +29,7 @@ namespace Jaar_1_Project_4 {
 
         private void BackButtonClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainMenu));
+            this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage));
         }
 
         private void Send_message(object sender, RoutedEventArgs e)

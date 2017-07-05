@@ -45,14 +45,14 @@ namespace Jaar_1_Project_4.QuestionSystem
             {
                 if(current % 2 == 0)
                 {
-                    Message current_message = MessageFactory.Create(MessageType.question, new EasyLabel(basex, (basey + (130 * current)), basewidth, baseheieght, qena[current]), current_page, (30 * (current + 1)) + 100 * current, "test", "Henk", 1, "informatica");
+                    Message current_message = MessageFactory.Create(MessageType.question, new EasyLabel(0 - (GetWidth() / 2), (basey + (130 * current)), GetWidth() - 100, baseheieght, qena[current]), current_page, (30 * (current + 1)) + 100 * current, "test", "Henk", 1, "informatica");
                     if (DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter) { current_message.Content.current_message.Tapped += new TappedEventHandler(answerQuestion); }
                     current_message.Draw();
                     current_messages.Add(current_message);
                 }
                 else if(current % 2 != 0)
                 {
-                    Message current_message = MessageFactory.Create(MessageType.answer, new EasyLabel(basex, (basey + (130 * current)), basewidth, baseheieght, qena[current]), current_page, (30 * (current + 1)) + 100 * current, null, "leraar", 1, "informatica");
+                    Message current_message = MessageFactory.Create(MessageType.answer, new EasyLabel(0 - (GetWidth() / 2), (basey + (130 * current)), GetWidth() - 70, baseheieght, qena[current]), current_page, (30 * (current + 1)) + 100 * current, null, "leraar", 1, "informatica");
                     current_message.Draw();
                     current_messages.Add(current_message);
                 }
@@ -73,13 +73,8 @@ namespace Jaar_1_Project_4.QuestionSystem
         }
         private int GetWidth()
         {
-            FrameworkElement pnlClient = this.Content as FrameworkElement;
-            if (pnlClient != null)
-            {
-                double Width = pnlClient.ActualWidth;
-                return (int)Width;
-            }
-            return 0;
+            Rect dimensions = Window.Current.Bounds;
+            return (int)dimensions.Width - 100;
         }
         private void Button_Click(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage));
