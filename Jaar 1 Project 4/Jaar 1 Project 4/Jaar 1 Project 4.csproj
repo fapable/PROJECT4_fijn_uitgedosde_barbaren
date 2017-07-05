@@ -121,6 +121,7 @@
     <Compile Include="QueryHandlers\InfoQueryHandler\InfoQueryHandler\InfoPopup.xaml.cs">
       <DependentUpon>InfoPopup.xaml</DependentUpon>
     </Compile>
+    <Compile Include="QuestionExtender\QuestionExtender.cs" />
     <Compile Include="QuestionSystem\AnswerAQuestion.xaml.cs">
       <DependentUpon>AnswerAQuestion.xaml</DependentUpon>
     </Compile>

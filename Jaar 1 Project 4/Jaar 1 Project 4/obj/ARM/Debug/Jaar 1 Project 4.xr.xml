@@ -23,7 +23,6 @@
       <RootProperty Name="Inlines" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Style" />
-      <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Border">
       <RootProperty Name="BorderBrush" />
@@ -101,7 +100,6 @@
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="MaxLength" />
-      <RootEvent Name="TextChanged" />
     </RootType>
     <RootType FullName="Jaar_1_Project_4.Answer" />
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />

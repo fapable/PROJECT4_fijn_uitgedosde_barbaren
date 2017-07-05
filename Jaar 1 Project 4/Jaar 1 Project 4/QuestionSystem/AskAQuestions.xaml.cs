@@ -14,21 +14,17 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using System.Net.Http;
 
+//The page where an question can be asked (only for students)
 
 namespace Jaar_1_Project_4 {
-    public sealed partial class Questions : Page
-    {
-        public Questions()
-        {
+    public sealed partial class Questions : Page {
+        public Questions() {
             this.InitializeComponent();
         }
-
-
         private void BackButtonClick(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage));
         }
-
         private void Send_message(object sender, RoutedEventArgs e)
         {
             var syncClient = new HttpClient();

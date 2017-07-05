@@ -16,16 +16,18 @@ using Windows.UI.Xaml.Navigation;
 using Jaar_1_Project_4_Messages;
 using System.Net.Http;
 using Jaar_1_Project_4;
+using Windows.Graphics.Display; //For the mobile flip
 
 
-namespace Jaar_1_Project_4.QuestionSystem
-{
-
+namespace Jaar_1_Project_4.QuestionSystem {
     public sealed partial class QandAPage : Page
     {
         public QandAPage()
         {
             this.InitializeComponent();
+            QuestionExtender.EasyLabelCounter = 50; //Imortant: Resets the counter, this is to have the text back on their place when the page gets re-loaded
+            DisplayInformation.AutoRotationPreferences = DisplayOrientations.Landscape; //flips screen (for mobile only)
+
             //foreach result in query return add to de lijst?
             Grid current_page = qanda;
             var syncClient = new HttpClient(); //To make connection with the API
@@ -46,10 +48,10 @@ namespace Jaar_1_Project_4.QuestionSystem
                 someothercount++;
                 if (someothercount % 2 != 0)
                 {
-                    Debug.WriteLine(entry[0] + entry[4]);
+                    //Debug.WriteLine(entry[0] + entry[4]);
                 } else
                 {
-                    Debug.WriteLine(entry[0] + entry[3]);
+                    //Debug.WriteLine(entry[0] + entry[3]);
                 }
             }
 
@@ -61,24 +63,26 @@ namespace Jaar_1_Project_4.QuestionSystem
             List<List<string>> answerHold = new List<List<string>>();
             int count = 0;
             int previousID = -125678;
-            foreach (List<string> entry in results)
-            {
-                
-                if (entry.Count == 5)
-                {
-                    Message current_message = MessageFactory.Create(MessageType.question, new EasyLabel(0 - (GetWidth() / 2), (basey + (130 * count)), GetWidth() - 100, baseheieght, entry[4]), current_page, (30 * (count + 1)) + 100 * count, entry[2], entry[3], Int32.Parse(entry[0]), entry[1]);
-                    if (DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter) { current_message.Content.current_message.Tapped += new TappedEventHandler(answerQuestion); }
+            foreach (List<string> entry in results) {
+                if (entry.Count == 5) {
+                    QuestionExtender.IsQuestion = true ; //This is to know when to add the question or answer title to the text
+                    QuestionExtender.CurrentSelectedQuestionID = entry[0].ToString(); //Important, this is to set the text object name
+                    Message current_message = MessageFactory.Create(MessageType.question, new EasyLabel(0 - (GetWidth() / 2), (basey + (130 * count)), GetWidth() - 100, baseheieght, entry[4], entry[0]), current_page, (30 * (count + 1)) + 100 * count, entry[2], entry[3], Int32.Parse(entry[0]), entry[1], new EasyLabel(0 - (GetWidth() / 2), (basey + (130 * count)), GetWidth() - 150, baseheieght, entry[0], entry[0]));               
+                    if (DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter) { current_message.Content.current_message.Tapped += new TappedEventHandler(answerQuestion);  }
                     current_message.Draw();
-                    current_messages.Add(current_message);
+                    current_messages.Add(current_message);                             
                     previousID = Int32.Parse(entry[0]);
                     count++;
-                } else
-                {
-                   Message current_message = MessageFactory.Create(MessageType.answer, new EasyLabel(0 - (GetWidth() / 2), (basey + (130 * count)), GetWidth() - 70, baseheieght, entry[3]), current_page, (30 * (count + 1)) + 100 * count, null, "leraar", 1, "informatica");
+                }
+                else {
+                    QuestionExtender.IsQuestion = false; 
+                    QuestionExtender.EasyLabelCounter += 40; //Important: Increments height position
+                    Message current_message = MessageFactory.Create(MessageType.answer, new EasyLabel(0 - (GetWidth() / 2), (basey + (130 * count)), GetWidth() - 70, baseheieght, entry[3]), current_page, (30 * (count + 1)) + 100 * count, null, "leraar", 1, "informatica");
                     current_message.Draw();
                     count++;
-                    current_messages.Add(current_message);
-                }
+                    current_messages.Add(current_message);              
+                    QuestionExtender.EasyLabelCounter += 60; //Important: Increments height position
+                }      
                 //if (entry.Count == 4) { 
                 //    answerHold.Add(entry);
                     
@@ -121,9 +125,15 @@ namespace Jaar_1_Project_4.QuestionSystem
             //}
         }
 
-        private void GoBack(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(mainQpage));
+        private void GoBack(object sender, RoutedEventArgs e) {
+            if (DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter) { //If teacher is logged it goes straight to the main menu
+                this.Frame.Navigate(typeof(MainMenu));
+
+            }
+            else {
+                this.Frame.Navigate(typeof(mainQpage));
+
+            }       
         }
         private int GetWidth()
         {
@@ -136,13 +146,26 @@ namespace Jaar_1_Project_4.QuestionSystem
             return (int)dimensions.Height/5 * 4;
         }
         private void Button_Click(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage));
-        }
+            if(DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter == true) {
+                this.Frame.Navigate(typeof(MainMenu));
 
-        public void answerQuestion(object sender, TappedRoutedEventArgs e)
-        {
-            Debug.WriteLine("Clicked It Bitch");
-            this.Frame.Navigate(typeof(Answer));
+            }
+            else {
+                this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage));
+            }     
+        }
+        //The method that is attached to the vraag text
+        public void answerQuestion(object sender, TappedRoutedEventArgs e) {
+            TextBlock message = (TextBlock) sender;
+            QuestionExtender.CurrentSelectedQuestionID = message.Name;  //Important: this is to make the database check query
+            QuestionExtender.TheQuestion = message.Text; //For the answer page textbox
+            if (QuestionExtender.Isanswered()){ //Important: only unanswered questions can be answered
+                //Nothing                
+            }
+            else {
+                this.Frame.Navigate(typeof(Answer));
+            }
+           
         }
         public List<List<string>> create_array_from_string(string questions, string answers)
         {

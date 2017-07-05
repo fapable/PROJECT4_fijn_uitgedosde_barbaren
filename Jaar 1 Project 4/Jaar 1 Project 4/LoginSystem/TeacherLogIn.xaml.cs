@@ -45,7 +45,7 @@ namespace Jaar_1_Project_4 {
             //If the login is correct, the teacher goes to the answer page
             if (loginVisitor.IsLoginInSucceded()) {
                 DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter = true; //This way it is know that the login has succeeded, this will be used in parts of the program
-                this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage));  //goes to the answer page
+                this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.QandAPage));  //goes to the answer page
             }
             else {
                 //If the login is not correct, then an error message is shown

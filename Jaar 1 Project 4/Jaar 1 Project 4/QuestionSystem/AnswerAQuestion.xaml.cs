@@ -15,34 +15,28 @@ using Windows.UI.Xaml.Navigation;
 using System.Net.Http;
 using Jaar_1_Project_4_Messages;
 
+//The answer page, only teachers can access this page
+
 namespace Jaar_1_Project_4 {
     public sealed partial class Answer : Page {
         public Answer() {
             this.InitializeComponent();
-            //question.Draw();
+            vraagBox.Text = QuestionExtender.TheQuestion; //The textbox of the question section gets changed into the question
         }
+        private void BackButtonClick(object sender, RoutedEventArgs e) {
+            if (DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter == true) {
+                this.Frame.Navigate(typeof(MainMenu));
 
-        private void MainTitle_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void BackButtonClick(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage));
-        }
-
+            }
+            else {
+                this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage));
+            }
+        }      
         private void Send_message(object sender, RoutedEventArgs e)
         {
+            //TODO
             //upload answer to database + send email to person that asked the answered question
         }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e) {
-
-          
-
-        }
-
         private int GetWidth()
         {
             FrameworkElement pnlClient = this.Content as FrameworkElement;

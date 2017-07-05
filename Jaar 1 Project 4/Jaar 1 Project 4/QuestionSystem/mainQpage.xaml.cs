@@ -12,31 +12,22 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Graphics.Display; //For the mobile flip
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace Jaar_1_Project_4.QuestionSystem
-{
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
-    public sealed partial class mainQpage : Page
-    {
-        public mainQpage()
-        {
+namespace Jaar_1_Project_4.QuestionSystem {
+    public sealed partial class mainQpage : Page {
+        public mainQpage() {
             this.InitializeComponent();
+            DisplayInformation.AutoRotationPreferences = DisplayOrientations.Portrait; //flips screen (for mobile only)
         }
-
-        private void AskAQuestion(object sender, RoutedEventArgs e)
-        {
+        private void AskAQuestion(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(Questions));
         }
-        private void ToQandAButton(object sender, RoutedEventArgs e)
-        {
+        private void ToQandAButton(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(QandAPage));
         }
-        private void backButtonClick(object sender, RoutedEventArgs e)
-        {
+        private void backButtonClick(object sender, RoutedEventArgs e) {
             this.Frame.Navigate(typeof(MainMenu));
         }
     }
