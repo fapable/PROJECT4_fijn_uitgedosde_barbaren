@@ -22,16 +22,19 @@ namespace Jaar_1_Project_4 {
             //question.Draw();
         }
 
-        private void MainTitle_SelectionChanged(object sender, RoutedEventArgs e) {
+        private void MainTitle_SelectionChanged(object sender, RoutedEventArgs e)
+        {
 
         }
 
-        private void BackButtonClick(object sender, RoutedEventArgs e) {
+        private void BackButtonClick(object sender, RoutedEventArgs e)
+        {
             this.Frame.Navigate(typeof(MainMenu));
         }
 
-        private void Send_message(object sender, RoutedEventArgs e) {
-            
+        private void Send_message(object sender, RoutedEventArgs e)
+        {
+            //upload answer to database + send email to person that asked the answered question
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e) {

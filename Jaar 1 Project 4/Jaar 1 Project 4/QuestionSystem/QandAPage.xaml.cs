@@ -46,7 +46,7 @@ namespace Jaar_1_Project_4.QuestionSystem
                 if(current % 2 == 0)
                 {
                     Message current_message = MessageFactory.Create(MessageType.question, new EasyLabel(basex, (basey + (130 * current)), basewidth, baseheieght, qena[current]), current_page, (30 * (current + 1)) + 100 * current, "test", "Henk", 1, "informatica");
-                    if (DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter) { current_message.Content.Tapped += new TappedEventHandler(answerQuestion); }
+                    if (DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter) { current_message.Content.current_message.Tapped += new TappedEventHandler(answerQuestion); }
                     current_message.Draw();
                     current_messages.Add(current_message);
                 }
