@@ -23,10 +23,6 @@ namespace Jaar_1_Project_4 {
             this.InitializeComponent();
         }
 
-        private void MainTitle_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-
-        }
 
         private void BackButtonClick(object sender, RoutedEventArgs e)
         {
@@ -51,11 +47,6 @@ namespace Jaar_1_Project_4 {
             string qupload = string.Format("http://www.wschaijk.nl/api/api.php/INSERT-INTO-questions-VALUES({0},-\'{1}\',-\'{2}\',-\'{3}\',-\'{4}\');", id, education.Replace(" ", "-"), email.Replace("@", "%40"), name.Replace(" ", "-"), question.Replace("?", "").Replace(" ", "-"));
             var uploadstuff = syncClient.GetAsync(qupload);
             this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage));
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
 
         private int GetWidth()

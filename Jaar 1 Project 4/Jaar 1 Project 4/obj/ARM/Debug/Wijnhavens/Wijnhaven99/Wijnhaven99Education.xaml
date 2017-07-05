@@ -13,9 +13,9 @@
             <LineBreak/>
             <Run/>
         </TextBlock>
-        <Button x:ConnectionId='3' x:Name="back" Content="Back" HorizontalAlignment="Center" Margin="113,477,105,0" VerticalAlignment="Top"                    Height="62" Width="142"/>
-        <Button x:ConnectionId='4' x:Name="Communication_and_multimedia_design" Content="Communication and multimedia design" HorizontalAlignment="Center" Margin="46,85,33,0" VerticalAlignment="Top"                             />
-        <Button x:ConnectionId='5' x:Name="Creative_Media_and_Game_Technologies" Content="Creative Media and Game Technologies" HorizontalAlignment="Center" Margin="46,152,33,0" VerticalAlignment="Top" Height="29" Width="281"                             />
+        <Button x:ConnectionId='3' x:Name="back" Content="Back" HorizontalAlignment="Center" Margin="113,477,105,0" VerticalAlignment="Top"                         Height="62" Width="142"/>
+        <Button x:ConnectionId='4' x:Name="Communication_and_multimedia_design" Content="Communication and multimedia design" HorizontalAlignment="Center" Margin="46,85,33,0" VerticalAlignment="Top"                              Height="45"/>
+        <Button x:ConnectionId='5' x:Name="Creative_Media_and_Game_Technologies" Content="Creative Media and Game Technologies" HorizontalAlignment="Center" Margin="46,152,33,0" VerticalAlignment="Top" Height="57" Width="281"                             />
 
     </Grid>
 </Page>

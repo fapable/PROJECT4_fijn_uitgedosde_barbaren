@@ -132,14 +132,14 @@ namespace Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[29];
+            _typeNameTable = new string[28];
             _typeNameTable[0] = "Jaar_1_Project_4.Activities";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "Jaar_1_Project_4.ContactPagePopup";
             _typeNameTable[4] = "Jaar_1_Project_4.HelpPage";
             _typeNameTable[5] = "Jaar_1_Project_4.ContactPage";
-            _typeNameTable[6] = "Jaar_1_Project_4.QueryHandlers.InfoQueryHandler.InfoQueryHandler.InfoPopup";
+            _typeNameTable[6] = "Jaar_1_Project_4.InfoPopup";
             _typeNameTable[7] = "Jaar_1_Project_4.Answer";
             _typeNameTable[8] = "Jaar_1_Project_4.QuestionSystem.mainQpage";
             _typeNameTable[9] = "Jaar_1_Project_4.QuestionSystem.QandAPage";
@@ -152,25 +152,24 @@ namespace Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo
             _typeNameTable[16] = "Jaar_1_Project_4.OpenDagInformatie";
             _typeNameTable[17] = "Jaar_1_Project_4.Questions";
             _typeNameTable[18] = "Jaar_1_Project_4.SecondFloor";
-            _typeNameTable[19] = "Jaar_1_Project_4.StudentLogin";
-            _typeNameTable[20] = "Jaar_1_Project_4.TeacherLogIn";
-            _typeNameTable[21] = "Jaar_1_Project_4.ThirthFloor";
-            _typeNameTable[22] = "Jaar_1_Project_4.Wijnhaven103";
-            _typeNameTable[23] = "Jaar_1_Project_4.Wijnhaven61";
-            _typeNameTable[24] = "Jaar_1_Project_4.Wijnhaven61Education";
-            _typeNameTable[25] = "Jaar_1_Project_4.Wijnhaven99";
-            _typeNameTable[26] = "Jaar_1_Project_4.Wijnhaven99Education";
-            _typeNameTable[27] = "Jaar_1_Project_4.WijnhavenLocations";
-            _typeNameTable[28] = "Jaar_1_Project_4.EducationPagePopUp";
+            _typeNameTable[19] = "Jaar_1_Project_4.TeacherLogIn";
+            _typeNameTable[20] = "Jaar_1_Project_4.ThirthFloor";
+            _typeNameTable[21] = "Jaar_1_Project_4.Wijnhaven103";
+            _typeNameTable[22] = "Jaar_1_Project_4.Wijnhaven61";
+            _typeNameTable[23] = "Jaar_1_Project_4.Wijnhaven61Education";
+            _typeNameTable[24] = "Jaar_1_Project_4.Wijnhaven99";
+            _typeNameTable[25] = "Jaar_1_Project_4.Wijnhaven99Education";
+            _typeNameTable[26] = "Jaar_1_Project_4.WijnhavenLocations";
+            _typeNameTable[27] = "Jaar_1_Project_4.EducationPagePopUp";
 
-            _typeTable = new global::System.Type[29];
+            _typeTable = new global::System.Type[28];
             _typeTable[0] = typeof(global::Jaar_1_Project_4.Activities);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::Jaar_1_Project_4.ContactPagePopup);
             _typeTable[4] = typeof(global::Jaar_1_Project_4.HelpPage);
             _typeTable[5] = typeof(global::Jaar_1_Project_4.ContactPage);
-            _typeTable[6] = typeof(global::Jaar_1_Project_4.QueryHandlers.InfoQueryHandler.InfoQueryHandler.InfoPopup);
+            _typeTable[6] = typeof(global::Jaar_1_Project_4.InfoPopup);
             _typeTable[7] = typeof(global::Jaar_1_Project_4.Answer);
             _typeTable[8] = typeof(global::Jaar_1_Project_4.QuestionSystem.mainQpage);
             _typeTable[9] = typeof(global::Jaar_1_Project_4.QuestionSystem.QandAPage);
@@ -183,16 +182,15 @@ namespace Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo
             _typeTable[16] = typeof(global::Jaar_1_Project_4.OpenDagInformatie);
             _typeTable[17] = typeof(global::Jaar_1_Project_4.Questions);
             _typeTable[18] = typeof(global::Jaar_1_Project_4.SecondFloor);
-            _typeTable[19] = typeof(global::Jaar_1_Project_4.StudentLogin);
-            _typeTable[20] = typeof(global::Jaar_1_Project_4.TeacherLogIn);
-            _typeTable[21] = typeof(global::Jaar_1_Project_4.ThirthFloor);
-            _typeTable[22] = typeof(global::Jaar_1_Project_4.Wijnhaven103);
-            _typeTable[23] = typeof(global::Jaar_1_Project_4.Wijnhaven61);
-            _typeTable[24] = typeof(global::Jaar_1_Project_4.Wijnhaven61Education);
-            _typeTable[25] = typeof(global::Jaar_1_Project_4.Wijnhaven99);
-            _typeTable[26] = typeof(global::Jaar_1_Project_4.Wijnhaven99Education);
-            _typeTable[27] = typeof(global::Jaar_1_Project_4.WijnhavenLocations);
-            _typeTable[28] = typeof(global::Jaar_1_Project_4.EducationPagePopUp);
+            _typeTable[19] = typeof(global::Jaar_1_Project_4.TeacherLogIn);
+            _typeTable[20] = typeof(global::Jaar_1_Project_4.ThirthFloor);
+            _typeTable[21] = typeof(global::Jaar_1_Project_4.Wijnhaven103);
+            _typeTable[22] = typeof(global::Jaar_1_Project_4.Wijnhaven61);
+            _typeTable[23] = typeof(global::Jaar_1_Project_4.Wijnhaven61Education);
+            _typeTable[24] = typeof(global::Jaar_1_Project_4.Wijnhaven99);
+            _typeTable[25] = typeof(global::Jaar_1_Project_4.Wijnhaven99Education);
+            _typeTable[26] = typeof(global::Jaar_1_Project_4.WijnhavenLocations);
+            _typeTable[27] = typeof(global::Jaar_1_Project_4.EducationPagePopUp);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -231,7 +229,7 @@ namespace Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo
         private object Activate_3_ContactPagePopup() { return new global::Jaar_1_Project_4.ContactPagePopup(); }
         private object Activate_4_HelpPage() { return new global::Jaar_1_Project_4.HelpPage(); }
         private object Activate_5_ContactPage() { return new global::Jaar_1_Project_4.ContactPage(); }
-        private object Activate_6_InfoPopup() { return new global::Jaar_1_Project_4.QueryHandlers.InfoQueryHandler.InfoQueryHandler.InfoPopup(); }
+        private object Activate_6_InfoPopup() { return new global::Jaar_1_Project_4.InfoPopup(); }
         private object Activate_7_Answer() { return new global::Jaar_1_Project_4.Answer(); }
         private object Activate_8_mainQpage() { return new global::Jaar_1_Project_4.QuestionSystem.mainQpage(); }
         private object Activate_9_QandAPage() { return new global::Jaar_1_Project_4.QuestionSystem.QandAPage(); }
@@ -244,16 +242,15 @@ namespace Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo
         private object Activate_16_OpenDagInformatie() { return new global::Jaar_1_Project_4.OpenDagInformatie(); }
         private object Activate_17_Questions() { return new global::Jaar_1_Project_4.Questions(); }
         private object Activate_18_SecondFloor() { return new global::Jaar_1_Project_4.SecondFloor(); }
-        private object Activate_19_StudentLogin() { return new global::Jaar_1_Project_4.StudentLogin(); }
-        private object Activate_20_TeacherLogIn() { return new global::Jaar_1_Project_4.TeacherLogIn(); }
-        private object Activate_21_ThirthFloor() { return new global::Jaar_1_Project_4.ThirthFloor(); }
-        private object Activate_22_Wijnhaven103() { return new global::Jaar_1_Project_4.Wijnhaven103(); }
-        private object Activate_23_Wijnhaven61() { return new global::Jaar_1_Project_4.Wijnhaven61(); }
-        private object Activate_24_Wijnhaven61Education() { return new global::Jaar_1_Project_4.Wijnhaven61Education(); }
-        private object Activate_25_Wijnhaven99() { return new global::Jaar_1_Project_4.Wijnhaven99(); }
-        private object Activate_26_Wijnhaven99Education() { return new global::Jaar_1_Project_4.Wijnhaven99Education(); }
-        private object Activate_27_WijnhavenLocations() { return new global::Jaar_1_Project_4.WijnhavenLocations(); }
-        private object Activate_28_EducationPagePopUp() { return new global::Jaar_1_Project_4.EducationPagePopUp(); }
+        private object Activate_19_TeacherLogIn() { return new global::Jaar_1_Project_4.TeacherLogIn(); }
+        private object Activate_20_ThirthFloor() { return new global::Jaar_1_Project_4.ThirthFloor(); }
+        private object Activate_21_Wijnhaven103() { return new global::Jaar_1_Project_4.Wijnhaven103(); }
+        private object Activate_22_Wijnhaven61() { return new global::Jaar_1_Project_4.Wijnhaven61(); }
+        private object Activate_23_Wijnhaven61Education() { return new global::Jaar_1_Project_4.Wijnhaven61Education(); }
+        private object Activate_24_Wijnhaven99() { return new global::Jaar_1_Project_4.Wijnhaven99(); }
+        private object Activate_25_Wijnhaven99Education() { return new global::Jaar_1_Project_4.Wijnhaven99Education(); }
+        private object Activate_26_WijnhavenLocations() { return new global::Jaar_1_Project_4.WijnhavenLocations(); }
+        private object Activate_27_EducationPagePopUp() { return new global::Jaar_1_Project_4.EducationPagePopUp(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -301,7 +298,7 @@ namespace Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 6:   //  Jaar_1_Project_4.QueryHandlers.InfoQueryHandler.InfoQueryHandler.InfoPopup
+            case 6:   //  Jaar_1_Project_4.InfoPopup
                 userType = new global::Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_6_InfoPopup;
                 userType.SetIsLocalType();
@@ -392,72 +389,65 @@ namespace Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 19:   //  Jaar_1_Project_4.StudentLogin
+            case 19:   //  Jaar_1_Project_4.TeacherLogIn
                 userType = new global::Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_19_StudentLogin;
+                userType.Activator = Activate_19_TeacherLogIn;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 20:   //  Jaar_1_Project_4.TeacherLogIn
+            case 20:   //  Jaar_1_Project_4.ThirthFloor
                 userType = new global::Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_20_TeacherLogIn;
+                userType.Activator = Activate_20_ThirthFloor;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 21:   //  Jaar_1_Project_4.ThirthFloor
+            case 21:   //  Jaar_1_Project_4.Wijnhaven103
                 userType = new global::Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_21_ThirthFloor;
+                userType.Activator = Activate_21_Wijnhaven103;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 22:   //  Jaar_1_Project_4.Wijnhaven103
+            case 22:   //  Jaar_1_Project_4.Wijnhaven61
                 userType = new global::Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_22_Wijnhaven103;
+                userType.Activator = Activate_22_Wijnhaven61;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 23:   //  Jaar_1_Project_4.Wijnhaven61
+            case 23:   //  Jaar_1_Project_4.Wijnhaven61Education
                 userType = new global::Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_23_Wijnhaven61;
+                userType.Activator = Activate_23_Wijnhaven61Education;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 24:   //  Jaar_1_Project_4.Wijnhaven61Education
+            case 24:   //  Jaar_1_Project_4.Wijnhaven99
                 userType = new global::Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_24_Wijnhaven61Education;
+                userType.Activator = Activate_24_Wijnhaven99;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 25:   //  Jaar_1_Project_4.Wijnhaven99
+            case 25:   //  Jaar_1_Project_4.Wijnhaven99Education
                 userType = new global::Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_25_Wijnhaven99;
+                userType.Activator = Activate_25_Wijnhaven99Education;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 26:   //  Jaar_1_Project_4.Wijnhaven99Education
+            case 26:   //  Jaar_1_Project_4.WijnhavenLocations
                 userType = new global::Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_26_Wijnhaven99Education;
+                userType.Activator = Activate_26_WijnhavenLocations;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 27:   //  Jaar_1_Project_4.WijnhavenLocations
+            case 27:   //  Jaar_1_Project_4.EducationPagePopUp
                 userType = new global::Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_27_WijnhavenLocations;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 28:   //  Jaar_1_Project_4.EducationPagePopUp
-                userType = new global::Jaar_1_Project_4.Jaar_1_Project_4_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_28_EducationPagePopUp;
+                userType.Activator = Activate_27_EducationPagePopUp;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

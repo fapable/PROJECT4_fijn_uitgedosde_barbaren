@@ -1,13 +1,13 @@
 ﻿<Page
-    x:Class="Jaar_1_Project_4.QueryHandlers.InfoQueryHandler.InfoQueryHandler.InfoPopup"
+    x:Class="Jaar_1_Project_4.InfoPopup"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Jaar_1_Project_4.QueryHandlers.InfoQueryHandler.InfoQueryHandler"
+    xmlns:local="using:Jaar_1_Project_4.InfoQueryHandler"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{StaticResource hrTheme}">
+    <Grid x:ConnectionId='1' Background="{StaticResource hrTheme}" x:Name="infoPopupGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="52*"/>
             <RowDefinition Height="51*"/>
@@ -20,7 +20,7 @@
             <RowDefinition Height="243*"/>
         </Grid.RowDefinitions>
         <TextBlock HorizontalAlignment="Center" Margin="138,10,153,0" TextWrapping="Wrap" Text="Info" VerticalAlignment="Top" FontSize="36" Foreground="White" FontWeight="Bold" Grid.RowSpan="2"/>
-        <Button x:ConnectionId='1' Content="Back" HorizontalAlignment="Left" Margin="138,10,0,0" VerticalAlignment="Top" Grid.Row="8" Height="39" Width="69"                     />
+        <Button x:ConnectionId='2' x:Name="ButtonClick" Content="Back" HorizontalAlignment="Center" Margin="99,10,100,0" VerticalAlignment="Top" Grid.Row="8" Height="44" Width="161"                        />
 
     </Grid>
 </Page>
