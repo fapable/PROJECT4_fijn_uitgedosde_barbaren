@@ -101,7 +101,6 @@
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="MaxLength" />
-      <RootEvent Name="TextChanged" />
     </RootType>
     <RootType FullName="Jaar_1_Project_4.Answer" />
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />

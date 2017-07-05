@@ -32,7 +32,7 @@ namespace Jaar_1_Project_4 {
         //job is to see if the teacher is logged in, if the teacher is logged in then it skips the login page
         private void MainLoginPageClick(object sender, RoutedEventArgs e) {
             if(DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter == true) { //Checks if teacher is already logged in
-                this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.QandAPage)); //goes to answer page if teacher is already logged in
+                this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage)); //goes to answer page if teacher is already logged in
             }
             else {
                 this.Frame.Navigate(typeof(MainLoginPage)); //When teacher is not logged in it goes to the login page
