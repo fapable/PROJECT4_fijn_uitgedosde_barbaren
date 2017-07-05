@@ -40,19 +40,19 @@ namespace Jaar_1_Project_4.QuestionSystem
             int basey = -420;
             int basewidth = 640;
             int baseheieght = 80;
-            List<IMessage> current_messages = new List<IMessage> { };
+            List<Message> current_messages = new List<Message> { };
             for(int current = 0; current < qena.Count(); current++)
             {
                 if(current % 2 == 0)
                 {
-                    IMessage current_message = MessageFactory.Create(MessageType.question, new EasyLabel(basex, (basey + (130 * current)), basewidth, baseheieght, qena[current]), current_page, (30 * (current + 1)) + 100 * current, "test", "Henk", 1, "informatica");
-                    if (DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter) { current_message.content.Tapped += new TappedEventHandler(answerQuestion); }
+                    Message current_message = MessageFactory.Create(MessageType.question, new EasyLabel(basex, (basey + (130 * current)), basewidth, baseheieght, qena[current]), current_page, (30 * (current + 1)) + 100 * current, "test", "Henk", 1, "informatica");
+                    if (DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter) { current_message.Content.Tapped += new TappedEventHandler(answerQuestion); }
                     current_message.Draw();
                     current_messages.Add(current_message);
                 }
                 else if(current % 2 != 0)
                 {
-                    IMessage current_message = MessageFactory.Create(MessageType.answer, new EasyLabel(basex, (basey + (130 * current)), basewidth, baseheieght, qena[current]), current_page, (30 * (current + 1)) + 100 * current, null, "leraar", 1, "informatica");
+                    Message current_message = MessageFactory.Create(MessageType.answer, new EasyLabel(basex, (basey + (130 * current)), basewidth, baseheieght, qena[current]), current_page, (30 * (current + 1)) + 100 * current, null, "leraar", 1, "informatica");
                     current_message.Draw();
                     current_messages.Add(current_message);
                 }
@@ -85,7 +85,7 @@ namespace Jaar_1_Project_4.QuestionSystem
             this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage));
         }
 
-        public void AnswerQuestion(object sender, TappedRoutedEventArgs e)
+        public void answerQuestion(object sender, TappedRoutedEventArgs e)
         {
             Debug.WriteLine("Clicked It Bitch");
             this.Frame.Navigate(typeof(Answer));

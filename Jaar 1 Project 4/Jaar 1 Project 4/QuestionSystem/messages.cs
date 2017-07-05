@@ -19,7 +19,7 @@ using Jaar_1_Project_4;
 
 namespace Jaar_1_Project_4_Messages
 {
-    public interface IMessage
+    public interface Message
     {
         void Draw();
         EasyLabel Content { get; }
@@ -29,7 +29,7 @@ namespace Jaar_1_Project_4_Messages
     public enum MessageType { question, answer, notification } // this enum makes sure we can only create 3 kinds of in app messages 
     public abstract class MessageFactory
     {
-        public static IMessage Create(MessageType type, EasyLabel text, Grid current_page, int margin,string email, string name, int qandaid, string education) //current page is the grid the message has to be drawn to
+        public static Message Create(MessageType type, EasyLabel text, Grid current_page, int margin,string email, string name, int qandaid, string education) //current page is the grid the message has to be drawn to
         {
             switch (type) //checks the type of message you want and then returns the apropriate object
             {
@@ -52,7 +52,7 @@ namespace Jaar_1_Project_4_Messages
             }
         }
     }
-    public abstract class MessageDecorator : IMessage //this decorator adds text (an easy label) to your message
+    public abstract class MessageDecorator : Message //this decorator adds text (an easy label) to your message
     {
         public EasyLabel message;
         public int qandaid;
