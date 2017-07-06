@@ -42,6 +42,8 @@ namespace Jaar_1_Project_4 {
             id = id + 1;
             string qupload = string.Format("http://www.wschaijk.nl/api/api.php/INSERT-INTO-questions-VALUES({0},-\'{1}\',-\'{2}\',-\'{3}\',-\'{4}\');", id, education.Replace(" ", "-"), email.Replace("@", "%40"), name.Replace(" ", "-"), question.Replace("?", "").Replace(" ", "-"));
             var uploadstuff = syncClient.GetAsync(qupload);
+            string tempanswer = string.Format("http://www.wschaijk.nl/api/api.php/INSERT-INTO-answer-VALUES({0},-\'{1}\',-\'place\',-\'This-question-is-not-yet-answered.\');", id, education.Replace(" ", "-"));
+            var uploadta = syncClient.GetAsync(tempanswer);
             this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage));
         }
 
