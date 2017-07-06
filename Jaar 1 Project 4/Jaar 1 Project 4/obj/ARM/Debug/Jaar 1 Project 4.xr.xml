@@ -38,6 +38,7 @@
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="IsTapEnabled" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.FontFamily" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Content" />
       <RootProperty Name="Resources" />

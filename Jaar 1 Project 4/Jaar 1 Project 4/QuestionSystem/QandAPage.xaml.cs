@@ -76,12 +76,12 @@ namespace Jaar_1_Project_4.QuestionSystem {
                 }
                 else {
                     QuestionExtender.IsQuestion = false; 
-                    QuestionExtender.EasyLabelCounter += 40; //Important: Increments height position
+                    QuestionExtender.EasyLabelCounter += 60; //Important: Increments height position
                     Message current_message = MessageFactory.Create(MessageType.answer, new EasyLabel(0 - (GetWidth() / 2), (basey + (130 * count)), GetWidth() - 70, baseheieght, entry[3]), current_page, (30 * (count + 1)) + 100 * count, null, "leraar", 1, "informatica");
                     current_message.Draw();
                     count++;
                     current_messages.Add(current_message);              
-                    QuestionExtender.EasyLabelCounter += 60; //Important: Increments height position
+                    QuestionExtender.EasyLabelCounter += 80; //Important: Increments height position
                 }      
                 //if (entry.Count == 4) { 
                 //    answerHold.Add(entry);

@@ -11,6 +11,7 @@
         <Style x:Key="toiletColour" TargetType="Border"/>
         <Style x:Key="classroomColour" TargetType="Border"/>
         <Style x:Key="projectSpaceColour" TargetType="Border"/>
+        <FontFamily x:Key="ContentControlThemeFontFamily">Consolas</FontFamily>
     </Application.Resources>
 
 </Application>

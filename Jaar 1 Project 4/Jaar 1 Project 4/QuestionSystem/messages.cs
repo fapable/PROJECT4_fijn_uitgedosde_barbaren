@@ -213,7 +213,6 @@ namespace Jaar_1_Project_4_Messages {
         public string text;
         int width;
         int height;
-        dynamic color;
         public TextBlock current_message;
         public TextBlock hiddenTextBlockID;
 
@@ -223,7 +222,7 @@ namespace Jaar_1_Project_4_Messages {
             this.text = text;
             this.width = width;
             this.height = height;
-            this.color = color;
+            
 
 
             current_message = new TextBlock();
