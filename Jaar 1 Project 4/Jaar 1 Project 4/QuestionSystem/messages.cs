@@ -107,7 +107,7 @@ namespace Jaar_1_Project_4_Messages {
             ////background.RadiusX = this.message.x;
             ////background.RadiusY = this.message.y;
             //current_page.Children.Add(background);
-            this.message.Foreground = new SolidColorBrush(Colors.Navy);
+            this.message.Foreground = new SolidColorBrush(Colors.White);
             current_page.Children.Add(this.message.Draw());
 
             //first we create the background we want, then we draw that background and then we draw the text overtop to create a message with a colore background

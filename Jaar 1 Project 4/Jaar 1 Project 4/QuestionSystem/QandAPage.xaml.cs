@@ -125,15 +125,9 @@ namespace Jaar_1_Project_4.QuestionSystem {
             //}
         }
 
-        private void GoBack(object sender, RoutedEventArgs e) {
-            if (DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter) { //If teacher is logged it goes straight to the main menu
-                this.Frame.Navigate(typeof(MainMenu));
-
-            }
-            else {
-                this.Frame.Navigate(typeof(mainQpage));
-
-            }       
+        private void GoBack(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(mainQpage));
         }
         private int GetWidth()
         {
