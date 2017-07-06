@@ -10,7 +10,7 @@ namespace Jaar_1_Project_4.QuestionSystem
     {
         public static string text_to_string(string text)
         {
-            string result = "";
+            string result = text;
 
             result = result.Replace("%", "%25");
             result = result.Replace(" ", "-");
@@ -20,7 +20,7 @@ namespace Jaar_1_Project_4.QuestionSystem
             result = result.Replace("$", "%24");
             result = result.Replace("*", "%2A");
             result = result.Replace("+", "%2B");
-            result = result.Replace("?", "%3F");
+            result = result.Replace("?", "");
 
             return result;
         }

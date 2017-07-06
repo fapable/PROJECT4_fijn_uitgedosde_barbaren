@@ -22,13 +22,13 @@ namespace Jaar_1_Project_4.QuestionSystem {
             DisplayInformation.AutoRotationPreferences = DisplayOrientations.Portrait; //flips screen (for mobile only)
         }
         private void AskAQuestion(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(Questions));
+            this.Frame.Navigate(typeof(Questions)); //change current page to the ask a question page
         }
         private void ToQandAButton(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(QandAPage));
+            this.Frame.Navigate(typeof(QandAPage)); //change current page to general q and a page
         }
         private void backButtonClick(object sender, RoutedEventArgs e) {
-            this.Frame.Navigate(typeof(MainMenu));
+            this.Frame.Navigate(typeof(MainMenu)); //change current page to the main menu
         }
     }
 }

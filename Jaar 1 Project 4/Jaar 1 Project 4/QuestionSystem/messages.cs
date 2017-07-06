@@ -97,23 +97,9 @@ namespace Jaar_1_Project_4_Messages {
         public override EasyLabel SecondContent => this.secondEasyLabel;
 
         public override void Draw() {
-            ////var background = new Rectangle();
-            ////background.Fill = new SolidColorBrush(Windows.UI.Colors.LightPink);
-            ////background.Width = this.message.GetWidth() + 20;
-            ////background.Height = 100;
-            ////background.Stroke = new SolidColorBrush(Windows.UI.Colors.Black);
-            ////background.VerticalAlignment = VerticalAlignment.Top;
-            ////background.Margin = new Thickness(1, this.some_margin, 1, 1);
-            ////background.StrokeThickness = 2;
-            ////background.RadiusX = this.message.x;
-            ////background.RadiusY = this.message.y;
-            //current_page.Children.Add(background);
             this.message.Foreground = new SolidColorBrush(Colors.Navy);
             current_page.Children.Add(this.message.Draw());
-
-            //first we create the background we want, then we draw that background and then we draw the text overtop to create a message with a colore background
         }
-
         public override void SecondDraw() {
             current_page.Children.Add(this.secondEasyLabel.Draw());
         }
@@ -132,34 +118,15 @@ namespace Jaar_1_Project_4_Messages {
             this.some_margin = margin;
             this.teacherid = teacherid;
             message.current_message.Foreground = new SolidColorBrush(Windows.UI.Colors.Chartreuse);
-
         }
-
         public override EasyLabel Content => this.message;
-
         public override int Content_y_value { set => this.message.y = (int) value; }
         public override int Margin { set => this.some_margin = value; }
-
         public override int GetQuestionID => base.qandaid;
-
         public override EasyLabel SecondContent => throw new NotImplementedException();
-
         public override void Draw() {
-            //var background = new Rectangle();
-            //background.Fill = new SolidColorBrush(Windows.UI.Colors.White);
-            //background.Width = this.message.GetWidth();
-            //background.Height = 100;
-            //background.Stroke = new SolidColorBrush(Windows.UI.Colors.Black);
-            //background.VerticalAlignment = VerticalAlignment.Top;
-            //background.Margin = new Thickness(1, this.some_margin, 1, 1);
-            //background.StrokeThickness = 2;
-            //background.RadiusX = 50;
-            //background.RadiusY = 10;
-
-            //current_page.Children.Add(background);
             current_page.Children.Add(this.message.Draw());
         }
-
         public override void SecondDraw() {
             throw new NotImplementedException();
         }
@@ -169,7 +136,6 @@ namespace Jaar_1_Project_4_Messages {
         bool IsAnswer;
         dynamic current_page;
         int some_margin;
-
         public Notification(EasyLabel message, Grid current_page, int margin) : base(message, -1, null) {
             this.current_page = current_page;
             this.IsAnswer = false;
@@ -187,18 +153,6 @@ namespace Jaar_1_Project_4_Messages {
         public override EasyLabel SecondContent => throw new NotImplementedException();
 
         public override void Draw() {
-            //var background = new Rectangle();
-            //background.Fill = new SolidColorBrush(Windows.UI.Colors.DarkRed);
-            //background.Width = this.message.GetWidth();
-            //background.Height = 180;
-            //background.Stroke = new SolidColorBrush(Windows.UI.Colors.Black);
-            //background.VerticalAlignment = VerticalAlignment.Top;
-            //background.Margin = new Thickness(1, this.some_margin, 1, 1);
-            //background.StrokeThickness = 2;
-            //background.RadiusX = 50;
-            //background.RadiusY = 10;
-
-            //current_page.Children.Add(background);
             current_page.Children.Add(this.message.Draw());
         }
 
@@ -215,43 +169,26 @@ namespace Jaar_1_Project_4_Messages {
         int height;
         public TextBlock current_message;
         public TextBlock hiddenTextBlockID;
-
         public EasyLabel(int x, int y, int width, int height, string text, string hiddenParameterID = "HELLLOOOOOOOOOOOOOOOOOOOOOOOO") {
             this.x = x + width / 2 + 50;
             this.y = y;
             this.text = text;
             this.width = width;
             this.height = height;
-            
-
-
             current_message = new TextBlock();
             current_message.FontFamily = new FontFamily("Consolas");
-            current_message.FontWeight = Windows.UI.Text.FontWeights.Bold;
-            
+            current_message.FontWeight = Windows.UI.Text.FontWeights.Bold;            
             current_message.TextWrapping = TextWrapping.Wrap;
-
             //puts the answer or question title in front of the answer or question
             if (QuestionExtender.IsQuestion == true) {
                 current_message.Text = "Question" + QuestionExtender.CurrentSelectedQuestionID.ToString() + ": " + this.text;
-
             }
             else {
                 current_message.Text = "Answer" + QuestionExtender.CurrentSelectedQuestionID.ToString() + ": " + this.text;
-
             }
-
             current_message.Name = QuestionExtender.CurrentSelectedQuestionID.ToString(); //Important, object name gets set to the current ID
             current_message.HorizontalAlignment = HorizontalAlignment.Center;
             current_message.Margin = new Thickness(10, QuestionExtender.EasyLabelCounter, 0, 0); //Important, questionExtender increments, the position changes based on it
-
-            //current_message.Width = this.width;
-            //current_message.Height = this.height;
-            //current_message.RenderTransform = new TranslateTransform { X = this.x, Y = this.y };
-
-            if (DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter) {
-                //this.current_message.Tapped += new TappedEventHandler(answerQuestion);
-            }
         }
 
         
@@ -259,12 +196,6 @@ namespace Jaar_1_Project_4_Messages {
         {
             return current_message;
         }
-
-        //public bool answerQuestion(object sender, TappedRoutedEventArgs e)
-        //{
-        //    return true;
-        //}
-
         public int GetWidth() => this.width; //returns width of the textblock
         public double GetHeight() => this.height; //returns height of the textblock
     }

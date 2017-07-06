@@ -14,6 +14,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using System.Net.Http;
 using Jaar_1_Project_4_Messages;
+using Jaar_1_Project_4.QuestionSystem;
 
 //The answer page, only teachers can access this page
 
@@ -23,60 +24,33 @@ namespace Jaar_1_Project_4 {
             this.InitializeComponent();
             vraagBox.Text = QuestionExtender.TheQuestion; //The textbox of the question section gets changed into the question
         }
-        private void BackButtonClick(object sender, RoutedEventArgs e) {
-            if (DatabaseLoginCheck.IsTeacherLoggedInGetAndSettter == true) {
-                this.Frame.Navigate(typeof(MainMenu));
-
-            }
-            else {
-                this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage));
-            }
+        private void BackButtonClick(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage)); //sends user back to main question page
         }      
         private void Send_message(object sender, RoutedEventArgs e)
         {
-            //TODO
-            //upload answer to database + send email to person that asked the answered question
-            var syncClient = new HttpClient();
+            var syncClient = new HttpClient(); //allow internet acces for api interaction
 
-            int question_id = Int32.Parse(QuestionExtender.CurrentSelectedQuestionID);
+            int question_id = Int32.Parse(QuestionExtender.CurrentSelectedQuestionID); //id of the question that is currently being answered
 
-            string who_to_mail = string.Format("http://www.wschaijk.nl/api/api.php/SELECT-email-FROM-questions-WHERE-question_id-=-{0};", question_id);
-            string person_name = string.Format("http://www.wschaijk.nl/api/api.php/SELECT-name-FROM-questions-WHERE-question_id-=-{0};", question_id);
+            string who_to_mail = string.Format("http://www.wschaijk.nl/api/api.php/SELECT-email-FROM-questions-WHERE-question_id-=-{0};", question_id); //email adress to notify the person who asked the question
+            string person_name = string.Format("http://www.wschaijk.nl/api/api.php/SELECT-name-FROM-questions-WHERE-question_id-=-{0};", question_id); //name of the person who asked the question
             var emailCall = syncClient.GetStringAsync(who_to_mail);
-            var emailResult = emailCall.Result;
+            var emailResult = emailCall.Result; //executes query
             var nameCall = syncClient.GetStringAsync(person_name);
-            var nameResult = nameCall.Result;
+            var nameResult = nameCall.Result; //executes query
             var gimmeResult = new PrepareForScreenQueryHandler();
-            var email = gimmeResult.ResultOnly(emailResult);
-            var name = gimmeResult.ResultOnly(nameResult);
+            var email = gimmeResult.ResultOnly(emailResult); //removes unnecessary string elements from the result
+            var name = gimmeResult.ResultOnly(nameResult); //removes unnecessary dtring elements from the result
 
-            string updatequery = string.Format("http://www.wschaijk.nl/api/api.php/UPDATE-answer-SET-teacher_id-=-\'{0}\',-answer-=-\'{1}\'-WHERE-question_id-=-{2};", DatabaseLoginCheck.LoggedInTeacherName, answerBox.Text, question_id);
-            var updateanswer = syncClient.GetAsync(updatequery);
+            string updatequery = TextToURL.text_to_string(string.Format("http://www.wschaijk.nl/api/api.php/UPDATE-answer-SET-teacher_id-=-\'{0}\',-answer-=-\'{1}\'-WHERE-question_id-=-{2};", DatabaseLoginCheck.LoggedInTeacherName, answerBox.Text, question_id));
+            var updateanswer = syncClient.GetAsync(updatequery); //upload answer to database
 
-            string notification = string.Format("http://www.wschaijk.nl/api/api.php/MAIL={0}=Your-question-has-been-answered!=Dear-{1},-your-question-regarding-the-open-day-has-been-answered.-Check-the-Q-and-A-page-for-the-answer.", email, name);
-            var sendmail = syncClient.GetAsync(notification);
+            string notification = TextToURL.text_to_string(string.Format("http://www.wschaijk.nl/api/api.php/MAIL={0}=Your-question-has-been-answered!=Dear-{1},-your-question-regarding-the-open-day-has-been-answered.-Check-the-Q-and-A-page-for-the-answer.", email, name));
+            var sendmail = syncClient.GetAsync(notification); //notify the person who asked the question via email
 
-            this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage));
-        }
-        private int GetWidth()
-        {
-            FrameworkElement pnlClient = this.Content as FrameworkElement;
-            if (pnlClient != null)
-            {
-                double Width = pnlClient.ActualWidth;
-                return (int)Width;
-            }
-            return 0;
-        }
-        private int GetHeight()
-        {
-            FrameworkElement pnlClient = this.Content as FrameworkElement;
-            if (pnlClient != null)
-            {
-                double height = pnlClient.ActualHeight;
-                return (int)Height;
-            }
-            return 0;
+            this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage)); //sends user back to the main question page
         }
     }
 }
