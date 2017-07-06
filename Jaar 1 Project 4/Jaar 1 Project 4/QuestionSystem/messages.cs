@@ -84,6 +84,7 @@ namespace Jaar_1_Project_4_Messages {
             this.email = email;
             this.name = name;
             this.secondEasyLabel = easylabel;
+            message.current_message.Foreground = new SolidColorBrush(Windows.UI.Colors.Blue);
         }
 
         public override EasyLabel Content => this.message;
@@ -107,7 +108,7 @@ namespace Jaar_1_Project_4_Messages {
             ////background.RadiusX = this.message.x;
             ////background.RadiusY = this.message.y;
             //current_page.Children.Add(background);
-            this.message.Foreground = new SolidColorBrush(Colors.White);
+            this.message.Foreground = new SolidColorBrush(Colors.Navy);
             current_page.Children.Add(this.message.Draw());
 
             //first we create the background we want, then we draw that background and then we draw the text overtop to create a message with a colore background
@@ -130,6 +131,8 @@ namespace Jaar_1_Project_4_Messages {
             this.current_page = current_page;
             this.some_margin = margin;
             this.teacherid = teacherid;
+            message.current_message.Foreground = new SolidColorBrush(Windows.UI.Colors.Chartreuse);
+
         }
 
         public override EasyLabel Content => this.message;
@@ -210,6 +213,7 @@ namespace Jaar_1_Project_4_Messages {
         public string text;
         int width;
         int height;
+        dynamic color;
         public TextBlock current_message;
         public TextBlock hiddenTextBlockID;
 
@@ -219,9 +223,13 @@ namespace Jaar_1_Project_4_Messages {
             this.text = text;
             this.width = width;
             this.height = height;
+            this.color = color;
 
 
             current_message = new TextBlock();
+            current_message.FontFamily = new FontFamily("Consolas");
+            current_message.FontWeight = Windows.UI.Text.FontWeights.Bold;
+            
             current_message.TextWrapping = TextWrapping.Wrap;
 
             //puts the answer or question title in front of the answer or question
@@ -246,6 +254,8 @@ namespace Jaar_1_Project_4_Messages {
                 //this.current_message.Tapped += new TappedEventHandler(answerQuestion);
             }
         }
+
+        
         public dynamic Draw() //returns the created textblock for the main classes (question, answer and notification) to use
         {
             return current_message;
