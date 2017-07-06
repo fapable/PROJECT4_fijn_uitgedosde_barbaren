@@ -36,6 +36,23 @@ namespace Jaar_1_Project_4 {
         {
             //TODO
             //upload answer to database + send email to person that asked the answered question
+            var syncClient = new HttpClient();
+
+            int question_id = Int32.Parse(QuestionExtender.CurrentSelectedQuestionID);
+
+            string who_to_mail = string.Format("http://www.wschaijk.nl/api/api.php/SELECT-email-FROM-questions-WHERE-question_id-=-{0};", question_id);
+            string person_name = string.Format("http://www.wschaijk.nl/api/api.php/SELECT-name-FROM-questions-WHERE-question_id-=-{0};", question_id);
+            var gimmeResult = new PrepareForScreenQueryHandler();
+            var email = gimmeResult.ResultOnly(who_to_mail);
+            var name = gimmeResult.ResultOnly(person_name);
+
+            string updatequery = string.Format("http://www.wschaijk.nl/api/api.php/UPDATE-answer-SET-teacher_id-=-\'{0}\',-answer-=-\'{1}\'-WHERE-question_id-=-{2};", DatabaseLoginCheck.LoggedInTeacherName, answerBox.Text, question_id);
+            var updateanswer = syncClient.GetAsync(updatequery);
+
+            string notification = string.Format("http://www.wschaijk.nl/api/api.php/MAIL={0}=Your-question-has-been-answered!=Dear-{0},-your-question-regarding-the-open-day-has-been-answered.-Check-the-Q-and-A-page-for-the-answer.", name);
+            var sendmail = syncClient.GetAsync(notification);
+
+            this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage));
         }
         private int GetWidth()
         {

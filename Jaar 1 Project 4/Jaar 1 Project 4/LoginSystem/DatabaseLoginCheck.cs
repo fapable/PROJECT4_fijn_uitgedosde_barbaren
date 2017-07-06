@@ -12,7 +12,9 @@ namespace Jaar_1_Project_4 {
     public abstract class DatabaseLoginCheck {
         //The getter and setter is static because everywhere in the program, the value must be the same
         private static bool isTeacherLoggedIn = false; 
-        public static bool IsTeacherLoggedInGetAndSettter { get => isTeacherLoggedIn; set => isTeacherLoggedIn = value; } 
+        public static bool IsTeacherLoggedInGetAndSettter { get => isTeacherLoggedIn; set => isTeacherLoggedIn = value; }
+        private static string teacherName = "";
+        public static string LoggedInTeacherName { get => teacherName; set => teacherName = value; }
 
         //Main job is to create a query to check if the given user information is correct
         public static bool CheckGivenPasswordInDatabase(IUserNameAndPasswordVisit<string>[] givenUserNameAndPassword) {
@@ -24,8 +26,11 @@ namespace Jaar_1_Project_4 {
             //The query password result is first converted to take out the brackets and other symbols 
             string passwordDBConverted = DatabaseLoginCheck.ConvertRawQueryToText(passwordResult);
 
+            LoggedInTeacherName = givenUserNameAndPassword[0].GetLoginInformationValue();
+
             //Checks wherever the given user information is correct
             return IsCorrectUserInformation(passwordDBConverted, givenUserNameAndPassword[1].GetLoginInformationValue());
+
         }
         //Main job is to make the query result more pretty, it takes out brackets and other symbols
         public static string ConvertRawQueryToText(string queryPasswordResult) {

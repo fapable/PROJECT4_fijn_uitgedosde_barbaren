@@ -7,15 +7,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <ScrollViewer VerticalScrollMode="Auto" Height="Auto" VerticalScrollBarVisibility="Auto">
-<<<<<<< HEAD
-        <Grid Background="{ThemeResource hrTheme}">
-            <Button x:ConnectionId='1' Content="Back" HorizontalAlignment="Left" Margin="115,513,0,0" VerticalAlignment="Top" Height="58" Width="123"                     />
-=======
         <Grid x:ConnectionId='1' Background="{ThemeResource hrTheme}" x:Name="qanda">
             <Button x:ConnectionId='2' x:Name="BackButton" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top"                Height="53" Width="105"/>
-            <TextBlock x:ConnectionId='3' x:Name="textBlock" HorizontalAlignment="Left" Margin="172,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="53" Text="Q and A" RenderTransformOrigin="1.074,0.375" FontSize="36" Foreground="#FFFFF8F8"/>
->>>>>>> origin/master
-        </Grid>
+                <TextBlock x:ConnectionId='3' x:Name="textBlock" HorizontalAlignment="Center" Margin="110,0,120,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="53" Text="Q and A" RenderTransformOrigin="1.074,0.375" FontSize="36" Foreground="#FFFFF8F8"/>
+            </Grid>
     </ScrollViewer>
 </Page>
 

@@ -12,13 +12,13 @@
             <RowDefinition Height="Auto" MinHeight="226"/>
             <RowDefinition Height="Auto" MinHeight="414"/>
         </Grid.RowDefinitions>
-        <TextBlock x:ConnectionId='2' x:Name="openDayInformation" TextWrapping="Wrap" Text="Open Day Information" Foreground="White" FontWeight="Bold" FontSize="33" Margin="10,0,0,168"/>
-        <Button x:ConnectionId='3' x:Name="activitiesButton" Content="Activities" HorizontalAlignment="Center" Margin="63,141,52,20" VerticalAlignment="Center" Width="245" Height="65"                                FontSize="15"/>
-        <Button x:ConnectionId='4' x:Name="educationButton" Content="Wijnhaven 107 Education" HorizontalAlignment="Center" Margin="63,219,52,356" VerticalAlignment="Center" Width="245" Height="65"                               FontSize="15" Grid.RowSpan="2"/>
+        <TextBlock x:ConnectionId='2' x:Name="openDayInformation" TextWrapping="Wrap" Text="Open Day Information" TextAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="33" Margin="10,0,0,168"/>
+        <Button x:ConnectionId='3' x:Name="activitiesButton" Content="Activities" HorizontalAlignment="Center" Margin="63,141,52,20" VerticalAlignment="Center" Width="245" Height="65"                               FontSize="15"/>
+        <Button x:ConnectionId='4' x:Name="educationButton" Content="Wijnhaven 107" HorizontalAlignment="Center" Margin="63,219,52,356" VerticalAlignment="Center" Width="245" Height="65"                              FontSize="15" Grid.RowSpan="2"/>
         <Button x:ConnectionId='5' x:Name="locationsButton" Content="Other Wijnhaven Locations
-                " HorizontalAlignment="Center" Margin="64,70,51,279" VerticalAlignment="Center" Width="245" Height="65" FontSize="15"                               Grid.Row="1"/>
-        <Button x:ConnectionId='6' x:Name="openDayBackButton" Content="Back" HorizontalAlignment="Center" Margin="65,222,51,130" VerticalAlignment="Center"                                 Width="244" Height="62" FontSize="15" Grid.Row="1" />
-        <Button x:ConnectionId='7' x:Name="ContactPage" Content="Contact page" HorizontalAlignment="Center" Margin="64,146,51,203" VerticalAlignment="Center" Width="245" Height="65"                             Grid.Row="1" />
+                " HorizontalAlignment="Center" Margin="64,70,51,279" VerticalAlignment="Center" Width="245" Height="65" FontSize="15"                              Grid.Row="1"/>
+        <Button x:ConnectionId='6' x:Name="openDayBackButton" Content="Back" HorizontalAlignment="Center" Margin="65,222,51,130" VerticalAlignment="Center"                         Width="244" Height="62" FontSize="15" Grid.Row="1" />
+        <Button x:ConnectionId='7' x:Name="ContactPage" Content="Contact page" HorizontalAlignment="Center" Margin="64,146,51,203" VerticalAlignment="Center" Width="245" Height="65"                            Grid.Row="1" />
 
     </Grid>
 </Page>

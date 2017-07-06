@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="Jaar_1_Project_4.Wijnhaven103"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Jaar_1_Project_4"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:ConnectionId='1' Background="{StaticResource hrTheme}" x:Name="wijnhaven_103">
+        <TextBlock x:ConnectionId='2' x:Name="mainTitle" HorizontalAlignment="Center" Margin="57,0,56,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FFFFF8F8" FontSize="35" Width="247">
+            <Run Text="Wijnhaven 103"/>
+            <LineBreak/>
+            <Run/>
+        </TextBlock>
+        <Button x:ConnectionId='3' x:Name="backButton" Content="Back" HorizontalAlignment="Center" Margin="108,342,93,0" VerticalAlignment="Top"                         Width="159" Height="74"/>
+        <Button x:ConnectionId='4' x:Name="_25Wijnhaven4103_25" Content="Info" HorizontalAlignment="Center" Margin="108,181,93,0" VerticalAlignment="Top"  Width="159" Height="62"                        />
+
+    </Grid>
+</Page>
+
