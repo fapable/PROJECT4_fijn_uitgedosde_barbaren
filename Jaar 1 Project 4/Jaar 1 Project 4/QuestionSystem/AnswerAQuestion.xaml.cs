@@ -42,14 +42,18 @@ namespace Jaar_1_Project_4 {
 
             string who_to_mail = string.Format("http://www.wschaijk.nl/api/api.php/SELECT-email-FROM-questions-WHERE-question_id-=-{0};", question_id);
             string person_name = string.Format("http://www.wschaijk.nl/api/api.php/SELECT-name-FROM-questions-WHERE-question_id-=-{0};", question_id);
+            var emailCall = syncClient.GetStringAsync(who_to_mail);
+            var emailResult = emailCall.Result;
+            var nameCall = syncClient.GetStringAsync(person_name);
+            var nameResult = nameCall.Result;
             var gimmeResult = new PrepareForScreenQueryHandler();
-            var email = gimmeResult.ResultOnly(who_to_mail);
-            var name = gimmeResult.ResultOnly(person_name);
+            var email = gimmeResult.ResultOnly(emailResult);
+            var name = gimmeResult.ResultOnly(nameResult);
 
             string updatequery = string.Format("http://www.wschaijk.nl/api/api.php/UPDATE-answer-SET-teacher_id-=-\'{0}\',-answer-=-\'{1}\'-WHERE-question_id-=-{2};", DatabaseLoginCheck.LoggedInTeacherName, answerBox.Text, question_id);
             var updateanswer = syncClient.GetAsync(updatequery);
 
-            string notification = string.Format("http://www.wschaijk.nl/api/api.php/MAIL={0}=Your-question-has-been-answered!=Dear-{0},-your-question-regarding-the-open-day-has-been-answered.-Check-the-Q-and-A-page-for-the-answer.", name);
+            string notification = string.Format("http://www.wschaijk.nl/api/api.php/MAIL={0}=Your-question-has-been-answered!=Dear-{1},-your-question-regarding-the-open-day-has-been-answered.-Check-the-Q-and-A-page-for-the-answer.", email, name);
             var sendmail = syncClient.GetAsync(notification);
 
             this.Frame.Navigate(typeof(Jaar_1_Project_4.QuestionSystem.mainQpage));
